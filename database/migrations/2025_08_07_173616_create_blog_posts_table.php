@@ -6,21 +6,29 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
-    public function up(): void
+    public function up()
     {
         Schema::create('blog_posts', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('slug')->unique();
+            $table->text('excerpt')->nullable();
+            $table->longText('content');
+            $table->string('featured_image')->nullable();
+            $table->string('seo_title')->nullable();
+            $table->text('meta_description')->nullable();
+            $table->boolean('is_published')->default(false);
+            $table->timestamp('published_at')->nullable();
+            $table->unsignedBigInteger('views')->default(0);
+            $table->json('tags')->nullable();
             $table->timestamps();
+            
+            $table->index(['is_published', 'published_at']);
+            $table->index('slug');
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
+    public function down()
     {
         Schema::dropIfExists('blog_posts');
     }
