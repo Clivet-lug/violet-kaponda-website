@@ -1,63 +1,54 @@
 @extends('layouts.app')
 
-@section('title', 'About Violet Nswana Kaponda - African Fintech Queen & Digital Transformation Leader')
-@section('description', 'Learn about Violet Nswana Kaponda\'s journey from IT Project Manager to Business Development
-    leader at Probase Group. Master\'s in Project Management, 1,469+ LinkedIn followers, driving Africa\'s digital
-    transformation.')
+@section('title', 'About Violet Nswana Kaponda - The Fintech Queen Building Africa\'s Digital Future')
+@section('description', 'Learn about Violet Nswana Kaponda\'s journey from IT Project Manager to Fintech Queen. Discover
+    her mission to drive digital transformation and economic empowerment across Africa.')
 
 @section('content')
     <!-- Hero Section -->
-    <section
-        class="relative py-20 lg:py-32 bg-gradient-to-br from-gray-900 via-red-900 to-orange-900 text-white overflow-hidden">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute inset-0"
-                style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;">
-            </div>
-        </div>
-
-        <!-- Floating Elements -->
-        <div class="absolute inset-0 overflow-hidden">
-            <div class="absolute w-96 h-96 bg-orange-500 rounded-full opacity-20 animate-float"
-                style="top: -10%; right: -10%;"></div>
-            <div class="absolute w-64 h-64 bg-red-500 rounded-full opacity-15 animate-float"
-                style="bottom: -10%; left: -10%; animation-delay: 2s;"></div>
-        </div>
-
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section class="relative py-20 bg-gray-50 overflow-hidden">
+        <div class="container-brand">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Content -->
                 <div class="animate-on-scroll">
+                    <!-- Badge -->
                     <div
-                        class="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-md rounded-full text-sm font-medium mb-6">
-                        <span class="w-2 h-2 bg-orange-400 rounded-full mr-2 animate-pulse"></span>
-                        African Fintech Queen
+                        class="inline-flex items-center px-4 py-2 bg-brand-red-50 text-brand-red-800 rounded-full text-sm font-medium mb-6">
+                        👑 Meet the Fintech Queen
                     </div>
-                    <h1 class="font-display text-4xl lg:text-6xl font-bold mb-6 text-shadow-xl">
-                        Meet <span class="gradient-text">Violet Nswana Kaponda</span>
+
+                    <h1 class="hero-text mb-6">
+                        Building Africa's
+                        <span class="text-brand-gradient">Digital Future</span>
                     </h1>
-                    <p class="text-xl lg:text-2xl mb-8 text-gray-200 leading-relaxed">
-                        <strong>BSc, MSc</strong> • Fintech Queen • Building Africa's Digital Future •
-                        Architect of Visibility & Impact • International Speaker
+
+                    <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+                        I'm Violet Nswana Kaponda, a business acquisition and growth strategist on a mission
+                        to bridge the gap between innovation and accessibility across emerging markets.
+                        Welcome to my story of transformation, impact, and limitless possibilities.
                     </p>
-                    <div class="flex flex-wrap gap-4 mb-8">
-                        <div class="bg-white/10 backdrop-blur-md rounded-xl px-4 py-2 border border-white/20">
-                            <span class="text-sm font-medium">📍 Lusaka, Zambia</span>
+
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                            <div class="text-2xl font-bold text-brand-red-900 mb-1">6+</div>
+                            <div class="text-sm text-gray-600">Years in Tech Leadership</div>
                         </div>
-                        <div class="bg-white/10 backdrop-blur-md rounded-xl px-4 py-2 border border-white/20">
-                            <span class="text-sm font-medium">👥 1,469+ LinkedIn Followers</span>
-                        </div>
-                        <div class="bg-white/10 backdrop-blur-md rounded-xl px-4 py-2 border border-white/20">
-                            <span class="text-sm font-medium">🎓 Master's in Project Management</span>
+                        <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                            <div class="text-2xl font-bold text-brand-red-900 mb-1">Master's</div>
+                            <div class="text-sm text-gray-600">Project Management</div>
                         </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="/contact" class="btn-primary px-8 py-4 text-lg">
-                            Work With Me
-                        </a>
-                        <a href="https://linkedin.com/in/violetkaponda"
-                            class="px-8 py-4 border-2 border-white/30 text-white rounded-xl hover:bg-white hover:text-gray-900 transition-all duration-300 font-semibold text-center">
-                            View LinkedIn Profile
+
+                    <!-- Social Links -->
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/in/violet-nswana-kaponda-bsc-msc-a2761a153" target="_blank"
+                            class="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-white transition duration-200">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                            <span>Connect on LinkedIn</span>
                         </a>
                     </div>
                 </div>
@@ -65,19 +56,21 @@
                 <!-- Image -->
                 <div class="animate-on-scroll">
                     <div class="relative">
-                        <div class="relative rounded-3xl overflow-hidden shadow-2xl">
-                            <img src="{{ asset('images/about/violet-professional-hero.jpg') }}"
-                                alt="Violet Nswana Kaponda - African Fintech Queen" class="w-full h-auto object-cover"
-                                style="aspect-ratio: 4/5;">
-                            <!-- Modern overlay -->
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent">
-                            </div>
-                        </div>
-                        <!-- Floating badge -->
-                        <div class="absolute -top-4 -right-4 bg-white rounded-2xl p-4 shadow-xl animate-float">
-                            <div class="text-center">
-                                <div class="text-2xl font-bold text-orange-600">6+</div>
-                                <div class="text-xs text-gray-600 font-medium">Years Experience</div>
+                        <img src="{{ asset('images/hero/violet-hero-2.jpg') }}"
+                            alt="Violet Nswana Kaponda - Professional Portrait" class="rounded-xl shadow-brand-lg w-full">
+
+                        <!-- Decorative Elements -->
+                        <div class="absolute -top-6 -left-6 w-32 h-32 bg-brand-gradient rounded-full opacity-20"></div>
+                        <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-yellow-400 rounded-full opacity-30"></div>
+
+                        <!-- Achievement Card -->
+                        <div class="absolute bottom-4 left-4 right-4 bg-white rounded-lg shadow-lg p-4">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <div class="font-semibold text-gray-900">International Speaker</div>
+                                    <div class="text-sm text-gray-600">Available globally</div>
+                                </div>
+                                <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                             </div>
                         </div>
                     </div>
@@ -86,145 +79,135 @@
         </div>
     </section>
 
-    <!-- About Story Section -->
-    <section class="py-20 lg:py-32 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- My Story Section -->
+    <section class="section-padding bg-white">
+        <div class="container-brand">
             <div class="max-w-4xl mx-auto">
+                <!-- Section Header -->
                 <div class="text-center mb-16 animate-on-scroll">
-                    <h2 class="font-display text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
-                        My <span class="gradient-text">Journey</span>
-                    </h2>
-                    <p class="text-xl text-gray-600 leading-relaxed">
-                        From IT Project Manager to Business Development Leader -
-                        Building Africa's Digital Future One Partnership at a Time
+                    <h2 class="display-text mb-6">My Story</h2>
+                    <p class="text-xl text-gray-600">
+                        From IT Project Manager to Fintech Queen - a journey of transformation,
+                        impact, and building bridges between innovation and accessibility.
                     </p>
                 </div>
 
-                <div class="prose prose-lg prose-gray max-w-none animate-on-scroll">
-                    <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-3xl p-8 lg:p-12 mb-12">
-                        <p class="text-xl leading-relaxed text-gray-700 mb-6">
-                            I am a <strong>business acquisition and growth strategist</strong> with a passion for scaling
-                            tech businesses,
-                            closing high-value deals, and driving digital expansion in Africa. With a strong foundation in
-                            project management
-                            and business development, I specialize in identifying strategic opportunities, building
-                            high-impact partnerships,
-                            and leading commercial strategies that drive revenue growth.
-                        </p>
+                <!-- Story Content -->
+                <div class="prose prose-lg prose-brand mx-auto animate-on-scroll">
+                    <p class="text-lg leading-relaxed mb-6">
+                        I am a business acquisition and growth strategist with a passion for scaling tech businesses,
+                        closing high-value deals, and driving digital expansion across Africa. With a strong foundation
+                        in project management and business development, I specialize in identifying strategic opportunities,
+                        building high-impact partnerships, and leading commercial strategies that drive revenue growth.
+                    </p>
 
-                        <p class="text-lg leading-relaxed text-gray-600 mb-6">
-                            Beyond business, I'm deeply committed to <strong>digital inclusion and economic
-                                empowerment</strong> in emerging markets.
-                            I believe that technology has the power to transform industries and create opportunities, and
-                            I'm on a mission
-                            to bridge the gap between innovation and accessibility.
-                        </p>
+                    <p class="text-lg leading-relaxed mb-6">
+                        Beyond business, I'm deeply committed to digital inclusion and economic empowerment in emerging
+                        markets.
+                        I believe that technology has the power to transform industries and create opportunities, and I'm on
+                        a
+                        mission to bridge the gap between innovation and accessibility. This belief drives everything I do -
+                        from my strategic work at Probase Group to my thought leadership through the "Elevate & Dominate"
+                        podcast.
+                    </p>
 
-                        <p class="text-lg leading-relaxed text-gray-600">
-                            I also share insights on mindset, tech, and wellness through my podcast, <strong>"Elevate &
-                                Dominate"</strong>,
-                            where I inspire professionals to step into their power and build limitless careers.
-                        </p>
-                    </div>
+                    <p class="text-lg leading-relaxed mb-8">
+                        Through my podcast, I share insights on mindset, tech, and wellness, where I inspire professionals
+                        to step into their power and build limitless careers. I'm always open to meaningful conversations
+                        and collaborations that align with my vision. Let's connect and explore opportunities to scale,
+                        innovate, and dominate together.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Professional Experience Section -->
-    <section class="py-20 lg:py-32 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 animate-on-scroll">
-                <div
-                    class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6">
-                    <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                    Professional Experience
-                </div>
-                <h2 class="font-display text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
-                    Career <span class="gradient-text">Progression</span>
-                </h2>
-            </div>
-
+    <!-- Professional Journey Timeline -->
+    <section class="section-padding bg-gray-50">
+        <div class="container-brand">
             <div class="max-w-4xl mx-auto">
-                <!-- Current Role -->
-                <div class="animate-on-scroll mb-12">
-                    <div
-                        class="bg-white rounded-3xl p-8 lg:p-12 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300">
-                        <div class="flex items-start space-x-4 mb-6">
-                            <div
-                                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center shadow-lg">
-                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                                </svg>
-                            </div>
-                            <div class="flex-1">
-                                <div class="flex items-center justify-between mb-2">
-                                    <h3 class="font-display text-2xl font-bold text-gray-900">Business Development and
-                                        Strategic Partnerships</h3>
-                                    <span
-                                        class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Current</span>
-                                </div>
-                                <div class="text-orange-600 font-semibold mb-2">Probase Group • Full-time</div>
-                                <div class="text-gray-600 mb-4">Feb 2024 - Present • 1 yr 7 mos</div>
-                                <p class="text-gray-700 leading-relaxed">
-                                    Leading strategic partnerships and business development initiatives, focusing on scaling
-                                    tech businesses
-                                    and driving digital expansion across Africa. Responsible for identifying growth
-                                    opportunities,
-                                    structuring high-value deals, and building strategic alliances that drive revenue
-                                    growth.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Skills -->
-                        <div class="flex flex-wrap gap-2 mt-6">
-                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">Business
-                                Acquisition</span>
-                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">Business
-                                Development</span>
-                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">+5
-                                skills</span>
-                        </div>
-                    </div>
+                <!-- Section Header -->
+                <div class="text-center mb-16 animate-on-scroll">
+                    <h2 class="display-text mb-6">Professional Journey</h2>
+                    <p class="text-xl text-gray-600">
+                        A decade of growth, learning, and impact across the African tech ecosystem.
+                    </p>
                 </div>
 
-                <!-- Previous Role -->
-                <div class="animate-on-scroll">
+                <!-- Timeline -->
+                <div class="relative">
+                    <!-- Timeline Line -->
                     <div
-                        class="bg-white rounded-3xl p-8 lg:p-12 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
-                        <div class="flex items-start space-x-4 mb-6">
+                        class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-1 bg-brand-red-200">
+                    </div>
+
+                    <!-- Timeline Items -->
+                    <div class="space-y-12">
+                        <!-- Current Role -->
+                        <div class="relative flex items-center animate-on-scroll">
                             <div
-                                class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
-                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                    </path>
-                                </svg>
+                                class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-brand-red-900 rounded-full border-4 border-white shadow-lg flex items-center justify-center">
+                                <div class="w-3 h-3 bg-white rounded-full animate-pulse"></div>
                             </div>
-                            <div class="flex-1">
-                                <h3 class="font-display text-2xl font-bold text-gray-900 mb-2">IT Project Manager</h3>
-                                <div class="text-blue-600 font-semibold mb-2">ProBASE • Full-time</div>
-                                <div class="text-gray-600 mb-4">Sep 2017 - Feb 2024 • 6 yrs 6 mos • Zambia</div>
-                                <p class="text-gray-700 leading-relaxed">
-                                    Managed complex IT projects and digital transformation initiatives. Led cross-functional
-                                    teams,
-                                    implemented project management best practices, and delivered technology solutions that
-                                    drove
-                                    business growth and operational efficiency.
-                                </p>
+                            <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8 md:text-right">
+                                <div class="card">
+                                    <div class="p-6">
+                                        <div class="text-sm font-semibold text-brand-red-600 mb-2">Feb 2024 - Present</div>
+                                        <h3 class="text-xl font-bold text-gray-900 mb-2">Business Development & Strategic
+                                            Partnerships</h3>
+                                        <div class="text-brand-red-700 font-medium mb-3">Probase Group</div>
+                                        <p class="text-gray-600 leading-relaxed">
+                                            Leading business acquisition and growth strategies, driving digital expansion
+                                            across Africa, and building high-impact partnerships that deliver measurable
+                                            results.
+                                        </p>
+                                        <div class="flex flex-wrap gap-2 mt-4">
+                                            <span
+                                                class="px-3 py-1 bg-brand-red-50 text-brand-red-700 rounded-full text-sm">Business
+                                                Development</span>
+                                            <span
+                                                class="px-3 py-1 bg-brand-red-50 text-brand-red-700 rounded-full text-sm">Strategic
+                                                Partnerships</span>
+                                            <span
+                                                class="px-3 py-1 bg-brand-red-50 text-brand-red-700 rounded-full text-sm">Deal
+                                                Structuring</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- Skills -->
-                        <div class="flex flex-wrap gap-2 mt-6">
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Project
-                                Management</span>
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Project
-                                Planning</span>
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">+3
-                                skills</span>
+                        <!-- Previous Role -->
+                        <div class="relative flex items-center animate-on-scroll">
+                            <div
+                                class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-brand-amber-900 rounded-full border-4 border-white shadow-lg">
+                            </div>
+                            <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8 md:ml-auto">
+                                <div class="card">
+                                    <div class="p-6">
+                                        <div class="text-sm font-semibold text-brand-amber-700 mb-2">Sep 2017 - Feb 2024 (6
+                                            yrs 6 mos)</div>
+                                        <h3 class="text-xl font-bold text-gray-900 mb-2">IT Project Manager</h3>
+                                        <div class="text-brand-amber-700 font-medium mb-3">ProBASE, Zambia</div>
+                                        <p class="text-gray-600 leading-relaxed">
+                                            Managed complex software projects, ensuring delivery excellence and stakeholder
+                                            satisfaction across diverse technical initiatives. Built the foundation for my
+                                            expertise in project management and business development.
+                                        </p>
+                                        <div class="flex flex-wrap gap-2 mt-4">
+                                            <span
+                                                class="px-3 py-1 bg-brand-amber-50 text-brand-amber-700 rounded-full text-sm">Project
+                                                Management</span>
+                                            <span
+                                                class="px-3 py-1 bg-brand-amber-50 text-brand-amber-700 rounded-full text-sm">Software
+                                                Development</span>
+                                            <span
+                                                class="px-3 py-1 bg-brand-amber-50 text-brand-amber-700 rounded-full text-sm">Team
+                                                Leadership</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -233,75 +216,144 @@
     </section>
 
     <!-- Education Section -->
-    <section class="py-20 lg:py-32 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 animate-on-scroll">
-                <div
-                    class="inline-flex items-center px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium mb-6">
-                    <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                    Education & Qualifications
+    <section class="section-padding bg-white">
+        <div class="container-brand">
+            <div class="max-w-4xl mx-auto">
+                <!-- Section Header -->
+                <div class="text-center mb-16 animate-on-scroll">
+                    <h2 class="display-text mb-6">Education & Qualifications</h2>
+                    <p class="text-xl text-gray-600">
+                        Building expertise through continuous learning and academic excellence.
+                    </p>
                 </div>
-                <h2 class="font-display text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
-                    Academic <span class="gradient-text">Excellence</span>
-                </h2>
-            </div>
 
-            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Master's Degree -->
-                <div class="animate-on-scroll">
-                    <div
-                        class="bg-gradient-to-br from-purple-50 to-blue-50 rounded-3xl p-8 shadow-lg border border-purple-100 hover:shadow-xl transition-all duration-300 h-full">
-                        <div class="flex items-start space-x-4 mb-6">
-                            <div
-                                class="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
-                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
+                <!-- Education Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Master's Degree -->
+                    <div class="card-elevated animate-on-scroll">
+                        <div class="p-8">
+                            <div class="w-16 h-16 bg-brand-gradient rounded-lg flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M12 14l9-5-9-5-9 5 9 5z"></path>
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
                                     </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                                    </path>
                                 </svg>
                             </div>
-                            <div class="flex-1">
-                                <h3 class="font-display text-xl font-bold text-gray-900 mb-2">Master's Degree</h3>
-                                <div class="text-purple-600 font-semibold mb-1">University of Lusaka</div>
-                                <div class="text-gray-600 mb-2">Project Management</div>
-                                <div class="text-sm text-gray-500">2019 - 2021</div>
-                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Master's Degree</h3>
+                            <div class="text-brand-red-700 font-medium mb-2">University of Lusaka</div>
+                            <div class="text-gray-600 mb-4">Project Management • 2019 - 2021</div>
+                            <p class="text-gray-600 leading-relaxed">
+                                Advanced studies in project management methodologies, strategic planning,
+                                and organizational leadership, providing the foundation for my expertise
+                                in managing complex business initiatives.
+                            </p>
                         </div>
-                        <p class="text-gray-700 text-sm leading-relaxed">
-                            Advanced studies in project management methodologies, strategic planning, and leadership
-                            principles
-                            that form the foundation of my business development expertise.
+                    </div>
+
+                    <!-- Bachelor's Degree -->
+                    <div class="card-elevated animate-on-scroll">
+                        <div class="p-8">
+                            <div class="w-16 h-16 bg-brand-gradient rounded-lg flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Bachelor's Degree</h3>
+                            <div class="text-brand-red-700 font-medium mb-2">University of Zambia</div>
+                            <div class="text-gray-600 mb-4">2012 - 2017</div>
+                            <p class="text-gray-600 leading-relaxed">
+                                Comprehensive undergraduate education that provided the analytical thinking,
+                                problem-solving skills, and academic rigor that underpin my professional
+                                success in technology and business development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values & Mission -->
+    <section class="section-padding bg-brand-black text-white">
+        <div class="container-brand">
+            <div class="max-w-4xl mx-auto text-center">
+                <!-- Section Header -->
+                <div class="mb-16 animate-on-scroll">
+                    <h2 class="display-text text-white mb-6">My Mission & Values</h2>
+                    <p class="text-xl text-gray-300">
+                        The principles and purpose that drive everything I do in the African tech ecosystem.
+                    </p>
+                </div>
+
+                <!-- Mission Statement -->
+                <div class="mb-16 animate-on-scroll">
+                    <div class="bg-white bg-opacity-10 rounded-xl p-8 backdrop-blur-sm">
+                        <h3 class="text-2xl font-bold text-yellow-400 mb-4">My Mission</h3>
+                        <p class="text-xl text-gray-200 leading-relaxed">
+                            To bridge the gap between innovation and accessibility across emerging markets,
+                            empowering individuals and organizations to harness technology for transformational
+                            growth and sustainable impact across Africa's digital economy.
                         </p>
                     </div>
                 </div>
 
-                <!-- Bachelor's Degree -->
-                <div class="animate-on-scroll">
-                    <div
-                        class="bg-gradient-to-br from-orange-50 to-red-50 rounded-3xl p-8 shadow-lg border border-orange-100 hover:shadow-xl transition-all duration-300 h-full">
-                        <div class="flex items-start space-x-4 mb-6">
-                            <div
-                                class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center shadow-lg">
-                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div class="flex-1">
-                                <h3 class="font-display text-xl font-bold text-gray-900 mb-2">Bachelor's Degree</h3>
-                                <div class="text-orange-600 font-semibold mb-1">University of Zambia</div>
-                                <div class="text-gray-600 mb-2">BSc</div>
-                                <div class="text-sm text-gray-500">2012 - 2017</div>
-                            </div>
+                <!-- Core Values -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Digital Inclusion -->
+                    <div class="animate-on-scroll">
+                        <div class="w-16 h-16 bg-yellow-400 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-brand-black" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                </path>
+                            </svg>
                         </div>
-                        <p class="text-gray-700 text-sm leading-relaxed">
-                            Comprehensive undergraduate education that provided the technical foundation for my career
-                            in technology and business development.
+                        <h3 class="text-xl font-bold text-white mb-3">Digital Inclusion</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Ensuring technology solutions are accessible and beneficial to all,
+                            especially underrepresented communities across emerging markets.
+                        </p>
+                    </div>
+
+                    <!-- Innovation Excellence -->
+                    <div class="animate-on-scroll">
+                        <div class="w-16 h-16 bg-yellow-400 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-brand-black" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Innovation Excellence</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Driving cutting-edge solutions and transformational strategies
+                            that create sustainable value and competitive advantage.
+                        </p>
+                    </div>
+
+                    <!-- Empowerment -->
+                    <div class="animate-on-scroll">
+                        <div class="w-16 h-16 bg-yellow-400 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-brand-black" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Empowerment</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Inspiring professionals to step into their power, build limitless careers,
+                            and become leaders who drive meaningful change.
                         </p>
                     </div>
                 </div>
@@ -309,137 +361,345 @@
         </div>
     </section>
 
-    <!-- What I Bring Section -->
-    <section class="py-20 lg:py-32 bg-gradient-to-br from-gray-50 to-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 animate-on-scroll">
-                <div
-                    class="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium mb-6">
-                    <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                    Core Expertise
+    <!-- Recognition & Achievements -->
+    <section class="section-padding bg-white">
+        <div class="container-brand">
+            <div class="max-w-4xl mx-auto">
+                <!-- Section Header -->
+                <div class="text-center mb-16 animate-on-scroll">
+                    <h2 class="display-text mb-6">Recognition & Achievements</h2>
+                    <p class="text-xl text-gray-600">
+                        Milestones and recognition that reflect my impact across the African tech ecosystem.
+                    </p>
                 </div>
-                <h2 class="font-display text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
-                    What I Bring to the <span class="gradient-text">Table</span>
-                </h2>
+
+                <!-- Achievements Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- LinkedIn Influence -->
+                    <div class="card animate-on-scroll">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900">LinkedIn Thought Leader</h3>
+                                    <p class="text-sm text-gray-600">1,470+ followers and growing</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed">
+                                Building a strong professional network and sharing insights that inspire
+                                and educate professionals across the African tech ecosystem.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Podcast Host -->
+                    <div class="card animate-on-scroll">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-brand-red-600 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900">Podcast Host</h3>
+                                    <p class="text-sm text-gray-600">"Elevate & Dominate" - 11+ episodes</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed">
+                                Sharing insights on mindset, tech, and wellness to inspire professionals
+                                to step into their power and build limitless careers.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- International Speaker -->
+                    <div class="card animate-on-scroll">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-brand-amber-600 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m0 0V1a1 1 0 011-1h2a1 1 0 011 1v3M7 4H5a1 1 0 00-1 1v16a1 1 0 001 1h14a1 1 0 001-1V5a1 1 0 00-1-1h-2">
+                                        </path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900">International Speaker</h3>
+                                    <p class="text-sm text-gray-600">Available for global events</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed">
+                                Delivering transformational insights on fintech innovation,
+                                digital transformation, and women's leadership across Africa.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Education Excellence -->
+                    <div class="card animate-on-scroll">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900">Academic Excellence</h3>
+                                    <p class="text-sm text-gray-600">BSc, MSc Project Management</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed">
+                                Strong academic foundation with advanced degrees in project management,
+                                providing the theoretical framework for practical business excellence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Expertise Cards -->
-                <div class="animate-on-scroll">
-                    <div
-                        class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
-                                </path>
-                            </svg>
-                        </div>
-                        <h3 class="font-display text-xl font-bold mb-4 text-gray-900">Business Acquisition & Strategic
-                            Growth</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            Expert in identifying and closing high-value deals, building strategic partnerships,
-                            and driving revenue growth through innovative business development strategies.
-                        </p>
-                    </div>
+    <!-- Personal Philosophy -->
+    <section class="section-padding bg-gray-50">
+        <div class="container-brand">
+            <div class="max-w-4xl mx-auto">
+                <!-- Section Header -->
+                <div class="text-center mb-16 animate-on-scroll">
+                    <h2 class="display-text mb-6">My Philosophy</h2>
+                    <p class="text-xl text-gray-600">
+                        The beliefs and principles that guide my approach to business, leadership, and life.
+                    </p>
                 </div>
 
-                <div class="animate-on-scroll">
-                    <div
-                        class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                            </svg>
+                <!-- Philosophy Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Limitless Mindset -->
+                    <div class="card-elevated animate-on-scroll">
+                        <div class="p-8">
+                            <div class="w-16 h-16 bg-brand-gradient rounded-lg flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">Limitless Mindset</h3>
+                            <p class="text-gray-600 leading-relaxed mb-4">
+                                I believe in the power of thinking beyond traditional boundaries.
+                                Success isn't limited by geography, background, or circumstance—it's
+                                determined by vision, preparation, and the courage to take action.
+                            </p>
+                            <blockquote class="border-l-4 border-brand-red-500 pl-4 italic text-gray-700">
+                                "Your potential is unlimited when you refuse to accept limitations."
+                            </blockquote>
                         </div>
-                        <h3 class="font-display text-xl font-bold mb-4 text-gray-900">Digital Transformation & Commercial
-                            Strategy</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            Leading digital transformation initiatives and developing commercial strategies
-                            that drive sustainable growth in the African tech ecosystem.
-                        </p>
+                    </div>
+
+                    <!-- Impact Over Income -->
+                    <div class="card-elevated animate-on-scroll">
+                        <div class="p-8">
+                            <div class="w-16 h-16 bg-brand-gradient rounded-lg flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">Impact Over Income</h3>
+                            <p class="text-gray-600 leading-relaxed mb-4">
+                                While financial success is important, true fulfillment comes from
+                                creating meaningful change. I focus on building solutions that
+                                empower communities and drive sustainable transformation.
+                            </p>
+                            <blockquote class="border-l-4 border-brand-red-500 pl-4 italic text-gray-700">
+                                "Success is measured not just by what you achieve, but by whom you lift up along the way."
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Continuous Evolution -->
+                    <div class="card-elevated animate-on-scroll">
+                        <div class="p-8">
+                            <div class="w-16 h-16 bg-brand-gradient rounded-lg flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">Continuous Evolution</h3>
+                            <p class="text-gray-600 leading-relaxed mb-4">
+                                The technology landscape is constantly evolving, and so must we.
+                                I'm committed to lifelong learning, adapting to new challenges,
+                                and staying ahead of industry trends.
+                            </p>
+                            <blockquote class="border-l-4 border-brand-red-500 pl-4 italic text-gray-700">
+                                "Growth is not a destination—it's a way of life."
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Collaborative Leadership -->
+                    <div class="card-elevated animate-on-scroll">
+                        <div class="p-8">
+                            <div class="w-16 h-16 bg-brand-gradient rounded-lg flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">Collaborative Leadership</h3>
+                            <p class="text-gray-600 leading-relaxed mb-4">
+                                The best solutions emerge when diverse minds work together.
+                                I believe in building inclusive teams, fostering open dialogue,
+                                and creating environments where everyone can contribute their best.
+                            </p>
+                            <blockquote class="border-l-4 border-brand-red-500 pl-4 italic text-gray-700">
+                                "Leadership is not about being in charge—it's about taking care of those in your charge."
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="animate-on-scroll">
-                    <div
-                        class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-pink-500 to-red-600 rounded-2xl flex items-center justify-center mb-6">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
-                                </path>
-                            </svg>
-                        </div>
-                        <h3 class="font-display text-xl font-bold mb-4 text-gray-900">High-Value Deal Structuring &
-                            Negotiation</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            Skilled in structuring complex deals, negotiating partnerships, and creating
-                            win-win scenarios that drive mutual value for all stakeholders.
-                        </p>
-                    </div>
+    <!-- Current Focus Areas -->
+    <section class="section-padding bg-white">
+        <div class="container-brand">
+            <div class="max-w-4xl mx-auto">
+                <!-- Section Header -->
+                <div class="text-center mb-16 animate-on-scroll">
+                    <h2 class="display-text mb-6">Current Focus Areas</h2>
+                    <p class="text-xl text-gray-600">
+                        The strategic initiatives and passion projects driving my work today.
+                    </p>
                 </div>
 
-                <div class="animate-on-scroll">
-                    <div
-                        class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
-                                </path>
-                            </svg>
+                <!-- Focus Areas -->
+                <div class="space-y-8">
+                    <!-- Fintech Innovation -->
+                    <div class="card animate-on-scroll">
+                        <div class="p-8">
+                            <div class="flex items-start space-x-6">
+                                <div
+                                    class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3">Fintech Innovation & Financial
+                                        Inclusion</h3>
+                                    <p class="text-gray-600 leading-relaxed mb-4">
+                                        Leading initiatives to expand financial services access across emerging markets.
+                                        Working on solutions that bridge the gap between traditional banking and
+                                        digital-first financial services, with a focus on underserved communities.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm">Digital
+                                            Payments</span>
+                                        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm">Financial
+                                            Inclusion</span>
+                                        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm">Mobile
+                                            Banking</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="font-display text-xl font-bold mb-4 text-gray-900">Thought Leadership in Tech & Digital
-                            Inclusion</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            Passionate advocate for digital inclusion and economic empowerment,
-                            bridging the gap between innovation and accessibility in emerging markets.
-                        </p>
                     </div>
-                </div>
 
-                <div class="animate-on-scroll">
-                    <div
-                        class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                </path>
-                            </svg>
+                    <!-- Women in Tech -->
+                    <div class="card animate-on-scroll">
+                        <div class="p-8">
+                            <div class="flex items-start space-x-6">
+                                <div
+                                    class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3">Women's Leadership in Tech</h3>
+                                    <p class="text-gray-600 leading-relaxed mb-4">
+                                        Championing women's advancement in technology through mentorship, advocacy,
+                                        and creating platforms for visibility. Through my podcast and speaking
+                                        engagements, I inspire women to step into leadership roles and build limitless
+                                        careers.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm">Mentorship</span>
+                                        <span
+                                            class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm">Leadership
+                                            Development</span>
+                                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm">Career
+                                            Advancement</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="font-display text-xl font-bold mb-4 text-gray-900">Project Management & Strategic
-                            Planning</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            Master's-level expertise in project management methodologies,
-                            strategic planning, and leading cross-functional teams to deliver results.
-                        </p>
                     </div>
-                </div>
 
-                <div class="animate-on-scroll">
-                    <div
-                        class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-teal-500 to-green-600 rounded-2xl flex items-center justify-center mb-6">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
-                                </path>
-                            </svg>
+                    <!-- Digital Transformation -->
+                    <div class="card animate-on-scroll">
+                        <div class="p-8">
+                            <div class="flex items-start space-x-6">
+                                <div
+                                    class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3">Digital Transformation Strategy</h3>
+                                    <p class="text-gray-600 leading-relaxed mb-4">
+                                        Helping organizations navigate their digital evolution through strategic planning,
+                                        technology adoption, and change management. Focus on creating sustainable
+                                        transformation that drives business value and competitive advantage.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">Strategy
+                                            Development</span>
+                                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">Change
+                                            Management</span>
+                                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">Technology
+                                            Adoption</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="font-display text-xl font-bold mb-4 text-gray-900">Mindset & Performance Coaching</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            Inspiring professionals through the "Elevate & Dominate" podcast,
-                            helping individuals step into their power and build limitless careers.
-                        </p>
                     </div>
                 </div>
             </div>
@@ -447,190 +707,98 @@
     </section>
 
     <!-- Call to Action -->
-    <section
-        class="py-20 lg:py-32 bg-gradient-to-br from-orange-600 via-red-600 to-red-700 text-white relative overflow-hidden">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute inset-0"
-                style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;">
-            </div>
-        </div>
+    <section class="section-padding bg-brand-gradient text-white">
+        <div class="container-brand">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="animate-on-scroll">
+                    <h2 class="display-text text-white mb-6">Let's Build the Future Together</h2>
+                    <p class="text-xl text-gray-100 mb-8 leading-relaxed">
+                        Ready to explore opportunities for collaboration, partnership, or simply
+                        connect with someone who shares your passion for transformational change?
+                        I'm always open to meaningful conversations that can drive impact across Africa's digital ecosystem.
+                    </p>
 
-        <!-- Floating Elements -->
-        <div class="absolute inset-0 overflow-hidden">
-            <div class="absolute w-64 h-64 bg-white rounded-full opacity-5 animate-float" style="top: 10%; right: 10%;">
-            </div>
-            <div class="absolute w-96 h-96 bg-yellow-300 rounded-full opacity-10 animate-float"
-                style="bottom: -10%; left: -10%; animation-delay: 3s;"></div>
-        </div>
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <a href="{{ route('contact') }}" class="btn-primary-white">
+                            Start a Conversation
+                            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                        <a href="{{ route('speaking') }}" class="btn-secondary-white">
+                            Book Me to Speak
+                        </a>
+                    </div>
 
-        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-on-scroll">
-            <h2 class="font-display text-4xl lg:text-5xl font-bold mb-6">
-                Ready to <span class="text-yellow-300">Collaborate?</span>
-            </h2>
-            <p class="text-xl lg:text-2xl mb-12 text-red-100 leading-relaxed max-w-3xl mx-auto">
-                I'm always open to meaningful conversations and collaborations that align with my vision.
-                Let's connect and explore opportunities to scale, innovate, and dominate together.
-            </p>
-
-            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-                <a href="/contact"
-                    class="bg-white text-red-600 px-10 py-5 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105">
-                    Start a Conversation
-                </a>
-                <a href="/speaking"
-                    class="border-2 border-white/30 text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-white hover:text-red-600 transition-all duration-300">
-                    Book Me to Speak
-                </a>
-            </div>
-
-            <!-- Social Links -->
-            <div class="flex justify-center space-x-6">
-                <a href="https://linkedin.com/in/violetkaponda"
-                    class="group p-4 bg-white/10 backdrop-blur-md rounded-2xl hover:bg-white/20 transition-all duration-300">
-                    <svg class="w-6 h-6 group-hover:scale-110 transition-transform duration-300" fill="currentColor"
-                        viewBox="0 0 24 24">
-                        <path
-                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                    </svg>
-                </a>
-                <a href="https://youtube.com/@elevateanddominate"
-                    class="group p-4 bg-white/10 backdrop-blur-md rounded-2xl hover:bg-white/20 transition-all duration-300">
-                    <svg class="w-6 h-6 group-hover:scale-110 transition-transform duration-300" fill="currentColor"
-                        viewBox="0 0 24 24">
-                        <path
-                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                    </svg>
-                </a>
-                <a href="https://instagram.com/violetkaponda"
-                    class="group p-4 bg-white/10 backdrop-blur-md rounded-2xl hover:bg-white/20 transition-all duration-300">
-                    <svg class="w-6 h-6 group-hover:scale-110 transition-transform duration-300" fill="currentColor"
-                        viewBox="0 0 24 24">
-                        <path
-                            d="M12.017 0C8.396 0 7.989.013 7.041.048 6.094.082 5.52.204 5.036.388a5.918 5.918 0 0 0-2.14 1.394A5.918 5.918 0 0 0 .48 4.126C.294 4.61.172 5.184.139 6.131.103 7.08.09 7.487.09 11.108c0 3.62.013 4.027.048 4.975.034.948.156 1.521.34 2.006a5.918 5.918 0 0 0 1.394 2.14 5.918 5.918 0 0 0 2.14 1.394c.485.184 1.058.306 2.006.34.948.035 1.355.048 4.976.048 3.62 0 4.027-.013 4.975-.048.948-.034 1.521-.156 2.006-.34a5.918 5.918 0 0 0 2.14-1.394 5.918 5.918 0 0 0 1.394-2.14c.184-.485.306-1.058.34-2.006.035-.948.048-1.355.048-4.976 0-3.62-.013-4.027-.048-4.975-.034-.948-.156-1.521-.34-2.006a5.918 5.918 0 0 0-1.394-2.14A5.918 5.918 0 0 0 16.986.388C16.501.204 15.928.082 14.98.048 14.031.013 13.624 0 10.003 0h2.014zm-.24 5.4a6.6 6.6 0 1 1 0 13.2 6.6 6.6 0 0 1 0-13.2zm0 2.16a4.44 4.44 0 1 0 0 8.88 4.44 4.44 0 0 0 0-8.88zm6.406-2.845a1.44 1.44 0 1 1 0 2.88 1.44 1.44 0 0 1 0-2.88z" />
-                    </svg>
-                </a>
-                <a href="https://tiktok.com/@violetkaponda"
-                    class="group p-4 bg-white/10 backdrop-blur-md rounded-2xl hover:bg-white/20 transition-all duration-300">
-                    <svg class="w-6 h-6 group-hover:scale-110 transition-transform duration-300" fill="currentColor"
-                        viewBox="0 0 24 24">
-                        <path
-                            d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
-                    </svg>
-                </a>
-            </div>
-
-            <!-- Contact Info -->
-            <div class="mt-12 pt-8 border-t border-white/20">
-                <p class="text-red-100 flex items-center justify-center space-x-2 mb-2">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                    </svg>
-                    <span>Based in Lusaka, Zambia</span>
-                </p>
-                <p class="text-red-100 flex items-center justify-center space-x-2">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                        </path>
-                    </svg>
-                    <span>violet@violetkaponda.com</span>
-                </p>
+                    <!-- Social Connect -->
+                    <div class="mt-8 pt-8 border-t border-white border-opacity-20">
+                        <p class="text-gray-200 mb-4">Connect with me on social media</p>
+                        <div class="flex justify-center space-x-6">
+                            <a href="https://linkedin.com/in/violet-nswana-kaponda-bsc-msc-a2761a153" target="_blank"
+                                class="text-white hover:text-yellow-400 transition duration-200">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank"
+                                class="text-white hover:text-yellow-400 transition duration-200">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank"
+                                class="text-white hover:text-yellow-400 transition duration-200">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.097.118.112.221.085.343-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+@endsection
 
-    <!-- Enhanced JavaScript for this page -->
+@push('scripts')
     <script>
-        // Enhanced scroll animations for about page
+        // Intersection Observer for animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
 
-        const observer = new IntersectionObserver(function(entries) {
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+                    entry.target.classList.add('animate-in');
                 }
             });
         }, observerOptions);
 
         // Observe all elements with animate-on-scroll class
-        document.querySelectorAll('.animate-on-scroll').forEach(el => {
-            observer.observe(el);
+        document.addEventListener('DOMContentLoaded', () => {
+            const animateElements = document.querySelectorAll('.animate-on-scroll');
+            animateElements.forEach(el => observer.observe(el));
         });
 
-        // Add stagger effect to cards
-        const cards = document.querySelectorAll('.animate-on-scroll');
-        cards.forEach((card, index) => {
-            card.style.transitionDelay = `${index * 0.1}s`;
-        });
-
-        // Enhanced LinkedIn link tracking
-        document.querySelector('a[href*="linkedin.com"]').addEventListener('click', function(e) {
-            // Add any analytics tracking here if needed
-            console.log('LinkedIn profile clicked');
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
         });
     </script>
-
-    <!-- Additional Styles for About Page -->
-    <style>
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .animate-on-scroll.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .card-hover:hover {
-            transform: translateY(-8px) scale(1.02);
-        }
-
-        @keyframes float {
-
-            0%,
-            100% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-15px);
-            }
-        }
-
-        .animate-float {
-            animation: float 6s ease-in-out infinite;
-        }
-
-        .gradient-text {
-            background: linear-gradient(135deg, #ea580c 0%, #dc2626 50%, #f59e0b 100%);
-            background-size: 200% 200%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: gradient 3s ease infinite;
-        }
-
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-    </style>
-@endsection
+@endpush
