@@ -759,7 +759,6 @@
                             </div>
                         </div>
 
-
                         <!-- Episode Info Card -->
                         <div
                             class="absolute bottom-4 left-4 right-4 bg-black/80 backdrop-blur-md rounded-xl p-4 text-white border border-white/20">
