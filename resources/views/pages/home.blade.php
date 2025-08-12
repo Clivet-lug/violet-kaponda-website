@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('title', 'Violet Nswana Kaponda - African Fintech Queen | Building Africa\'s Digital Future')
-@section('description', 'Violet Nswana Kaponda is the African Fintech Queen building Africa\'s digital future. Expert in
+@section('description',
+    'Violet Nswana Kaponda is the African Fintech Queen building Africa\'s digital future. Expert in
     business development, strategic partnerships, and digital transformation across emerging markets.')
 
 @section('content')
@@ -61,7 +62,7 @@
 
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                        <a href="#speaking"
+                        <a href="/speaking"
                             class="group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-red-600 text-white font-semibold rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25">
                             <span class="relative z-10">Book Me to Speak</span>
                             <div
@@ -69,7 +70,7 @@
                             </div>
                         </a>
 
-                        <a href="#podcast"
+                        <a href="https://youtube.com/@elevate-and-dominat?si=fPZL9xmnmx-yn5lP"
                             class="group px-8 py-4 bg-white/10 backdrop-blur-md text-white font-semibold rounded-xl border border-white/20 transition-all duration-300 hover:bg-white/20 hover:scale-105">
                             <span class="flex items-center space-x-2">
                                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -666,7 +667,7 @@
 
                     <!-- Platform Links -->
                     <div class="flex flex-wrap gap-4">
-                        <a href="https://youtube.com/@elevateanddominate" target="_blank"
+                        <a href="https://youtube.com/@elevate-and-dominat?si=fPZL9xmnmx-yn5lP" target="_blank"
                             class="group flex items-center space-x-2 bg-red-600 hover:bg-red-700 px-4 py-3 rounded-xl transition-all duration-300 text-white shadow-lg hover:shadow-xl hover:scale-105">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path
@@ -675,7 +676,7 @@
                             <span class="font-medium">YouTube</span>
                         </a>
 
-                        <a href="https://tiktok.com/@violetkaponda" target="_blank"
+                        <a href="https://www.tiktok.com/@theegoddessnwanah?_t=ZM-8yeSs5dzHxF&_r=1" target="_blank"
                             class="group flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 px-4 py-3 rounded-xl transition-all duration-300 text-white shadow-lg hover:shadow-xl hover:scale-105">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path
@@ -722,15 +723,42 @@
                         </div>
 
                         <!-- Play Button Overlay -->
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <button
+                        <div x-data="{ openVideo: false }" class="absolute inset-0 flex items-center justify-center">
+
+                            <!-- Play Button -->
+                            <button @click="openVideo = true"
                                 class="group w-20 h-20 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center shadow-xl hover:bg-white hover:scale-110 transition-all duration-300 border border-white/20">
                                 <svg class="w-8 h-8 text-red-600 ml-1 group-hover:scale-110 transition-transform duration-300"
                                     fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M8 5v14l11-7z" />
                                 </svg>
                             </button>
+
+                            <!-- Video Modal -->
+                            <div x-show="openVideo" x-transition.opacity.duration.300ms
+                                class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
+                                @click.self="openVideo = false">
+
+                                <!-- Video Container -->
+                                <div x-transition.scale.duration.300ms class="relative w-full max-w-4xl aspect-video">
+
+                                    <!-- YouTube Video -->
+                                    <iframe class="w-full h-full rounded-lg shadow-lg"
+                                        src="https://www.youtube.com/embed/xtmlZ5w70uE?autoplay=1"
+                                        title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media"
+                                        allowfullscreen>
+                                    </iframe>
+
+                                    <!-- Close Button with delayed fade -->
+                                    <button @click="openVideo = false" x-show="openVideo"
+                                        x-transition.opacity.duration.300ms.delay.200ms
+                                        class="absolute -top-10 right-0 text-white text-3xl hover:text-red-500 transition-colors">
+                                        &times;
+                                    </button>
+                                </div>
+                            </div>
                         </div>
+
 
                         <!-- Episode Info Card -->
                         <div
