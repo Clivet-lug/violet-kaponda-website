@@ -1,203 +1,295 @@
 @extends('layouts.app')
 
-@section('title', 'Violet Nswana Kaponda - Fintech Queen | Building Africa\'s Digital Future')
-@section('description', 'Violet Nswana Kaponda is the Fintech Queen building Africa\'s digital future. Expert in
+@section('title', 'Violet Nswana Kaponda - African Fintech Queen | Building Africa\'s Digital Future')
+@section('description', 'Violet Nswana Kaponda is the African Fintech Queen building Africa\'s digital future. Expert in
     business development, strategic partnerships, and digital transformation across emerging markets.')
 
 @section('content')
     <!-- Hero Section -->
-    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <!-- Dynamic Background -->
-        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20"></div>
-
+    <section id="hero"
+        class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-black">
         <!-- Animated Background Elements -->
-        <div class="absolute inset-0 overflow-hidden">
-            <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-brand-orange/10 rounded-full blur-3xl animate-float"></div>
-            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-red/10 rounded-full blur-3xl animate-float-delayed">
+        <div class="absolute inset-0">
+            <div
+                class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-brand-orange/20 to-brand-red/20 rounded-full blur-3xl animate-pulse">
             </div>
-            <div class="absolute top-1/2 right-1/3 w-64 h-64 bg-brand-gold/10 rounded-full blur-3xl animate-float"></div>
+            <div
+                class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-brand-red/20 to-yellow-400/20 rounded-full blur-3xl animate-pulse delay-1000">
+            </div>
+            <div
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-full blur-3xl animate-float">
+            </div>
         </div>
 
+        <!-- Glass Overlay -->
+        <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+
         <!-- Hero Content -->
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-            <div class="animate-on-scroll">
-                <!-- Badge -->
-                <div
-                    class="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-md rounded-full text-sm font-medium mb-8 border border-white/20 shadow-xl">
-                    <span class="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></span>
-                    <span class="gradient-text">Available for Speaking Engagements</span>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-screen py-20">
+
+                <!-- Content Side -->
+                <div class="text-white space-y-8 lg:order-1">
+                    <!-- Status Badge -->
+                    <div
+                        class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-md rounded-full text-sm font-medium border border-white/20 shadow-lg">
+                        <span class="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
+                        Available for Speaking Engagements
+                    </div>
+
+                    <!-- Main Headlines -->
+                    <div class="space-y-4">
+                        <h1 class="text-5xl md:text-7xl font-display font-bold leading-tight">
+                            <span class="block text-white">African</span>
+                            <span
+                                class="block bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent animate-gradient">
+                                Fintech Queen
+                            </span>
+                        </h1>
+
+                        <div class="text-xl md:text-2xl text-gray-300 font-medium">
+                            Building Africa's Digital Future
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <p class="text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl">
+                        I'm <strong class="text-white">Violet Nswana Kaponda</strong>, driving digital transformation across
+                        Africa through strategic partnerships, business development, and empowering the next generation of
+                        tech leaders at <strong class="text-orange-400">Probase Group</strong>.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#speaking"
+                            class="group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-red-600 text-white font-semibold rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25">
+                            <span class="relative z-10">Book Me to Speak</span>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-red-600 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
+                        </a>
+
+                        <a href="#podcast"
+                            class="group px-8 py-4 bg-white/10 backdrop-blur-md text-white font-semibold rounded-xl border border-white/20 transition-all duration-300 hover:bg-white/20 hover:scale-105">
+                            <span class="flex items-center space-x-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                                <span>Listen to Elevate & Dominate</span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <!-- Stats Grid -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8">
+                        <div class="text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10">
+                            <div class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">6+</div>
+                            <div class="text-sm text-gray-300">Years in Tech</div>
+                        </div>
+                        <div class="text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10">
+                            <div class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">11+</div>
+                            <div class="text-sm text-gray-300">Podcast Episodes</div>
+                        </div>
+                        <div class="text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10">
+                            <div class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">5</div>
+                            <div class="text-sm text-gray-300">Speaking Topics</div>
+                        </div>
+                        <div class="text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10">
+                            <div class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">1,470+</div>
+                            <div class="text-sm text-gray-300">LinkedIn Followers</div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Main Headline -->
-                <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight">
-                    Building Africa's
-                    <span class="block gradient-text animate-on-scroll">Digital Future</span>
-                </h1>
+                <!-- Image Side -->
+                <div class="lg:order-2 flex justify-center lg:justify-end">
+                    <div class="relative">
+                        <!-- Main Image -->
+                        <div class="relative w-80 h-96 md:w-96 md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+                            <img src="{{ asset('images/hero/violet-hero-main.jpg') }}"
+                                alt="Violet Nswana Kaponda - African Fintech Queen"
+                                class="w-full h-full object-cover object-center">
 
-                <!-- Subheadline -->
-                <p class="text-xl md:text-2xl lg:text-3xl mb-12 text-gray-200 max-w-5xl mx-auto leading-relaxed font-light">
-                    I'm Violet Nswana Kaponda, the <span class="text-brand-gold font-semibold">Fintech Queen</span> driving
-                    digital transformation across Africa through strategic partnerships, business development, and
-                    empowering the next generation of tech leaders.
-                </p>
+                            <!-- Glass Overlay with Gradient -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent">
+                            </div>
+                        </div>
 
-                <!-- CTA Buttons -->
-                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-                    <a href="#speaking"
-                        class="btn-primary text-lg px-10 py-5 shadow-2xl transform hover:scale-105 transition-all duration-300 relative overflow-hidden group">
-                        <span class="relative z-10 flex items-center">
-                            🎤 Book Me to Speak
-                            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                            </svg>
-                        </span>
-                    </a>
-                    <a href="#podcast"
-                        class="glass-btn text-lg px-10 py-5 bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 transition-all duration-300 rounded-xl font-semibold shadow-xl">
-                        <span class="flex items-center">
-                            🎙️ Listen to Elevate & Dominate
-                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h8m-10 5a9 9 0 1118 0H3z"></path>
-                            </svg>
-                        </span>
-                    </a>
-                </div>
+                        <!-- Floating Achievement Card -->
+                        <div
+                            class="absolute -top-6 -left-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-white/20 max-w-xs">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                                <span class="text-sm font-semibold text-gray-800">International Speaker</span>
+                            </div>
+                            <p class="text-xs text-gray-600 mt-1">Available for global events</p>
+                        </div>
 
-                <!-- Social Proof Stats -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-                    <div
-                        class="glass-card p-6 text-center animate-on-scroll bg-white/5 backdrop-blur-md rounded-2xl border border-white/10">
-                        <div class="text-4xl font-bold gradient-text mb-2">6+</div>
-                        <div class="text-gray-300 text-sm">Years in Tech Leadership</div>
-                    </div>
-                    <div
-                        class="glass-card p-6 text-center animate-on-scroll bg-white/5 backdrop-blur-md rounded-2xl border border-white/10">
-                        <div class="text-4xl font-bold gradient-text mb-2">11+</div>
-                        <div class="text-gray-300 text-sm">Podcast Episodes</div>
-                    </div>
-                    <div
-                        class="glass-card p-6 text-center animate-on-scroll bg-white/5 backdrop-blur-md rounded-2xl border border-white/10">
-                        <div class="text-4xl font-bold gradient-text mb-2">5</div>
-                        <div class="text-gray-300 text-sm">Core Speaking Topics</div>
-                    </div>
-                    <div
-                        class="glass-card p-6 text-center animate-on-scroll bg-white/5 backdrop-blur-md rounded-2xl border border-white/10">
-                        <div class="text-4xl font-bold gradient-text mb-2">1,470+</div>
-                        <div class="text-gray-300 text-sm">LinkedIn Followers</div>
+                        <!-- Floating Stats Card -->
+                        <div
+                            class="absolute -bottom-6 -right-6 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-4 shadow-xl text-white max-w-xs">
+                            <div class="text-lg font-bold">Probase Group</div>
+                            <div class="text-sm opacity-90">Business Development Lead</div>
+                        </div>
+
+                        <!-- Decorative Elements -->
+                        <div
+                            class="absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full opacity-20 blur-xl animate-float">
+                        </div>
+                        <div
+                            class="absolute -bottom-10 -left-10 w-24 h-24 bg-gradient-to-r from-red-500 to-pink-500 rounded-full opacity-20 blur-xl animate-float delay-1000">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Scroll Indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-            <a href="#about-preview" class="block p-2">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3">
-                    </path>
-                </svg>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/70 animate-bounce">
+            <a href="#about-preview" class="block group">
+                <div class="flex flex-col items-center space-y-2">
+                    <span class="text-sm font-medium group-hover:text-yellow-400 transition-colors duration-300">Discover
+                        More</span>
+                    <svg class="w-6 h-6 group-hover:text-yellow-400 transition-colors duration-300" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </div>
             </a>
         </div>
     </section>
 
     <!-- About Preview Section -->
-    <section id="about-preview" class="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-br from-brand-orange/5 to-brand-red/5"></div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about-preview" class="py-20 bg-white relative overflow-hidden">
+        <!-- Background Elements -->
+        <div
+            class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-orange-100 to-red-100 rounded-full blur-3xl opacity-30">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-yellow-100 to-orange-100 rounded-full blur-3xl opacity-20">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <!-- Content -->
-                <div class="animate-on-scroll from-left">
-                    <div
-                        class="inline-flex items-center px-4 py-2 bg-brand-orange/10 text-brand-orange rounded-full text-sm font-medium mb-8 border border-brand-orange/20">
-                        🚀 Architect of Visibility & Impact
-                    </div>
 
-                    <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
-                        The <span class="gradient-text">Fintech Queen</span> Transforming Africa
-                    </h2>
-
-                    <div class="space-y-6 text-lg text-gray-700 leading-relaxed mb-10">
-                        <p>I'm a business acquisition and growth strategist with a passion for scaling tech businesses,
-                            closing high-value deals, and driving digital expansion across Africa. With a strong foundation
-                            in project management and business development, I specialize in identifying strategic
-                            opportunities and building high-impact partnerships.</p>
-
-                        <p>Beyond business, I'm deeply committed to digital inclusion and economic empowerment in emerging
-                            markets. I believe technology has the power to transform industries and create opportunities,
-                            and I'm on a mission to bridge the gap between innovation and accessibility.</p>
-                    </div>
-
-                    <!-- Key Achievements -->
-                    <div class="space-y-4 mb-10">
-                        <div
-                            class="flex items-center space-x-4 p-3 bg-white/50 backdrop-blur-sm rounded-xl border border-gray-200/50">
-                            <div class="w-3 h-3 bg-gradient-to-r from-brand-orange to-brand-red rounded-full"></div>
-                            <span class="text-gray-700 font-medium">Master's in Project Management (University of
-                                Lusaka)</span>
-                        </div>
-                        <div
-                            class="flex items-center space-x-4 p-3 bg-white/50 backdrop-blur-sm rounded-xl border border-gray-200/50">
-                            <div class="w-3 h-3 bg-gradient-to-r from-brand-orange to-brand-red rounded-full"></div>
-                            <span class="text-gray-700 font-medium">6+ Years IT Project Management at ProBASE</span>
-                        </div>
-                        <div
-                            class="flex items-center space-x-4 p-3 bg-white/50 backdrop-blur-sm rounded-xl border border-gray-200/50">
-                            <div class="w-3 h-3 bg-gradient-to-r from-brand-orange to-brand-red rounded-full"></div>
-                            <span class="text-gray-700 font-medium">Current: Business Development at Probase Group</span>
-                        </div>
-                        <div
-                            class="flex items-center space-x-4 p-3 bg-white/50 backdrop-blur-sm rounded-xl border border-gray-200/50">
-                            <div class="w-3 h-3 bg-gradient-to-r from-brand-orange to-brand-red rounded-full"></div>
-                            <span class="text-gray-700 font-medium">Host of "Elevate & Dominate" Podcast</span>
-                        </div>
-                    </div>
-
-                    <a href="/about" class="btn-primary inline-flex items-center text-lg px-8 py-4">
-                        Discover My Full Story
-                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                        </svg>
-                    </a>
-                </div>
-
-                <!-- Image -->
-                <div class="animate-on-scroll from-right">
+                <!-- Image Side - LEFT as requested -->
+                <div class="lg:order-1 animate-on-scroll">
                     <div class="relative">
-                        <!-- Placeholder for Violet's image -->
-                        <div
-                            class="aspect-w-4 aspect-h-5 rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-brand-orange to-brand-red flex items-center justify-center">
-                            <div class="text-white text-center p-8">
-                                <div
-                                    class="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <span class="text-6xl font-display font-bold">V</span>
-                                </div>
-                                <p class="text-xl font-semibold">Professional Portrait</p>
-                                <p class="text-sm opacity-75 mt-2">Add: violet-professional-1.jpg</p>
+                        <!-- Main Professional Image -->
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                            <img src="{{ asset('images/gallery/violet-professional-1.jpg') }}"
+                                alt="Violet Nswana Kaponda - Professional Portrait" class="w-full h-auto object-cover">
+
+                            <!-- Glass Overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent">
                             </div>
+                        </div>
+
+                        <!-- Floating Achievement Cards -->
+                        <div
+                            class="absolute -top-4 -right-4 bg-white/95 backdrop-blur-md rounded-xl p-3 shadow-xl border border-gray-100 max-w-xs">
+                            <div class="flex items-center space-x-2 mb-1">
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <span class="text-xs font-semibold text-gray-800">Master's in Project Management</span>
+                            </div>
+                            <p class="text-xs text-gray-600">University of Lusaka</p>
+                        </div>
+
+                        <div
+                            class="absolute -bottom-4 -left-4 bg-gradient-to-r from-red-600 to-orange-600 rounded-xl p-3 shadow-xl text-white max-w-xs">
+                            <div class="text-sm font-bold">6+ Years</div>
+                            <div class="text-xs opacity-90">Tech Leadership Experience</div>
                         </div>
 
                         <!-- Decorative Elements -->
                         <div
-                            class="absolute -top-8 -left-8 w-32 h-32 bg-gradient-to-r from-brand-orange to-brand-gold rounded-full opacity-20 blur-xl">
+                            class="absolute -top-8 -left-8 w-24 h-24 bg-gradient-to-r from-orange-400 to-red-400 rounded-full opacity-20 blur-xl">
                         </div>
                         <div
-                            class="absolute -bottom-8 -right-8 w-24 h-24 bg-gradient-to-r from-brand-red to-brand-orange rounded-full opacity-30 blur-xl">
+                            class="absolute -bottom-8 -right-8 w-32 h-32 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full opacity-15 blur-xl">
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Floating Achievement Card -->
-                        <div
-                            class="absolute top-6 right-6 bg-white/90 backdrop-blur-md rounded-2xl shadow-xl p-4 max-w-xs border border-white/20">
-                            <div class="flex items-center space-x-3">
-                                <div class="w-4 h-4 bg-green-500 rounded-full animate-pulse"></div>
-                                <span class="text-sm font-semibold text-gray-800">International Speaker</span>
+                <!-- Content Side - RIGHT -->
+                <div class="lg:order-2 animate-on-scroll space-y-6">
+                    <!-- Section Badge -->
+                    <div
+                        class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 text-red-800 rounded-full text-sm font-medium">
+                        🚀 Architect of Visibility & Impact
+                    </div>
+
+                    <!-- Headlines -->
+                    <div class="space-y-4">
+                        <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 leading-tight">
+                            The <span
+                                class="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Fintech
+                                Queen</span>
+                            <br>Transforming Africa
+                        </h2>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="space-y-4 text-lg text-gray-700 leading-relaxed">
+                        <p>
+                            I'm a <strong class="text-gray-900">business acquisition and growth strategist</strong> with a
+                            passion for scaling tech businesses, closing high-value deals, and driving digital expansion
+                            across Africa. With a strong foundation in project management and business development, I
+                            specialize in identifying strategic opportunities and building high-impact partnerships.
+                        </p>
+
+                        <p>
+                            Beyond business, I'm deeply committed to <strong class="text-red-600">digital inclusion and
+                                economic empowerment</strong> in emerging markets. I believe technology has the power to
+                            transform industries and create opportunities, and I'm on a mission to bridge the gap between
+                            innovation and accessibility.
+                        </p>
+                    </div>
+
+                    <!-- Key Achievements -->
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3 group">
+                            <div
+                                class="w-2 h-2 bg-red-600 rounded-full group-hover:scale-125 transition-transform duration-200">
                             </div>
-                            <p class="text-xs text-gray-600 mt-2">Available for global events</p>
+                            <span class="text-gray-700 group-hover:text-gray-900 transition-colors duration-200">Master's
+                                in Project Management (University of Lusaka)</span>
                         </div>
+                        <div class="flex items-center space-x-3 group">
+                            <div
+                                class="w-2 h-2 bg-red-600 rounded-full group-hover:scale-125 transition-transform duration-200">
+                            </div>
+                            <span class="text-gray-700 group-hover:text-gray-900 transition-colors duration-200">6+ Years
+                                IT Project Management at ProBASE</span>
+                        </div>
+                        <div class="flex items-center space-x-3 group">
+                            <div
+                                class="w-2 h-2 bg-red-600 rounded-full group-hover:scale-125 transition-transform duration-200">
+                            </div>
+                            <span class="text-gray-700 group-hover:text-gray-900 transition-colors duration-200">Current:
+                                Business Development at Probase Group</span>
+                        </div>
+                        <div class="flex items-center space-x-3 group">
+                            <div
+                                class="w-2 h-2 bg-red-600 rounded-full group-hover:scale-125 transition-transform duration-200">
+                            </div>
+                            <span class="text-gray-700 group-hover:text-gray-900 transition-colors duration-200">Host of
+                                "Elevate & Dominate" Podcast</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="pt-4">
+                        <a href="{{ route('about') }}"
+                            class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                            <span>Discover My Full Story</span>
+                            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -205,17 +297,30 @@
     </section>
 
     <!-- Expertise Section -->
-    <section id="expertise" class="py-24 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
-        <div class="absolute inset-0">
-            <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-brand-red/5 rounded-full blur-3xl"></div>
-            <div class="absolute bottom-1/4 left-1/4 w-72 h-72 bg-brand-orange/5 rounded-full blur-3xl"></div>
+    <section id="expertise" class="py-20 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div
+            class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-orange-200/30 to-red-200/30 rounded-full blur-3xl">
+        </div>
+        <div
+            class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-yellow-200/30 to-orange-200/30 rounded-full blur-3xl">
         </div>
 
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <!-- Section Header -->
-            <div class="text-center mb-20 animate-on-scroll">
-                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">What I Bring to the Table</h2>
-                <p class="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <div class="text-center mb-16 animate-on-scroll">
+                <div
+                    class="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-md border border-gray-200 text-gray-800 rounded-full text-sm font-medium mb-6">
+                    💼 What I Bring to the Table
+                </div>
+
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6 leading-tight">
+                    Strategic <span
+                        class="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Expertise</span>
+                    <br>for Digital Growth
+                </h2>
+
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                     Combining strategic vision with practical execution to drive transformational growth across the African
                     tech ecosystem.
                 </p>
@@ -223,41 +328,46 @@
 
             <!-- Expertise Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
                 <!-- Business Development -->
                 <div
-                    class="card-hover glass-card bg-white/60 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-xl animate-on-scroll group">
+                    class="group bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     <div
-                        class="w-16 h-16 bg-gradient-to-r from-brand-orange to-brand-red rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        class="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
                         </svg>
                     </div>
+
                     <h3
-                        class="text-xl font-bold mb-4 text-gray-900 group-hover:text-brand-red transition-colors duration-300">
+                        class="text-xl font-bold text-gray-900 mb-4 group-hover:text-red-700 transition-colors duration-300">
                         Business Acquisition & Strategic Growth
                     </h3>
+
                     <p class="text-gray-600 leading-relaxed">
                         Expert in scaling tech businesses, closing high-value deals, and identifying strategic opportunities
-                        that drive sustainable revenue growth.
+                        that drive sustainable revenue growth across African markets.
                     </p>
                 </div>
 
                 <!-- Digital Transformation -->
                 <div
-                    class="card-hover glass-card bg-white/60 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-xl animate-on-scroll group">
+                    class="group bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     <div
-                        class="w-16 h-16 bg-gradient-to-r from-brand-orange to-brand-red rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        class="w-16 h-16 bg-gradient-to-r from-red-500 to-pink-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
                             </path>
                         </svg>
                     </div>
+
                     <h3
-                        class="text-xl font-bold mb-4 text-gray-900 group-hover:text-brand-red transition-colors duration-300">
+                        class="text-xl font-bold text-gray-900 mb-4 group-hover:text-red-700 transition-colors duration-300">
                         Digital Transformation & Commercial Strategy
                     </h3>
+
                     <p class="text-gray-600 leading-relaxed">
                         Driving digital expansion across Africa with commercial strategies that bridge innovation gaps and
                         create accessible technology solutions.
@@ -266,19 +376,21 @@
 
                 <!-- Partnership Building -->
                 <div
-                    class="card-hover glass-card bg-white/60 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-xl animate-on-scroll group">
+                    class="group bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     <div
-                        class="w-16 h-16 bg-gradient-to-r from-brand-orange to-brand-red rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        class="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
                             </path>
                         </svg>
                     </div>
+
                     <h3
-                        class="text-xl font-bold mb-4 text-gray-900 group-hover:text-brand-red transition-colors duration-300">
+                        class="text-xl font-bold text-gray-900 mb-4 group-hover:text-red-700 transition-colors duration-300">
                         High-Value Deal Structuring & Negotiation
                     </h3>
+
                     <p class="text-gray-600 leading-relaxed">
                         Building high-impact partnerships and structuring complex deals that create mutual value and drive
                         sustainable business growth.
@@ -287,19 +399,21 @@
 
                 <!-- Thought Leadership -->
                 <div
-                    class="card-hover glass-card bg-white/60 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-xl animate-on-scroll group">
+                    class="group bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     <div
-                        class="w-16 h-16 bg-gradient-to-r from-brand-orange to-brand-red rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        class="w-16 h-16 bg-gradient-to-r from-purple-500 to-red-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z">
                             </path>
                         </svg>
                     </div>
+
                     <h3
-                        class="text-xl font-bold mb-4 text-gray-900 group-hover:text-brand-red transition-colors duration-300">
+                        class="text-xl font-bold text-gray-900 mb-4 group-hover:text-red-700 transition-colors duration-300">
                         Thought Leadership in Tech & Digital Inclusion
                     </h3>
+
                     <p class="text-gray-600 leading-relaxed">
                         Championing digital inclusion and economic empowerment across emerging markets through speaking,
                         podcasting, and strategic consultation.
@@ -308,19 +422,21 @@
 
                 <!-- Project Management -->
                 <div
-                    class="card-hover glass-card bg-white/60 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-xl animate-on-scroll group">
+                    class="group bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     <div
-                        class="w-16 h-16 bg-gradient-to-r from-brand-orange to-brand-red rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
                             </path>
                         </svg>
                     </div>
+
                     <h3
-                        class="text-xl font-bold mb-4 text-gray-900 group-hover:text-brand-red transition-colors duration-300">
+                        class="text-xl font-bold text-gray-900 mb-4 group-hover:text-red-700 transition-colors duration-300">
                         Software Project Management
                     </h3>
+
                     <p class="text-gray-600 leading-relaxed">
                         6+ years of expertise in managing complex software projects, ensuring delivery excellence and
                         stakeholder satisfaction across diverse technical initiatives.
@@ -329,19 +445,21 @@
 
                 <!-- Mindset Coaching -->
                 <div
-                    class="card-hover glass-card bg-white/60 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-xl animate-on-scroll group">
+                    class="group bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     <div
-                        class="w-16 h-16 bg-gradient-to-r from-brand-orange to-brand-red rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        class="w-16 h-16 bg-gradient-to-r from-pink-500 to-red-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
                             </path>
                         </svg>
                     </div>
+
                     <h3
-                        class="text-xl font-bold mb-4 text-gray-900 group-hover:text-brand-red transition-colors duration-300">
+                        class="text-xl font-bold text-gray-900 mb-4 group-hover:text-red-700 transition-colors duration-300">
                         Mindset & Performance Coaching
                     </h3>
+
                     <p class="text-gray-600 leading-relaxed">
                         Empowering professionals to step into their power and build limitless careers through mindset
                         transformation and performance optimization strategies.
@@ -352,82 +470,128 @@
     </section>
 
     <!-- Speaking Topics Preview -->
-    <section id="speaking" class="py-24 bg-gradient-to-br from-gray-900 to-black text-white relative overflow-hidden">
-        <div class="absolute inset-0">
-            <div class="absolute top-1/3 left-1/4 w-96 h-96 bg-brand-orange/10 rounded-full blur-3xl"></div>
-            <div class="absolute bottom-1/3 right-1/4 w-72 h-72 bg-brand-red/10 rounded-full blur-3xl"></div>
+    <section id="speaking" class="py-20 bg-white relative overflow-hidden">
+        <!-- Background Elements -->
+        <div
+            class="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-red-100 to-orange-100 rounded-full blur-3xl opacity-40">
+        </div>
+        <div
+            class="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-tl from-yellow-100 to-red-100 rounded-full blur-3xl opacity-30">
         </div>
 
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <!-- Section Header -->
-            <div class="text-center mb-20 animate-on-scroll">
-                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">Speaking Topics That
-                    Transform</h2>
-                <p class="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+            <div class="text-center mb-16 animate-on-scroll">
+                <div
+                    class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 text-red-800 rounded-full text-sm font-medium mb-6">
+                    🎤 Speaking Topics That Transform
+                </div>
+
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6 leading-tight">
+                    Insights That <span
+                        class="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Inspire
+                        Action</span>
+                </h2>
+
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
                     From fintech innovation to women's leadership, I deliver powerful insights that inspire action and drive
                     meaningful change across Africa's tech ecosystem.
                 </p>
             </div>
 
             <!-- Featured Topics Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+
                 <!-- Fintech & AI -->
                 <div
-                    class="glass-card bg-white/5 backdrop-blur-md p-10 rounded-3xl border border-white/10 shadow-2xl animate-on-scroll group hover:bg-white/10 transition-all duration-300">
+                    class="group bg-white/90 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     <div
-                        class="w-20 h-20 bg-gradient-to-r from-brand-orange to-brand-red rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300 shadow-xl">
-                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        class="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
                             </path>
                         </svg>
                     </div>
+
                     <h3
-                        class="text-2xl font-bold mb-6 text-white group-hover:text-brand-gold transition-colors duration-300">
+                        class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-700 transition-colors duration-300">
                         Fintech & AI in Africa
                     </h3>
-                    <p class="text-gray-300 leading-relaxed mb-6 text-lg">
+
+                    <p class="text-gray-600 leading-relaxed mb-6">
                         Exploring how artificial intelligence and fintech innovations are reshaping Africa's financial
                         landscape and creating unprecedented opportunities for economic growth and inclusion.
                     </p>
-                    <div class="text-sm text-brand-gold font-medium bg-brand-gold/10 px-4 py-2 rounded-full inline-block">
-                        Duration: 45-60 minutes • Interactive Q&A included
+
+                    <div class="flex items-center justify-between">
+                        <div class="text-sm text-red-600 font-medium">
+                            ⏱️ Duration: 45-60 minutes • Interactive Q&A included
+                        </div>
                     </div>
                 </div>
 
                 <!-- Women in Technology -->
                 <div
-                    class="glass-card bg-white/5 backdrop-blur-md p-10 rounded-3xl border border-white/10 shadow-2xl animate-on-scroll group hover:bg-white/10 transition-all duration-300">
+                    class="group bg-white/90 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     <div
-                        class="w-20 h-20 bg-gradient-to-r from-brand-orange to-brand-red rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300 shadow-xl">
-                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        class="w-16 h-16 bg-gradient-to-r from-pink-500 to-red-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
                             </path>
                         </svg>
                     </div>
+
                     <h3
-                        class="text-2xl font-bold mb-6 text-white group-hover:text-brand-gold transition-colors duration-300">
+                        class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-700 transition-colors duration-300">
                         Women in Technology & Leadership
                     </h3>
-                    <p class="text-gray-300 leading-relaxed mb-6 text-lg">
+
+                    <p class="text-gray-600 leading-relaxed mb-6">
                         Empowering women to break barriers, claim their space in tech, and become leaders who drive
                         organizational transformation and innovation across the African continent.
                     </p>
-                    <div class="text-sm text-brand-gold font-medium bg-brand-gold/10 px-4 py-2 rounded-full inline-block">
-                        Duration: 45-60 minutes • Audience: All genders welcome
+
+                    <div class="flex items-center justify-between">
+                        <div class="text-sm text-red-600 font-medium">
+                            👥 Duration: 45-60 minutes • Audience: All genders welcome
+                        </div>
                     </div>
+                </div>
+            </div>
+
+            <!-- Additional Topics Preview -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-6 border border-orange-200">
+                    <h4 class="font-bold text-gray-900 mb-2">Digital Inclusion & Transformation</h4>
+                    <p class="text-sm text-gray-600">Strategic approaches to digital transformation that ensure inclusive
+                        growth across Africa.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-red-50 to-pink-50 rounded-xl p-6 border border-red-200">
+                    <h4 class="font-bold text-gray-900 mb-2">Mindset & Performance Coaching</h4>
+                    <p class="text-sm text-gray-600">Empowering professionals to step into their power and build limitless
+                        careers.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl p-6 border border-yellow-200">
+                    <h4 class="font-bold text-gray-900 mb-2">Business Development Strategy</h4>
+                    <p class="text-sm text-gray-600">Scaling tech businesses and closing high-value deals in emerging
+                        markets.</p>
                 </div>
             </div>
 
             <!-- CTA -->
             <div class="text-center animate-on-scroll">
-                <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                <p class="text-lg text-gray-600 mb-6">
                     Ready to inspire your audience with actionable insights and transformational strategies?
                 </p>
-                <a href="/speaking" class="btn-primary text-lg px-10 py-5 inline-flex items-center">
-                    View All Speaking Topics & Book Now
-                    <svg class="w-5 h-5 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <a href="{{ route('speaking') }}"
+                    class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <span>View All Speaking Topics & Book Now</span>
+                    <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                     </svg>
@@ -438,114 +602,130 @@
 
     <!-- Podcast Section -->
     <section id="podcast"
-        class="py-24 bg-gradient-to-br from-brand-red to-brand-orange text-white relative overflow-hidden">
+        class="py-20 bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white relative overflow-hidden">
+        <!-- Background Effects -->
         <div class="absolute inset-0">
-            <div class="absolute top-1/4 right-1/3 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
-            <div class="absolute bottom-1/4 left-1/3 w-72 h-72 bg-black/10 rounded-full blur-3xl"></div>
+            <div
+                class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-orange-500/20 to-red-500/20 rounded-full blur-3xl animate-pulse">
+            </div>
+            <div
+                class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full blur-3xl animate-pulse delay-1000">
+            </div>
+            <div
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-yellow-500/10 to-orange-500/10 rounded-full blur-3xl">
+            </div>
         </div>
 
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
                 <!-- Content -->
-                <div class="animate-on-scroll from-left">
+                <div class="animate-on-scroll space-y-8">
+                    <!-- Badge -->
                     <div
-                        class="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-md text-white rounded-full text-sm font-medium mb-8 border border-white/20">
+                        class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full text-sm font-medium shadow-lg">
                         🎙️ 11+ Episodes & Growing
                     </div>
 
-                    <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-white">
-                        Elevate & Dominate
-                        <span class="block text-yellow-300">Podcast</span>
-                    </h2>
+                    <!-- Headlines -->
+                    <div class="space-y-4">
+                        <h2 class="text-4xl md:text-5xl font-display font-bold text-white leading-tight">
+                            Elevate & Dominate
+                            <span
+                                class="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+                                Podcast
+                            </span>
+                        </h2>
+                    </div>
 
-                    <p class="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-                        Join me for powerful conversations about fintech innovation, leadership strategies, wellness, and
-                        the mindset shifts that drive success in today's digital economy.
-                    </p>
+                    <!-- Description -->
+                    <div class="space-y-4">
+                        <p class="text-xl text-gray-300 leading-relaxed">
+                            Join me for powerful conversations about fintech innovation, leadership strategies, wellness,
+                            and the mindset shifts that drive success in today's digital economy.
+                        </p>
 
-                    <p class="text-lg text-white/80 mb-10 leading-relaxed">
-                        Through "Elevate & Dominate," I share insights on mindset, tech, and wellness, inspiring
-                        professionals to step into their power and build limitless careers across the African tech ecosystem
-                        and beyond.
-                    </p>
+                        <p class="text-lg text-gray-400 leading-relaxed">
+                            Through "Elevate & Dominate," I share insights on mindset, tech, and wellness, inspiring
+                            professionals to step into their power and build limitless careers across the African tech
+                            ecosystem and beyond.
+                        </p>
+                    </div>
 
-                    <!-- Podcast Features -->
-                    <div class="grid grid-cols-2 gap-8 mb-10">
-                        <div
-                            class="glass-card bg-white/10 backdrop-blur-md p-6 rounded-2xl text-center border border-white/20">
-                            <div class="text-4xl font-bold text-yellow-300 mb-2">11+</div>
-                            <div class="text-white/80">Episodes Available</div>
+                    <!-- Podcast Stats -->
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10">
+                            <div class="text-3xl font-bold text-yellow-400 mb-2">11+</div>
+                            <div class="text-gray-400 text-sm">Episodes Available</div>
                         </div>
-                        <div
-                            class="glass-card bg-white/10 backdrop-blur-md p-6 rounded-2xl text-center border border-white/20">
-                            <div class="text-4xl font-bold text-yellow-300 mb-2">Multi</div>
-                            <div class="text-white/80">Platform Distribution</div>
+                        <div class="text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10">
+                            <div class="text-3xl font-bold text-yellow-400 mb-2">Multi-Platform</div>
+                            <div class="text-gray-400 text-sm">Distribution</div>
                         </div>
                     </div>
 
                     <!-- Platform Links -->
-                    <div class="flex flex-wrap gap-4 mb-10">
+                    <div class="flex flex-wrap gap-4">
                         <a href="https://youtube.com/@elevateanddominate" target="_blank"
-                            class="flex items-center space-x-3 bg-red-600/80 backdrop-blur-md hover:bg-red-600 px-6 py-4 rounded-xl transition duration-300 text-white border border-white/20 shadow-xl">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            class="group flex items-center space-x-2 bg-red-600 hover:bg-red-700 px-4 py-3 rounded-xl transition-all duration-300 text-white shadow-lg hover:shadow-xl hover:scale-105">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path
-                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z" />
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                             </svg>
-                            <span class="font-medium text-lg">YouTube</span>
+                            <span class="font-medium">YouTube</span>
                         </a>
+
                         <a href="https://tiktok.com/@violetkaponda" target="_blank"
-                            class="flex items-center space-x-3 bg-black/60 backdrop-blur-md hover:bg-black/80 px-6 py-4 rounded-xl transition duration-300 text-white border border-white/20 shadow-xl">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            class="group flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 px-4 py-3 rounded-xl transition-all duration-300 text-white shadow-lg hover:shadow-xl hover:scale-105">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72z" />
                             </svg>
-                            <span class="font-medium text-lg">TikTok</span>
+                            <span class="font-medium">TikTok</span>
                         </a>
-                        <a href="https://linkedin.com/in/violetkaponda" target="_blank"
-                            class="flex items-center space-x-3 bg-blue-600/80 backdrop-blur-md hover:bg-blue-600 px-6 py-4 rounded-xl transition duration-300 text-white border border-white/20 shadow-xl">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+
+                        <a href="https://linkedin.com/in/violet-nswana-kaponda-bsc-msc-a2761a153" target="_blank"
+                            class="group flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 px-4 py-3 rounded-xl transition-all duration-300 text-white shadow-lg hover:shadow-xl hover:scale-105">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path
-                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286z" />
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                             </svg>
-                            <span class="font-medium text-lg">LinkedIn</span>
+                            <span class="font-medium">LinkedIn</span>
                         </a>
                     </div>
 
-                    <a href="/media"
-                        class="glass-btn bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 px-8 py-4 rounded-xl font-semibold text-lg inline-flex items-center">
-                        Listen to All Episodes
-                        <svg class="w-5 h-5 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h8m-10 5a9 9 0 1118 0H3z"></path>
-                        </svg>
-                    </a>
+                    <!-- CTA -->
+                    <div class="pt-4">
+                        <a href="{{ route('media') }}"
+                            class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-yellow-500 to-orange-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                            <span>Listen to All Episodes</span>
+                            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Featured Episode / Speaking Image -->
-                <div class="animate-on-scroll from-right">
+                <div class="animate-on-scroll lg:order-2">
                     <div class="relative">
-                        <!-- Placeholder for Speaking/Podcast image -->
-                        <div
-                            class="aspect-w-4 aspect-h-5 rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-gray-800 to-black flex items-center justify-center">
-                            <div class="text-white text-center p-8">
-                                <div
-                                    class="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                                    <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <p class="text-xl font-semibold mb-2">Speaking Event Photo</p>
-                                <p class="text-sm opacity-75">Add: violet-speaking-event-1.jpg</p>
+                        <!-- Main Image -->
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                            <img src="{{ asset('images/speaking/violet-speaking-event-1.jpg') }}"
+                                alt="Violet Kaponda Speaking at Event" class="w-full h-auto object-cover">
+
+                            <!-- Glass Overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent">
                             </div>
                         </div>
 
                         <!-- Play Button Overlay -->
                         <div class="absolute inset-0 flex items-center justify-center">
                             <button
-                                class="w-24 h-24 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center shadow-2xl hover:bg-white transition duration-300 group border border-white/20">
-                                <svg class="w-10 h-10 text-brand-red ml-1 group-hover:scale-110 transition-transform duration-300"
+                                class="group w-20 h-20 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center shadow-xl hover:bg-white hover:scale-110 transition-all duration-300 border border-white/20">
+                                <svg class="w-8 h-8 text-red-600 ml-1 group-hover:scale-110 transition-transform duration-300"
                                     fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M8 5v14l11-7z" />
                                 </svg>
@@ -554,9 +734,17 @@
 
                         <!-- Episode Info Card -->
                         <div
-                            class="absolute bottom-6 left-6 right-6 bg-black/80 backdrop-blur-md rounded-2xl p-6 text-white border border-white/20">
-                            <div class="text-sm font-medium mb-2 text-yellow-300">Latest Episode</div>
-                            <div class="text-lg font-semibold">Building Africa's Digital Future</div>
+                            class="absolute bottom-4 left-4 right-4 bg-black/80 backdrop-blur-md rounded-xl p-4 text-white border border-white/20">
+                            <div class="text-sm font-medium mb-1">Latest Episode</div>
+                            <div class="text-xs text-gray-300">Building Africa's Digital Future</div>
+                        </div>
+
+                        <!-- Decorative Elements -->
+                        <div
+                            class="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full opacity-20 blur-xl animate-float">
+                        </div>
+                        <div
+                            class="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-r from-red-500 to-pink-500 rounded-full opacity-20 blur-xl animate-float delay-1000">
                         </div>
                     </div>
                 </div>
@@ -564,67 +752,79 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
-        <div class="absolute inset-0">
-            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-orange/5 rounded-full blur-3xl"></div>
-            <div class="absolute bottom-1/4 right-1/4 w-72 h-72 bg-brand-red/5 rounded-full blur-3xl"></div>
+    <!-- Social Proof / Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div
+            class="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-orange-200/30 to-red-200/30 rounded-full blur-3xl">
+        </div>
+        <div
+            class="absolute bottom-1/4 left-1/4 w-80 h-80 bg-gradient-to-r from-yellow-200/30 to-orange-200/30 rounded-full blur-3xl">
         </div>
 
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-20 animate-on-scroll">
-                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Trusted by Industry Leaders</h2>
-                <p class="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-on-scroll">
+                <div
+                    class="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-md border border-gray-200 text-gray-800 rounded-full text-sm font-medium mb-6">
+                    ⭐ Trusted by Industry Leaders
+                </div>
+
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6 leading-tight">
+                    What <span class="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Leaders
+                        Say</span>
+                </h2>
+
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                     See what colleagues, partners, and industry professionals say about working with Violet.
                 </p>
             </div>
 
             <!-- Testimonials Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
                 <!-- Testimonial 1 -->
                 <div
-                    class="glass-card bg-white/60 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-xl animate-on-scroll hover:shadow-2xl transition-all duration-300">
-                    <div class="flex items-center mb-6">
+                    class="group bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                    <!-- Star Rating -->
+                    <div class="flex items-center mb-4">
                         <div class="flex text-yellow-400">
-                            <!-- 5 Stars -->
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                </path>
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                </path>
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                </path>
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                </path>
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                </path>
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                         </div>
                     </div>
-                    <blockquote class="text-gray-700 mb-6 leading-relaxed text-lg">
+
+                    <blockquote
+                        class="text-gray-700 mb-6 leading-relaxed group-hover:text-gray-900 transition-colors duration-300">
                         "Violet's strategic insights and business development expertise have been instrumental in driving
                         our digital transformation initiatives across the region."
                     </blockquote>
+
                     <div class="flex items-center">
                         <div
-                            class="w-12 h-12 bg-gradient-to-r from-brand-orange to-brand-red rounded-full flex items-center justify-center text-white font-semibold mr-4 text-lg">
+                            class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white font-semibold mr-4">
                             JM
                         </div>
                         <div>
-                            <div class="font-semibold text-gray-900 text-lg">John Mwangi</div>
+                            <div class="font-semibold text-gray-900">John Mwangi</div>
                             <div class="text-sm text-gray-600">CTO, TechCorp Africa</div>
                         </div>
                     </div>
@@ -632,48 +832,46 @@
 
                 <!-- Testimonial 2 -->
                 <div
-                    class="glass-card bg-white/60 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-xl animate-on-scroll hover:shadow-2xl transition-all duration-300">
-                    <div class="flex items-center mb-6">
+                    class="group bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                    <!-- Star Rating -->
+                    <div class="flex items-center mb-4">
                         <div class="flex text-yellow-400">
-                            <!-- 5 Stars -->
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                </path>
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                </path>
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                </path>
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                </path>
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                </path>
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                         </div>
                     </div>
-                    <blockquote class="text-gray-700 mb-6 leading-relaxed text-lg">
+
+                    <blockquote
+                        class="text-gray-700 mb-6 leading-relaxed group-hover:text-gray-900 transition-colors duration-300">
                         "As a keynote speaker, Violet delivered actionable insights that transformed how our team approaches
                         fintech innovation. Highly recommend!"
                     </blockquote>
+
                     <div class="flex items-center">
                         <div
-                            class="w-12 h-12 bg-gradient-to-r from-brand-orange to-brand-red rounded-full flex items-center justify-center text-white font-semibold mr-4 text-lg">
+                            class="w-12 h-12 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center text-white font-semibold mr-4">
                             AK
                         </div>
                         <div>
-                            <div class="font-semibold text-gray-900 text-lg">Amara Kone</div>
+                            <div class="font-semibold text-gray-900">Amara Kone</div>
                             <div class="text-sm text-gray-600">Event Director, FinTech Summit</div>
                         </div>
                     </div>
@@ -681,48 +879,46 @@
 
                 <!-- Testimonial 3 -->
                 <div
-                    class="glass-card bg-white/60 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-xl animate-on-scroll hover:shadow-2xl transition-all duration-300">
-                    <div class="flex items-center mb-6">
+                    class="group bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                    <!-- Star Rating -->
+                    <div class="flex items-center mb-4">
                         <div class="flex text-yellow-400">
-                            <!-- 5 Stars -->
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                </path>
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                </path>
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                </path>
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                </path>
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                </path>
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                         </div>
                     </div>
-                    <blockquote class="text-gray-700 mb-6 leading-relaxed text-lg">
+
+                    <blockquote
+                        class="text-gray-700 mb-6 leading-relaxed group-hover:text-gray-900 transition-colors duration-300">
                         "Violet's podcast 'Elevate & Dominate' has been a game-changer for my career. Her insights on
                         mindset and performance are invaluable."
                     </blockquote>
+
                     <div class="flex items-center">
                         <div
-                            class="w-12 h-12 bg-gradient-to-r from-brand-orange to-brand-red rounded-full flex items-center justify-center text-white font-semibold mr-4 text-lg">
+                            class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-semibold mr-4">
                             SM
                         </div>
                         <div>
-                            <div class="font-semibold text-gray-900 text-lg">Sarah Mutuku</div>
+                            <div class="font-semibold text-gray-900">Sarah Mutuku</div>
                             <div class="text-sm text-gray-600">Software Engineer, InnovateTech</div>
                         </div>
                     </div>
@@ -733,156 +929,147 @@
 
     <!-- Newsletter Section -->
     <section id="newsletter"
-        class="py-24 bg-gradient-to-br from-brand-red to-brand-orange text-white relative overflow-hidden">
+        class="py-20 bg-gradient-to-br from-red-900 via-red-800 to-orange-900 text-white relative overflow-hidden">
+        <!-- Background Effects -->
         <div class="absolute inset-0">
-            <div class="absolute top-1/4 right-1/3 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-float"></div>
-            <div class="absolute bottom-1/4 left-1/3 w-72 h-72 bg-black/10 rounded-full blur-3xl animate-float-delayed">
+            <div
+                class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 rounded-full blur-3xl animate-pulse">
+            </div>
+            <div
+                class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-orange-500/20 to-red-500/20 rounded-full blur-3xl animate-pulse delay-1000">
             </div>
         </div>
 
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-4xl mx-auto text-center animate-on-scroll">
-                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-white">
-                    Stay Ahead of Africa's Tech Revolution
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 animate-on-scroll">
+            <!-- Section Header -->
+            <div class="mb-8">
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-6 leading-tight">
+                    Stay Ahead of Africa's
+                    <span class="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">Tech
+                        Revolution</span>
                 </h2>
-                <p class="text-xl md:text-2xl text-white/90 mb-12 leading-relaxed max-w-3xl mx-auto">
+
+                <p class="text-xl text-red-100 leading-relaxed max-w-3xl mx-auto">
                     Get exclusive insights on fintech trends, leadership strategies, business development tactics, and
-                    opportunities shaping Africa's digital future. Join <span
-                        class="text-yellow-300 font-semibold">1,470+</span> forward-thinking professionals.
+                    opportunities shaping Africa's digital future. Join 1,470+ forward-thinking professionals.
                 </p>
+            </div>
 
-                <!-- Newsletter Form -->
-                <div class="max-w-lg mx-auto mb-8">
-                    <form class="flex flex-col sm:flex-row gap-4">
-                        <input type="email" placeholder="Enter your email address" required
-                            class="flex-1 px-6 py-4 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-yellow-400/50 border-0 text-lg font-medium shadow-xl backdrop-blur-sm">
-                        <button type="submit"
-                            class="glass-btn bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white hover:text-brand-red px-8 py-4 text-lg whitespace-nowrap font-semibold rounded-xl shadow-xl transition-all duration-300 hover:scale-105">
-                            Join the Movement 🚀
-                        </button>
-                    </form>
+            <!-- Newsletter Form -->
+            <div class="max-w-lg mx-auto mb-8">
+                <form class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Enter your email address"
+                        class="flex-1 px-6 py-4 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-yellow-400/50 border-0 shadow-lg backdrop-blur-md"
+                        required>
+                    <button type="submit"
+                        class="px-8 py-4 bg-gradient-to-r from-yellow-500 to-orange-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 whitespace-nowrap">
+                        Join the Movement
+                    </button>
+                </form>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div
+                class="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-8 text-red-200 text-sm">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span>No spam, ever</span>
                 </div>
-
-                <div class="flex flex-wrap justify-center items-center gap-8 text-white/80 text-lg mb-8">
-                    <div class="flex items-center">
-                        <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                        No spam, ever
-                    </div>
-                    <div class="flex items-center">
-                        <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                        Unsubscribe anytime
-                    </div>
-                    <div class="flex items-center">
-                        <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                        Exclusive opportunities
-                    </div>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span>Unsubscribe anytime</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span>Monthly insights + exclusive opportunities</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action Section -->
-    <section id="cta" class="py-24 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
-        <div class="absolute inset-0">
-            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-orange/5 rounded-full blur-3xl animate-float"></div>
-            <div
-                class="absolute bottom-1/4 right-1/4 w-72 h-72 bg-brand-red/5 rounded-full blur-3xl animate-float-delayed">
-            </div>
+    <!-- Final Call to Action Section -->
+    <section id="cta" class="py-20 bg-white relative overflow-hidden">
+        <!-- Background Elements -->
+        <div
+            class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-orange-100 to-red-100 rounded-full blur-3xl opacity-30">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-yellow-100 to-orange-100 rounded-full blur-3xl opacity-20">
         </div>
 
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-6xl mx-auto text-center animate-on-scroll">
-                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
-                    Ready to Transform Your Organization?
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 animate-on-scroll">
+            <!-- Section Content -->
+            <div class="space-y-8">
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 leading-tight">
+                    Ready to Transform Your
+                    <span
+                        class="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Organization?</span>
                 </h2>
-                <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-5xl mx-auto leading-relaxed">
+
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
                     Book Violet for your next conference, corporate event, or strategic consultation. Deliver powerful
                     insights on fintech innovation, digital transformation, and leadership that inspire action and drive
                     meaningful change across Africa's tech ecosystem.
                 </p>
 
                 <!-- CTA Buttons -->
-                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-                    <a href="/contact"
-                        class="btn-primary text-lg px-10 py-5 inline-flex items-center shadow-2xl transform hover:scale-105 transition-all duration-300">
-                        📞 Book Speaking Engagement
-                        <svg class="w-5 h-5 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+                    <a href="{{ route('contact') }}"
+                        class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                        <span>Book Speaking Engagement</span>
+                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                         </svg>
                     </a>
-                    <a href="/about"
-                        class="glass-btn bg-white/60 backdrop-blur-md border border-gray-200 text-gray-800 hover:bg-white hover:shadow-2xl px-10 py-5 text-lg font-semibold rounded-xl shadow-xl transition-all duration-300 inline-flex items-center transform hover:scale-105">
-                        Learn More About Violet
-                        <svg class="w-5 h-5 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+                    <a href="{{ route('about') }}"
+                        class="group inline-flex items-center px-8 py-4 bg-white border-2 border-gray-300 text-gray-700 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:border-orange-500 hover:text-orange-600">
+                        <span>Learn More About Violet</span>
+                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                         </svg>
                     </a>
                 </div>
 
                 <!-- Quick Contact Info -->
-                <div class="border-t border-gray-200 pt-12">
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                        <div
-                            class="glass-card bg-white/60 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 group">
+                <div class="border-t border-gray-200 pt-8 mt-12">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                        <div class="group">
                             <div
-                                class="w-16 h-16 bg-gradient-to-r from-brand-orange to-brand-red rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div class="text-lg font-semibold text-gray-900 mb-2">Speaking Inquiries</div>
+                                class="text-sm font-semibold text-gray-900 mb-1 group-hover:text-red-600 transition-colors duration-300">
+                                Speaking Inquiries</div>
                             <a href="mailto:violet@violetkaponda.com"
-                                class="text-brand-red hover:text-brand-orange transition-colors duration-300 font-medium text-lg">
+                                class="text-red-700 hover:text-red-900 transition-colors duration-300">
                                 violet@violetkaponda.com
                             </a>
                         </div>
-
-                        <div
-                            class="glass-card bg-white/60 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 group">
+                        <div class="group">
                             <div
-                                class="w-16 h-16 bg-gradient-to-r from-brand-orange to-brand-red rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
-                                    </path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                </svg>
-                            </div>
-                            <div class="text-lg font-semibold text-gray-900 mb-2">Based in</div>
-                            <span class="text-gray-600 font-medium text-lg">Lusaka, Zambia 🇿🇲</span>
+                                class="text-sm font-semibold text-gray-900 mb-1 group-hover:text-red-600 transition-colors duration-300">
+                                Based in</div>
+                            <span class="text-gray-600">Lusaka, Zambia</span>
                         </div>
-
-                        <div
-                            class="glass-card bg-white/60 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 group">
+                        <div class="group">
                             <div
-                                class="w-16 h-16 bg-gradient-to-r from-brand-orange to-brand-red rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </div>
-                            <div class="text-lg font-semibold text-gray-900 mb-2">Response Time</div>
-                            <span class="text-gray-600 font-medium text-lg">24-48 hours ⚡</span>
+                                class="text-sm font-semibold text-gray-900 mb-1 group-hover:text-red-600 transition-colors duration-300">
+                                Response Time</div>
+                            <span class="text-gray-600">24-48 hours</span>
                         </div>
                     </div>
                 </div>
@@ -890,44 +1077,19 @@
         </div>
     </section>
 
-    <!-- Additional Styles for Glass Effects and Animations -->
+    <!-- Enhanced CSS Styles -->
     <style>
-        .glass-card {
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-        }
+        /* Custom animations */
+        @keyframes gradient {
 
-        .glass-btn {
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
 
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(50px) scale(0.95);
-            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .animate-on-scroll.visible {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-        }
-
-        .animate-on-scroll.from-left {
-            transform: translateX(-50px) scale(0.95);
-        }
-
-        .animate-on-scroll.from-left.visible {
-            transform: translateX(0) scale(1);
-        }
-
-        .animate-on-scroll.from-right {
-            transform: translateX(50px) scale(0.95);
-        }
-
-        .animate-on-scroll.from-right.visible {
-            transform: translateX(0) scale(1);
+            50% {
+                background-position: 100% 50%;
+            }
         }
 
         @keyframes float {
@@ -938,80 +1100,175 @@
             }
 
             50% {
-                transform: translateY(-20px) rotate(2deg);
+                transform: translateY(-15px) rotate(2deg);
             }
         }
 
-        @keyframes float-delayed {
+        @keyframes bounce-soft {
 
             0%,
             100% {
-                transform: translateY(0px) rotate(0deg);
+                transform: translateY(0);
             }
 
             50% {
-                transform: translateY(-15px) rotate(-2deg);
+                transform: translateY(-10px);
             }
+        }
+
+        .animate-gradient {
+            background-size: 200% 200%;
+            animation: gradient 3s ease infinite;
         }
 
         .animate-float {
             animation: float 6s ease-in-out infinite;
         }
 
-        .animate-float-delayed {
-            animation: float-delayed 6s ease-in-out infinite 2s;
+        .animate-bounce-soft {
+            animation: bounce-soft 2s ease-in-out infinite;
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Glass effects */
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Custom gradients */
+        .text-gradient {
+            background: linear-gradient(135deg, #ea580c 0%, #dc2626 50%, #f59e0b 100%);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Enhanced hover effects */
+        .group:hover .group-hover\:glow {
+            box-shadow: 0 0 30px rgba(234, 88, 12, 0.3);
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #ea580c, #dc2626);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(to bottom, #dc2626, #b91c1c);
         }
     </style>
 
-    <!-- JavaScript for Scroll Animations -->
+    <!-- Enhanced JavaScript -->
     <script>
-        // Intersection Observer for Scroll Animations
         document.addEventListener('DOMContentLoaded', function() {
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
+            // Animate on scroll
+            const animateElements = document.querySelectorAll('.animate-on-scroll');
 
-            const observer = new IntersectionObserver(function(entries) {
+            const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                     }
                 });
-            }, observerOptions);
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
 
-            // Observe all elements with animate-on-scroll class
-            const animatedElements = document.querySelectorAll('.animate-on-scroll');
-            animatedElements.forEach(el => observer.observe(el));
-        });
+            animateElements.forEach(el => observer.observe(el));
 
-        // Enhanced Newsletter Form
-        document.addEventListener('DOMContentLoaded', function() {
+            // Newsletter form handling
             const newsletterForm = document.querySelector('#newsletter form');
             if (newsletterForm) {
                 newsletterForm.addEventListener('submit', function(e) {
                     e.preventDefault();
-                    const button = this.querySelector('button[type="submit"]');
-                    const originalText = button.innerHTML;
+                    const email = this.querySelector('input[type="email"]').value;
+                    const button = this.querySelector('button');
+                    const originalText = button.textContent;
 
                     // Show loading state
-                    button.innerHTML = 'Joining... ⏳';
+                    button.textContent = 'Joining...';
                     button.disabled = true;
 
                     // Simulate API call
                     setTimeout(() => {
-                        button.innerHTML = 'Welcome! 🎉';
-                        button.classList.add('bg-green-500', 'hover:bg-green-600');
+                        button.textContent = '✓ Joined!';
+                        button.style.background = 'linear-gradient(to right, #10b981, #059669)';
 
-                        // Reset after 3 seconds
                         setTimeout(() => {
-                            button.innerHTML = originalText;
+                            button.textContent = originalText;
                             button.disabled = false;
-                            button.classList.remove('bg-green-500', 'hover:bg-green-600');
-                        }, 3000);
-                    }, 2000);
+                            button.style.background = '';
+                            this.reset();
+                        }, 2000);
+                    }, 1500);
                 });
             }
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Parallax effect for background elements
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const parallaxElements = document.querySelectorAll('[class*="blur-3xl"]');
+
+                parallaxElements.forEach((element, index) => {
+                    const speed = 0.5 + (index * 0.1);
+                    const yPos = -(scrolled * speed);
+                    element.style.transform = `translateY(${yPos}px)`;
+                });
+            });
+
+            // Enhanced testimonial interactions
+            const testimonialCards = document.querySelectorAll('#testimonials .group');
+            testimonialCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) scale(1.02)';
+                });
+
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
         });
     </script>
 @endsection
