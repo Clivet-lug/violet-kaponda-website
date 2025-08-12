@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('title', 'Contact Violet Nswana Kaponda - Let\'s Build Africa\'s Digital Future Together')
-@section('description', 'Connect with Violet Nswana Kaponda for speaking engagements, media inquiries, strategic
+@section('description',
+    'Connect with Violet Nswana Kaponda for speaking engagements, media inquiries, strategic
     partnerships, and business development opportunities across Africa\'s fintech ecosystem.')
 
 @section('content')
@@ -727,11 +728,11 @@
                 option.addEventListener('change', function() {
                     // Update visual selection
                     document.querySelectorAll('.inquiry-type-option .inquiry-card').forEach(
-                    card => {
-                        card.classList.remove('border-orange-500', 'bg-orange-50',
-                            'shadow-lg');
-                        card.classList.add('hover:shadow-md');
-                    });
+                        card => {
+                            card.classList.remove('border-orange-500', 'bg-orange-50',
+                                'shadow-lg');
+                            card.classList.add('hover:shadow-md');
+                        });
 
                     const selectedCard = this.closest('.inquiry-type-option').querySelector(
                         '.inquiry-card');
@@ -894,53 +895,172 @@
 
                 const submitButton = document.getElementById('submit-button');
                 const originalText = submitButton.textContent;
+                const formData = new FormData(this);
 
                 // Show loading state
                 submitButton.innerHTML = `
-                    <div class="flex items-center justify-center">
-                        <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                        </svg>
-                        Sending...
-                    </div>
-                `;
+                <div class="flex items-center justify-center">
+                    <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Sending...
+                </div>
+    `;
                 submitButton.disabled = true;
 
-                // Simulate form submission (replace with actual form handling)
-                setTimeout(() => {
-                    // Show success state
-                    submitButton.innerHTML = `
-                        <div class="flex items-center justify-center">
-                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Message Sent!
-                        </div>
-                    `;
-                    submitButton.classList.remove('bg-gradient-to-r', 'from-orange-600',
-                        'to-red-600');
-                    submitButton.classList.add('bg-green-600');
+                // Send form data
+                fetch(this.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'X-Requested-With': 'XMLHttpRequest',
+                            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]')
+                                .getAttribute('content')
+                        }
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            // Show success state
+                            submitButton.innerHTML = `
+                <div class="flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Message Sent!
+                </div>
+            `;
+                            submitButton.classList.remove('bg-gradient-to-r', 'from-orange-600',
+                                'to-red-600');
+                            submitButton.classList.add('bg-green-600');
 
-                    // Reset form after delay
-                    setTimeout(() => {
-                        contactForm.reset();
-                        dynamicFields.innerHTML = '';
-                        document.querySelectorAll('.inquiry-type-option .inquiry-card')
-                            .forEach(card => {
-                                card.classList.remove('border-orange-500',
-                                    'bg-orange-50', 'shadow-lg');
-                                card.classList.add('hover:shadow-md');
-                            });
+                            // Show success message
+                            showNotification('success', data.message);
 
-                        submitButton.innerHTML = originalText;
-                        submitButton.disabled = false;
-                        submitButton.classList.remove('bg-green-600');
-                        submitButton.classList.add('bg-gradient-to-r', 'from-orange-600',
+                            // Reset form after delay
+                            setTimeout(() => {
+                                contactForm.reset();
+                                dynamicFields.innerHTML = '';
+                                document.querySelectorAll('.inquiry-type-option .inquiry-card')
+                                    .forEach(card => {
+                                        card.classList.remove('border-orange-500',
+                                            'bg-orange-50', 'shadow-lg');
+                                        card.classList.add('hover:shadow-md');
+                                    });
+
+                                submitButton.innerHTML = originalText;
+                                submitButton.disabled = false;
+                                submitButton.classList.remove('bg-green-600');
+                                submitButton.classList.add('bg-gradient-to-r',
+                                    'from-orange-600', 'to-red-600');
+                            }, 3000);
+                        } else {
+                            // Show error state
+                            submitButton.innerHTML = `
+                <div class="flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                    Error - Try Again
+                </div>
+            `;
+                            submitButton.classList.remove('bg-gradient-to-r', 'from-orange-600',
+                                'to-red-600');
+                            submitButton.classList.add('bg-red-600');
+
+                            showNotification('error', data.message ||
+                                'Something went wrong. Please try again.');
+
+                            // Reset button after delay
+                            setTimeout(() => {
+                                submitButton.innerHTML = originalText;
+                                submitButton.disabled = false;
+                                submitButton.classList.remove('bg-red-600');
+                                submitButton.classList.add('bg-gradient-to-r',
+                                    'from-orange-600', 'to-red-600');
+                            }, 3000);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+
+                        submitButton.innerHTML = `
+            <div class="flex items-center justify-center">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+                Network Error
+            </div>
+        `;
+                        submitButton.classList.remove('bg-gradient-to-r', 'from-orange-600',
                             'to-red-600');
-                    }, 3000);
-                }, 2000);
+                        submitButton.classList.add('bg-red-600');
+
+                        showNotification('error',
+                            'Network error. Please check your connection and try again.');
+
+                        setTimeout(() => {
+                            submitButton.innerHTML = originalText;
+                            submitButton.disabled = false;
+                            submitButton.classList.remove('bg-red-600');
+                            submitButton.classList.add('bg-gradient-to-r', 'from-orange-600',
+                                'to-red-600');
+                        }, 3000);
+                    });
             });
+
+            // Notification function
+            function showNotification(type, message) {
+                // Remove existing notifications
+                const existingNotification = document.querySelector('.notification');
+                if (existingNotification) {
+                    existingNotification.remove();
+                }
+
+                const notification = document.createElement('div');
+                notification.className =
+                    `notification fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg transition-all duration-300 max-w-md`;
+
+                if (type === 'success') {
+                    notification.classList.add('bg-green-600', 'text-white');
+                    notification.innerHTML = `
+            <div class="flex items-center">
+                <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                    <div class="font-semibold">Success!</div>
+                    <div class="text-sm opacity-90">${message}</div>
+                </div>
+            </div>
+        `;
+                } else {
+                    notification.classList.add('bg-red-600', 'text-white');
+                    notification.innerHTML = `
+            <div class="flex items-center">
+                <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+                <div>
+                    <div class="font-semibold">Error</div>
+                    <div class="text-sm opacity-90">${message}</div>
+                </div>
+            </div>
+        `;
+                }
+
+                document.body.appendChild(notification);
+
+                // Auto-remove after 5 seconds
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.style.opacity = '0';
+                        notification.style.transform = 'translateX(100%)';
+                        setTimeout(() => notification.remove(), 300);
+                    }
+                }, 5000);
+            }
 
             // Animate on scroll
             const animateElements = document.querySelectorAll('.animate-on-scroll');

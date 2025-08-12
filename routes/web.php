@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', function () {
     return view('pages.home');
@@ -22,15 +23,11 @@ Route::get('/blog', function () {
     return view('pages.blog.index');
 })->name('blog.index');
 
-Route::get('/contact', function () {
-    return view('pages.contact');
-})->name('contact');
+// Contact routes using controller
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
-// API Routes for forms (we'll build these later)
-Route::post('/contact', function () {
-    // Contact form processing
-})->name('contact.submit');
-
+// Newsletter subscription (for future implementation)
 Route::post('/newsletter/subscribe', function () {
-    // Newsletter subscription
+    // Newsletter subscription logic here
 })->name('newsletter.subscribe');
