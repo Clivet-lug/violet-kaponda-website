@@ -415,14 +415,159 @@
                 <div>
                     <h3 class="font-semibold text-lg mb-4 text-white">Stay Connected</h3>
                     <p class="text-gray-400 text-base mb-6">Get exclusive fintech insights delivered to your inbox.</p>
-                    <div class="flex flex-col sm:flex-row gap-3">
-                        <input type="email" placeholder="Your email address"
+
+                    <form id="newsletter-form" action="{{ route('newsletter.subscribe') }}" method="POST"
+                        class="flex flex-col sm:flex-row gap-3">
+                        @csrf
+                        <input type="email" name="email" placeholder="Your email address" required
                             class="flex-1 px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-orange transition-all duration-300">
-                        <button class="btn-primary px-6 py-3 rounded-lg font-semibold whitespace-nowrap">
+                        <button type="submit" id="newsletter-btn"
+                            class="btn-primary px-6 py-3 rounded-lg font-semibold whitespace-nowrap">
                             Subscribe
                         </button>
-                    </div>
+                    </form>
                 </div>
+
+                <script>
+                    // Newsletter form submission handling
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const newsletterForm = document.getElementById('newsletter-form');
+
+                        if (newsletterForm) {
+                            newsletterForm.addEventListener('submit', function(e) {
+                                e.preventDefault();
+
+                                const submitBtn = document.getElementById('newsletter-btn');
+                                const originalText = submitBtn.textContent;
+                                const formData = new FormData(this);
+
+                                // Show loading state
+                                submitBtn.innerHTML = `
+                <div class="flex items-center justify-center">
+                    <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Joining...
+                </div>
+            `;
+                                submitBtn.disabled = true;
+
+                                // Send form data
+                                fetch(this.action, {
+                                        method: 'POST',
+                                        body: formData,
+                                        headers: {
+                                            'X-Requested-With': 'XMLHttpRequest',
+                                            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]')
+                                                .getAttribute('content')
+                                        }
+                                    })
+                                    .then(response => response.json())
+                                    .then(data => {
+                                        if (data.success) {
+                                            // Show success state
+                                            submitBtn.innerHTML = '✓ Subscribed!';
+                                            submitBtn.style.background =
+                                                'linear-gradient(to right, #10b981, #059669)';
+
+                                            // Show success notification
+                                            showNewsletterNotification('success',
+                                                'Welcome! You\'ve successfully subscribed to our newsletter.');
+
+                                            // Reset form after delay
+                                            setTimeout(() => {
+                                                newsletterForm.reset();
+                                                submitBtn.innerHTML = originalText;
+                                                submitBtn.disabled = false;
+                                                submitBtn.style.background = '';
+                                            }, 3000);
+                                        } else {
+                                            // Show error state
+                                            submitBtn.innerHTML = 'Error';
+                                            submitBtn.style.background = '#dc2626';
+
+                                            showNewsletterNotification('error', data.message ||
+                                                'Subscription failed. Please try again.');
+
+                                            // Reset button after delay
+                                            setTimeout(() => {
+                                                submitBtn.innerHTML = originalText;
+                                                submitBtn.disabled = false;
+                                                submitBtn.style.background = '';
+                                            }, 3000);
+                                        }
+                                    })
+                                    .catch(error => {
+                                        console.error('Error:', error);
+
+                                        submitBtn.innerHTML = 'Error';
+                                        submitBtn.style.background = '#dc2626';
+
+                                        showNewsletterNotification('error', 'Network error. Please try again.');
+
+                                        setTimeout(() => {
+                                            submitBtn.innerHTML = originalText;
+                                            submitBtn.disabled = false;
+                                            submitBtn.style.background = '';
+                                        }, 3000);
+                                    });
+                            });
+                        }
+                    });
+
+                    // Notification function for newsletter
+                    function showNewsletterNotification(type, message) {
+                        // Remove existing notifications
+                        const existingNotification = document.querySelector('.newsletter-notification');
+                        if (existingNotification) {
+                            existingNotification.remove();
+                        }
+
+                        const notification = document.createElement('div');
+                        notification.className =
+                            `newsletter-notification fixed bottom-4 right-4 z-50 p-4 rounded-lg shadow-lg transition-all duration-300 max-w-md`;
+
+                        if (type === 'success') {
+                            notification.classList.add('bg-green-600', 'text-white');
+                            notification.innerHTML = `
+            <div class="flex items-center">
+                <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                    <div class="font-semibold">Subscribed!</div>
+                    <div class="text-sm opacity-90">${message}</div>
+                </div>
+            </div>
+        `;
+                        } else {
+                            notification.classList.add('bg-red-600', 'text-white');
+                            notification.innerHTML = `
+            <div class="flex items-center">
+                <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+                <div>
+                    <div class="font-semibold">Error</div>
+                    <div class="text-sm opacity-90">${message}</div>
+                </div>
+            </div>
+        `;
+                        }
+
+                        document.body.appendChild(notification);
+
+                        // Auto-remove after 5 seconds
+                        setTimeout(() => {
+                            if (notification.parentNode) {
+                                notification.style.opacity = '0';
+                                notification.style.transform = 'translateY(100%)';
+                                setTimeout(() => notification.remove(), 300);
+                            }
+                        }, 5000);
+                    }
+                </script>
             </div>
 
             <!-- Copyright Section -->

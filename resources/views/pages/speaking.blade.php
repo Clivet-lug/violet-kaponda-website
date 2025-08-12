@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('title', 'Book Violet Nswana Kaponda for Speaking Engagements - African Fintech Queen')
-@section('description', 'Book Violet Nswana Kaponda for your next conference or corporate event. Expert speaker on
+@section('description',
+    'Book Violet Nswana Kaponda for your next conference or corporate event. Expert speaker on
     fintech innovation, women in tech, digital transformation, and African business development.')
 
 @section('content')
@@ -840,17 +841,22 @@
                     <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 shadow-xl">
                         <h3 class="text-2xl font-bold text-white mb-6">Send Speaking Inquiry</h3>
 
-                        <form class="space-y-6">
+                        <form id="speaking-inquiry-form" action="{{ route('contact.submit') }}" method="POST"
+                            class="space-y-6">
+                            @csrf
+                            <!-- Hidden field to identify this as a speaking inquiry -->
+                            <input type="hidden" name="inquiry_type" value="speaking">
+
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
                                     <label class="block text-sm font-medium text-orange-100 mb-2">Your Name</label>
-                                    <input type="text"
+                                    <input type="text" name="name"
                                         class="w-full px-4 py-3 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg text-white placeholder-orange-200 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300"
                                         placeholder="Full Name" required>
                                 </div>
                                 <div>
                                     <label class="block text-sm font-medium text-orange-100 mb-2">Email Address</label>
-                                    <input type="email"
+                                    <input type="email" name="email"
                                         class="w-full px-4 py-3 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg text-white placeholder-orange-200 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300"
                                         placeholder="email@company.com" required>
                                 </div>
@@ -859,46 +865,221 @@
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
                                     <label class="block text-sm font-medium text-orange-100 mb-2">Organization</label>
-                                    <input type="text"
+                                    <input type="text" name="organization"
                                         class="w-full px-4 py-3 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg text-white placeholder-orange-200 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300"
                                         placeholder="Company/Organization">
                                 </div>
                                 <div>
                                     <label class="block text-sm font-medium text-orange-100 mb-2">Event Date</label>
-                                    <input type="date"
+                                    <input type="date" name="event_date"
                                         class="w-full px-4 py-3 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300">
                                 </div>
                             </div>
 
-                            <div>
-                                <label class="block text-sm font-medium text-orange-100 mb-2">Speaking Topic
-                                    Interest</label>
-                                <select
-                                    class="w-full px-4 py-3 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300">
-                                    <option value="">Select a topic</option>
-                                    <option value="fintech-ai">Fintech & AI in Africa</option>
-                                    <option value="women-tech">Women in Technology & Leadership</option>
-                                    <option value="digital-transformation">Digital Transformation Strategy</option>
-                                    <option value="business-development">Strategic Business Development</option>
-                                    <option value="mindset-coaching">Mindset & Performance Coaching</option>
-                                    <option value="custom">Custom Topic</option>
-                                </select>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-orange-100 mb-2">Speaking Topic
+                                        Interest</label>
+                                    <select name="speaking_topic"
+                                        class="w-full px-4 py-3 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300">
+                                        <option value="">Select a topic</option>
+                                        <option value="fintech-ai">Fintech & AI in Africa</option>
+                                        <option value="women-tech">Women in Technology & Leadership</option>
+                                        <option value="digital-transformation">Digital Transformation Strategy</option>
+                                        <option value="business-development">Strategic Business Development</option>
+                                        <option value="mindset-coaching">Mindset & Performance Coaching</option>
+                                        <option value="custom">Custom Topic</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-orange-100 mb-2">Expected Audience
+                                        Size</label>
+                                    <select name="audience_size"
+                                        class="w-full px-4 py-3 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300">
+                                        <option value="">Select size</option>
+                                        <option value="1-50">1-50 people</option>
+                                        <option value="51-200">51-200 people</option>
+                                        <option value="201-500">201-500 people</option>
+                                        <option value="500+">500+ people</option>
+                                    </select>
+                                </div>
                             </div>
 
                             <div>
                                 <label class="block text-sm font-medium text-orange-100 mb-2">Event Details</label>
-                                <textarea rows="4"
+                                <textarea rows="4" name="message"
                                     class="w-full px-4 py-3 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg text-white placeholder-orange-200 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300"
-                                    placeholder="Tell us about your event: audience size, format preference, key objectives, etc."></textarea>
+                                    placeholder="Tell us about your event: format preference, key objectives, budget considerations, etc." required></textarea>
                             </div>
 
-                            <button type="submit"
+                            <button type="submit" id="speaking-submit-btn"
                                 class="w-full bg-gradient-to-r from-yellow-500 to-orange-500 text-white font-semibold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                                 Send Speaking Inquiry
                             </button>
                         </form>
                     </div>
                 </div>
+
+                <script>
+                    // Speaking form submission handling
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const speakingForm = document.getElementById('speaking-inquiry-form');
+
+                        if (speakingForm) {
+                            speakingForm.addEventListener('submit', function(e) {
+                                e.preventDefault();
+
+                                const submitBtn = document.getElementById('speaking-submit-btn');
+                                const originalText = submitBtn.textContent;
+                                const formData = new FormData(this);
+
+                                // Show loading state
+                                submitBtn.innerHTML = `
+                <div class="flex items-center justify-center">
+                    <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Sending...
+                </div>
+            `;
+                                submitBtn.disabled = true;
+
+                                // Send form data
+                                fetch(this.action, {
+                                        method: 'POST',
+                                        body: formData,
+                                        headers: {
+                                            'X-Requested-With': 'XMLHttpRequest',
+                                            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]')
+                                                .getAttribute('content')
+                                        }
+                                    })
+                                    .then(response => response.json())
+                                    .then(data => {
+                                        if (data.success) {
+                                            // Show success state
+                                            submitBtn.innerHTML = `
+                        <div class="flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Speaking Inquiry Sent!
+                        </div>
+                    `;
+                                            submitBtn.classList.remove('bg-gradient-to-r', 'from-yellow-500',
+                                                'to-orange-500');
+                                            submitBtn.classList.add('bg-green-600');
+
+                                            // Show success notification
+                                            showSpeakingNotification('success',
+                                                'Thank you! Your speaking inquiry has been sent. Violet will respond within 24-48 hours.'
+                                            );
+
+                                            // Reset form after delay
+                                            setTimeout(() => {
+                                                speakingForm.reset();
+                                                submitBtn.innerHTML = originalText;
+                                                submitBtn.disabled = false;
+                                                submitBtn.classList.remove('bg-green-600');
+                                                submitBtn.classList.add('bg-gradient-to-r',
+                                                    'from-yellow-500', 'to-orange-500');
+                                            }, 3000);
+                                        } else {
+                                            // Show error state
+                                            submitBtn.innerHTML = 'Error - Try Again';
+                                            submitBtn.classList.remove('bg-gradient-to-r', 'from-yellow-500',
+                                                'to-orange-500');
+                                            submitBtn.classList.add('bg-red-600');
+
+                                            showSpeakingNotification('error', data.message ||
+                                                'Something went wrong. Please try again.');
+
+                                            // Reset button after delay
+                                            setTimeout(() => {
+                                                submitBtn.innerHTML = originalText;
+                                                submitBtn.disabled = false;
+                                                submitBtn.classList.remove('bg-red-600');
+                                                submitBtn.classList.add('bg-gradient-to-r',
+                                                    'from-yellow-500', 'to-orange-500');
+                                            }, 3000);
+                                        }
+                                    })
+                                    .catch(error => {
+                                        console.error('Error:', error);
+
+                                        submitBtn.innerHTML = 'Network Error';
+                                        submitBtn.classList.remove('bg-gradient-to-r', 'from-yellow-500',
+                                            'to-orange-500');
+                                        submitBtn.classList.add('bg-red-600');
+
+                                        showSpeakingNotification('error',
+                                            'Network error. Please check your connection and try again.');
+
+                                        setTimeout(() => {
+                                            submitBtn.innerHTML = originalText;
+                                            submitBtn.disabled = false;
+                                            submitBtn.classList.remove('bg-red-600');
+                                            submitBtn.classList.add('bg-gradient-to-r', 'from-yellow-500',
+                                                'to-orange-500');
+                                        }, 3000);
+                                    });
+                            });
+                        }
+                    });
+
+                    // Notification function for speaking page
+                    function showSpeakingNotification(type, message) {
+                        // Remove existing notifications
+                        const existingNotification = document.querySelector('.speaking-notification');
+                        if (existingNotification) {
+                            existingNotification.remove();
+                        }
+
+                        const notification = document.createElement('div');
+                        notification.className =
+                            `speaking-notification fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg transition-all duration-300 max-w-md`;
+
+                        if (type === 'success') {
+                            notification.classList.add('bg-green-600', 'text-white');
+                            notification.innerHTML = `
+            <div class="flex items-center">
+                <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                    <div class="font-semibold">Success!</div>
+                    <div class="text-sm opacity-90">${message}</div>
+                </div>
+            </div>
+        `;
+                        } else {
+                            notification.classList.add('bg-red-600', 'text-white');
+                            notification.innerHTML = `
+            <div class="flex items-center">
+                <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+                <div>
+                    <div class="font-semibold">Error</div>
+                    <div class="text-sm opacity-90">${message}</div>
+                </div>
+            </div>
+        `;
+                        }
+
+                        document.body.appendChild(notification);
+
+                        // Auto-remove after 5 seconds
+                        setTimeout(() => {
+                            if (notification.parentNode) {
+                                notification.style.opacity = '0';
+                                notification.style.transform = 'translateX(100%)';
+                                setTimeout(() => notification.remove(), 300);
+                            }
+                        }, 5000);
+                    }
+                </script>
             </div>
         </div>
     </section>

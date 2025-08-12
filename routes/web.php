@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\NewsletterController;
 
 Route::get('/', function () {
     return view('pages.home');
@@ -27,7 +28,5 @@ Route::get('/blog', function () {
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
-// Newsletter subscription (for future implementation)
-Route::post('/newsletter/subscribe', function () {
-    // Newsletter subscription logic here
-})->name('newsletter.subscribe');
+// Newsletter subscription
+Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe'])->name('newsletter.subscribe');

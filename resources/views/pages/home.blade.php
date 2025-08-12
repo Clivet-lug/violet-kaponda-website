@@ -984,16 +984,166 @@
 
             <!-- Newsletter Form -->
             <div class="max-w-lg mx-auto mb-8">
-                <form class="flex flex-col sm:flex-row gap-4">
-                    <input type="email" placeholder="Enter your email address"
+                <form id="newsletter-main-form" action="{{ route('newsletter.subscribe') }}" method="POST"
+                    class="flex flex-col sm:flex-row gap-4">
+                    @csrf
+                    <input type="email" name="email" placeholder="Enter your email address"
                         class="flex-1 px-6 py-4 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-yellow-400/50 border-0 shadow-lg backdrop-blur-md"
                         required>
-                    <button type="submit"
+                    <button type="submit" id="newsletter-main-btn"
                         class="px-8 py-4 bg-gradient-to-r from-yellow-500 to-orange-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 whitespace-nowrap">
                         Join the Movement
                     </button>
                 </form>
             </div>
+
+            <script>
+                // Newsletter main form submission handling
+                document.addEventListener('DOMContentLoaded', function() {
+                    const newsletterMainForm = document.getElementById('newsletter-main-form');
+
+                    if (newsletterMainForm) {
+                        newsletterMainForm.addEventListener('submit', function(e) {
+                            e.preventDefault();
+
+                            const submitBtn = document.getElementById('newsletter-main-btn');
+                            const originalText = submitBtn.textContent;
+                            const formData = new FormData(this);
+
+                            // Show loading state
+                            submitBtn.innerHTML = `
+                <div class="flex items-center justify-center">
+                    <svg class="animate-spin -ml-1 mr-2 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Joining...
+                </div>
+            `;
+                            submitBtn.disabled = true;
+
+                            // Send form data
+                            fetch(this.action, {
+                                    method: 'POST',
+                                    body: formData,
+                                    headers: {
+                                        'X-Requested-With': 'XMLHttpRequest',
+                                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]')
+                                            .getAttribute('content')
+                                    }
+                                })
+                                .then(response => response.json())
+                                .then(data => {
+                                    if (data.success) {
+                                        // Show success state
+                                        submitBtn.innerHTML = '🎉 Welcome to the Movement!';
+                                        submitBtn.style.background =
+                                            'linear-gradient(to right, #10b981, #059669)';
+
+                                        // Show success notification
+                                        showMainNewsletterNotification('success',
+                                            'Welcome! You\'ve successfully joined Violet\'s exclusive fintech community.'
+                                            );
+
+                                        // Reset form after delay
+                                        setTimeout(() => {
+                                            newsletterMainForm.reset();
+                                            submitBtn.innerHTML = originalText;
+                                            submitBtn.disabled = false;
+                                            submitBtn.style.background = '';
+                                        }, 4000);
+                                    } else {
+                                        // Show error state
+                                        submitBtn.innerHTML = 'Error - Try Again';
+                                        submitBtn.style.background = '#dc2626';
+
+                                        showMainNewsletterNotification('error', data.message ||
+                                            'Subscription failed. Please try again.');
+
+                                        // Reset button after delay
+                                        setTimeout(() => {
+                                            submitBtn.innerHTML = originalText;
+                                            submitBtn.disabled = false;
+                                            submitBtn.style.background = '';
+                                        }, 3000);
+                                    }
+                                })
+                                .catch(error => {
+                                    console.error('Error:', error);
+
+                                    submitBtn.innerHTML = 'Network Error';
+                                    submitBtn.style.background = '#dc2626';
+
+                                    showMainNewsletterNotification('error', 'Network error. Please try again.');
+
+                                    setTimeout(() => {
+                                        submitBtn.innerHTML = originalText;
+                                        submitBtn.disabled = false;
+                                        submitBtn.style.background = '';
+                                    }, 3000);
+                                });
+                        });
+                    }
+                });
+
+                // Notification function for main newsletter
+                function showMainNewsletterNotification(type, message) {
+                    // Remove existing notifications
+                    const existingNotification = document.querySelector('.main-newsletter-notification');
+                    if (existingNotification) {
+                        existingNotification.remove();
+                    }
+
+                    const notification = document.createElement('div');
+                    notification.className =
+                        `main-newsletter-notification fixed top-4 right-4 z-50 p-6 rounded-xl shadow-2xl transition-all duration-300 max-w-md`;
+
+                    if (type === 'success') {
+                        notification.classList.add('bg-gradient-to-r', 'from-green-500', 'to-emerald-600', 'text-white');
+                        notification.innerHTML = `
+            <div class="flex items-center">
+                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+                <div>
+                    <div class="font-bold text-lg mb-1">Welcome to the Movement! 🚀</div>
+                    <div class="text-sm opacity-90">${message}</div>
+                    <div class="text-xs opacity-75 mt-2">Check your email for a welcome message from Violet!</div>
+                </div>
+            </div>
+        `;
+                    } else {
+                        notification.classList.add('bg-gradient-to-r', 'from-red-500', 'to-red-600', 'text-white');
+                        notification.innerHTML = `
+            <div class="flex items-center">
+                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </div>
+                <div>
+                    <div class="font-bold text-lg mb-1">Subscription Error</div>
+                    <div class="text-sm opacity-90">${message}</div>
+                </div>
+            </div>
+        `;
+                    }
+
+                    document.body.appendChild(notification);
+
+                    // Auto-remove after 7 seconds for success, 5 for error
+                    const timeout = type === 'success' ? 7000 : 5000;
+                    setTimeout(() => {
+                        if (notification.parentNode) {
+                            notification.style.opacity = '0';
+                            notification.style.transform = 'translateX(100%)';
+                            setTimeout(() => notification.remove(), 300);
+                        }
+                    }, timeout);
+                }
+            </script>
 
             <!-- Trust Indicators -->
             <div
