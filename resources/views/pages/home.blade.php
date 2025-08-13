@@ -246,6 +246,154 @@
                 </div>
 
                 <!-- Thought Leadership -->
+                <div
+                    class="group bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-purple-500 to-red-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <h3
+                        class="text-xl font-bold text-gray-900 mb-4 group-hover:text-red-700 transition-colors duration-300">
+                        Thought Leadership in Tech & Digital Inclusion
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Championing digital inclusion and economic empowerment across emerging markets through speaking,
+                        podcasting, and strategic consultation.
+                    </p>
+                </div>
+
+                <!-- Project Management -->
+                <div
+                    class="group bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <h3
+                        class="text-xl font-bold text-gray-900 mb-4 group-hover:text-red-700 transition-colors duration-300">
+                        Software Project Management
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        6+ years of expertise in managing complex software projects, ensuring delivery excellence and
+                        stakeholder satisfaction across diverse technical initiatives.
+                    </p>
+                </div>
+
+                <!-- Mindset Coaching -->
+                <div
+                    class="group bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-pink-500 to-red-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <h3
+                        class="text-xl font-bold text-gray-900 mb-4 group-hover:text-red-700 transition-colors duration-300">
+                        Mindset & Performance Coaching
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Empowering professionals to step into their power and build limitless careers through mindset
+                        transformation and performance optimization strategies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speaking Topics Preview -->
+    <section id="speaking" class="py-20 bg-white relative overflow-hidden">
+        <!-- Background Elements -->
+        <div
+            class="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-red-100 to-orange-100 rounded-full blur-3xl opacity-40">
+        </div>
+        <div
+            class="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-tl from-yellow-100 to-red-100 rounded-full blur-3xl opacity-30">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-on-scroll">
+                <div
+                    class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 text-red-800 rounded-full text-sm font-medium mb-6">
+                    🎤 Speaking Topics That Transform
+                </div>
+
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6 leading-tight">
+                    Insights That <span
+                        class="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Inspire
+                        Action</span>
+                </h2>
+
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                    From fintech innovation to women's leadership, I deliver powerful insights that inspire action and drive
+                    meaningful change across Africa's tech ecosystem.
+                </p>
+            </div>
+
+            <!-- Featured Topics Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+
+                <!-- Fintech & AI -->
+                <div
+                    class="group bg-white/90 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <h3
+                        class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-700 transition-colors duration-300">
+                        Fintech & AI in Africa
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Exploring how artificial intelligence and fintech innovations are reshaping Africa's financial
+                        landscape and creating unprecedented opportunities for economic growth and inclusion.
+                    </p>
+
+                    <div class="flex items-center justify-between">
+                        <div class="text-sm text-red-600 font-medium">
+                            ⏱️ Duration: 45-60 minutes • Interactive Q&A included
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Women in Technology -->
+                <div
+                    class="group bg-white/90 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-pink-500 to-red-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                            </path>
+                        </svg>
+>>>>>>> e78563b6fb2fd9d59ed3ac13f2f5fceebd8f8565
+                    </div>
+
+<<<<<<< HEAD
+                <!-- Thought Leadership -->
                 <div class="card-elevated animate-on-scroll group">
                     <div class="p-8">
                         <div

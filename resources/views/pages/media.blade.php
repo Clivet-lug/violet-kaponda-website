@@ -1,923 +1,964 @@
 @extends('layouts.app')
 
-@section('title', 'Media & Press - Violet Nswana Kaponda | Fintech Queen & Digital Transformation Expert')
-@section('description', 'Access Violet Nswana Kaponda\'s media kit, press coverage, podcast interviews, and speaking
-    engagements. Available for interviews, panels, and thought leadership opportunities.')
+@section('title', 'Violet Kaponda Media - Elevate & Dominate Podcast | African Fintech Queen')
+@section('description', 'Watch and listen to Violet Nswana Kaponda\'s Elevate & Dominate podcast. Get insights on
+    fintech, mindset, wellness, and building limitless careers in Africa\'s tech ecosystem.')
 
 @section('content')
     <!-- Hero Section -->
-    <section class="relative py-20 bg-brand-gradient text-white overflow-hidden">
-        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
-        <div class="container-brand relative z-10">
-            <div class="max-w-4xl mx-auto text-center">
-                <div class="animate-on-scroll">
+    <section class="relative py-20 bg-gradient-to-br from-gray-900 via-red-900 to-black text-white overflow-hidden">
+        <!-- Background Effects -->
+        <div class="absolute inset-0">
+            <div
+                class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-red-600/30 to-red-500/20 rounded-full blur-3xl animate-pulse">
+            </div>
+            <div
+                class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full blur-3xl animate-pulse delay-1000">
+            </div>
+            <div
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-red-900/10 to-red-800/10 rounded-full blur-3xl">
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+                <!-- Content -->
+                <div class="animate-on-scroll space-y-8">
                     <!-- Badge -->
                     <div
-                        class="inline-flex items-center px-4 py-2 bg-white bg-opacity-20 backdrop-blur-sm text-white rounded-full text-sm font-medium mb-6">
-                        🎙️ Media & Press Center
+                        class="inline-flex items-center px-4 py-2 bg-red-600/20 backdrop-blur-md border border-red-500/30 text-red-300 rounded-full text-sm font-medium shadow-lg">
+                        🎙️ Now Streaming • 11+ Episodes
                     </div>
 
-                    <h1 class="hero-text text-white mb-6">
-                        Voice of Change in
-                        <span class="text-yellow-400">African Fintech</span>
-                    </h1>
+                    <!-- Headlines -->
+                    <div class="space-y-4">
+                        <h1 class="text-4xl md:text-6xl font-display font-bold text-white leading-tight">
+                            Elevate &
+                            <span class="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+                                Dominate
+                            </span>
+                        </h1>
 
-                    <p class="text-xl text-gray-100 mb-8 leading-relaxed max-w-3xl mx-auto">
-                        Available for interviews, panels, and thought leadership opportunities.
-                        Bringing insights on fintech innovation, digital transformation, and
-                        women's leadership across emerging markets.
+                        <h2 class="text-2xl md:text-3xl text-red-300 font-semibold">
+                            The Podcast Empowering Africa's Future
+                        </h2>
+                    </div>
+
+                    <!-- Description -->
+                    <p class="text-xl text-gray-300 leading-relaxed">
+                        Join Violet for powerful conversations about fintech innovation, mindset transformation,
+                        wellness strategies, and building limitless careers in today's digital economy.
+                        <strong class="text-red-400">Step into your power.</strong>
                     </p>
 
-                    <!-- Quick Stats -->
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-                        <div class="text-center p-4 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg">
-                            <div class="text-2xl font-bold text-yellow-400 mb-1">11+</div>
-                            <div class="text-sm text-gray-200">Podcast Episodes</div>
+                    <!-- Podcast Stats -->
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="text-center bg-red-600/10 backdrop-blur-md rounded-xl p-4 border border-red-500/20">
+                            <div class="text-2xl font-bold text-red-400 mb-1">11+</div>
+                            <div class="text-xs text-gray-400">Episodes</div>
                         </div>
-                        <div class="text-center p-4 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg">
-                            <div class="text-2xl font-bold text-yellow-400 mb-1">1.4K+</div>
-                            <div class="text-sm text-gray-200">LinkedIn Followers</div>
+                        <div class="text-center bg-red-600/10 backdrop-blur-md rounded-xl p-4 border border-red-500/20">
+                            <div class="text-2xl font-bold text-red-400 mb-1">Multi</div>
+                            <div class="text-xs text-gray-400">Platform</div>
                         </div>
-                        <div class="text-center p-4 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg">
-                            <div class="text-2xl font-bold text-yellow-400 mb-1">6+</div>
-                            <div class="text-sm text-gray-200">Years Leadership</div>
-                        </div>
-                        <div class="text-center p-4 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg">
-                            <div class="text-2xl font-bold text-yellow-400 mb-1">Global</div>
-                            <div class="text-sm text-gray-200">Speaking Reach</div>
+                        <div class="text-center bg-red-600/10 backdrop-blur-md rounded-xl p-4 border border-red-500/20">
+                            <div class="text-2xl font-bold text-red-400 mb-1">Global</div>
+                            <div class="text-xs text-gray-400">Reach</div>
                         </div>
                     </div>
 
-                    <!-- Action Buttons -->
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="#media-kit" class="btn-primary-white">
-                            Download Media Kit
-                            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 10v6m0 0l-4-4m4 4l4-4m-6 4V4"></path>
+                    <!-- Platform Links -->
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="https://youtube.com/@elevateanddominate" target="_blank"
+                            class="group flex items-center space-x-2 bg-red-600 hover:bg-red-700 px-6 py-3 rounded-xl text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                             </svg>
+                            <span>Watch on YouTube</span>
                         </a>
-                        <a href="{{ route('contact') }}" class="btn-secondary-white">
-                            Request Interview
+
+                        <a href="https://tiktok.com/@violetkaponda" target="_blank"
+                            class="group flex items-center space-x-2 bg-gray-900 hover:bg-gray-800 px-6 py-3 rounded-xl text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72z" />
+                            </svg>
+                            <span>Follow on TikTok</span>
                         </a>
+                    </div>
+                </div>
+
+                <!-- Podcast Visual -->
+                <div class="animate-on-scroll lg:order-2">
+                    <div class="relative">
+                        <!-- Main Podcast Image -->
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                            <img src="{{ asset('images/podcast/elevate-dominate-cover.jpg') }}"
+                                alt="Elevate & Dominate Podcast Cover" class="w-full h-auto object-cover">
+
+                            <!-- Play Overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent">
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <button
+                                    class="group w-20 h-20 bg-red-600/90 backdrop-blur-md rounded-full flex items-center justify-center shadow-xl hover:bg-red-600 hover:scale-110 transition-all duration-300 border border-white/20">
+                                    <svg class="w-8 h-8 text-white ml-1 group-hover:scale-110 transition-transform duration-300"
+                                        fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Floating Episode Card -->
+                        <div
+                            class="absolute -top-6 -left-6 bg-black/90 backdrop-blur-md rounded-xl p-4 shadow-xl border border-red-500/30 max-w-xs">
+                            <div class="flex items-center space-x-2 mb-1">
+                                <div class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+                                <span class="text-sm font-semibold text-red-300">Latest Episode</span>
+                            </div>
+                            <p class="text-xs text-gray-300">The Audacity to Be More</p>
+                        </div>
+
+                        <!-- Floating Stats Card -->
+                        <div
+                            class="absolute -bottom-6 -right-6 bg-gradient-to-r from-red-600 to-red-700 rounded-xl p-4 shadow-xl text-white max-w-xs">
+                            <div class="text-sm font-bold">The Audacity Series</div>
+                            <div class="text-xs opacity-90">Empowering Your Voice</div>
+                        </div>
+
+                        <!-- Decorative Elements -->
+                        <div
+                            class="absolute -top-8 -right-8 w-24 h-24 bg-gradient-to-r from-red-500 to-pink-500 rounded-full opacity-20 blur-xl animate-float">
+                        </div>
+                        <div
+                            class="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-r from-red-600 to-red-700 rounded-full opacity-15 blur-xl animate-float delay-1000">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Podcast Section -->
-    <section class="section-padding bg-white">
-        <div class="container-brand">
-            <div class="max-w-6xl mx-auto">
-                <!-- Section Header -->
-                <div class="text-center mb-16 animate-on-scroll">
-                    <h2 class="display-text mb-6">Elevate & Dominate Podcast</h2>
-                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Inspiring conversations on mindset, tech, and wellness where professionals
-                        learn to step into their power and build limitless careers.
-                    </p>
+    <!-- The Audacity Series -->
+    <section class="py-20 bg-black relative overflow-hidden">
+        <!-- Background Elements -->
+        <div
+            class="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-red-900/30 to-red-800/20 rounded-full blur-3xl">
+        </div>
+        <div
+            class="absolute bottom-1/4 left-1/4 w-80 h-80 bg-gradient-to-r from-red-800/20 to-red-900/30 rounded-full blur-3xl">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-on-scroll">
+                <div
+                    class="inline-flex items-center px-4 py-2 bg-red-600/20 backdrop-blur-md border border-red-500/30 text-red-300 rounded-full text-sm font-medium mb-6">
+                    🔥 The Audacity Series
                 </div>
 
-                <!-- Featured Episode -->
-                <div class="mb-16 animate-on-scroll">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                        <div>
-                            <div
-                                class="inline-flex items-center px-3 py-1 bg-brand-red-50 text-brand-red-700 rounded-full text-sm font-medium mb-4">
-                                🎧 Featured Episode
-                            </div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-4">
-                                Building Limitless Careers in African Tech
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-6 leading-tight">
+                    Reclaim Your <span class="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Voice,
+                        Power & Presence</span>
+                </h2>
+
+                <p class="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+                    A bold journey into reclaiming your voice, power, and presence in today's digital economy.
+                    Sometimes, what stands between you and the life you know you're meant to live... is <strong
+                        class="text-red-400">AUDACITY</strong>.
+                </p>
+            </div>
+
+            <!-- Series Overview -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+                <!-- Audacity to Believe -->
+                <div
+                    class="group bg-red-900/20 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-red-500/30 hover:bg-red-900/30 transition-all duration-500 hover:-translate-y-2 animate-on-scroll">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white mb-4 group-hover:text-red-300 transition-colors duration-300">
+                        Audacity to Believe
+                    </h3>
+
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        Building unshakeable self-belief and confidence to pursue your biggest dreams
+                        in the tech industry and beyond.
+                    </p>
+
+                    <div class="text-sm text-red-400 font-medium">Episode 1 • Foundation Series</div>
+                </div>
+
+                <!-- Audacity to Start -->
+                <div
+                    class="group bg-red-900/20 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-red-500/30 hover:bg-red-900/30 transition-all duration-500 hover:-translate-y-2 animate-on-scroll">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-red-600 to-red-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white mb-4 group-hover:text-red-300 transition-colors duration-300">
+                        Audacity to Start
+                    </h3>
+
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        Overcoming perfectionism, fear, and procrastination to take the first step
+                        toward your transformational goals.
+                    </p>
+
+                    <div class="text-sm text-red-400 font-medium">Episode 2 • Action Series</div>
+                </div>
+
+                <!-- Audacity to Take Space -->
+                <div
+                    class="group bg-red-900/20 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-red-500/30 hover:bg-red-900/30 transition-all duration-500 hover:-translate-y-2 animate-on-scroll">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-red-700 to-red-800 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white mb-4 group-hover:text-red-300 transition-colors duration-300">
+                        Audacity to Take Space
+                    </h3>
+
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        Unapologetically claiming your space in boardrooms, conferences, and leadership
+                        positions across Africa's tech ecosystem.
+                    </p>
+
+                    <div class="text-sm text-red-400 font-medium">Episode 3 • Leadership Series</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Episodes -->
+    <section class="py-20 bg-gradient-to-br from-gray-900 to-black relative overflow-hidden">
+        <!-- Background Elements -->
+        <div
+            class="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-red-900/20 to-red-800/10 rounded-full blur-3xl opacity-40">
+        </div>
+        <div
+            class="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-tl from-red-700/10 to-red-900/20 rounded-full blur-3xl opacity-30">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-on-scroll">
+                <div
+                    class="inline-flex items-center px-4 py-2 bg-red-600/20 backdrop-blur-md border border-red-500/30 text-red-300 rounded-full text-sm font-medium mb-6">
+                    🎧 Featured Episodes
+                </div>
+
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-6 leading-tight">
+                    Latest <span
+                        class="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Episodes</span>
+                </h2>
+
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Dive into powerful conversations that transform mindsets and build limitless careers.
+                </p>
+            </div>
+
+            <!-- Episodes Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Episode 1 -->
+                <div
+                    class="group bg-red-900/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg border border-red-500/20 hover:border-red-500/40 transition-all duration-500 hover:-translate-y-2 animate-on-scroll">
+                    <div class="relative">
+                        <img src="{{ asset('images/podcast/episode-1-thumbnail.jpg') }}" alt="The Audacity to Be More"
+                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+
+                        <!-- Play Button -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <button
+                                class="w-16 h-16 bg-red-600/90 backdrop-blur-md rounded-full flex items-center justify-center shadow-xl hover:bg-red-600 hover:scale-110 transition-all duration-300">
+                                <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Episode Number -->
+                        <div class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                            EP 01
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3
+                            class="text-lg font-bold text-white mb-2 group-hover:text-red-300 transition-colors duration-300">
+                            The Audacity to Be More
+                        </h3>
+
+                        <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                            Sometimes, what stands between you and the life you know you're meant to live... is AUDACITY.
+                            Kicking off a bold journey into reclaiming your voice, power, and presence.
+                        </p>
+
+                        <div class="flex items-center justify-between text-xs text-gray-500">
+                            <span>The Audacity Series</span>
+                            <span>25 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Episode 2 -->
+                <div
+                    class="group bg-red-900/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg border border-red-500/20 hover:border-red-500/40 transition-all duration-500 hover:-translate-y-2 animate-on-scroll">
+                    <div class="relative">
+                        <img src="{{ asset('images/podcast/episode-2-thumbnail.jpg') }}"
+                            alt="Building Africa's Digital Future"
+                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+
+                        <!-- Play Button -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <button
+                                class="w-16 h-16 bg-red-600/90 backdrop-blur-md rounded-full flex items-center justify-center shadow-xl hover:bg-red-600 hover:scale-110 transition-all duration-300">
+                                <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Episode Number -->
+                        <div class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                            EP 02
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3
+                            class="text-lg font-bold text-white mb-2 group-hover:text-red-300 transition-colors duration-300">
+                            Building Africa's Digital Future
+                        </h3>
+
+                        <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                            Exploring how African interoperability and digital transformation are reshaping
+                            our continent's financial landscape and creating new opportunities.
+                        </p>
+
+                        <div class="flex items-center justify-between text-xs text-gray-500">
+                            <span>Fintech Innovation</span>
+                            <span>32 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Episode 3 -->
+                <div
+                    class="group bg-red-900/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg border border-red-500/20 hover:border-red-500/40 transition-all duration-500 hover:-translate-y-2 animate-on-scroll">
+                    <div class="relative">
+                        <img src="{{ asset('images/podcast/episode-3-thumbnail.jpg') }}"
+                            alt="Women Leading Tech Innovation"
+                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+
+                        <!-- Play Button -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <button
+                                class="w-16 h-16 bg-red-600/90 backdrop-blur-md rounded-full flex items-center justify-center shadow-xl hover:bg-red-600 hover:scale-110 transition-all duration-300">
+                                <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Episode Number -->
+                        <div class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                            EP 03
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3
+                            class="text-lg font-bold text-white mb-2 group-hover:text-red-300 transition-colors duration-300">
+                            Women Leading Tech Innovation
+                        </h3>
+
+                        <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                            Breaking barriers and claiming space in boardrooms. How women are driving
+                            transformational change across Africa's technology ecosystem.
+                        </p>
+
+                        <div class="flex items-center justify-between text-xs text-gray-500">
+                            <span>Women in Tech</span>
+                            <span>28 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Episodes CTA -->
+            <div class="text-center mt-12 animate-on-scroll">
+                <a href="https://youtube.com/@elevateanddominate" target="_blank"
+                    class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-red-600 to-red-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <span>Watch All Episodes</span>
+                    <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Appearances & Press -->
+    <section class="py-20 bg-black relative overflow-hidden">
+        <!-- Background Elements -->
+        <div
+            class="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-red-800/20 to-red-900/30 rounded-full blur-3xl">
+        </div>
+        <div
+            class="absolute bottom-1/4 left-1/4 w-80 h-80 bg-gradient-to-r from-red-700/20 to-red-800/20 rounded-full blur-3xl">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-on-scroll">
+                <div
+                    class="inline-flex items-center px-4 py-2 bg-red-600/20 backdrop-blur-md border border-red-500/30 text-red-300 rounded-full text-sm font-medium mb-6">
+                    📺 Media Appearances & Press
+                </div>
+
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-6 leading-tight">
+                    In the <span
+                        class="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Spotlight</span>
+                </h2>
+
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Featured across conferences, summits, and media platforms as a leading voice in African fintech and
+                    digital transformation.
+                </p>
+            </div>
+
+            <!-- Media Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- PMI Conference Feature -->
+                <div
+                    class="group bg-red-900/10 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-red-500/20 hover:border-red-500/40 transition-all duration-500 hover:-translate-y-2 animate-on-scroll">
+                    <div class="flex items-start space-x-6">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-r from-purple-600 to-red-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3
+                                class="text-xl font-bold text-white mb-2 group-hover:text-red-300 transition-colors duration-300">
+                                PMI Zambia 2025 Conference
                             </h3>
-                            <p class="text-gray-600 mb-6 leading-relaxed">
-                                In this powerful episode, I share insights on breaking through traditional
-                                career limitations, leveraging technology for growth, and building a
-                                personal brand that opens doors across the African tech ecosystem.
+                            <p class="text-gray-400 mb-3 leading-relaxed">
+                                Featured speaker on "Agile Leadership: Empowering Projects in a Tech-Driven World" -
+                                delivering transformational insights to project management professionals.
                             </p>
-
-                            <!-- Episode Stats -->
-                            <div class="flex space-x-6 mb-6">
-                                <div class="text-center">
-                                    <div class="text-lg font-bold text-brand-red-900">45 min</div>
-                                    <div class="text-sm text-gray-600">Duration</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-lg font-bold text-brand-red-900">Episode 1</div>
-                                    <div class="text-sm text-gray-600">Latest</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-lg font-bold text-brand-red-900">2024</div>
-                                    <div class="text-sm text-gray-600">Released</div>
-                                </div>
-                            </div>
-
-                            <!-- Listen Buttons -->
-                            <div class="flex flex-wrap gap-3">
-                                <a href="#"
-                                    class="inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition duration-200">
-                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                        <path
-                                            d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z" />
-                                    </svg>
-                                    Spotify
-                                </a>
-                                <a href="#"
-                                    class="inline-flex items-center px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition duration-200">
-                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                        <path
-                                            d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 4.54 3.2 8.79 7.52 10.13v-9.21c-.26-.81-1-1.39-1.85-1.39-.26 0-.53.04-.79.11L7.01 6C8.81 5.5 10.8 5.5 12.04 5.5s3.23 0 5.03.5l0 5.55c-.26-.07-.53-.11-.79-.11-.85 0-1.59.58-1.85 1.39v9.21c4.32-1.34 7.52-5.59 7.52-10.13C21.95 6.45 17.5 2 12.04 2z" />
-                                    </svg>
-                                    Apple Podcasts
-                                </a>
-                                <a href="#"
-                                    class="inline-flex items-center px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg transition duration-200">
-                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                        <path
-                                            d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16c-.169-.3-.48-.5-.832-.5h-1.125v1.68h1.125c.351 0 .663.2.832.5.169.301.169.699 0 1l-1.714 2.967c-.169.3-.48.5-.832.5H12v1.68h3.022c.351 0 .663-.2.832-.5L17.57 12c.338-.585.338-1.415 0-2z" />
-                                    </svg>
-                                    Google Podcasts
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Podcast Cover Art -->
-                        <div class="lg:order-first">
-                            <div class="relative">
-                                <img src="{{ asset('images/podcast/elevate-dominate-cover.jpg') }}"
-                                    alt="Elevate & Dominate Podcast Cover"
-                                    class="rounded-xl shadow-brand-lg w-full max-w-md mx-auto">
-
-                                <!-- Play Button Overlay -->
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                    <button
-                                        class="w-20 h-20 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full flex items-center justify-center shadow-lg transition duration-200 group">
-                                        <svg class="w-8 h-8 text-brand-red-600 ml-1 group-hover:scale-110 transition transform"
-                                            fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M8 5v14l11-7z" />
-                                        </svg>
-                                    </button>
-                                </div>
+                            <div class="flex items-center space-x-4 text-sm">
+                                <span class="px-3 py-1 bg-red-600/20 text-red-300 rounded-full">Conference Speaker</span>
+                                <span class="text-gray-500">2025</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Recent Episodes -->
-                <div class="animate-on-scroll">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-8">Recent Episodes</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- Episode 1 -->
-                        <div class="card hover:shadow-lg transition duration-200">
-                            <div class="p-6">
-                                <div class="flex items-center justify-between mb-4">
-                                    <span class="text-sm font-medium text-brand-red-600">Episode 11</span>
-                                    <span class="text-sm text-gray-500">Dec 2024</span>
-                                </div>
-                                <h4 class="font-bold text-gray-900 mb-2 line-clamp-2">
-                                    The Future of Fintech in Emerging Markets
-                                </h4>
-                                <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                                    Exploring how financial technology is revolutionizing access to
-                                    financial services across Africa and beyond.
-                                </p>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-sm text-gray-500">42 min</span>
-                                    <button class="text-brand-red-600 hover:text-brand-red-700 transition duration-200">
-                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M8 5v14l11-7z" />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Episode 2 -->
-                        <div class="card hover:shadow-lg transition duration-200">
-                            <div class="p-6">
-                                <div class="flex items-center justify-between mb-4">
-                                    <span class="text-sm font-medium text-brand-red-600">Episode 10</span>
-                                    <span class="text-sm text-gray-500">Nov 2024</span>
-                                </div>
-                                <h4 class="font-bold text-gray-900 mb-2 line-clamp-2">
-                                    Women Breaking Barriers in Tech Leadership
-                                </h4>
-                                <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                                    Strategies for women to overcome challenges and thrive in
-                                    technology leadership roles across the continent.
-                                </p>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-sm text-gray-500">38 min</span>
-                                    <button class="text-brand-red-600 hover:text-brand-red-700 transition duration-200">
-                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M8 5v14l11-7z" />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Episode 3 -->
-                        <div class="card hover:shadow-lg transition duration-200">
-                            <div class="p-6">
-                                <div class="flex items-center justify-between mb-4">
-                                    <span class="text-sm font-medium text-brand-red-600">Episode 9</span>
-                                    <span class="text-sm text-gray-500">Oct 2024</span>
-                                </div>
-                                <h4 class="font-bold text-gray-900 mb-2 line-clamp-2">
-                                    Digital Transformation: From Strategy to Execution
-                                </h4>
-                                <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                                    A deep dive into successful digital transformation
-                                    methodologies and real-world implementation strategies.
-                                </p>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-sm text-gray-500">45 min</span>
-                                    <button class="text-brand-red-600 hover:text-brand-red-700 transition duration-200">
-                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M8 5v14l11-7z" />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- View All Episodes -->
-                    <div class="text-center mt-8">
-                        <a href="#" class="btn-primary">
-                            View All Episodes
-                            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                <!-- LinkedIn Thought Leadership -->
+                <div
+                    class="group bg-red-900/10 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-red-500/20 hover:border-red-500/40 transition-all duration-500 hover:-translate-y-2 animate-on-scroll">
+                    <div class="flex items-start space-x-6">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-r from-blue-600 to-red-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                             </svg>
-                        </a>
+                        </div>
+                        <div class="flex-1">
+                            <h3
+                                class="text-xl font-bold text-white mb-2 group-hover:text-red-300 transition-colors duration-300">
+                                LinkedIn Thought Leadership
+                            </h3>
+                            <p class="text-gray-400 mb-3 leading-relaxed">
+                                Building influence with 1,480+ followers through strategic content on African fintech
+                                innovation,
+                                digital transformation, and business development insights.
+                            </p>
+                            <div class="flex items-center space-x-4 text-sm">
+                                <span class="px-3 py-1 bg-red-600/20 text-red-300 rounded-full">Content Creator</span>
+                                <span class="text-gray-500">1,480+ Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Galactic Billionaire Event -->
+                <div
+                    class="group bg-red-900/10 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-red-500/20 hover:border-red-500/40 transition-all duration-500 hover:-translate-y-2 animate-on-scroll">
+                    <div class="flex items-start space-x-6">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-r from-yellow-600 to-red-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3
+                                class="text-xl font-bold text-white mb-2 group-hover:text-red-300 transition-colors duration-300">
+                                Galactic Billionaire 2025 Experience
+                            </h3>
+                            <p class="text-gray-400 mb-3 leading-relaxed">
+                                "Some rooms don't just shift your thinking, they shift your entire trajectory."
+                                A transformational experience that redefined vision and approach to building Africa's
+                                future.
+                            </p>
+                            <div class="flex items-center space-x-4 text-sm">
+                                <span class="px-3 py-1 bg-red-600/20 text-red-300 rounded-full">Thought Leader</span>
+                                <span class="text-gray-500">Lusaka Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Inclusion Advocacy -->
+                <div
+                    class="group bg-red-900/10 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-red-500/20 hover:border-red-500/40 transition-all duration-500 hover:-translate-y-2 animate-on-scroll">
+                    <div class="flex items-start space-x-6">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-r from-green-600 to-red-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3
+                                class="text-xl font-bold text-white mb-2 group-hover:text-red-300 transition-colors duration-300">
+                                Digital Africa Advocacy
+                            </h3>
+                            <p class="text-gray-400 mb-3 leading-relaxed">
+                                Leading conversations on African interoperability and data integration -
+                                "Let's connect our own systems before we dream about connecting continents."
+                            </p>
+                            <div class="flex items-center space-x-4 text-sm">
+                                <span class="px-3 py-1 bg-red-600/20 text-red-300 rounded-full">Digital Advocate</span>
+                                <span class="text-gray-500">Continental Impact</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Speaking Engagements -->
-    <section class="section-padding bg-gray-50">
-        <div class="container-brand">
-            <div class="max-w-6xl mx-auto">
-                <!-- Section Header -->
-                <div class="text-center mb-16 animate-on-scroll">
-                    <h2 class="display-text mb-6">Speaking Engagements</h2>
-                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Available for conferences, panels, workshops, and corporate events.
-                        Bringing insights on fintech, digital transformation, and women's leadership.
+    <!-- Social Media Highlights -->
+    <section class="py-20 bg-gradient-to-br from-gray-900 to-black relative overflow-hidden">
+        <!-- Background Elements -->
+        <div
+            class="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-red-900/20 to-red-800/10 rounded-full blur-3xl opacity-40">
+        </div>
+        <div
+            class="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-tl from-red-700/10 to-red-900/20 rounded-full blur-3xl opacity-30">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-on-scroll">
+                <div
+                    class="inline-flex items-center px-4 py-2 bg-red-600/20 backdrop-blur-md border border-red-500/30 text-red-300 rounded-full text-sm font-medium mb-6">
+                    📱 Social Media Highlights
+                </div>
+
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-6 leading-tight">
+                    Follow the <span
+                        class="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Journey</span>
+                </h2>
+
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Stay connected for daily insights on fintech innovation, mindset transformation, and building limitless
+                    careers.
+                </p>
+            </div>
+
+            <!-- Social Platforms Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+
+                <!-- YouTube -->
+                <div
+                    class="group bg-red-900/10 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-red-500/20 hover:border-red-500/40 transition-all duration-500 hover:-translate-y-2 animate-on-scroll text-center">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-red-600 to-red-700 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-red-300 transition-colors duration-300">
+                        YouTube Channel
+                    </h3>
+
+                    <p class="text-gray-400 mb-4 leading-relaxed">
+                        Full podcast episodes, behind-the-scenes content, and exclusive interviews with industry leaders.
                     </p>
+
+                    <div class="text-sm text-red-400 font-medium mb-4">11+ Episodes Available</div>
+
+                    <a href="https://youtube.com/@elevateanddominate" target="_blank"
+                        class="inline-flex items-center px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105">
+                        <span>Subscribe</span>
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                    </a>
                 </div>
 
-                <!-- Speaking Topics -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                    <!-- Topic 1 -->
-                    <div class="card-elevated animate-on-scroll">
-                        <div class="p-8">
-                            <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
-                                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-4">Fintech Innovation</h3>
-                            <p class="text-gray-600 leading-relaxed mb-4">
-                                The future of financial services in emerging markets, digital payment
-                                solutions, and bridging the financial inclusion gap.
+                <!-- LinkedIn -->
+                <div
+                    class="group bg-red-900/10 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-red-500/20 hover:border-red-500/40 transition-all duration-500 hover:-translate-y-2 animate-on-scroll text-center">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-blue-600 to-red-600 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-red-300 transition-colors duration-300">
+                        LinkedIn Posts
+                    </h3>
+
+                    <p class="text-gray-400 mb-4 leading-relaxed">
+                        Professional insights, industry updates, and thought leadership on African fintech and business
+                        development.
+                    </p>
+
+                    <div class="text-sm text-red-400 font-medium mb-4">1,480+ Followers</div>
+
+                    <a href="https://linkedin.com/in/violet-nswana-kaponda-bsc-msc-a2761a153" target="_blank"
+                        class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105">
+                        <span>Connect</span>
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- TikTok -->
+                <div
+                    class="group bg-red-900/10 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-red-500/20 hover:border-red-500/40 transition-all duration-500 hover:-translate-y-2 animate-on-scroll text-center">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-gray-800 to-red-600 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72z" />
+                        </svg>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-red-300 transition-colors duration-300">
+                        TikTok Content
+                    </h3>
+
+                    <p class="text-gray-400 mb-4 leading-relaxed">
+                        Quick insights, motivational content, and behind-the-scenes glimpses of building Africa's digital
+                        future.
+                    </p>
+
+                    <div class="text-sm text-red-400 font-medium mb-4">Short-form Content</div>
+
+                    <a href="https://tiktok.com/@violetkaponda" target="_blank"
+                        class="inline-flex items-center px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105">
+                        <span>Follow</span>
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Content Highlights -->
+            <div
+                class="bg-red-900/10 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-red-500/20 animate-on-scroll">
+                <h3 class="text-2xl font-bold text-white mb-6 text-center">
+                    Recent <span class="text-red-400">Content Highlights</span>
+                </h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-3 h-3 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <div>
+                            <p class="text-gray-300 leading-relaxed">
+                                <strong class="text-white">"Africa's Digital Future"</strong> - Breaking down
+                                interoperability challenges and solutions for connecting African systems.
                             </p>
-                            <ul class="text-sm text-gray-600 space-y-2">
-                                <li>• Mobile money ecosystem development</li>
-                                <li>• Digital lending and credit scoring</li>
-                                <li>• Regulatory frameworks for fintech</li>
-                            </ul>
                         </div>
                     </div>
 
-                    <!-- Topic 2 -->
-                    <div class="card-elevated animate-on-scroll">
-                        <div class="p-8">
-                            <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor"
+                    <div class="flex items-start space-x-4">
+                        <div class="w-3 h-3 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <div>
+                            <p class="text-gray-300 leading-relaxed">
+                                <strong class="text-white">"The Audacity Series"</strong> - Empowering professionals to
+                                step into their power and build limitless careers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Contact & Newsletter -->
+    <section class="py-20 bg-black relative overflow-hidden">
+        <!-- Background Effects -->
+        <div class="absolute inset-0">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-red-600/10 rounded-full blur-3xl animate-pulse"></div>
+            <div
+                class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-red-500/10 rounded-full blur-3xl animate-pulse delay-1000">
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+                <!-- Content -->
+                <div class="animate-on-scroll space-y-8">
+                    <div class="space-y-4">
+                        <h2 class="text-4xl md:text-5xl font-display font-bold text-white leading-tight">
+                            Stay <span class="text-red-400">Connected</span>
+                        </h2>
+
+                        <p class="text-xl text-gray-300 leading-relaxed">
+                            Get exclusive content, behind-the-scenes insights, and early access to new podcast episodes.
+                            Join the community building Africa's digital future.
+                        </p>
+                    </div>
+
+                    <!-- Newsletter Benefits -->
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                                    </path>
+                                        d="M5 13l4 4L19 7"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-4">Digital Transformation</h3>
-                            <p class="text-gray-600 leading-relaxed mb-4">
-                                Strategic approaches to digital evolution, change management,
-                                and building technology-driven competitive advantages.
-                            </p>
-                            <ul class="text-sm text-gray-600 space-y-2">
-                                <li>• Enterprise digital strategy</li>
-                                <li>• Technology adoption frameworks</li>
-                                <li>• Cultural change management</li>
-                            </ul>
+                            <span class="text-gray-300">Early access to new episodes</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-300">Exclusive fintech insights</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-300">Behind-the-scenes content</span>
                         </div>
                     </div>
 
-                    <!-- Topic 3 -->
-                    <div class="card-elevated animate-on-scroll">
-                        <div class="p-8">
-                            <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
-                                <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor"
+                    <!-- Media Contact -->
+                    <div class="bg-red-900/20 backdrop-blur-md rounded-xl p-6 border border-red-500/30">
+                        <h3 class="text-lg font-bold text-white mb-4">Media Inquiries:</h3>
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-red-400" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                        d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
                                     </path>
                                 </svg>
+                                <a href="mailto:violet@violetkaponda.com"
+                                    class="text-red-300 hover:text-red-200 transition-colors duration-300">
+                                    violet@violetkaponda.com
+                                </a>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-4">Women's Leadership</h3>
-                            <p class="text-gray-600 leading-relaxed mb-4">
-                                Empowering women in technology, breaking through barriers,
-                                and building inclusive tech ecosystems across Africa.
-                            </p>
-                            <ul class="text-sm text-gray-600 space-y-2">
-                                <li>• Career advancement strategies</li>
-                                <li>• Building confidence and presence</li>
-                                <li>• Mentorship and sponsorship</li>
-                            </ul>
+                            <div class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-red-400" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-gray-300">Response within 24-48 hours</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Speaking Format Options -->
+                <!-- Newsletter Form -->
                 <div class="animate-on-scroll">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Available Formats</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <!-- Keynote -->
-                        <div class="text-center p-6 bg-white rounded-lg shadow-sm">
-                            <div
-                                class="w-12 h-12 bg-brand-red-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                                <svg class="w-6 h-6 text-brand-red-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <h4 class="font-bold text-gray-900 mb-2">Keynote Speeches</h4>
-                            <p class="text-sm text-gray-600">45-60 minute inspiring presentations</p>
-                        </div>
+                    <div class="bg-red-900/10 backdrop-blur-md rounded-2xl p-8 border border-red-500/20 shadow-xl">
+                        <h3 class="text-2xl font-bold text-white mb-6">Join the Movement</h3>
 
-                        <!-- Panel -->
-                        <div class="text-center p-6 bg-white rounded-lg shadow-sm">
-                            <div
-                                class="w-12 h-12 bg-brand-red-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                                <svg class="w-6 h-6 text-brand-red-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <h4 class="font-bold text-gray-900 mb-2">Panel Discussions</h4>
-                            <p class="text-sm text-gray-600">Expert insights in group settings</p>
-                        </div>
-
-                        <!-- Workshop -->
-                        <div class="text-center p-6 bg-white rounded-lg shadow-sm">
-                            <div
-                                class="w-12 h-12 bg-brand-red-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                                <svg class="w-6 h-6 text-brand-red-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
-                                    </path>
-                                </svg>
-                            </div>
-                            <h4 class="font-bold text-gray-900 mb-2">Workshops</h4>
-                            <p class="text-sm text-gray-600">Interactive learning experiences</p>
-                        </div>
-
-                        <!-- Fireside Chat -->
-                        <div class="text-center p-6 bg-white rounded-lg shadow-sm">
-                            <div
-                                class="w-12 h-12 bg-brand-red-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                                <svg class="w-6 h-6 text-brand-red-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <h4 class="font-bold text-gray-900 mb-2">Fireside Chats</h4>
-                            <p class="text-sm text-gray-600">Intimate conversation formats</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Press Coverage & Features -->
-    <section class="section-padding bg-white">
-        <div class="container-brand">
-            <div class="max-w-6xl mx-auto">
-                <!-- Section Header -->
-                <div class="text-center mb-16 animate-on-scroll">
-                    <h2 class="display-text mb-6">Press Coverage</h2>
-                    <p class="text-xl text-gray-600">
-                        Recent features, interviews, and mentions across leading publications and platforms.
-                    </p>
-                </div>
-
-                <!-- Featured Coverage -->
-                <div class="mb-16 animate-on-scroll">
-                    <div class="card-elevated">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
+                        <form class="space-y-6">
                             <div>
-                                <div
-                                    class="inline-flex items-center px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium mb-4">
-                                    📰 Featured Article
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Your Email Address</label>
+                                <input type="email"
+                                    class="w-full px-4 py-3 bg-red-900/20 backdrop-blur-md border border-red-500/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 transition-all duration-300"
+                                    placeholder="email@example.com" required>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Your Name (Optional)</label>
+                                <input type="text"
+                                    class="w-full px-4 py-3 bg-red-900/20 backdrop-blur-md border border-red-500/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 transition-all duration-300"
+                                    placeholder="Full Name">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">I'm interested in:</label>
+                                <div class="space-y-2">
+                                    <label class="flex items-center">
+                                        <input type="checkbox"
+                                            class="w-4 h-4 text-red-600 bg-red-900/20 border-red-500/30 rounded focus:ring-red-500 focus:ring-2">
+                                        <span class="ml-2 text-gray-300">Podcast updates</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox"
+                                            class="w-4 h-4 text-red-600 bg-red-900/20 border-red-500/30 rounded focus:ring-red-500 focus:ring-2">
+                                        <span class="ml-2 text-gray-300">Fintech insights</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox"
+                                            class="w-4 h-4 text-red-600 bg-red-900/20 border-red-500/30 rounded focus:ring-red-500 focus:ring-2">
+                                        <span class="ml-2 text-gray-300">Speaking events</span>
+                                    </label>
                                 </div>
-                                <h3 class="text-2xl font-bold text-gray-900 mb-4">
-                                    "The Rise of African Fintech Queens"
-                                </h3>
-                                <p class="text-gray-600 mb-4 leading-relaxed">
-                                    Tech Africa Today explores how women leaders like Violet Nswana Kaponda
-                                    are reshaping the financial technology landscape across the continent,
-                                    driving innovation and creating inclusive solutions for emerging markets.
-                                </p>
-                                <div class="flex items-center justify-between mb-6">
-                                    <div class="flex items-center space-x-4">
-                                        <span class="text-sm font-medium text-gray-700">Tech Africa Today</span>
-                                        <span class="text-sm text-gray-500">•</span>
-                                        <span class="text-sm text-gray-500">December 2024</span>
-                                    </div>
-                                    <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm">Featured</span>
-                                </div>
-                                <a href="#" class="btn-primary">
-                                    Read Full Article
-                                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
-                                        </path>
-                                    </svg>
-                                </a>
                             </div>
-                            <div class="lg:order-first">
-                                <img src="{{ asset('images/press/tech-africa-today-feature.jpg') }}"
-                                    alt="Tech Africa Today Feature" class="rounded-lg shadow-lg w-full h-64 object-cover">
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Press Coverage Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Press Item 1 -->
-                    <div class="card hover:shadow-lg transition duration-200 animate-on-scroll">
-                        <div class="p-6">
-                            <div class="flex items-center justify-between mb-4">
-                                <span class="text-sm font-medium text-blue-600">African Business Weekly</span>
-                                <span class="text-sm text-gray-500">Nov 2024</span>
-                            </div>
-                            <h4 class="font-bold text-gray-900 mb-3 line-clamp-2">
-                                "Digital Transformation Leaders to Watch in 2025"
-                            </h4>
-                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                                Violet Nswana Kaponda named among top 20 digital transformation
-                                leaders driving change across African markets.
-                            </p>
-                            <div class="flex items-center justify-between">
-                                <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs">Recognition</span>
-                                <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium">Read
-                                    More</a>
-                            </div>
-                        </div>
-                    </div>
+                            <button type="submit"
+                                class="w-full bg-gradient-to-r from-red-600 to-red-700 text-white font-semibold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                                Subscribe Now
+                            </button>
 
-                    <!-- Press Item 2 -->
-                    <div class="card hover:shadow-lg transition duration-200 animate-on-scroll">
-                        <div class="p-6">
-                            <div class="flex items-center justify-between mb-4">
-                                <span class="text-sm font-medium text-purple-600">Fintech Focus Africa</span>
-                                <span class="text-sm text-gray-500">Oct 2024</span>
-                            </div>
-                            <h4 class="font-bold text-gray-900 mb-3 line-clamp-2">
-                                "Podcast Interview: Building Limitless Careers"
-                            </h4>
-                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                                In-depth conversation about career development, women's leadership,
-                                and the future of fintech in emerging markets.
+                            <p class="text-xs text-gray-400 text-center">
+                                No spam ever. Unsubscribe anytime with one click.
                             </p>
-                            <div class="flex items-center justify-between">
-                                <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-xs">Interview</span>
-                                <a href="#"
-                                    class="text-purple-600 hover:text-purple-700 text-sm font-medium">Listen</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Press Item 3 -->
-                    <div class="card hover:shadow-lg transition duration-200 animate-on-scroll">
-                        <div class="p-6">
-                            <div class="flex items-center justify-between mb-4">
-                                <span class="text-sm font-medium text-green-600">Women in Tech ZM</span>
-                                <span class="text-sm text-gray-500">Sep 2024</span>
-                            </div>
-                            <h4 class="font-bold text-gray-900 mb-3 line-clamp-2">
-                                "Speaking Spotlight: Zambia Tech Summit 2024"
-                            </h4>
-                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                                Keynote highlights from Violet's presentation on fintech innovation
-                                and financial inclusion strategies.
-                            </p>
-                            <div class="flex items-center justify-between">
-                                <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-xs">Speaking</span>
-                                <a href="#"
-                                    class="text-green-600 hover:text-green-700 text-sm font-medium">Watch</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Press Item 4 -->
-                    <div class="card hover:shadow-lg transition duration-200 animate-on-scroll">
-                        <div class="p-6">
-                            <div class="flex items-center justify-between mb-4">
-                                <span class="text-sm font-medium text-red-600">Business Daily Africa</span>
-                                <span class="text-sm text-gray-500">Aug 2024</span>
-                            </div>
-                            <h4 class="font-bold text-gray-900 mb-3 line-clamp-2">
-                                "Opinion: The Future of African Digital Payments"
-                            </h4>
-                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                                Expert analysis on mobile money ecosystems and the path
-                                to universal financial inclusion across the continent.
-                            </p>
-                            <div class="flex items-center justify-between">
-                                <span class="px-3 py-1 bg-red-50 text-red-700 rounded-full text-xs">Opinion</span>
-                                <a href="#" class="text-red-600 hover:text-red-700 text-sm font-medium">Read</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Press Item 5 -->
-                    <div class="card hover:shadow-lg transition duration-200 animate-on-scroll">
-                        <div class="p-6">
-                            <div class="flex items-center justify-between mb-4">
-                                <span class="text-sm font-medium text-yellow-600">LinkedIn Today</span>
-                                <span class="text-sm text-gray-500">Jul 2024</span>
-                            </div>
-                            <h4 class="font-bold text-gray-900 mb-3 line-clamp-2">
-                                "Thought Leader Spotlight: Violet Nswana Kaponda"
-                            </h4>
-                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                                Profile feature highlighting Violet's journey from IT Project
-                                Manager to recognized fintech thought leader.
-                            </p>
-                            <div class="flex items-center justify-between">
-                                <span class="px-3 py-1 bg-yellow-50 text-yellow-700 rounded-full text-xs">Profile</span>
-                                <a href="#"
-                                    class="text-yellow-600 hover:text-yellow-700 text-sm font-medium">View</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Press Item 6 -->
-                    <div class="card hover:shadow-lg transition duration-200 animate-on-scroll">
-                        <div class="p-6">
-                            <div class="flex items-center justify-between mb-4">
-                                <span class="text-sm font-medium text-indigo-600">Tech Innovation Hub</span>
-                                <span class="text-sm text-gray-500">Jun 2024</span>
-                            </div>
-                            <h4 class="font-bold text-gray-900 mb-3 line-clamp-2">
-                                "Podcast Guest: Elevating African Tech Talent"
-                            </h4>
-                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                                Guest appearance discussing strategies for developing
-                                and retaining top tech talent across African markets.
-                            </p>
-                            <div class="flex items-center justify-between">
-                                <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-xs">Podcast</span>
-                                <a href="#"
-                                    class="text-indigo-600 hover:text-indigo-700 text-sm font-medium">Listen</a>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Media Kit Section -->
-    <section id="media-kit" class="section-padding bg-gray-50">
-        <div class="container-brand">
-            <div class="max-w-4xl mx-auto">
-                <!-- Section Header -->
-                <div class="text-center mb-16 animate-on-scroll">
-                    <h2 class="display-text mb-6">Media Kit</h2>
-                    <p class="text-xl text-gray-600">
-                        Everything you need for interviews, features, and event promotion.
-                    </p>
-                </div>
+    <!-- Enhanced CSS for Media Page -->
+    <style>
+        @keyframes float {
 
-                <!-- Media Kit Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                    <!-- Professional Photos -->
-                    <div class="card-elevated animate-on-scroll">
-                        <div class="p-8">
-                            <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z">
-                                    </path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-4">Professional Photos</h3>
-                            <p class="text-gray-600 mb-6 leading-relaxed">
-                                High-resolution headshots, speaking photos, and lifestyle images
-                                available in various formats and resolutions.
-                            </p>
-                            <ul class="text-sm text-gray-600 space-y-2 mb-6">
-                                <li>• Professional headshots (300 DPI)</li>
-                                <li>• Speaking event photos</li>
-                                <li>• Lifestyle and workplace images</li>
-                                <li>• Multiple formats (JPG, PNG, TIFF)</li>
-                            </ul>
-                            <a href="#" class="btn-secondary">
-                                Download Photos
-                                <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 10v6m0 0l-4-4m4 4l4-4m-6 4V4"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
 
-                    <!-- Biography & Fact Sheet -->
-                    <div class="card-elevated animate-on-scroll">
-                        <div class="p-8">
-                            <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
-                                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-4">Biography & Facts</h3>
-                            <p class="text-gray-600 mb-6 leading-relaxed">
-                                Professional biography, key achievements, quick facts,
-                                and notable quotes for easy reference.
-                            </p>
-                            <ul class="text-sm text-gray-600 space-y-2 mb-6">
-                                <li>• Long-form biography (500+ words)</li>
-                                <li>• Short bio (100 words)</li>
-                                <li>• Key achievements and milestones</li>
-                                <li>• Notable quotes and sound bites</li>
-                            </ul>
-                            <a href="#" class="btn-secondary">
-                                Download Bio Kit
-                                <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 10v6m0 0l-4-4m4 4l4-4m-6 4V4"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+            50% {
+                transform: translateY(-15px) rotate(2deg);
+            }
+        }
 
-                    <!-- Speaking Topics -->
-                    <div class="card-elevated animate-on-scroll">
-                        <div class="p-8">
-                            <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
-                                <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-4">Speaking Topics</h3>
-                            <p class="text-gray-600 mb-6 leading-relaxed">
-                                Detailed speaking topic outlines, key points, and customizable
-                                presentations for various audience types.
-                            </p>
-                            <ul class="text-sm text-gray-600 space-y-2 mb-6">
-                                <li>• Topic descriptions and objectives</li>
-                                <li>• Key takeaways for audiences</li>
-                                <li>• Customizable presentation formats</li>
-                                <li>• Speaking requirements and logistics</li>
-                            </ul>
-                            <a href="#" class="btn-secondary">
-                                View Topics
-                                <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
-                                    </path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
 
-                    <!-- Brand Assets -->
-                    <div class="card-elevated animate-on-scroll">
-                        <div class="p-8">
-                            <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mb-6">
-                                <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-4">Brand Assets</h3>
-                            <p class="text-gray-600 mb-6 leading-relaxed">
-                                Logo variations, brand colors, typography guidelines,
-                                and visual identity elements for co-branded materials.
-                            </p>
-                            <ul class="text-sm text-gray-600 space-y-2 mb-6">
-                                <li>• Logo files (SVG, PNG, AI)</li>
-                                <li>• Brand color palette (HEX, RGB, CMYK)</li>
-                                <li>• Typography specifications</li>
-                                <li>• Usage guidelines and examples</li>
-                            </ul>
-                            <a href="#" class="btn-secondary">
-                                Download Assets
-                                <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 10v6m0 0l-4-4m4 4l4-4m-6 4V4"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-                <!-- Complete Media Kit Download -->
-                <div class="text-center animate-on-scroll">
-                    <div class="bg-brand-gradient rounded-xl p-8 text-white">
-                        <h3 class="text-2xl font-bold mb-4">Complete Media Kit</h3>
-                        <p class="text-gray-100 mb-6 max-w-2xl mx-auto">
-                            Download the complete media kit with all assets, biographies, photos,
-                            and brand guidelines in one convenient package.
-                        </p>
-                        <a href="#" class="btn-primary-white">
-                            Download Complete Kit (ZIP)
-                            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 10v6m0 0l-4-4m4 4l4-4m-6 4V4"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-    <!-- Contact for Media -->
-    <section class="section-padding bg-white">
-        <div class="container-brand">
-            <div class="max-w-4xl mx-auto text-center">
-                <div class="animate-on-scroll">
-                    <h2 class="display-text mb-6">Media Inquiries</h2>
-                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-                        Ready to feature Violet in your publication, podcast, or event?
-                        Let's discuss how we can create valuable content for your audience.
-                    </p>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 
-                    <!-- Contact Options -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                        <!-- Interview Requests -->
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">Interview Requests</h3>
-                            <p class="text-gray-600 text-sm mb-4">
-                                Print, podcast, video interviews and expert commentary
-                            </p>
-                            <a href="{{ route('contact') }}"
-                                class="text-blue-600 hover:text-blue-700 font-medium text-sm">
-                                Request Interview →
-                            </a>
-                        </div>
-
-                        <!-- Speaking Invitations -->
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">Speaking Events</h3>
-                            <p class="text-gray-600 text-sm mb-4">
-                                Conferences, panels, workshops, and corporate events
-                            </p>
-                            <a href="{{ route('speaking') }}"
-                                class="text-green-600 hover:text-green-700 font-medium text-sm">
-                                Book Speaker →
-                            </a>
-                        </div>
-
-                        <!-- Press & PR -->
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                                <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">Press & PR</h3>
-                            <p class="text-gray-600 text-sm mb-4">
-                                Press releases, feature stories, and media partnerships
-                            </p>
-                            <a href="{{ route('contact') }}"
-                                class="text-purple-600 hover:text-purple-700 font-medium text-sm">
-                                Media Inquiry →
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Primary CTA -->
-                    <div class="bg-gray-50 rounded-xl p-8">
-                        <h3 class="text-xl font-bold text-gray-900 mb-4">Quick Response Guarantee</h3>
-                        <p class="text-gray-600 mb-6">
-                            All media inquiries receive a response within 24 hours.
-                            Emergency or time-sensitive requests can be accommodated with advance notice.
-                        </p>
-                        <a href="{{ route('contact') }}" class="btn-primary">
-                            Get in Touch
-                            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-@endsection
-
-@push('scripts')
+    <!-- JavaScript -->
     <script>
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-in');
-                }
-            });
-        }, observerOptions);
-
-        // Observe all elements with animate-on-scroll class
-        document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('DOMContentLoaded', function() {
+            // Scroll animations
             const animateElements = document.querySelectorAll('.animate-on-scroll');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
             animateElements.forEach(el => observer.observe(el));
-        });
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+            // Newsletter form handling
+            const newsletterForm = document.querySelector('#newsletter form, form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const button = this.querySelector('button[type="submit"]');
+                    const originalText = button.textContent;
 
-        // Podcast play button functionality
-        document.querySelectorAll('.podcast-play-btn').forEach(button => {
-            button.addEventListener('click', function() {
-                // Add your podcast player integration here
-                console.log('Playing podcast episode');
-            });
-        });
+                    button.textContent = 'Subscribing...';
+                    button.disabled = true;
 
-        // Media kit download tracking
-        document.querySelectorAll('a[href*="download"]').forEach(link => {
-            link.addEventListener('click', function() {
-                // Add your download tracking here
-                console.log('Media kit download:', this.textContent);
-            });
+                    setTimeout(() => {
+                        button.textContent = '✓ Subscribed!';
+                        button.style.background = 'linear-gradient(to right, #10b981, #059669)';
+
+                        setTimeout(() => {
+                            button.textContent = originalText;
+                            button.disabled = false;
+                            button.style.background = '';
+                            this.reset();
+                        }, 2000);
+                    }, 1500);
+                });
+            }
         });
     </script>
-@endpush
+@endsection

@@ -6,58 +6,278 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Violet Nswana Kaponda - Fintech Thought Leader</title>
-    <meta name="description"
-        content="Violet Nswana Kaponda is a leading voice in African fintech, digital transformation, and women in technology.">
+    <title>@yield('title', 'Violet Nswana Kaponda - Fintech Thought Leader & Speaker')</title>
+    <meta name="description" content="@yield('description', 'Violet Nswana Kaponda is a leading voice in African fintech, digital transformation, and women in technology.')">
 
-    <!-- Fonts -->
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- Direct CSS -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- Enhanced Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand': {
+                            'orange': '#ea580c',
+                            'red': '#dc2626',
+                            'gold': '#f59e0b',
+                        }
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                    }
+                }
+            }
+        }
+    </script>
 
-    <!-- Alpine.js CDN -->
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        /* Ultimate Desktop Experience */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(25px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
 
-    <!-- Direct JS -->
-    <script src="{{ asset('js/app.js') }}"></script>
+        .glass-nav.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(30px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-link {
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.75rem;
+            color: #374151;
+            font-weight: 500;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #ea580c;
+            background-color: #fed7aa;
+            transform: translateY(-2px);
+        }
+
+        .nav-underline {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: #ea580c;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover .nav-underline {
+            width: 80%;
+        }
+
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: linear-gradient(to right, #ea580c, #dc2626, #f59e0b);
+            z-index: 9999;
+            transition: width 0.3s ease;
+            box-shadow: 0 2px 10px rgba(234, 88, 12, 0.3);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(234, 88, 12, 0.3);
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.6s;
+        }
+
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(234, 88, 12, 0.4);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #ea580c 0%, #dc2626 50%, #f59e0b 100%);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradient 3s ease infinite;
+        }
+
+        .mobile-menu {
+            transform: translateY(-100%);
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        .mobile-menu.open {
+            transform: translateY(0);
+            opacity: 1;
+            max-height: 500px;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-15px) rotate(2deg);
+            }
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #ea580c, #dc2626);
+            border-radius: 6px;
+            box-shadow: 0 2px 10px rgba(234, 88, 12, 0.3);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(to bottom, #dc2626, #b91c1c);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            -webkit-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        @media (max-width: 768px) {
+            .btn-primary {
+                min-height: 44px;
+                font-size: 16px;
+            }
+
+            input[type="email"] {
+                font-size: 16px;
+                min-height: 44px;
+            }
+        }
+    </style>
 </head>
 
-<body class="antialiased" x-data="scrollAnimations">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full z-50 transition-all duration-300" x-data="navigation">
-        <div class="container-brand">
+<body class="font-sans antialiased bg-gray-50 overflow-x-hidden">
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- Glass Navigation -->
+    <nav class="glass-nav sticky top-0 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <!-- Logo -->
                 <div class="flex items-center">
-                    <a href="{{ route('home') }}" class="flex items-center space-x-3">
-                        <div class="w-10 h-10 bg-brand-gradient rounded-full flex items-center justify-center">
-                            <span class="text-white font-bold text-xl">V</span>
+                    <a href="/" class="flex items-center space-x-3 group">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-red rounded-xl flex items-center justify-center animate-float group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                            <span class="text-white font-bold text-xl font-display">V</span>
                         </div>
-                        <div class="hidden sm:block">
-                            <div class="font-display font-bold text-xl text-brand-black">Violet Kaponda</div>
-                            <div class="text-xs text-gray-600 -mt-1">Fintech Thought Leader</div>
+                        <div>
+                            <div
+                                class="font-display font-bold text-xl text-gray-900 group-hover:text-brand-orange transition-colors duration-300">
+                                Violet Kaponda</div>
+                            <div class="text-xs text-gray-600">Fintech Thought Leader</div>
                         </div>
                     </a>
                 </div>
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="{{ route('home') }}" class="nav-link">Home</a>
-                    <a href="{{ route('about') }}" class="nav-link">About</a>
-                    <a href="{{ route('speaking') }}" class="nav-link">Speaking</a>
-                    <a href="{{ route('media') }}" class="nav-link">Media</a>
-                    <a href="{{ route('blog.index') }}" class="nav-link">Blog</a>
-                    <a href="{{ route('contact') }}" class="btn-primary text-sm">Work With Me</a>
+                    <a href="/" class="nav-link">Home<span class="nav-underline"></span></a>
+                    <a href="/about" class="nav-link">About<span class="nav-underline"></span></a>
+                    <a href="/speaking" class="nav-link">Speaking<span class="nav-underline"></span></a>
+                    <a href="/media" class="nav-link">Media<span class="nav-underline"></span></a>
+                    <a href="/blog" class="nav-link">Blog<span class="nav-underline"></span></a>
+                    <a href="/contact" class="btn-primary text-white px-8 py-3 rounded-xl font-semibold shadow-lg ml-4">
+                        Work With Me
+                    </a>
                 </div>
 
-                <!-- Mobile menu button -->
+                <!-- Mobile Menu Button -->
                 <div class="md:hidden">
-                    <button @click="toggle()" class="text-gray-700 hover:text-brand-red-900 focus:outline-none">
+                    <button id="mobile-menu-button"
+                        class="p-3 rounded-xl text-gray-700 hover:text-brand-orange hover:bg-orange-50 transition-all duration-300">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path x-show="!open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h16M4 18h16" />
                             <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M6 18L18 6M6 6l12 12" />
@@ -67,20 +287,22 @@
             </div>
 
             <!-- Mobile Navigation -->
-            <div x-show="open" x-transition class="md:hidden">
-                <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
-                    <a href="{{ route('home') }}"
-                        class="block px-3 py-2 text-gray-700 hover:text-brand-red-900">Home</a>
-                    <a href="{{ route('about') }}"
-                        class="block px-3 py-2 text-gray-700 hover:text-brand-red-900">About</a>
-                    <a href="{{ route('speaking') }}"
-                        class="block px-3 py-2 text-gray-700 hover:text-brand-red-900">Speaking</a>
-                    <a href="{{ route('media') }}"
-                        class="block px-3 py-2 text-gray-700 hover:text-brand-red-900">Media</a>
-                    <a href="{{ route('blog.index') }}"
-                        class="block px-3 py-2 text-gray-700 hover:text-brand-red-900">Blog</a>
-                    <a href="{{ route('contact') }}" class="block mx-3 my-2 btn-primary text-center text-sm">Work With
-                        Me</a>
+            <div id="mobile-menu" class="md:hidden mobile-menu">
+                <div class="px-4 pt-4 pb-6 space-y-2 glass-nav border-t border-gray-100 shadow-xl rounded-b-2xl">
+                    <a href="/contact"
+                        class="block mx-2 mb-4 btn-primary text-white px-6 py-4 rounded-xl text-center font-semibold shadow-lg">
+                        Work With Me
+                    </a>
+                    <a href="/"
+                        class="block px-4 py-3 text-gray-700 hover:text-brand-orange hover:bg-orange-50 rounded-lg transition-colors duration-300 font-medium">Home</a>
+                    <a href="/about"
+                        class="block px-4 py-3 text-gray-700 hover:text-brand-orange hover:bg-orange-50 rounded-lg transition-colors duration-300 font-medium">About</a>
+                    <a href="/speaking"
+                        class="block px-4 py-3 text-gray-700 hover:text-brand-orange hover:bg-orange-50 rounded-lg transition-colors duration-300 font-medium">Speaking</a>
+                    <a href="/media"
+                        class="block px-4 py-3 text-gray-700 hover:text-brand-orange hover:bg-orange-50 rounded-lg transition-colors duration-300 font-medium">Media</a>
+                    <a href="/blog"
+                        class="block px-4 py-3 text-gray-700 hover:text-brand-orange hover:bg-orange-50 rounded-lg transition-colors duration-300 font-medium">Blog</a>
                 </div>
             </div>
         </div>
@@ -91,105 +313,356 @@
         @yield('content')
     </main>
 
+    <!-- Back to Top Button -->
+    <button id="back-to-top"
+        class="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-br from-brand-orange to-brand-red text-white rounded-full shadow-xl opacity-0 invisible transition-all duration-300 hover:scale-110 hover:shadow-2xl z-50 group"
+        aria-label="Back to top">
+        <svg class="w-6 h-6 mx-auto group-hover:animate-bounce" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
     <!-- Footer -->
-    <footer class="bg-brand-black text-white">
-        <div class="container-brand section-padding">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <!-- Brand -->
-                <div class="md:col-span-2">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-12 h-12 bg-brand-gradient rounded-full flex items-center justify-center">
-                            <span class="text-white font-bold text-xl">V</span>
+    <footer class="bg-gray-900 text-white py-16 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Brand Section -->
+                <div class="md:col-span-1">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-brand-orange to-brand-red rounded-2xl flex items-center justify-center animate-float shadow-xl">
+                            <span class="text-white font-bold text-2xl font-display">V</span>
                         </div>
                         <div>
-                            <div class="font-display font-bold text-xl">Violet Kaponda</div>
+                            <div class="font-display font-bold text-2xl gradient-text">Violet Kaponda</div>
                             <div class="text-gray-400 text-sm">Fintech Thought Leader</div>
                         </div>
                     </div>
-                    <p class="text-gray-300 mb-6 max-w-md">
-                        Empowering the future of African fintech through thought leadership,
-                        strategic consulting, and inspiring speaking engagements.
+                    <p class="text-gray-300 text-base leading-relaxed mb-8">
+                        Empowering the future of African fintech through thought leadership and strategic consulting.
                     </p>
+
+                    <!-- Social Links -->
                     <div class="flex space-x-4">
-                        <a href="https://linkedin.com/in/violetkaponda"
-                            class="text-gray-400 hover:text-brand-amber-900 transition duration-200">
-                            <span class="sr-only">LinkedIn</span>
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/violet-nswana-kaponda-bsc-msc-a2761a153"
+                            class="p-3 bg-blue-600 hover:bg-blue-700 rounded-lg transition-all duration-300 hover:scale-110 shadow-lg">
+                            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                    d="M20.451 20.451H16.9v-5.569c0-1.327-.027-3.037-1.85-3.037-1.85 0-2.134 1.445-2.134 2.939v5.667H9.365V9h3.414v1.561h.046c.476-.9 1.636-1.85 3.368-1.85 3.6 0 4.258 2.37 4.258 5.455v6.285zM5.337 7.433a2.06 2.06 0 110-4.119 2.06 2.06 0 010 4.119zM6.952 20.451H3.723V9h3.229v11.451z" />
                             </svg>
                         </a>
-                        <a href="https://youtube.com/@elevateanddominate"
-                            class="text-gray-400 hover:text-brand-amber-900 transition duration-200">
-                            <span class="sr-only">YouTube</span>
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+
+                        <!-- YouTube -->
+                        <a href="https://youtu.be/xtmlZ5w70uE"
+                            class="p-3 bg-red-600 hover:bg-red-700 rounded-lg transition-all duration-300 hover:scale-110 shadow-lg">
+                            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                    d="M23.498 6.186a2.99 2.99 0 00-2.122-2.121C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.376.52A2.99 2.99 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a2.99 2.99 0 002.122 2.121c1.871.52 9.376.52 9.376.52s7.505 0 9.376-.52a2.99 2.99 0 002.122-2.121C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.75 15.568V8.432L15.818 12 9.75 15.568z" />
                             </svg>
                         </a>
-                        <a href="https://instagram.com/violetkaponda"
-                            class="text-gray-400 hover:text-brand-amber-900 transition duration-200">
-                            <span class="sr-only">Instagram</span>
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/thee_goddess_nswanah"
+                            class="p-3 bg-pink-600 hover:bg-pink-700 rounded-lg transition-all duration-300 hover:scale-110 shadow-lg">
+                            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M12.017 0C8.396 0 7.989.013 7.041.048 6.094.082 5.52.204 5.036.388a5.918 5.918 0 0 0-2.14 1.394A5.918 5.918 0 0 0 .48 4.126C.294 4.61.172 5.184.139 6.131.103 7.08.09 7.487.09 11.108c0 3.62.013 4.027.048 4.975.034.948.156 1.521.34 2.006a5.918 5.918 0 0 0 1.394 2.14 5.918 5.918 0 0 0 2.14 1.394c.485.184 1.058.306 2.006.34.948.035 1.355.048 4.976.048 3.62 0 4.027-.013 4.975-.048.948-.034 1.521-.156 2.006-.34a5.918 5.918 0 0 0 2.14-1.394 5.918 5.918 0 0 0 1.394-2.14c.184-.485.306-1.058.34-2.006.035-.948.048-1.355.048-4.976 0-3.62-.013-4.027-.048-4.975-.034-.948-.156-1.521-.34-2.006a5.918 5.918 0 0 0-1.394-2.14A5.918 5.918 0 0 0 16.986.388C16.501.204 15.928.082 14.98.048 14.031.013 13.624 0 10.003 0h2.014zm-.24 5.4a6.6 6.6 0 1 1 0 13.2 6.6 6.6 0 0 1 0-13.2zm0 2.16a4.44 4.44 0 1 0 0 8.88 4.44 4.44 0 0 0 0-8.88zm6.406-2.845a1.44 1.44 0 1 1 0 2.88 1.44 1.44 0 0 1 0-2.88z" />
+                                    d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm4.25 4a5.25 5.25 0 110 10.5 5.25 5.25 0 010-10.5zm0 1.5a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zm5.5-.75a1 1 0 110 2 1 1 0 010-2z" />
                             </svg>
                         </a>
-                        <a href="https://tiktok.com/@violetkaponda"
-                            class="text-gray-400 hover:text-brand-amber-900 transition duration-200">
-                            <span class="sr-only">TikTok</span>
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+
+                        <!-- TikTok -->
+                        <a href="https://www.tiktok.com/@theegoddessnwanah"
+                            class="p-3 bg-black hover:bg-gray-800 rounded-lg transition-all duration-300 hover:scale-110 shadow-lg">
+                            <svg class="h-5 w-5" viewBox="0 0 48 48" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+                                    d="M41,15.5c-3.4,0-6.4-1.1-8.9-3.1V30c0,8.3-6.7,15-15,15S2,38.3,2,30s6.7-15,15-15c1.1,0,2.1,0.1,3.1,0.4v7.8
+            C19.1,23,18.6,23,18,23c-3.9,0-7,3.1-7,7s3.1,7,7,7s7-3.1,7-7V0h7c0,0.5,0,1,0.1,1.5C34.5,9,37.5,12,41,12V15.5z" />
                             </svg>
                         </a>
                     </div>
+
                 </div>
 
                 <!-- Quick Links -->
                 <div>
-                    <h3 class="font-display font-semibold text-lg mb-4">Quick Links</h3>
-                    <ul class="space-y-2 text-gray-300">
-                        <li><a href="{{ route('about') }}"
-                                class="hover:text-brand-amber-900 transition duration-200">About</a></li>
-                        <li><a href="{{ route('speaking') }}"
-                                class="hover:text-brand-amber-900 transition duration-200">Speaking Topics</a></li>
-                        <li><a href="{{ route('media') }}"
-                                class="hover:text-brand-amber-900 transition duration-200">Podcast</a></li>
-                        <li><a href="{{ route('blog.index') }}"
-                                class="hover:text-brand-amber-900 transition duration-200">Blog</a></li>
-                        <li><a href="{{ route('contact') }}"
-                                class="hover:text-brand-amber-900 transition duration-200">Contact</a></li>
+                    <h3 class="font-semibold text-lg mb-6 text-white">Quick Links</h3>
+                    <ul class="space-y-4">
+                        <li><a href="/about"
+                                class="text-gray-400 hover:text-brand-orange transition-colors duration-300 text-base hover:translate-x-2 inline-block">About
+                                Me</a></li>
+                        <li><a href="/speaking"
+                                class="text-gray-400 hover:text-brand-orange transition-colors duration-300 text-base hover:translate-x-2 inline-block">Speaking
+                                Engagements</a></li>
+                        <li><a href="/media"
+                                class="text-gray-400 hover:text-brand-orange transition-colors duration-300 text-base hover:translate-x-2 inline-block">Media
+                                Kit</a></li>
+                        <li><a href="/blog"
+                                class="text-gray-400 hover:text-brand-orange transition-colors duration-300 text-base hover:translate-x-2 inline-block">Blog
+                                & Insights</a></li>
+                        <li><a href="/contact"
+                                class="text-gray-400 hover:text-brand-orange transition-colors duration-300 text-base hover:translate-x-2 inline-block">Contact</a>
+                        </li>
                     </ul>
                 </div>
 
                 <!-- Newsletter -->
                 <div>
-                    <h3 class="font-display font-semibold text-lg mb-4">Stay Connected</h3>
-                    <p class="text-gray-300 text-sm mb-4">Get insights on fintech and leadership delivered to your
-                        inbox.</p>
-                    <div x-data="newsletter">
-                        <form @submit.prevent="subscribe()" class="space-y-3">
-                            <input type="email" x-model="email" placeholder="Your email address"
-                                class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-amber-900 focus:border-transparent"
-                                required>
-                            <button type="submit" class="w-full btn-accent text-sm">
-                                <span x-show="!loading">Subscribe</span>
-                                <span x-show="loading">Subscribing...</span>
-                            </button>
-                        </form>
-                        <div x-show="success" class="mt-2 text-green-400 text-sm">Thank you for subscribing!</div>
-                        <div x-show="error" class="mt-2 text-red-400 text-sm" x-text="error"></div>
+                    <h3 class="font-semibold text-lg mb-4 text-white">Stay Connected</h3>
+                    <p class="text-gray-400 text-base mb-6">Get exclusive fintech insights delivered to your inbox.</p>
+
+                    <form id="newsletter-form" action="{{ route('newsletter.subscribe') }}" method="POST"
+                        class="flex flex-col sm:flex-row gap-3">
+                        @csrf
+                        <input type="email" name="email" placeholder="Your email address" required
+                            class="flex-1 px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-orange transition-all duration-300">
+                        <button type="submit" id="newsletter-btn"
+                            class="btn-primary px-6 py-3 rounded-lg font-semibold whitespace-nowrap">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+                <script>
+                    // Newsletter form submission handling
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const newsletterForm = document.getElementById('newsletter-form');
+
+                        if (newsletterForm) {
+                            newsletterForm.addEventListener('submit', function(e) {
+                                e.preventDefault();
+
+                                const submitBtn = document.getElementById('newsletter-btn');
+                                const originalText = submitBtn.textContent;
+                                const formData = new FormData(this);
+
+                                // Show loading state
+                                submitBtn.innerHTML = `
+                <div class="flex items-center justify-center">
+                    <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Joining...
+                </div>
+            `;
+                                submitBtn.disabled = true;
+
+                                // Send form data
+                                fetch(this.action, {
+                                        method: 'POST',
+                                        body: formData,
+                                        headers: {
+                                            'X-Requested-With': 'XMLHttpRequest',
+                                            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]')
+                                                .getAttribute('content')
+                                        }
+                                    })
+                                    .then(response => response.json())
+                                    .then(data => {
+                                        if (data.success) {
+                                            // Show success state
+                                            submitBtn.innerHTML = '✓ Subscribed!';
+                                            submitBtn.style.background =
+                                                'linear-gradient(to right, #10b981, #059669)';
+
+                                            // Show success notification
+                                            showNewsletterNotification('success',
+                                                'Welcome! You\'ve successfully subscribed to our newsletter.');
+
+                                            // Reset form after delay
+                                            setTimeout(() => {
+                                                newsletterForm.reset();
+                                                submitBtn.innerHTML = originalText;
+                                                submitBtn.disabled = false;
+                                                submitBtn.style.background = '';
+                                            }, 3000);
+                                        } else {
+                                            // Show error state
+                                            submitBtn.innerHTML = 'Error';
+                                            submitBtn.style.background = '#dc2626';
+
+                                            showNewsletterNotification('error', data.message ||
+                                                'Subscription failed. Please try again.');
+
+                                            // Reset button after delay
+                                            setTimeout(() => {
+                                                submitBtn.innerHTML = originalText;
+                                                submitBtn.disabled = false;
+                                                submitBtn.style.background = '';
+                                            }, 3000);
+                                        }
+                                    })
+                                    .catch(error => {
+                                        console.error('Error:', error);
+
+                                        submitBtn.innerHTML = 'Error';
+                                        submitBtn.style.background = '#dc2626';
+
+                                        showNewsletterNotification('error', 'Network error. Please try again.');
+
+                                        setTimeout(() => {
+                                            submitBtn.innerHTML = originalText;
+                                            submitBtn.disabled = false;
+                                            submitBtn.style.background = '';
+                                        }, 3000);
+                                    });
+                            });
+                        }
+                    });
+
+                    // Notification function for newsletter
+                    function showNewsletterNotification(type, message) {
+                        // Remove existing notifications
+                        const existingNotification = document.querySelector('.newsletter-notification');
+                        if (existingNotification) {
+                            existingNotification.remove();
+                        }
+
+                        const notification = document.createElement('div');
+                        notification.className =
+                            `newsletter-notification fixed bottom-4 right-4 z-50 p-4 rounded-lg shadow-lg transition-all duration-300 max-w-md`;
+
+                        if (type === 'success') {
+                            notification.classList.add('bg-green-600', 'text-white');
+                            notification.innerHTML = `
+            <div class="flex items-center">
+                <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                    <div class="font-semibold">Subscribed!</div>
+                    <div class="text-sm opacity-90">${message}</div>
+                </div>
+            </div>
+        `;
+                        } else {
+                            notification.classList.add('bg-red-600', 'text-white');
+                            notification.innerHTML = `
+            <div class="flex items-center">
+                <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+                <div>
+                    <div class="font-semibold">Error</div>
+                    <div class="text-sm opacity-90">${message}</div>
+                </div>
+            </div>
+        `;
+                        }
+
+                        document.body.appendChild(notification);
+
+                        // Auto-remove after 5 seconds
+                        setTimeout(() => {
+                            if (notification.parentNode) {
+                                notification.style.opacity = '0';
+                                notification.style.transform = 'translateY(100%)';
+                                setTimeout(() => notification.remove(), 300);
+                            }
+                        }, 5000);
+                    }
+                </script>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="border-t border-gray-700 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <div class="text-gray-400 text-sm text-center md:text-left">
+                        <p>&copy; 2025 Violet Nswana Kaponda. All rights reserved.</p>
+                        <p class="text-xs mt-1">Empowering Africa's Fintech Future 🌍</p>
+                    </div>
+                    <div class="flex space-x-6 text-sm">
+                        <a href="/privacy"
+                            class="text-gray-400 hover:text-brand-orange transition-colors duration-300">Privacy
+                            Policy</a>
+                        <a href="/terms"
+                            class="text-gray-400 hover:text-brand-orange transition-colors duration-300">Terms of
+                            Service</a>
+                        <a href="/sitemap"
+                            class="text-gray-400 hover:text-brand-orange transition-colors duration-300">Sitemap</a>
                     </div>
                 </div>
             </div>
-
-            <!-- Copyright -->
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; {{ date('Y') }} Violet Nswana Kaponda. All rights reserved.</p>
-            </div>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('open');
+                    menuIcon.classList.toggle('hidden');
+                    closeIcon.classList.toggle('hidden');
+                });
+            }
+        });
+
+        // Glass Navigation Scroll Effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll Progress Indicator
+        window.addEventListener('scroll', function() {
+            const scrollIndicator = document.getElementById('scrollIndicator');
+            const totalHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (window.scrollY / totalHeight) * 100;
+            scrollIndicator.style.width = progress + '%';
+        });
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 500) {
+                backToTopButton.style.opacity = '1';
+                backToTopButton.style.visibility = 'visible';
+            } else {
+                backToTopButton.style.opacity = '0';
+                backToTopButton.style.visibility = 'hidden';
+            }
+        });
+
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Keyboard navigation (ESC closes mobile menu)
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const mobileMenu = document.getElementById('mobile-menu');
+                const menuIcon = document.getElementById('menu-icon');
+                const closeIcon = document.getElementById('close-icon');
+
+                if (mobileMenu && mobileMenu.classList.contains('open')) {
+                    mobileMenu.classList.remove('open');
+                    menuIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
