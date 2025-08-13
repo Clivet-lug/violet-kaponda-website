@@ -17,7 +17,7 @@
     <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js" type="module"></script>
 
     <!-- TinyMCE -->
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.tiny.cloud/1/mfbdnvj7mjvuz835d2goj09wand7rjjodkt9q9oxpyyop1sz/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
     <script>
         tailwind.config = {
