@@ -722,39 +722,111 @@
                             </div>
                         </div>
 
-                        <!-- Play Button Overlay -->
-                        <div x-data="{ openVideo: false }" class="absolute inset-0 flex items-center justify-center">
+                        <!-- Enhanced Play Button Overlay - Replace the entire original section -->
+                        <div x-data="{
+                            openVideo: false,
+                            isHovered: false,
+                            closeVideo() {
+                                this.openVideo = false;
+                                // Stop video by reloading iframe src
+                                setTimeout(() => {
+                                    const iframe = this.$refs.videoFrame;
+                                    if (iframe) {
+                                        iframe.src = iframe.src.replace('&autoplay=1', '');
+                                    }
+                                }, 300);
+                            }
+                        }" class="absolute inset-0 flex flex-col items-center justify-center">
 
-                            <!-- Play Button -->
-                            <button @click="openVideo = true"
-                                class="group w-20 h-20 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center shadow-xl hover:bg-white hover:scale-110 transition-all duration-300 border border-white/20">
-                                <svg class="w-8 h-8 text-red-600 ml-1 group-hover:scale-110 transition-transform duration-300"
-                                    fill="currentColor" viewBox="0 0 24 24">
+                            <!-- Gradient overlay for better contrast -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
+
+                            <!-- Video Duration Badge -->
+                            <div
+                                class="absolute bottom-4 right-4 bg-black/80 backdrop-blur-sm text-white text-sm px-2 py-1 rounded font-medium z-10">
+                                12:45
+                            </div>
+
+                            <!-- Enhanced Play Button with pulse animation -->
+                            <button @click="openVideo = true" @mouseenter="isHovered = true"
+                                @mouseleave="isHovered = false"
+                                class="group/btn relative w-24 h-24 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center shadow-2xl hover:shadow-red-500/25 transition-all duration-500 border-2 border-white/20 hover:border-white/40 mb-4 z-10"
+                                :class="{ 'scale-110 shadow-red-500/40': isHovered }">
+
+                                <!-- Pulse animation rings -->
+                                <div class="absolute inset-0 rounded-full bg-red-600 animate-ping opacity-20"></div>
+                                <div class="absolute inset-2 rounded-full bg-red-600 animate-pulse opacity-30"></div>
+
+                                <!-- Play icon with enhanced styling -->
+                                <svg class="relative z-10 w-10 h-10 text-white ml-1 transition-all duration-300"
+                                    :class="{ 'scale-110': isHovered }" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M8 5v14l11-7z" />
                                 </svg>
+
+                                <!-- Glow effect -->
+                                <div
+                                    class="absolute inset-0 rounded-full bg-gradient-to-r from-red-600 to-red-500 blur-lg opacity-0 group-hover/btn:opacity-30 transition-opacity duration-500">
+                                </div>
                             </button>
 
-                            <!-- Video Modal -->
-                            <div x-show="openVideo" x-transition.opacity.duration.300ms
-                                class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
-                                @click.self="openVideo = false">
+                            <!-- Descriptive text -->
+                            <div
+                                class="text-white font-medium text-lg tracking-wide opacity-90 hover:opacity-100 transition-opacity duration-300 z-10">
+                                Watch Full Interview
+                            </div>
 
-                                <!-- Video Container -->
-                                <div x-transition.scale.duration.300ms class="relative w-full max-w-4xl aspect-video">
+                            <!-- Enhanced Video Modal -->
+                            <div x-show="openVideo" x-transition:enter="transition ease-out duration-300"
+                                x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                                x-transition:leave="transition ease-in duration-200"
+                                x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
+                                class="fixed inset-0 bg-black/90 backdrop-blur-sm flex items-center justify-center z-50 p-4"
+                                @click.self="closeVideo()" @keydown.escape.window="closeVideo()">
 
-                                    <!-- YouTube Video -->
-                                    <iframe class="w-full h-full rounded-lg shadow-lg"
-                                        src="https://www.youtube.com/embed/xtmlZ5w70uE?autoplay=1"
-                                        title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media"
+                                <!-- Video Container with enhanced animations -->
+                                <div x-show="openVideo" x-transition:enter="transition ease-out duration-300 delay-100"
+                                    x-transition:enter-start="opacity-0 scale-95"
+                                    x-transition:enter-end="opacity-100 scale-100"
+                                    x-transition:leave="transition ease-in duration-200"
+                                    x-transition:leave-start="opacity-100 scale-100"
+                                    x-transition:leave-end="opacity-0 scale-95"
+                                    class="relative w-full max-w-5xl aspect-video">
+
+                                    <!-- Loading state -->
+                                    <div
+                                        class="absolute inset-0 bg-gray-900 rounded-lg flex items-center justify-center z-0">
+                                        <div
+                                            class="animate-spin rounded-full h-12 w-12 border-4 border-red-600 border-t-transparent">
+                                        </div>
+                                    </div>
+
+                                    <!-- YouTube Video with better parameters -->
+                                    <iframe x-ref="videoFrame" class="relative z-10 w-full h-full rounded-lg shadow-2xl"
+                                        src="https://www.youtube.com/embed/xtmlZ5w70uE?autoplay=1&rel=0&modestbranding=1&fs=1&cc_load_policy=1"
+                                        title="Violet Kaponda - Fintech Innovation Interview" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen>
                                     </iframe>
 
-                                    <!-- Close Button with delayed fade -->
-                                    <button @click="openVideo = false" x-show="openVideo"
-                                        x-transition.opacity.duration.300ms.delay.200ms
-                                        class="absolute -top-10 right-0 text-white text-3xl hover:text-red-500 transition-colors">
-                                        &times;
+                                    <!-- Enhanced Close Button -->
+                                    <button @click="closeVideo()" x-show="openVideo"
+                                        x-transition:enter="transition ease-out duration-300 delay-200"
+                                        x-transition:enter-start="opacity-0 scale-90"
+                                        x-transition:enter-end="opacity-100 scale-100"
+                                        class="absolute -top-12 right-0 w-10 h-10 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white/20 hover:text-red-400 transition-all duration-300 border border-white/20">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
                                     </button>
+
+                                    <!-- ESC hint -->
+                                    {{-- <div x-show="openVideo"
+                                        x-transition:enter="transition ease-out duration-500 delay-500"
+                                        x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                                        class="absolute -bottom-8 left-0 text-white/60 text-sm">
+                                        Press ESC to close
+                                    </div> --}}
                                 </div>
                             </div>
                         </div>
@@ -1043,7 +1115,7 @@
                                         // Show success notification
                                         showMainNewsletterNotification('success',
                                             'Welcome! You\'ve successfully joined Violet\'s exclusive fintech community.'
-                                            );
+                                        );
 
                                         // Reset form after delay
                                         setTimeout(() => {
