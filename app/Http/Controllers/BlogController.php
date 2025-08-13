@@ -16,8 +16,8 @@ class BlogController extends Controller
         if ($request->filled('search')) {
             $query->where(function ($q) use ($request) {
                 $q->where('title', 'like', '%' . $request->search . '%')
-                  ->orWhere('excerpt', 'like', '%' . $request->search . '%')
-                  ->orWhere('content', 'like', '%' . $request->search . '%');
+                    ->orWhere('excerpt', 'like', '%' . $request->search . '%')
+                    ->orWhere('content', 'like', '%' . $request->search . '%');
             });
         }
 
@@ -36,9 +36,8 @@ class BlogController extends Controller
         $posts = $query->paginate(12);
 
         // Get categories for filter dropdown
+        // Get categories for filter dropdown
         $categories = BlogCategory::active()
-            ->withCount(['publishedPosts'])
-            ->having('published_posts_count', '>', 0)
             ->orderBy('name')
             ->get();
 

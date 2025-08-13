@@ -11,23 +11,18 @@ class AdminUserSeeder extends Seeder
 {
     public function run()
     {
-        // Check if admin user already exists, if not create it
-        $admin = User::firstOrCreate(
-            ['email' => 'violet@violetkaponda.com'],
-            [
-                'name' => 'Violet Nswana Kaponda',
-                'password' => Hash::make('VioletAdmin2025!'),
-                'is_admin' => true,
-                'bio' => 'Fintech thought leader and speaker passionate about empowering Africa through technology.',
-                'email_verified_at' => now(),
-            ]
-        );
+        // Delete existing user first to ensure clean creation
+        User::where('email', 'violet@violetkaponda.com')->delete();
 
-        // Update admin status if user exists but isn't admin
-        if (!$admin->is_admin) {
-            $admin->update(['is_admin' => true]);
-            $this->command->info('Updated existing user to admin status.');
-        }
+        // Create fresh admin user
+        $admin = User::create([
+            'name' => 'Violet Nswana Kaponda',
+            'email' => 'violet@violetkaponda.com',
+            'password' => Hash::make('VioletAdmin2025!'),
+            'is_admin' => true,
+            'bio' => 'Fintech thought leader and speaker passionate about empowering Africa through technology.',
+            'email_verified_at' => now(),
+        ]);
 
         // Create categories (only if they don't exist)
         $categories = [
@@ -75,14 +70,10 @@ class AdminUserSeeder extends Seeder
             );
         }
 
-        $this->command->info('✅ Admin user setup complete:');
+        $this->command->info('✅ Admin user created fresh:');
         $this->command->info('📧 Email: ' . $admin->email);
         $this->command->info('🔑 Password: VioletAdmin2025!');
-        if ($admin->wasRecentlyCreated) {
-            $this->command->info('🎉 New admin user created!');
-        } else {
-            $this->command->info('👤 Existing user updated!');
-        }
+        $this->command->info('🎉 New admin user created!');
         $this->command->info('⚠️  Please change the password after first login!');
     }
 }
