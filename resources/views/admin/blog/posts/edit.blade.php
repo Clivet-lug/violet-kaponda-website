@@ -262,7 +262,7 @@
                                 <p class="text-sm text-gray-600 mb-1">
                                     {{ $post->featured_image ? 'Upload new image' : 'Click to upload an image' }}
                                 </p>
-                                <p class="text-xs text-gray-500">PNG, JPG, WebP up to 2MB</p>
+                                <p class="text-xs text-gray-500">PNG, JPG, WebP up to 10MB</p>
                             </div>
                             <div id="image-preview" class="hidden">
                                 <img id="preview-img" class="max-w-full h-auto rounded-lg">

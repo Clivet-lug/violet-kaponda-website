@@ -27,7 +27,7 @@
                         </svg>
                         Choose Files
                     </div>
-                    <p class="text-xs text-gray-500 mt-3">PNG, JPG, WebP up to 2MB each</p>
+                    <p class="text-xs text-gray-500 mt-3">PNG, JPG, WebP up to 10MB each</p>
                 </div>
 
                 <!-- Upload Progress -->

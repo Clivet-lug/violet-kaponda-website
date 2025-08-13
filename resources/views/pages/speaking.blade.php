@@ -881,7 +881,7 @@
                                     <label class="block text-sm font-medium text-orange-100 mb-2">Speaking Topic
                                         Interest</label>
                                     <select name="speaking_topic"
-                                        class="w-full px-4 py-3 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300">
+                                        class="w-full px-4 py-3 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300">
                                         <option value="">Select a topic</option>
                                         <option value="fintech-ai">Fintech & AI in Africa</option>
                                         <option value="women-tech">Women in Technology & Leadership</option>
@@ -895,7 +895,7 @@
                                     <label class="block text-sm font-medium text-orange-100 mb-2">Expected Audience
                                         Size</label>
                                     <select name="audience_size"
-                                        class="w-full px-4 py-3 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300">
+                                        class="w-full px-4 py-3 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300">
                                         <option value="">Select size</option>
                                         <option value="1-50">1-50 people</option>
                                         <option value="51-200">51-200 people</option>
