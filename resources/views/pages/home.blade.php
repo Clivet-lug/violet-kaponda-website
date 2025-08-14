@@ -27,7 +27,7 @@
 
         <!-- Hero Content -->
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-screen py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh] py-12">
 
                 <!-- Content Side -->
                 <div class="text-white space-y-8 lg:order-1">
@@ -57,7 +57,7 @@
                     <p class="text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl">
                         I'm <strong class="text-white">Violet Nswana Kaponda</strong>, driving digital transformation across
                         Africa through strategic partnerships, business development, and empowering the next generation of
-                        tech leaders at <strong class="text-orange-400">Probase Group</strong>.
+                        tech leaders in the <strong class="text-orange-400">fintech ecosystem</strong>.
                     </p>
 
                     <!-- CTA Buttons -->
@@ -81,23 +81,90 @@
                         </a>
                     </div>
 
-                    <!-- Stats Grid -->
+                    <!-- Stats Grid with Persistent Glass Glow -->
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8">
-                        <div class="text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10">
-                            <div class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">6+</div>
-                            <div class="text-sm text-gray-300">Years in Tech</div>
+                        <div
+                            class="group relative text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10 transition-all duration-500 hover:bg-white/8 hover:border-white/20 hover:scale-105 cursor-pointer overflow-hidden">
+                            <!-- Initial glass shimmer sweep effect -->
+                            <div
+                                class="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-all duration-600 ease-out group-hover:left-[100%]">
+                            </div>
+
+                            <!-- Persistent glass glow that stays on hover -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-white/10 via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-300 rounded-xl">
+                            </div>
+
+                            <div class="relative z-10">
+                                <div
+                                    class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 group-hover:text-yellow-300 transition-colors duration-300">
+                                    6+</div>
+                                <div class="text-sm text-gray-300 group-hover:text-white transition-colors duration-300">
+                                    Years in Tech</div>
+                            </div>
                         </div>
-                        <div class="text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10">
-                            <div class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">11+</div>
-                            <div class="text-sm text-gray-300">Podcast Episodes</div>
+
+                        <div
+                            class="group relative text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10 transition-all duration-500 hover:bg-white/8 hover:border-white/20 hover:scale-105 cursor-pointer overflow-hidden">
+                            <!-- Initial glass shimmer sweep effect -->
+                            <div
+                                class="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-all duration-600 ease-out group-hover:left-[100%]">
+                            </div>
+
+                            <!-- Persistent glass glow that stays on hover -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-white/10 via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-300 rounded-xl">
+                            </div>
+
+                            <div class="relative z-10">
+                                <div
+                                    class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 group-hover:text-yellow-300 transition-colors duration-300">
+                                    11+</div>
+                                <div class="text-sm text-gray-300 group-hover:text-white transition-colors duration-300">
+                                    Podcast Episodes</div>
+                            </div>
                         </div>
-                        <div class="text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10">
-                            <div class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">5</div>
-                            <div class="text-sm text-gray-300">Speaking Topics</div>
+
+                        <div
+                            class="group relative text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10 transition-all duration-500 hover:bg-white/8 hover:border-white/20 hover:scale-105 cursor-pointer overflow-hidden">
+                            <!-- Initial glass shimmer sweep effect -->
+                            <div
+                                class="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-all duration-600 ease-out group-hover:left-[100%]">
+                            </div>
+
+                            <!-- Persistent glass glow that stays on hover -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-white/10 via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-300 rounded-xl">
+                            </div>
+
+                            <div class="relative z-10">
+                                <div
+                                    class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 group-hover:text-yellow-300 transition-colors duration-300">
+                                    5</div>
+                                <div class="text-sm text-gray-300 group-hover:text-white transition-colors duration-300">
+                                    Speaking Topics</div>
+                            </div>
                         </div>
-                        <div class="text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10">
-                            <div class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">1,470+</div>
-                            <div class="text-sm text-gray-300">LinkedIn Followers</div>
+
+                        <div
+                            class="group relative text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10 transition-all duration-500 hover:bg-white/8 hover:border-white/20 hover:scale-105 cursor-pointer overflow-hidden">
+                            <!-- Initial glass shimmer sweep effect -->
+                            <div
+                                class="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-all duration-600 ease-out group-hover:left-[100%]">
+                            </div>
+
+                            <!-- Persistent glass glow that stays on hover -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-white/10 via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-300 rounded-xl">
+                            </div>
+
+                            <div class="relative z-10">
+                                <div
+                                    class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 group-hover:text-yellow-300 transition-colors duration-300">
+                                    1,470+</div>
+                                <div class="text-sm text-gray-300 group-hover:text-white transition-colors duration-300">
+                                    LinkedIn Followers</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -105,8 +172,9 @@
                 <!-- Image Side -->
                 <div class="lg:order-2 flex justify-center lg:justify-end">
                     <div class="relative">
-                        <!-- Main Image -->
-                        <div class="relative w-80 h-96 md:w-96 md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+                        <!-- Main Image - Made Bigger -->
+                        <div
+                            class="relative w-96 h-[500px] md:w-[450px] md:h-[580px] rounded-3xl overflow-hidden shadow-2xl">
                             <img src="{{ asset('images/hero/violet-hero-main.jpg') }}"
                                 alt="Violet Nswana Kaponda - African Fintech Queen"
                                 class="w-full h-full object-cover object-center">
@@ -126,11 +194,11 @@
                             <p class="text-xs text-gray-600 mt-1">Available for global events</p>
                         </div>
 
-                        <!-- Floating Stats Card -->
+                        <!-- Floating Stats Card - Updated without Probase -->
                         <div
                             class="absolute -bottom-6 -right-6 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-4 shadow-xl text-white max-w-xs">
-                            <div class="text-lg font-bold">Probase Group</div>
-                            <div class="text-sm opacity-90">Business Development Lead</div>
+                            <div class="text-lg font-bold">Business Development</div>
+                            <div class="text-sm opacity-90">Strategic Leader</div>
                         </div>
 
                         <!-- Decorative Elements -->

@@ -57,8 +57,8 @@
             background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(30px);
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-            padding-top: 0.75rem;
-            padding-bottom: 0.75rem;
+            /* padding-top: 0.75rem;
+            padding-bottom: 0.75rem; */
         }
 
         /* Enhanced Logo */
@@ -635,7 +635,7 @@
             <div class="border-t border-gray-700 mt-12 pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                     <div class="text-gray-400 text-sm text-center md:text-left">
-                        <p>&copy; 2025 Violet Nswana Kaponda. All rights reserved.</p>
+                        <p>&copy; {{ date('Y') }} Violet Nswana Kaponda. All rights reserved.</p>
                         <p class="text-xs mt-1">Empowering Africa's Fintech Future 🌍</p>
                     </div>
                     <div class="flex space-x-6 text-sm">
