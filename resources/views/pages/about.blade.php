@@ -7,7 +7,7 @@
 
 @section('content')
     <!-- Hero Section -->
-    <section class="relative py-20 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
+    <section class="relative py-10 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
         <!-- Background Elements -->
         <div
             class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-orange-100 to-amber-100 rounded-full blur-3xl opacity-40">
@@ -20,7 +20,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
                 <!-- Content -->
-                <div class="animate-on-scroll space-y-8">
+                <div class="animate-on-scroll space-y-8 -mt-1">
                     <!-- Badge -->
                     <div
                         class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 text-amber-800 rounded-full text-sm font-medium shadow-sm">
