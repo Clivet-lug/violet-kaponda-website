@@ -54,8 +54,8 @@
                         </div>
                         <div
                             class="bg-white/80 backdrop-blur-md rounded-xl p-4 shadow-lg border border-white/20 text-center">
-                            <div class="text-2xl font-bold text-amber-800 mb-1">1,480+</div>
-                            <div class="text-sm text-gray-600">LinkedIn Followers</div>
+                            <div class="text-2xl font-bold text-amber-800 mb-1">5000+</div>
+                            <div class="text-sm text-gray-600">Followers Across Social Media Platforms</div>
                         </div>
                     </div>
 

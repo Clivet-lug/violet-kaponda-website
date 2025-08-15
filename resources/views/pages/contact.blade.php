@@ -631,6 +631,72 @@
                         </p>
                     </div>
                 </div>
+
+                <div class="space-y-6">
+                    <div
+                        class="bg-white/90 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/20 animate-on-scroll">
+                        <h3 class="font-bold text-gray-900 mb-3">Do you offer workshops or training?
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Yes — I create and deliver bespoke workshops on digital transformation, business growth
+                            strategies, fintech trends, and leadership in emerging markets.
+
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white/90 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/20 animate-on-scroll">
+                        <h3 class="font-bold text-gray-900 mb-3">What makes your approach unique?
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            I merge nearly a decade of fintech experience with a passion for digital inclusion, ensuring
+                            that strategies are both innovative and accessible to diverse markets.
+                        </p>
+                    </div>
+
+                    {{-- <div
+                        class="bg-white/90 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/20 animate-on-scroll">
+                        <h3 class="font-bold text-gray-900 mb-3">What's included in speaking engagements?</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Pre-event consultation, customized presentation, professional slides,
+                            interactive Q&A session, and post-event follow-up materials.
+                        </p>
+                    </div> --}}
+                </div>
+
+                <div class="space-y-6">
+                    <div
+                        class="bg-white/90 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/20 animate-on-scroll">
+                        <h3 class="font-bold text-gray-900 mb-3">What’s your speaking style?
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            I combine data-driven insights, practical strategies, and compelling storytelling to keep
+                            audiences engaged while delivering actionable takeaways.
+
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white/90 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/20 animate-on-scroll">
+                        <h3 class="font-bold text-gray-900 mb-3">Can you collaborate on long-term projects?
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Absolutely I work with organizations on both short-term engagements and long-term strategic
+                            partnerships to ensure sustained impact.
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white/90 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/20 animate-on-scroll">
+                        <h3 class="font-bold text-gray-900 mb-3">How far in advance should I book you?
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            For speaking engagements, I recommend booking at least 4–6 weeks in advance to allow for
+                            customization. For consulting or business development projects, timelines vary based on scope.
+
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

@@ -235,7 +235,7 @@
                                 class="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4 animate-float">
                                 <span class="text-white font-bold text-2xl font-display">V</span>
                             </div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">Violet Kaponda</h3>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">Violet Nswana Kaponda</h3>
                             <p class="text-sm text-gray-600 mb-4">
                                 Fintech thought leader passionate about empowering Africa through technology and innovation.
                             </p>

@@ -397,8 +397,8 @@
                             <span class="text-white font-bold text-2xl font-display">V</span>
                         </div>
                         <div>
-                            <div class="font-display font-bold text-2xl gradient-text">Violet Kaponda</div>
-                            <div class="text-gray-400 text-sm">Fintech Thought Leader</div>
+                            <div class="font-display font-bold text-2xl gradient-text">Violet Nswana Kaponda</div>
+                            <div class="text-gray-400 text-sm">African Fintech Queen</div>
                         </div>
                     </div>
                     <p class="text-gray-300 text-base leading-relaxed mb-8">

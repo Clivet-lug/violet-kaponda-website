@@ -260,14 +260,14 @@
                             class="absolute -top-4 -right-4 bg-white/95 backdrop-blur-md rounded-xl p-3 shadow-xl border border-gray-100 max-w-xs">
                             <div class="flex items-center space-x-2 mb-1">
                                 <div class="w-2 h-2 bg-green-500 rounded-full"></div>
-                                <span class="text-xs font-semibold text-gray-800">Master's in Project Management</span>
+                                <span class="text-xs font-semibold text-gray-800">Master of Science in Project Management</span>
                             </div>
                             <p class="text-xs text-gray-600">University of Lusaka</p>
                         </div>
 
                         <div
                             class="absolute -bottom-4 -left-4 bg-gradient-to-r from-red-600 to-orange-600 rounded-xl p-3 shadow-xl text-white max-w-xs">
-                            <div class="text-sm font-bold">6+ Years</div>
+                            <div class="text-sm font-bold">8+ Years</div>
                             <div class="text-xs opacity-90">Tech Leadership Experience</div>
                         </div>
 
