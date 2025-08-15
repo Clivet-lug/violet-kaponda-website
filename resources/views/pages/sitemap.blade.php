@@ -359,10 +359,10 @@
                             class="block w-full btn-primary text-white text-center px-6 py-3 rounded-xl font-semibold shadow-lg transition-all duration-300 hover:scale-105">
                             Work With Me
                         </a>
-                        <a href="{{ route('newsletter.subscribe') }}"
+                        {{-- <a href="{{ route('newsletter.subscribe') }}"
                             class="block w-full bg-gray-100 hover:bg-gray-200 text-gray-800 text-center px-6 py-3 rounded-xl font-medium transition-all duration-300">
                             Subscribe to Newsletter
-                        </a>
+                        </a> --}}
                         <a href="{{ route('blog.index') }}"
                             class="block w-full border-2 border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white text-center px-6 py-3 rounded-xl font-medium transition-all duration-300">
                             Read Latest Insights
