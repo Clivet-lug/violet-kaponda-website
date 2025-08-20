@@ -329,13 +329,12 @@
                         <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8 md:text-right">
                             <div
                                 class="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                                <div class="text-sm font-semibold text-amber-600 mb-2 flex items-center md:justify-end">
+                                <div class="text-sm font-semibold text-amber-600 mb-2 flex">
                                     <span class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
                                     Feb 2024 - Present
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-2">Lead Business Development & Strategic
-                                    Partnerships</h3>
-                                <div class="text-amber-700 font-medium mb-3 flex items-center md:justify-end">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2 md:text-left">Lead Business Development & Strategic Partnerships</h3>
+                                <div class="text-amber-700 font-medium mb-3 flex">
                                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
@@ -343,12 +342,12 @@
                                     </svg>
                                     Probase Group
                                 </div>
-                                <p class="text-gray-600 leading-relaxed mb-4">
+                                <p class="text-gray-600 leading-relaxed mb-4 text-justify">
                                     Leading business acquisition and growth strategies, driving digital expansion
                                     across Africa, and building high-impact partnerships that deliver measurable
                                     results and transformational value.
                                 </p>
-                                <div class="flex flex-wrap gap-2 md:justify-end">
+                                <div class="flex flex-wrap gap-2">
                                     <span
                                         class="px-3 py-1 bg-amber-50 text-amber-700 rounded-full text-sm font-medium">Business
                                         Development</span>
@@ -358,6 +357,47 @@
                                     <span
                                         class="px-3 py-1 bg-amber-50 text-amber-700 rounded-full text-sm font-medium">Deal
                                         Structuring</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other Current Role -->
+                    <div class="relative flex items-center animate-on-scroll">
+                        <div
+                            class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 bg-gradient-to-r from-purple-600 to-gray-600 rounded-full border-4 border-white shadow-xl flex items-center justify-center z-10">
+                            <div class="w-3 h-3 bg-white rounded-full animate-pulse"></div>
+                        </div>
+
+                        <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8 md:ml-auto">
+                            <div
+                                class="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300 hover:scale-105">
+                                <div class="text-sm font-semibold text-purple-600 mb-2">
+                                    <span class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
+                                    Jan 2025 - Present
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Co-Founder & Chief Strategy and Growth Officer at Uniplexity AI</h3>
+                                <div class="text-purple-700 font-medium mb-3">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                        </path>
+                                    </svg>
+                                    Uniplexity AI
+                                </div>
+                                <p class="text-gray-600 leading-relaxed mb-4 text-justify">
+                                    Leading strategic partnerships and business growth initiatives while positioning
+                                    Uniplexity AI as a leader in Africa’s digital and AI innovation
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Artificial
+                                        Intelligence
+                                    </span>
+                                    <span
+                                        class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Business
+                                        Development
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -374,13 +414,13 @@
                             </svg>
                         </div>
 
-                        <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8 md:ml-auto">
+                        <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8 md:text-right">
                             <div
                                 class="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                                <div class="text-sm font-semibold text-blue-600 mb-2">Sep 2017 - Feb 2024 (6 yrs 6 mos)
+                                <div class="text-sm font-semibold text-blue-600 mb-2 flex">Sep 2017 - Feb 2024 (6 yrs 6 mos)
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-2">IT Project Manager</h3>
-                                <div class="text-blue-700 font-medium mb-3 flex items-center">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2 flex">IT Project Manager</h3>
+                                <div class="text-blue-700 font-medium mb-3 flex">
                                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
@@ -388,7 +428,7 @@
                                     </svg>
                                     ProBASE, Zambia
                                 </div>
-                                <p class="text-gray-600 leading-relaxed mb-4">
+                                <p class="text-gray-600 leading-relaxed mb-4 text-justify">
                                     Managed complex software projects, ensuring delivery excellence and stakeholder
                                     satisfaction across diverse technical initiatives. Built the foundation for my
                                     expertise in project management and business development.
@@ -420,10 +460,10 @@
                             </svg>
                         </div>
 
-                        <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8 md:text-right">
+                        <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8 md:ml-auto">
                             <div
                                 class="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                                <div class="text-sm font-semibold text-green-600 mb-2 flex items-center md:justify-end">
+                                <div class="text-sm font-semibold text-green-600 mb-2">
                                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -431,18 +471,18 @@
                                     2019 - 2021
                                 </div>
                                 <h3 class="text-xl font-bold text-gray-900 mb-2">Academic Excellence</h3>
-                                <div class="text-green-700 font-medium mb-3 flex items-center md:justify-end">
+                                <div class="text-green-700 font-medium mb-3">
                                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M12 14l9-5-9-5-9 5 9 5z"></path>
                                     </svg>
                                     University of Lusaka
                                 </div>
-                                <p class="text-gray-600 leading-relaxed mb-4">
+                                <p class="text-gray-600 leading-relaxed mb-4 text-justify">
                                     Earned Master's degree in Project Management while excelling in professional role,
                                     demonstrating commitment to continuous learning and academic excellence in leadership.
                                 </p>
-                                <div class="flex flex-wrap gap-2 md:justify-end">
+                                <div class="flex flex-wrap gap-2">
                                     <span
                                         class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">Master's
                                         Degree</span>
@@ -527,7 +567,7 @@
                         Project Management • 2019 - 2021
                     </div>
 
-                    <p class="text-gray-600 leading-relaxed mb-4">
+                    <p class="text-gray-600 leading-relaxed mb-4 text-justify">
                         Advanced studies in project management methodologies, strategic planning,
                         and organizational leadership, providing the foundation for my expertise
                         in managing complex business initiatives and driving digital transformation.
@@ -578,7 +618,7 @@
                         2012 - 2017
                     </div>
 
-                    <p class="text-gray-600 leading-relaxed mb-4">
+                    <p class="text-gray-600 leading-relaxed mb-4 text-justify">
                         Comprehensive undergraduate education that provided the analytical thinking,
                         problem-solving skills, and academic rigor that underpin my professional
                         success in technology and business development across emerging markets.
@@ -817,7 +857,7 @@
                             <h3
                                 class="text-lg font-bold text-gray-900 group-hover:text-blue-700 transition-colors duration-300">
                                 LinkedIn Thought Leader</h3>
-                            <p class="text-sm text-gray-600">1,480+ followers and growing</p>
+                            <p class="text-sm text-gray-600">2,000+ followers and growing</p>
                         </div>
                     </div>
                     <p class="text-gray-600 leading-relaxed">
@@ -952,7 +992,7 @@
                         class="text-xl font-bold text-gray-900 mb-4 group-hover:text-amber-700 transition-colors duration-300">
                         Limitless Mindset</h3>
 
-                    <p class="text-gray-600 leading-relaxed mb-4">
+                    <p class="text-gray-600 leading-relaxed mb-4 text-justify">
                         I believe in the power of thinking beyond traditional boundaries.
                         Success isn't limited by geography, background, or circumstance—it's
                         determined by vision, preparation, and the courage to take action.
@@ -979,7 +1019,7 @@
                         class="text-xl font-bold text-gray-900 mb-4 group-hover:text-red-700 transition-colors duration-300">
                         Impact Over Income</h3>
 
-                    <p class="text-gray-600 leading-relaxed mb-4">
+                    <p class="text-gray-600 leading-relaxed mb-4 text-justify">
                         While financial success is important, true fulfillment comes from
                         creating meaningful change. I focus on building solutions that
                         empower communities and drive sustainable transformation.
@@ -1006,7 +1046,7 @@
                         class="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-700 transition-colors duration-300">
                         Continuous Evolution</h3>
 
-                    <p class="text-gray-600 leading-relaxed mb-4">
+                    <p class="text-gray-600 leading-relaxed mb-4 text-justify">
                         The technology landscape is constantly evolving, and so must we.
                         I'm committed to lifelong learning, adapting to new challenges,
                         and staying ahead of industry trends.
@@ -1033,7 +1073,7 @@
                         class="text-xl font-bold text-gray-900 mb-4 group-hover:text-green-700 transition-colors duration-300">
                         Collaborative Leadership</h3>
 
-                    <p class="text-gray-600 leading-relaxed mb-4">
+                    <p class="text-gray-600 leading-relaxed mb-4 text-justify">
                         The best solutions emerge when diverse minds work together.
                         I believe in building inclusive teams, fostering open dialogue,
                         and creating environments where everyone can contribute their best.
@@ -1093,7 +1133,7 @@
                         </div>
                         <div class="flex-1">
                             <h3 class="text-xl font-bold text-gray-900 mb-3">Fintech Innovation & Financial Inclusion</h3>
-                            <p class="text-gray-600 leading-relaxed mb-4">
+                            <p class="text-gray-600 leading-relaxed mb-4 text-justify">
                                 Leading initiatives to expand financial services access across emerging markets.
                                 Working on solutions that bridge the gap between traditional banking and
                                 digital-first financial services, with focus on underserved communities.
@@ -1125,7 +1165,7 @@
                         </div>
                         <div class="flex-1">
                             <h3 class="text-xl font-bold text-gray-900 mb-3">Women's Leadership in Tech</h3>
-                            <p class="text-gray-600 leading-relaxed mb-4">
+                            <p class="text-gray-600 leading-relaxed mb-4 text-justify">
                                 Championing women's advancement in technology through mentorship, advocacy,
                                 and creating platforms for visibility. Through my podcast and speaking
                                 engagements, I inspire women to step into leadership roles.
@@ -1158,7 +1198,7 @@
                         </div>
                         <div class="flex-1">
                             <h3 class="text-xl font-bold text-gray-900 mb-3">Digital Transformation Strategy</h3>
-                            <p class="text-gray-600 leading-relaxed mb-4">
+                            <p class="text-gray-600 leading-relaxed mb-4 text-justify">
                                 Helping organizations navigate their digital evolution through strategic planning,
                                 technology adoption, and change management. Focus on creating sustainable
                                 transformation that drives business value and competitive advantage.

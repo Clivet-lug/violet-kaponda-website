@@ -682,8 +682,8 @@
                             AK
                         </div>
                         <div>
-                            <div class="font-semibold text-gray-900">Amara Kone</div>
-                            <div class="text-sm text-gray-600">Event Director, African FinTech Summit</div>
+                            <div class="font-semibold text-gray-900">Nickson Dawson</div>
+                            <div class="text-sm text-gray-600">CEO & Founder at East Africa Internet Group</div>
                         </div>
                     </div>
                 </div>
@@ -730,8 +730,8 @@
                             PM
                         </div>
                         <div>
-                            <div class="font-semibold text-gray-900">Priya Maharaj</div>
-                            <div class="text-sm text-gray-600">Conference Chair, PMI Zambia Chapter</div>
+                            <div class="font-semibold text-gray-900">Billy Mwape</div>
+                            <div class="text-sm text-gray-600">FNB CIO Zambia</div>
                         </div>
                     </div>
                 </div>
