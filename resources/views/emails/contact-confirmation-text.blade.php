@@ -31,7 +31,7 @@ WHAT HAPPENS NEXT:
 @elseif($inquiryType === 'media')
 ✓ For media inquiries: I'll provide my media kit and confirm my availability for interviews
 @else
-✓ For general inquiries: I'll connect personally to understand how I can best assist you
+✓ For Coaching: I'll connect personally to understand how I can best assist you
 @endif
 ✓ I'll respond directly to your email with personalized next steps
 ✓ We'll coordinate the best way to move forward together

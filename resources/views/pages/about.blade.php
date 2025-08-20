@@ -49,7 +49,7 @@
                     <div class="grid grid-cols-2 gap-6">
                         <div
                             class="bg-white/80 backdrop-blur-md rounded-xl p-4 shadow-lg border border-white/20 text-center">
-                            <div class="text-2xl font-bold text-amber-800 mb-1">6+</div>
+                            <div class="text-2xl font-bold text-amber-800 mb-1">10+</div>
                             <div class="text-sm text-gray-600">Years in Tech Leadership</div>
                         </div>
                         <div
@@ -99,7 +99,7 @@
                             class="absolute -top-6 -left-6 bg-white/95 backdrop-blur-md rounded-xl p-4 shadow-xl border border-white/20 max-w-xs">
                             <div class="flex items-center space-x-2 mb-1">
                                 <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                                <span class="text-sm font-semibold text-gray-800">African Tech Queen</span>
+                                <span class="text-sm font-semibold text-gray-800">African Fintech Queen</span>
                             </div>
                             <p class="text-xs text-gray-600">Building Digital Africa</p>
                         </div>
@@ -333,7 +333,7 @@
                                     <span class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
                                     Feb 2024 - Present
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-2">Business Development & Strategic
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Lead Business Development & Strategic
                                     Partnerships</h3>
                                 <div class="text-amber-700 font-medium mb-3 flex items-center md:justify-end">
                                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -402,7 +402,7 @@
                         </div>
                     </div>
                     <p class="text-gray-300 text-base leading-relaxed mb-8">
-                        Empowering the future of African fintech through thought leadership and strategic consulting.
+                        Driving Africa’s fintech revolution through bold leadership, digital inclusion, and transformation.
                     </p>
 
                     <!-- Social Links -->

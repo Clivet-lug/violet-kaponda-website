@@ -251,7 +251,7 @@
                         <li><strong>For media inquiries:</strong> I'll provide my media kit and confirm my availability
                             for interviews</li>
                     @else
-                        <li><strong>For general inquiries:</strong> I'll connect personally to understand how I can best
+                        <li><strong>For Coaching:</strong> I'll connect personally to understand how I can best
                             assist you</li>
                     @endif
                     <li><strong>I'll respond directly</strong> to your email with personalized next steps</li>

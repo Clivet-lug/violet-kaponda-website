@@ -57,14 +57,16 @@
                     <p class="text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl">
                         I'm <strong class="text-white">Violet Nswana Kaponda</strong>, driving digital transformation across
                         Africa through strategic partnerships, business development, and empowering the next generation of
-                        tech leaders in the <strong class="text-orange-400">fintech ecosystem</strong>.
+                        tech leaders in the <strong class="text-orange-400">fintech ecosystem</strong>. With a special focus
+                        on <strong class="text-orange-400">Digital Inclusion</strong> and access for underserved
+                        communities.
                     </p>
 
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-4 pt-4">
                         <a href="/speaking"
                             class="group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-red-600 text-white font-semibold rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25">
-                            <span class="relative z-10">Book Me to Speak</span>
+                            <span class="relative z-10">Work With Me</span>
                             <div
                                 class="absolute inset-0 bg-gradient-to-r from-red-600 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -98,7 +100,7 @@
                             <div class="relative z-10">
                                 <div
                                     class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 group-hover:text-yellow-300 transition-colors duration-300">
-                                    6+</div>
+                                    10+</div>
                                 <div class="text-sm text-gray-300 group-hover:text-white transition-colors duration-300">
                                     Years in Tech</div>
                             </div>
@@ -161,9 +163,9 @@
                             <div class="relative z-10">
                                 <div
                                     class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 group-hover:text-yellow-300 transition-colors duration-300">
-                                    1,470+</div>
+                                    5000+</div>
                                 <div class="text-sm text-gray-300 group-hover:text-white transition-colors duration-300">
-                                    LinkedIn Followers</div>
+                                    Followers</div>
                             </div>
                         </div>
                     </div>
@@ -197,7 +199,7 @@
                         <!-- Floating Stats Card - Updated without Probase -->
                         <div
                             class="absolute -bottom-6 -right-6 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-4 shadow-xl text-white max-w-xs">
-                            <div class="text-lg font-bold">Business Development</div>
+                            <div class="text-lg font-bold">Lead Business Development</div>
                             <div class="text-sm opacity-90">Strategic Leader</div>
                         </div>
 
@@ -260,14 +262,15 @@
                             class="absolute -top-4 -right-4 bg-white/95 backdrop-blur-md rounded-xl p-3 shadow-xl border border-gray-100 max-w-xs">
                             <div class="flex items-center space-x-2 mb-1">
                                 <div class="w-2 h-2 bg-green-500 rounded-full"></div>
-                                <span class="text-xs font-semibold text-gray-800">Master of Science in Project Management</span>
+                                <span class="text-xs font-semibold text-gray-800">Master of Science in Project
+                                    Management</span>
                             </div>
                             <p class="text-xs text-gray-600">University of Lusaka</p>
                         </div>
 
                         <div
                             class="absolute -bottom-4 -left-4 bg-gradient-to-r from-red-600 to-orange-600 rounded-xl p-3 shadow-xl text-white max-w-xs">
-                            <div class="text-sm font-bold">8+ Years</div>
+                            <div class="text-sm font-bold">10+ Years</div>
                             <div class="text-xs opacity-90">Tech Leadership Experience</div>
                         </div>
 
@@ -329,7 +332,7 @@
                             <div
                                 class="w-2 h-2 bg-red-600 rounded-full group-hover:scale-125 transition-transform duration-200">
                             </div>
-                            <span class="text-gray-700 group-hover:text-gray-900 transition-colors duration-200">6+ Years
+                            <span class="text-gray-700 group-hover:text-gray-900 transition-colors duration-200">10+ Years
                                 IT Project Management at ProBASE</span>
                         </div>
                         <div class="flex items-center space-x-3 group">
@@ -337,7 +340,15 @@
                                 class="w-2 h-2 bg-red-600 rounded-full group-hover:scale-125 transition-transform duration-200">
                             </div>
                             <span class="text-gray-700 group-hover:text-gray-900 transition-colors duration-200">Current:
-                                Business Development at Probase Group</span>
+                                Lead Business Development at Probase Group</span>
+                        </div>
+                        <div class="flex items-center space-x-3 group">
+                            <div
+                                class="w-2 h-2 bg-red-600 rounded-full group-hover:scale-125 transition-transform duration-200">
+                            </div>
+                            <span class="text-gray-700 group-hover:text-gray-900 transition-colors duration-200">Current:
+                                Co-Founder & Chief Strategy and Growth Officer at Uniplexity AI
+                            </span>
                         </div>
                         <div class="flex items-center space-x-3 group">
                             <div
@@ -507,7 +518,7 @@
                     </h3>
 
                     <p class="text-gray-600 leading-relaxed">
-                        6+ years of expertise in managing complex software projects, ensuring delivery excellence and
+                        10+ years of expertise in managing complex software projects, ensuring delivery excellence and
                         stakeholder satisfaction across diverse technical initiatives.
                     </p>
                 </div>
@@ -1118,7 +1129,7 @@
 
                 <p class="text-xl text-red-100 leading-relaxed max-w-3xl mx-auto">
                     Get exclusive insights on fintech trends, leadership strategies, business development tactics, and
-                    opportunities shaping Africa's digital future. Join 1,470+ forward-thinking professionals.
+                    opportunities shaping Africa's digital future. Join 5000+ forward-thinking professionals.
                 </p>
             </div>
 
@@ -1336,9 +1347,14 @@
                 </h2>
 
                 <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                    Book Violet for your next conference, corporate event, or strategic consultation. Deliver powerful
-                    insights on fintech innovation, digital transformation, and leadership that inspire action and drive
-                    meaningful change across Africa's tech ecosystem.
+                    Bring Violet to your next conference, corporate event, retreat,or strategic boardroom session. With deep
+                    expertise in
+                    fintech innovation, digital transformation, and business growth, Violet empowers leaders to unlock new
+                    opportunities, embrace technology with confidence, and drive inclusive impact.
+
+                    Her insights don’t just inspire they ignite actionable change that helps organizations thrive in
+                    Africa’s fast-evolving tech ecosystem.
+
                 </p>
 
                 <!-- CTA Buttons -->

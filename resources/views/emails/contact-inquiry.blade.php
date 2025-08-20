@@ -289,7 +289,7 @@
                 </div>
             @elseif($inquiryType === 'general')
                 <div class="inquiry-details">
-                    <h3 style="margin-top: 0; color: #1f2937;">General Inquiry Details</h3>
+                    <h3 style="margin-top: 0; color: #1f2937;">Coaching Details</h3>
 
                     @if (isset($data['general_help']) && $data['general_help'])
                         <div class="detail-row">
