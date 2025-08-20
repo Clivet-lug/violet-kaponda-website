@@ -45,50 +45,128 @@
     </script>
 
     <style>
-        /* Ultimate Desktop Experience */
+        /* Enhanced Glass Navigation */
         .glass-nav {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(25px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .glass-nav.scrolled {
             background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(30px);
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            /* padding-top: 0.75rem;
+            padding-bottom: 0.75rem; */
         }
 
+        /* Enhanced Logo */
+        .logo-container:hover .logo-icon {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 15px 35px rgba(234, 88, 12, 0.4);
+        }
+
+        .logo-icon {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Enhanced Nav Links */
         .nav-link {
             padding: 0.75rem 1.25rem;
             border-radius: 0.75rem;
             color: #374151;
             font-weight: 500;
             position: relative;
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(234, 88, 12, 0.1), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .nav-link:hover::before {
+            left: 100%;
         }
 
         .nav-link:hover {
             color: #ea580c;
-            background-color: #fed7aa;
+            background-color: rgba(254, 215, 170, 0.5);
             transform: translateY(-2px);
         }
 
-        .nav-underline {
+        /* Active Nav Link Styles */
+        .nav-link.active {
+            color: #ea580c;
+            background: linear-gradient(135deg, rgba(234, 88, 12, 0.15), rgba(220, 38, 38, 0.1));
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(234, 88, 12, 0.2);
+        }
+
+        .nav-link.active::after {
+            content: '';
             position: absolute;
             bottom: 0;
             left: 50%;
-            width: 0;
-            height: 2px;
-            background-color: #ea580c;
-            transition: all 0.3s ease;
+            width: 60%;
+            height: 3px;
+            background: linear-gradient(to right, #ea580c, #dc2626);
+            border-radius: 2px;
             transform: translateX(-50%);
+            box-shadow: 0 2px 8px rgba(234, 88, 12, 0.4);
         }
 
-        .nav-link:hover .nav-underline {
-            width: 80%;
+        /* Mobile Navigation */
+        .mobile-menu {
+            transform: translateY(-100%);
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            max-height: 0;
+            overflow: hidden;
         }
 
+        .mobile-menu.open {
+            transform: translateY(0);
+            opacity: 1;
+            max-height: 500px;
+        }
+
+        .mobile-nav-link {
+            display: block;
+            padding: 0.875rem 1rem;
+            color: #374151;
+            font-weight: 500;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mobile-nav-link:hover {
+            color: #ea580c;
+            background-color: rgba(254, 215, 170, 0.7);
+            transform: translateX(8px);
+        }
+
+        /* Active Mobile Nav Link */
+        .mobile-nav-link.active {
+            color: #ea580c;
+            background: linear-gradient(135deg, rgba(234, 88, 12, 0.2), rgba(220, 38, 38, 0.1));
+            font-weight: 600;
+            transform: translateX(8px);
+            border-left: 4px solid #ea580c;
+            box-shadow: 0 4px 12px rgba(234, 88, 12, 0.2);
+        }
+
+        /* Scroll Progress */
         .scroll-indicator {
             position: fixed;
             top: 0;
@@ -97,10 +175,11 @@
             height: 4px;
             background: linear-gradient(to right, #ea580c, #dc2626, #f59e0b);
             z-index: 9999;
-            transition: width 0.3s ease;
+            transition: width 0.1s ease;
             box-shadow: 0 2px 10px rgba(234, 88, 12, 0.3);
         }
 
+        /* Enhanced Button */
         .btn-primary {
             background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -117,7 +196,7 @@
             width: 100%;
             height: 100%;
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-            transition: left 0.6s;
+            transition: left 0.6s ease;
         }
 
         .btn-primary:hover::before {
@@ -138,20 +217,7 @@
             animation: gradient 3s ease infinite;
         }
 
-        .mobile-menu {
-            transform: translateY(-100%);
-            opacity: 0;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            max-height: 0;
-            overflow: hidden;
-        }
-
-        .mobile-menu.open {
-            transform: translateY(0);
-            opacity: 1;
-            max-height: 500px;
-        }
-
+        /* Animations */
         @keyframes float {
 
             0%,
@@ -190,10 +256,6 @@
             }
         }
 
-        .animate-float {
-            animation: float 6s ease-in-out infinite;
-        }
-
         /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 12px;
@@ -213,15 +275,7 @@
             background: linear-gradient(to bottom, #dc2626, #b91c1c);
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            -webkit-text-size-adjust: 100%;
-            -webkit-font-smoothing: antialiased;
-        }
-
+        /* Responsive */
         @media (max-width: 768px) {
             .btn-primary {
                 min-height: 44px;
@@ -240,40 +294,52 @@
     <!-- Scroll Progress Indicator -->
     <div class="scroll-indicator" id="scrollIndicator"></div>
 
-    <!-- Glass Navigation -->
-    <nav class="glass-nav sticky top-0 z-50 transition-all duration-300" id="navbar">
+    <!-- Enhanced Glass Navigation -->
+    <nav class="glass-nav sticky top-0 z-50" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
-                <!-- Logo -->
-                <div class="flex items-center">
-                    <a href="/" class="flex items-center space-x-3 group">
+
+                <!-- Enhanced Logo with Full Name -->
+                <div class="flex items-center min-w-0 flex-1 lg:flex-none">
+                    <a href="/" class="logo-container flex items-center space-x-3 group min-w-0">
                         <div
-                            class="w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-red rounded-xl flex items-center justify-center animate-float group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                            class="logo-icon w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-red rounded-xl flex items-center justify-center animate-float shadow-lg flex-shrink-0">
                             <span class="text-white font-bold text-xl font-display">V</span>
                         </div>
-                        <div>
+                        <!-- Desktop: Full Name -->
+                        <div class="min-w-0 hidden sm:block">
                             <div
-                                class="font-display font-bold text-xl text-gray-900 group-hover:text-brand-orange transition-colors duration-300">
-                                Violet Kaponda</div>
-                            <div class="text-xs text-gray-600">Fintech Thought Leader</div>
+                                class="font-display font-bold text-xl text-gray-900 group-hover:text-brand-orange transition-colors duration-300 whitespace-nowrap">
+                                Violet Nswana Kaponda
+                            </div>
+                            <div class="text-xs text-gray-600">African Fintech Queen</div>
+                        </div>
+                        <!-- Mobile: Shorter Version -->
+                        <div class="min-w-0 sm:hidden">
+                            <div
+                                class="font-display font-bold text-lg text-gray-900 group-hover:text-brand-orange transition-colors duration-300">
+                                Violet Nswana Kaponda
+                            </div>
+                            <div class="text-xs text-gray-600">African Fintech Queen</div>
                         </div>
                     </a>
                 </div>
 
                 <!-- Desktop Navigation -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="/" class="nav-link">Home<span class="nav-underline"></span></a>
-                    <a href="/about" class="nav-link">About<span class="nav-underline"></span></a>
-                    <a href="/speaking" class="nav-link">Speaking<span class="nav-underline"></span></a>
-                    <a href="/media" class="nav-link">Media<span class="nav-underline"></span></a>
-                    <a href="/blog" class="nav-link">Blog<span class="nav-underline"></span></a>
-                    <a href="/contact" class="btn-primary text-white px-8 py-3 rounded-xl font-semibold shadow-lg ml-4">
+                <div class="hidden lg:flex items-center space-x-2">
+                    <a href="/" class="nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
+                    <a href="/about" class="nav-link {{ request()->is('about') ? 'active' : '' }}">About</a>
+                    <a href="/speaking" class="nav-link {{ request()->is('speaking') ? 'active' : '' }}">Speaking</a>
+                    <a href="/media" class="nav-link {{ request()->is('media') ? 'active' : '' }}">Media</a>
+                    <a href="/blog" class="nav-link {{ request()->is('blog*') ? 'active' : '' }}">Blog</a>
+                    <a href="/contact"
+                        class="btn-primary text-white px-6 py-3 rounded-xl font-semibold shadow-lg ml-4 flex-shrink-0">
                         Work With Me
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <div class="md:hidden">
+                <div class="lg:hidden flex-shrink-0">
                     <button id="mobile-menu-button"
                         class="p-3 rounded-xl text-gray-700 hover:text-brand-orange hover:bg-orange-50 transition-all duration-300">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -287,22 +353,18 @@
             </div>
 
             <!-- Mobile Navigation -->
-            <div id="mobile-menu" class="md:hidden mobile-menu">
-                <div class="px-4 pt-4 pb-6 space-y-2 glass-nav border-t border-gray-100 shadow-xl rounded-b-2xl">
+            <div id="mobile-menu" class="lg:hidden mobile-menu">
+                <div class="px-4 pt-4 pb-6 space-y-3 glass-nav border-t border-gray-100 shadow-xl rounded-b-2xl">
                     <a href="/contact"
                         class="block mx-2 mb-4 btn-primary text-white px-6 py-4 rounded-xl text-center font-semibold shadow-lg">
                         Work With Me
                     </a>
-                    <a href="/"
-                        class="block px-4 py-3 text-gray-700 hover:text-brand-orange hover:bg-orange-50 rounded-lg transition-colors duration-300 font-medium">Home</a>
-                    <a href="/about"
-                        class="block px-4 py-3 text-gray-700 hover:text-brand-orange hover:bg-orange-50 rounded-lg transition-colors duration-300 font-medium">About</a>
+                    <a href="/" class="mobile-nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
+                    <a href="/about" class="mobile-nav-link {{ request()->is('about') ? 'active' : '' }}">About</a>
                     <a href="/speaking"
-                        class="block px-4 py-3 text-gray-700 hover:text-brand-orange hover:bg-orange-50 rounded-lg transition-colors duration-300 font-medium">Speaking</a>
-                    <a href="/media"
-                        class="block px-4 py-3 text-gray-700 hover:text-brand-orange hover:bg-orange-50 rounded-lg transition-colors duration-300 font-medium">Media</a>
-                    <a href="/blog"
-                        class="block px-4 py-3 text-gray-700 hover:text-brand-orange hover:bg-orange-50 rounded-lg transition-colors duration-300 font-medium">Blog</a>
+                        class="mobile-nav-link {{ request()->is('speaking') ? 'active' : '' }}">Speaking</a>
+                    <a href="/media" class="mobile-nav-link {{ request()->is('media') ? 'active' : '' }}">Media</a>
+                    <a href="/blog" class="mobile-nav-link {{ request()->is('blog*') ? 'active' : '' }}">Blog</a>
                 </div>
             </div>
         </div>
@@ -335,12 +397,12 @@
                             <span class="text-white font-bold text-2xl font-display">V</span>
                         </div>
                         <div>
-                            <div class="font-display font-bold text-2xl gradient-text">Violet Kaponda</div>
-                            <div class="text-gray-400 text-sm">Fintech Thought Leader</div>
+                            <div class="font-display font-bold text-2xl gradient-text">Violet Nswana Kaponda</div>
+                            <div class="text-gray-400 text-sm">African Fintech Queen</div>
                         </div>
                     </div>
                     <p class="text-gray-300 text-base leading-relaxed mb-8">
-                        Empowering the future of African fintech through thought leadership and strategic consulting.
+                        Driving Africa’s fintech revolution through bold leadership, digital inclusion, and transformation.
                     </p>
 
                     <!-- Social Links -->
@@ -386,7 +448,6 @@
                             </svg>
                         </a>
                     </div>
-
                 </div>
 
                 <!-- Quick Links -->
@@ -574,7 +635,7 @@
             <div class="border-t border-gray-700 mt-12 pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                     <div class="text-gray-400 text-sm text-center md:text-left">
-                        <p>&copy; 2025 Violet Nswana Kaponda. All rights reserved.</p>
+                        <p>&copy; {{ date('Y') }} Violet Nswana Kaponda. All rights reserved.</p>
                         <p class="text-xs mt-1">Empowering Africa's Fintech Future 🌍</p>
                     </div>
                     <div class="flex space-x-6 text-sm">
@@ -596,6 +657,7 @@
     <script>
         // Mobile Menu Toggle
         document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             const menuIcon = document.getElementById('menu-icon');
@@ -610,58 +672,57 @@
             }
         });
 
-        // Glass Navigation Scroll Effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Scroll Progress Indicator
-        window.addEventListener('scroll', function() {
-            const scrollIndicator = document.getElementById('scrollIndicator');
-            const totalHeight = document.body.scrollHeight - window.innerHeight;
-            const progress = (window.scrollY / totalHeight) * 100;
-            scrollIndicator.style.width = progress + '%';
-        });
-
-        // Back to Top Button
-        const backToTopButton = document.getElementById('back-to-top');
-
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 500) {
-                backToTopButton.style.opacity = '1';
-                backToTopButton.style.visibility = 'visible';
-            } else {
-                backToTopButton.style.opacity = '0';
-                backToTopButton.style.visibility = 'hidden';
-            }
-        });
-
-        backToTopButton.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
+            // Glass Navigation Scroll Effect
+            window.addEventListener('scroll', function() {
+                const navbar = document.getElementById('navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
             });
-        });
+
+            // Scroll Progress Indicator
+            window.addEventListener('scroll', function() {
+                const scrollIndicator = document.getElementById('scrollIndicator');
+                const totalHeight = document.body.scrollHeight - window.innerHeight;
+                const progress = (window.scrollY / totalHeight) * 100;
+                scrollIndicator.style.width = progress + '%';
+            });
+
+            // Back to Top Button
+            const backToTopButton = document.getElementById('back-to-top');
+
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 500) {
+                    backToTopButton.style.opacity = '1';
+                    backToTopButton.style.visibility = 'visible';
+                } else {
+                    backToTopButton.style.opacity = '0';
+                    backToTopButton.style.visibility = 'hidden';
+                }
+            });
+
+            backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
 
         // Keyboard navigation (ESC closes mobile menu)
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                const mobileMenu = document.getElementById('mobile-menu');
-                const menuIcon = document.getElementById('menu-icon');
-                const closeIcon = document.getElementById('close-icon');
-
-                if (mobileMenu && mobileMenu.classList.contains('open')) {
-                    mobileMenu.classList.remove('open');
-                    menuIcon.classList.remove('hidden');
-                    closeIcon.classList.add('hidden');
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    const menuIcon = document.getElementById('menu-icon');
+                    const closeIcon = document.getElementById('close-icon');
+                    if (mobileMenu && mobileMenu.classList.contains('open')) {
+                        mobileMenu.classList.remove('open');
+                        menuIcon.classList.remove('hidden');
+                        closeIcon.classList.add('hidden');
+                    }
                 }
-            }
-        });
+            });
     </script>
 </body>
 

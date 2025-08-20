@@ -36,3 +36,34 @@ Route::post('/contact', [ContactController::class, 'submit'])->name('contact.sub
 
 // Newsletter subscription
 Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe'])->name('newsletter.subscribe');
+
+// Legal Pages
+Route::get('/privacy', function () {
+    return view('pages.legal.privacy');
+})->name('privacy');
+
+Route::get('/terms', function () {
+    return view('pages.legal.terms');
+})->name('terms');
+
+// Sitemap (HTML version for users)
+Route::get('/sitemap', function () {
+    return view('pages.sitemap');
+})->name('sitemap');
+
+// XML Sitemap for search engines (optional)
+Route::get('/sitemap.xml', function () {
+    $routes = [
+        ['url' => route('home'), 'priority' => '1.0', 'changefreq' => 'weekly'],
+        ['url' => route('about'), 'priority' => '0.9', 'changefreq' => 'monthly'],
+        ['url' => route('speaking'), 'priority' => '0.8', 'changefreq' => 'monthly'],
+        ['url' => route('media'), 'priority' => '0.8', 'changefreq' => 'monthly'],
+        ['url' => route('blog.index'), 'priority' => '0.9', 'changefreq' => 'weekly'],
+        ['url' => route('contact'), 'priority' => '0.7', 'changefreq' => 'monthly'],
+        ['url' => route('privacy'), 'priority' => '0.3', 'changefreq' => 'yearly'],
+        ['url' => route('terms'), 'priority' => '0.3', 'changefreq' => 'yearly'],
+    ];
+
+    return response()->view('pages.sitemap-xml', compact('routes'))
+        ->header('Content-Type', 'application/xml');
+})->name('sitemap.xml');

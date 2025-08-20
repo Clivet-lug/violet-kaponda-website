@@ -51,7 +51,7 @@ Publication: {{ $data['publication'] }}
 Topic/Angle: {{ $data['media_topic'] }}
 @endif
 @elseif($inquiryType === 'general')
-GENERAL INQUIRY DETAILS:
+COACHING DETAILS:
 @if(isset($data['general_help']) && $data['general_help'])
 Help Needed: {{ ucwords($data['general_help']) }}
 @endif

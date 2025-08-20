@@ -505,13 +505,13 @@
                                 LinkedIn Thought Leadership
                             </h3>
                             <p class="text-gray-400 mb-3 leading-relaxed">
-                                Building influence with 1,480+ followers through strategic content on African fintech
+                                Building influence with 2,000+ followers through strategic content on African fintech
                                 innovation,
                                 digital transformation, and business development insights.
                             </p>
                             <div class="flex items-center space-x-4 text-sm">
                                 <span class="px-3 py-1 bg-red-600/20 text-red-300 rounded-full">Content Creator</span>
-                                <span class="text-gray-500">1,480+ Followers</span>
+                                <span class="text-gray-500">2,000+ Followers</span>
                             </div>
                         </div>
                     </div>
@@ -661,7 +661,7 @@
                         development.
                     </p>
 
-                    <div class="text-sm text-red-400 font-medium mb-4">1,480+ Followers</div>
+                    <div class="text-sm text-red-400 font-medium mb-4">2,000+ Followers</div>
 
                     <a href="https://linkedin.com/in/violet-nswana-kaponda-bsc-msc-a2761a153" target="_blank"
                         class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105">

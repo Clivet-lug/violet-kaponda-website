@@ -188,7 +188,7 @@
 
         <!-- Hero Content -->
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-screen py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh] py-12">
 
                 <!-- Content Side -->
                 <div class="text-white space-y-8 lg:order-1">
@@ -218,14 +218,16 @@
                     <p class="text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl">
                         I'm <strong class="text-white">Violet Nswana Kaponda</strong>, driving digital transformation across
                         Africa through strategic partnerships, business development, and empowering the next generation of
-                        tech leaders at <strong class="text-orange-400">Probase Group</strong>.
+                        tech leaders in the <strong class="text-orange-400">fintech ecosystem</strong>. With a special focus
+                        on <strong class="text-orange-400">Digital Inclusion</strong> and access for underserved
+                        communities.
                     </p>
 
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-4 pt-4">
                         <a href="/speaking"
                             class="group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-red-600 text-white font-semibold rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25">
-                            <span class="relative z-10">Book Me to Speak</span>
+                            <span class="relative z-10">Work With Me</span>
                             <div
                                 class="absolute inset-0 bg-gradient-to-r from-red-600 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -242,23 +244,90 @@
                         </a>
                     </div>
 
-                    <!-- Stats Grid -->
+                    <!-- Stats Grid with Persistent Glass Glow -->
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8">
-                        <div class="text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10">
-                            <div class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">6+</div>
-                            <div class="text-sm text-gray-300">Years in Tech</div>
+                        <div
+                            class="group relative text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10 transition-all duration-500 hover:bg-white/8 hover:border-white/20 hover:scale-105 cursor-pointer overflow-hidden">
+                            <!-- Initial glass shimmer sweep effect -->
+                            <div
+                                class="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-all duration-600 ease-out group-hover:left-[100%]">
+                            </div>
+
+                            <!-- Persistent glass glow that stays on hover -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-white/10 via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-300 rounded-xl">
+                            </div>
+
+                            <div class="relative z-10">
+                                <div
+                                    class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 group-hover:text-yellow-300 transition-colors duration-300">
+                                    10+</div>
+                                <div class="text-sm text-gray-300 group-hover:text-white transition-colors duration-300">
+                                    Years in Tech</div>
+                            </div>
                         </div>
-                        <div class="text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10">
-                            <div class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">11+</div>
-                            <div class="text-sm text-gray-300">Podcast Episodes</div>
+
+                        <div
+                            class="group relative text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10 transition-all duration-500 hover:bg-white/8 hover:border-white/20 hover:scale-105 cursor-pointer overflow-hidden">
+                            <!-- Initial glass shimmer sweep effect -->
+                            <div
+                                class="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-all duration-600 ease-out group-hover:left-[100%]">
+                            </div>
+
+                            <!-- Persistent glass glow that stays on hover -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-white/10 via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-300 rounded-xl">
+                            </div>
+
+                            <div class="relative z-10">
+                                <div
+                                    class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 group-hover:text-yellow-300 transition-colors duration-300">
+                                    11+</div>
+                                <div class="text-sm text-gray-300 group-hover:text-white transition-colors duration-300">
+                                    Podcast Episodes</div>
+                            </div>
                         </div>
-                        <div class="text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10">
-                            <div class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">5</div>
-                            <div class="text-sm text-gray-300">Speaking Topics</div>
+
+                        <div
+                            class="group relative text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10 transition-all duration-500 hover:bg-white/8 hover:border-white/20 hover:scale-105 cursor-pointer overflow-hidden">
+                            <!-- Initial glass shimmer sweep effect -->
+                            <div
+                                class="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-all duration-600 ease-out group-hover:left-[100%]">
+                            </div>
+
+                            <!-- Persistent glass glow that stays on hover -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-white/10 via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-300 rounded-xl">
+                            </div>
+
+                            <div class="relative z-10">
+                                <div
+                                    class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 group-hover:text-yellow-300 transition-colors duration-300">
+                                    5</div>
+                                <div class="text-sm text-gray-300 group-hover:text-white transition-colors duration-300">
+                                    Speaking Topics</div>
+                            </div>
                         </div>
-                        <div class="text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10">
-                            <div class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">1,470+</div>
-                            <div class="text-sm text-gray-300">LinkedIn Followers</div>
+
+                        <div
+                            class="group relative text-center bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10 transition-all duration-500 hover:bg-white/8 hover:border-white/20 hover:scale-105 cursor-pointer overflow-hidden">
+                            <!-- Initial glass shimmer sweep effect -->
+                            <div
+                                class="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-all duration-600 ease-out group-hover:left-[100%]">
+                            </div>
+
+                            <!-- Persistent glass glow that stays on hover -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-white/10 via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-300 rounded-xl">
+                            </div>
+
+                            <div class="relative z-10">
+                                <div
+                                    class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 group-hover:text-yellow-300 transition-colors duration-300">
+                                    5000+</div>
+                                <div class="text-sm text-gray-300 group-hover:text-white transition-colors duration-300">
+                                    Followers</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -266,8 +335,9 @@
                 <!-- Image Side -->
                 <div class="lg:order-2 flex justify-center lg:justify-end">
                     <div class="relative">
-                        <!-- Main Image -->
-                        <div class="relative w-80 h-96 md:w-96 md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+                        <!-- Main Image - Made Bigger -->
+                        <div
+                            class="relative w-96 h-[500px] md:w-[450px] md:h-[580px] rounded-3xl overflow-hidden shadow-2xl">
                             <img src="{{ asset('images/hero/violet-hero-main.jpg') }}"
                                 alt="Violet Nswana Kaponda - African Fintech Queen"
                                 class="w-full h-full object-cover object-center">
@@ -291,11 +361,11 @@
                             <p class="text-xs text-gray-600 mt-1">Available for global events</p>
                         </div>
 
-                        <!-- Floating Stats Card -->
+                        <!-- Floating Stats Card - Updated without Probase -->
                         <div
                             class="absolute -bottom-6 -right-6 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-4 shadow-xl text-white max-w-xs">
-                            <div class="text-lg font-bold">Probase Group</div>
-                            <div class="text-sm opacity-90">Business Development Lead</div>
+                            <div class="text-lg font-bold">Lead Business Development</div>
+                            <div class="text-sm opacity-90">Strategic Leader</div>
                         </div>
 
                         <!-- Decorative Elements -->
@@ -357,14 +427,15 @@
                             class="absolute -top-4 -right-4 bg-white/95 backdrop-blur-md rounded-xl p-3 shadow-xl border border-gray-100 max-w-xs">
                             <div class="flex items-center space-x-2 mb-1">
                                 <div class="w-2 h-2 bg-green-500 rounded-full"></div>
-                                <span class="text-xs font-semibold text-gray-800">Master's in Project Management</span>
+                                <span class="text-xs font-semibold text-gray-800">Master of Science in Project
+                                    Management</span>
                             </div>
                             <p class="text-xs text-gray-600">University of Lusaka</p>
                         </div>
 
                         <div
                             class="absolute -bottom-4 -left-4 bg-gradient-to-r from-red-600 to-orange-600 rounded-xl p-3 shadow-xl text-white max-w-xs">
-                            <div class="text-sm font-bold">6+ Years</div>
+                            <div class="text-sm font-bold">10+ Years</div>
                             <div class="text-xs opacity-90">Tech Leadership Experience</div>
                         </div>
 
@@ -426,7 +497,7 @@
                             <div
                                 class="w-2 h-2 bg-red-600 rounded-full group-hover:scale-125 transition-transform duration-200">
                             </div>
-                            <span class="text-gray-700 group-hover:text-gray-900 transition-colors duration-200">6+ Years
+                            <span class="text-gray-700 group-hover:text-gray-900 transition-colors duration-200">10+ Years
                                 IT Project Management at ProBASE</span>
                         </div>
                         <div class="flex items-center space-x-3 group">
@@ -434,7 +505,15 @@
                                 class="w-2 h-2 bg-red-600 rounded-full group-hover:scale-125 transition-transform duration-200">
                             </div>
                             <span class="text-gray-700 group-hover:text-gray-900 transition-colors duration-200">Current:
-                                Business Development at Probase Group</span>
+                                Lead Business Development at Probase Group</span>
+                        </div>
+                        <div class="flex items-center space-x-3 group">
+                            <div
+                                class="w-2 h-2 bg-red-600 rounded-full group-hover:scale-125 transition-transform duration-200">
+                            </div>
+                            <span class="text-gray-700 group-hover:text-gray-900 transition-colors duration-200">Current:
+                                Co-Founder & Chief Strategy and Growth Officer at Uniplexity AI
+                            </span>
                         </div>
                         <div class="flex items-center space-x-3 group">
                             <div
@@ -677,7 +756,7 @@
                     </h3>
 
                     <p class="text-gray-600 leading-relaxed">
-                        6+ years of expertise in managing complex software projects, ensuring delivery excellence and
+                        10+ years of expertise in managing complex software projects, ensuring delivery excellence and
                         stakeholder satisfaction across diverse technical initiatives.
                     </p>
                 </div>
@@ -1341,39 +1420,111 @@
                             </div>
                         </div>
 
-                        <!-- Play Button Overlay -->
-                        <div x-data="{ openVideo: false }" class="absolute inset-0 flex items-center justify-center">
+                        <!-- Enhanced Play Button Overlay - Replace the entire original section -->
+                        <div x-data="{
+                            openVideo: false,
+                            isHovered: false,
+                            closeVideo() {
+                                this.openVideo = false;
+                                // Stop video by reloading iframe src
+                                setTimeout(() => {
+                                    const iframe = this.$refs.videoFrame;
+                                    if (iframe) {
+                                        iframe.src = iframe.src.replace('&autoplay=1', '');
+                                    }
+                                }, 300);
+                            }
+                        }" class="absolute inset-0 flex flex-col items-center justify-center">
 
-                            <!-- Play Button -->
-                            <button @click="openVideo = true"
-                                class="group w-20 h-20 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center shadow-xl hover:bg-white hover:scale-110 transition-all duration-300 border border-white/20">
-                                <svg class="w-8 h-8 text-red-600 ml-1 group-hover:scale-110 transition-transform duration-300"
-                                    fill="currentColor" viewBox="0 0 24 24">
+                            <!-- Gradient overlay for better contrast -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
+
+                            <!-- Video Duration Badge -->
+                            <div
+                                class="absolute bottom-4 right-4 bg-black/80 backdrop-blur-sm text-white text-sm px-2 py-1 rounded font-medium z-10">
+                                12:45
+                            </div>
+
+                            <!-- Enhanced Play Button with pulse animation -->
+                            <button @click="openVideo = true" @mouseenter="isHovered = true"
+                                @mouseleave="isHovered = false"
+                                class="group/btn relative w-24 h-24 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center shadow-2xl hover:shadow-red-500/25 transition-all duration-500 border-2 border-white/20 hover:border-white/40 mb-4 z-10"
+                                :class="{ 'scale-110 shadow-red-500/40': isHovered }">
+
+                                <!-- Pulse animation rings -->
+                                <div class="absolute inset-0 rounded-full bg-red-600 animate-ping opacity-20"></div>
+                                <div class="absolute inset-2 rounded-full bg-red-600 animate-pulse opacity-30"></div>
+
+                                <!-- Play icon with enhanced styling -->
+                                <svg class="relative z-10 w-10 h-10 text-white ml-1 transition-all duration-300"
+                                    :class="{ 'scale-110': isHovered }" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M8 5v14l11-7z" />
                                 </svg>
+
+                                <!-- Glow effect -->
+                                <div
+                                    class="absolute inset-0 rounded-full bg-gradient-to-r from-red-600 to-red-500 blur-lg opacity-0 group-hover/btn:opacity-30 transition-opacity duration-500">
+                                </div>
                             </button>
 
-                            <!-- Video Modal -->
-                            <div x-show="openVideo" x-transition.opacity.duration.300ms
-                                class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
-                                @click.self="openVideo = false">
+                            <!-- Descriptive text -->
+                            <div
+                                class="text-white font-medium text-lg tracking-wide opacity-90 hover:opacity-100 transition-opacity duration-300 z-10">
+                                Watch Full Interview
+                            </div>
 
-                                <!-- Video Container -->
-                                <div x-transition.scale.duration.300ms class="relative w-full max-w-4xl aspect-video">
+                            <!-- Enhanced Video Modal -->
+                            <div x-show="openVideo" x-transition:enter="transition ease-out duration-300"
+                                x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                                x-transition:leave="transition ease-in duration-200"
+                                x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
+                                class="fixed inset-0 bg-black/90 backdrop-blur-sm flex items-center justify-center z-50 p-4"
+                                @click.self="closeVideo()" @keydown.escape.window="closeVideo()">
 
-                                    <!-- YouTube Video -->
-                                    <iframe class="w-full h-full rounded-lg shadow-lg"
-                                        src="https://www.youtube.com/embed/xtmlZ5w70uE?autoplay=1"
-                                        title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media"
+                                <!-- Video Container with enhanced animations -->
+                                <div x-show="openVideo" x-transition:enter="transition ease-out duration-300 delay-100"
+                                    x-transition:enter-start="opacity-0 scale-95"
+                                    x-transition:enter-end="opacity-100 scale-100"
+                                    x-transition:leave="transition ease-in duration-200"
+                                    x-transition:leave-start="opacity-100 scale-100"
+                                    x-transition:leave-end="opacity-0 scale-95"
+                                    class="relative w-full max-w-5xl aspect-video">
+
+                                    <!-- Loading state -->
+                                    <div
+                                        class="absolute inset-0 bg-gray-900 rounded-lg flex items-center justify-center z-0">
+                                        <div
+                                            class="animate-spin rounded-full h-12 w-12 border-4 border-red-600 border-t-transparent">
+                                        </div>
+                                    </div>
+
+                                    <!-- YouTube Video with better parameters -->
+                                    <iframe x-ref="videoFrame" class="relative z-10 w-full h-full rounded-lg shadow-2xl"
+                                        src="https://www.youtube.com/embed/xtmlZ5w70uE?autoplay=1&rel=0&modestbranding=1&fs=1&cc_load_policy=1"
+                                        title="Violet Kaponda - Fintech Innovation Interview" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen>
                                     </iframe>
 
-                                    <!-- Close Button with delayed fade -->
-                                    <button @click="openVideo = false" x-show="openVideo"
-                                        x-transition.opacity.duration.300ms.delay.200ms
-                                        class="absolute -top-10 right-0 text-white text-3xl hover:text-red-500 transition-colors">
-                                        &times;
+                                    <!-- Enhanced Close Button -->
+                                    <button @click="closeVideo()" x-show="openVideo"
+                                        x-transition:enter="transition ease-out duration-300 delay-200"
+                                        x-transition:enter-start="opacity-0 scale-90"
+                                        x-transition:enter-end="opacity-100 scale-100"
+                                        class="absolute -top-12 right-0 w-10 h-10 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white/20 hover:text-red-400 transition-all duration-300 border border-white/20">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
                                     </button>
+
+                                    <!-- ESC hint -->
+                                    {{-- <div x-show="openVideo"
+                                        x-transition:enter="transition ease-out duration-500 delay-500"
+                                        x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                                        class="absolute -bottom-8 left-0 text-white/60 text-sm">
+                                        Press ESC to close
+                                    </div> --}}
                                 </div>
                             </div>
                         </div>
@@ -1680,7 +1831,7 @@
 
                 <p class="text-xl text-red-100 leading-relaxed max-w-3xl mx-auto">
                     Get exclusive insights on fintech trends, leadership strategies, business development tactics, and
-                    opportunities shaping Africa's digital future. Join 1,470+ forward-thinking professionals.
+                    opportunities shaping Africa's digital future. Join 5000+ forward-thinking professionals.
                 </p>
             </div>
 
@@ -1745,7 +1896,7 @@
                                         // Show success notification
                                         showMainNewsletterNotification('success',
                                             'Welcome! You\'ve successfully joined Violet\'s exclusive fintech community.'
-                                            );
+                                        );
 
                                         // Reset form after delay
                                         setTimeout(() => {
@@ -1898,9 +2049,14 @@
                 </h2>
 
                 <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                    Book Violet for your next conference, corporate event, or strategic consultation. Deliver powerful
-                    insights on fintech innovation, digital transformation, and leadership that inspire action and drive
-                    meaningful change across Africa's tech ecosystem.
+                    Bring Violet to your next conference, corporate event, retreat,or strategic boardroom session. With deep
+                    expertise in
+                    fintech innovation, digital transformation, and business growth, Violet empowers leaders to unlock new
+                    opportunities, embrace technology with confidence, and drive inclusive impact.
+
+                    Her insights don’t just inspire they ignite actionable change that helps organizations thrive in
+                    Africa’s fast-evolving tech ecosystem.
+
                 </p>
 
                 <!-- CTA Buttons -->

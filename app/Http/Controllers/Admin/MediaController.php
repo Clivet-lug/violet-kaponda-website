@@ -30,7 +30,7 @@ class MediaController extends Controller
     {
         $request->validate([
             'files' => 'required|array',
-            'files.*' => 'image|mimes:jpeg,png,jpg,webp|max:2048'
+            'files.*' => 'image|mimes:jpeg,png,jpg,webp|max:10240'
         ]);
 
         $uploaded = [];
