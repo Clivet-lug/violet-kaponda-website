@@ -1883,8 +1883,8 @@ document.addEventListener('DOMContentLoaded', () => {
                             AK
                         </div>
                         <div>
-                            <div class="font-semibold text-gray-900">Nickson Dawson</div>
-                            <div class="text-sm text-gray-600">CEO & Founder at East Africa Internet Group</div>
+                            <div class="font-semibold text-gray-900">Chongo Mutale</div>
+                            <div class="text-sm text-gray-600">Innovation and partnerships specialist ABSA</div>
                         </div>
                     </div>
                 </div>
@@ -1921,7 +1921,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     <blockquote
                         class="text-gray-700 mb-6 leading-relaxed text-lg group-hover:text-gray-900 transition-colors duration-300">
-                        "Outstanding keynote on women in technology! Violet's authenticity and powerful message inspired our
+                        "Outstanding keynote on technology! Violet's authenticity and powerful message inspired our
                         entire audience. We received incredibly positive feedback and requests for her return."
                     </blockquote>
 
