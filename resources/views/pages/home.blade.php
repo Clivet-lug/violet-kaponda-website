@@ -30,7 +30,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh] py-12">
 
                 <!-- Content Side -->
-                <div class="text-white space-y-8 lg:order-1">
+                <div class="text-white space-y-8 order-2 lg:order-1">
                     <!-- Status Badge -->
                     <div
                         class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-md rounded-full text-sm font-medium border border-white/20 shadow-lg">
@@ -172,7 +172,7 @@
                 </div>
 
                 <!-- Image Side -->
-                <div class="lg:order-2 flex justify-center lg:justify-end">
+                <div class="lg:order-2 order-1 flex justify-center lg:justify-end">
                     <div class="relative">
                         <!-- Main Image - Made Bigger -->
                         <div
@@ -992,8 +992,8 @@
 
                     <blockquote
                         class="text-gray-700 mb-6 leading-relaxed group-hover:text-gray-900 transition-colors duration-300">
-                        "Violet's strategic insights and business development expertise have been instrumental in driving
-                        our digital transformation initiatives across the region."
+                        "Violet has a rare ability to connect vision with execution. In every partnership
+                         conversation, she brings depth, foresight, and a true passion for African innovation. She is a force in fintech and technology across the continent."
                     </blockquote>
 
                     <div class="flex items-center">
@@ -1002,8 +1002,8 @@
                             JM
                         </div>
                         <div>
-                            <div class="font-semibold text-gray-900">John Mwangi</div>
-                            <div class="text-sm text-gray-600">CTO, TechCorp Africa</div>
+                            <div class="font-semibold text-gray-900">Daniel EFT</div>
+                            <div class="text-sm text-gray-600">VIce President EFT Corp, SA</div>
                         </div>
                     </div>
                 </div>
@@ -1039,8 +1039,8 @@
 
                     <blockquote
                         class="text-gray-700 mb-6 leading-relaxed group-hover:text-gray-900 transition-colors duration-300">
-                        "As a keynote speaker, Violet delivered actionable insights that transformed how our team approaches
-                        fintech innovation. Highly recommend!"
+                        "Violet is the epitome of resilience and vision. She has defied odds, broken barriers, and now uses her platform to open doors for others.
+                         She’s not just a leader in technology — she’s a role model for what is possible."
                     </blockquote>
 
                     <div class="flex items-center">
@@ -1049,8 +1049,8 @@
                             AK
                         </div>
                         <div>
-                            <div class="font-semibold text-gray-900">Amara Kone</div>
-                            <div class="text-sm text-gray-600">Event Director, FinTech Summit</div>
+                            <div class="font-semibold text-gray-900">Samuel Mwale</div>
+                            <div class="text-sm text-gray-600">Head Of Operations, Probase Group</div>
                         </div>
                     </div>
                 </div>
@@ -1086,8 +1086,8 @@
 
                     <blockquote
                         class="text-gray-700 mb-6 leading-relaxed group-hover:text-gray-900 transition-colors duration-300">
-                        "Violet's podcast 'Elevate & Dominate' has been a game-changer for my career. Her insights on
-                        mindset and performance are invaluable."
+                        "Violet Nswana Kaponda doesn't just participate in Africa's fintech revolution — she leads it. Through strategic vision and relentless execution,
+                        she's opening doors that transform entire industries."
                     </blockquote>
 
                     <div class="flex items-center">
@@ -1096,8 +1096,8 @@
                             SM
                         </div>
                         <div>
-                            <div class="font-semibold text-gray-900">Sarah Mutuku</div>
-                            <div class="text-sm text-gray-600">Software Engineer, InnovateTech</div>
+                            <div class="font-semibold text-gray-900">Nickson Dawson</div>
+                            <div class="text-sm text-gray-600">CEO & Founder at East Africa Internet Group</div>
                         </div>
                     </div>
                 </div>
