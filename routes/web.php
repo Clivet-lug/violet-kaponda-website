@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\NewsletterController;
+use App\Http\Controllers\MediaController;
 use App\Http\Controllers\BlogController;
 
 Route::get('/', function () {
@@ -17,9 +18,25 @@ Route::get('/speaking', function () {
     return view('pages.speaking');
 })->name('speaking');
 
-Route::get('/media', function () {
-    return view('pages.media');
-})->name('media');
+// Route::get('/media', function () {
+//     return view('pages.media');
+// })->name('media');
+
+// Media page with YouTube data
+Route::get('/media', [MediaController::class, 'index'])->name('media');
+
+// API routes for real-time YouTube data
+Route::prefix('api/youtube')->group(function () {
+    Route::get('/data', [MediaController::class, 'getYouTubeData'])->name('api.youtube.data');
+    Route::post('/refresh', [MediaController::class, 'refreshYouTubeData'])->name('api.youtube.refresh');
+});
+
+// Optional: Webhook endpoint for YouTube notifications (advanced)
+Route::post('/webhook/youtube', function () {
+    // YouTube can ping this when new videos are uploaded
+    // Requires YouTube Push Notifications setup
+    return response('OK', 200);
+})->name('youtube.webhook');
 
 Route::get('/blog', function () {
     return view('pages.blog.index');
