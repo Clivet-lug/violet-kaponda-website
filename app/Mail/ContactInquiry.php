@@ -29,7 +29,7 @@ class ContactInquiry extends Mailable implements ShouldQueue
     public function envelope(): Envelope
     {
         $subject = sprintf(
-            'New %s Inquiry from %s - violetkaponda.com',
+            'New %s Inquiry from %s - violetnswanakaponda.com',
             $this->data['inquiry_type_label'],
             $this->data['name']
         );

@@ -153,7 +153,7 @@
         <div class="header">
             <div class="badge">New Website Inquiry</div>
             <h1>{{ $inquiryTypeLabel }}</h1>
-            <p style="margin: 10px 0 0 0; opacity: 0.9;">From violetkaponda.com contact form</p>
+            <p style="margin: 10px 0 0 0; opacity: 0.9;">From violetnswanakaponda.com contact form</p>
         </div>
 
         <!-- Content -->
@@ -323,7 +323,7 @@
 
         <!-- Footer -->
         <div class="footer">
-            <p>This inquiry was submitted through the contact form at <strong>violetkaponda.com</strong></p>
+            <p>This inquiry was submitted through the contact form at <strong>violetnswanakaponda.com</strong></p>
             <p style="margin: 0; font-size: 12px; color: #9ca3af;">
                 Auto-confirmation sent to {{ $data['email'] }}
             </p>

@@ -29,7 +29,7 @@ class NewsletterSubscription extends Mailable implements ShouldQueue
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'New Newsletter Subscription - violetkaponda.com',
+            subject: 'New Newsletter Subscription - violetnswanakaponda.com',
             replyTo: $this->data['email']
         );
     }

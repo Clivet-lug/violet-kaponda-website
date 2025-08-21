@@ -1387,9 +1387,9 @@
                             <div
                                 class="text-sm font-semibold text-gray-900 mb-1 group-hover:text-red-600 transition-colors duration-300">
                                 Speaking Inquiries</div>
-                            <a href="mailto:violet@violetkaponda.com"
+                            <a href="mailto:violet@violetnswanakaponda.com"
                                 class="text-red-700 hover:text-red-900 transition-colors duration-300">
-                                violet@violetkaponda.com
+                                violet@violetnswanakaponda.com
                             </a>
                         </div>
                         <div class="group">

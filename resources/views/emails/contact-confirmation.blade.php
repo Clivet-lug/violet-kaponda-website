@@ -307,7 +307,7 @@
             </p>
             <p style="margin: 0; font-size: 12px; color: #9ca3af;">
                 Probase Group, Lusaka, Zambia<br>
-                <a href="mailto:violet@violetkaponda.com" style="color: #ea580c;">violet@violetkaponda.com</a> |
+                <a href="mailto:violet@violetnswanakaponda.com" style="color: #ea580c;">violet@violetnswanakaponda.com</a> |
                 <a href="https://violetkaponda.com" style="color: #ea580c;">violetkaponda.com</a>
             </p>
 

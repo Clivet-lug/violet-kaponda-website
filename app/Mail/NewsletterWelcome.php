@@ -29,7 +29,7 @@ class NewsletterWelcome extends Mailable implements ShouldQueue
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: config('mail.from.address', 'violet@violetkaponda.com'),
+            from: config('mail.from.address', 'violet@violetnswanakaponda.com'),
             subject: 'Welcome to Violet\'s Exclusive Fintech Insights!'
         );
     }

@@ -1,5 +1,5 @@
 NEW {{ strtoupper($inquiryTypeLabel) }} INQUIRY
-From: violetkaponda.com contact form
+From: violetnswanakaponda.com contact form
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -69,5 +69,5 @@ QUICK ACTIONS:
 • Reply: mailto:{{ $data['email'] }}?subject=Re: {{ $inquiryTypeLabel }} Inquiry
 • View full details in HTML version of this email
 
-This inquiry was submitted through violetkaponda.com
+This inquiry was submitted through violetnswanakaponda.com
 Auto-confirmation sent to {{ $data['email'] }}

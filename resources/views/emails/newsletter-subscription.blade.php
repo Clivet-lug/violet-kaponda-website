@@ -58,7 +58,7 @@
     <div class="container">
         <div class="header">
             <h1 style="margin: 0;">📧 New Newsletter Subscriber</h1>
-            <p style="margin: 10px 0 0 0; opacity: 0.9;">violetkaponda.com</p>
+            <p style="margin: 10px 0 0 0; opacity: 0.9;">violetnswanakaponda.com</p>
         </div>
 
         <div class="content">
@@ -79,7 +79,7 @@
         </div>
 
         <div class="footer">
-            <p style="margin: 0;">Auto-notification from violetkaponda.com</p>
+            <p style="margin: 0;">Auto-notification from violetnswanakaponda.com</p>
         </div>
     </div>
 </body>
@@ -224,7 +224,7 @@
                 African Fintech Queen | Business Development Strategist | International Speaker
             </p>
             <p style="margin: 0; font-size: 12px; color: #9ca3af;">
-                violetkaponda.com | "Building Africa's Digital Future, One Connection at a Time"
+                violetnswanakaponda.com | "Building Africa's Digital Future, One Connection at a Time"
             </p>
         </div>
     </div>
@@ -240,7 +240,7 @@ Email: {{ $data['email'] }}
 Subscribed: {{ \Carbon\Carbon::parse($data['subscribed_at'])->format('F j, Y \a\t g:i A') }}
 IP Address: {{ $data['ip_address'] }}
 
-Auto-notification from violetkaponda.com
+Auto-notification from violetnswanakaponda.com
 
 {{-- resources/views/emails/newsletter-welcome-text.blade.php --}}
 WELCOME TO VIOLET'S NEWSLETTER!
@@ -273,4 +273,4 @@ Best regards,
 
 Violet Nswana Kaponda
 African Fintech Queen | Business Development Strategist | International Speaker
-violetkaponda.com | "Building Africa's Digital Future, One Connection at a Time"
+violetnswanakaponda.com | "Building Africa's Digital Future, One Connection at a Time"

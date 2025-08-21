@@ -117,7 +117,7 @@
                         <input type="email" id="email" name="email" value="{{ old('email') }}" required
                             autocomplete="email" autofocus
                             class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none input-focus transition-all duration-200 text-white placeholder-gray-500 @error('email') border-red-500 @enderror"
-                            placeholder="violet@violetkaponda.com">
+                            placeholder="violet@violetnswanakaponda.com">
                         @error('email')
                             <p class="mt-2 text-sm text-red-400">{{ $message }}</p>
                         @enderror

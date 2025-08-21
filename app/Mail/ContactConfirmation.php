@@ -29,7 +29,7 @@ class ContactConfirmation extends Mailable implements ShouldQueue
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: config('mail.from.address', 'violet@violetkaponda.com'),
+            from: config('mail.from.address', 'violet@violetnswanakaponda.com'),
             subject: sprintf(
                 'Thank you for your %s inquiry - I\'ll respond within 24-48 hours',
                 strtolower($this->data['inquiry_type_label'])

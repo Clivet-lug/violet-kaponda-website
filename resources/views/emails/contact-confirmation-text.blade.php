@@ -58,6 +58,6 @@ Best regards,
 Violet Nswana Kaponda
 African Fintech Queen | Business Development Strategist | International Speaker
 Probase Group, Lusaka, Zambia
-violet@violetkaponda.com | violetkaponda.com
+violet@violetnswanakaponda.com | violetnswanakaponda.com
 
 "Building Africa's Digital Future, One Connection at a Time"

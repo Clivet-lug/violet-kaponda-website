@@ -1125,9 +1125,9 @@
                                         d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
                                     </path>
                                 </svg>
-                                <a href="mailto:violet@violetkaponda.com"
+                                <a href="mailto:violet@violetnswanakaponda.com"
                                     class="text-red-300 hover:text-red-200 transition-colors duration-300">
-                                    violet@violetkaponda.com
+                                    violet@violetnswanakaponda.com
                                 </a>
                             </div>
                             <div class="flex items-center space-x-3">

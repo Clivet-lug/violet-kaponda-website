@@ -84,9 +84,9 @@
                                 </div>
                                 <div>
                                     <div class="font-medium text-gray-900">Email</div>
-                                    <a href="mailto:violet@violetkaponda.com"
+                                    <a href="mailto:violet@violetnswanakaponda.com"
                                         class="text-orange-600 hover:text-orange-700 transition-colors duration-300">
-                                        violet@violetkaponda.com
+                                        	violet@violetnswanakaponda.com
                                     </a>
                                 </div>
                             </div>
@@ -734,7 +734,7 @@
                         </svg>
                     </a>
 
-                    <a href="mailto:violet@violetkaponda.com"
+                    <a href="mailto:violet@violetnswanakaponda.com"
                         class="group inline-flex items-center px-8 py-4 bg-white/20 backdrop-blur-md border border-white/30 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                         <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
