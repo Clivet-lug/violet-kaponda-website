@@ -20,6 +20,9 @@
     <script src="https://cdn.tiny.cloud/1/mfbdnvj7mjvuz835d2goj09wand7rjjodkt9q9oxpyyop1sz/tinymce/6/tinymce.min.js"
         referrerpolicy="origin"></script>
 
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ asset('favicon/apple-touch-icon.png') }}">
+
     <script>
         tailwind.config = {
             theme: {
@@ -96,7 +99,7 @@
         // Auto-close sidebar on mobile, auto-open on desktop
         if (isMobile) {
             sidebarOpen = false;
-        } 
+        }
     });
 }">
     <div class="min-h-screen flex">
