@@ -32,7 +32,7 @@ class NewsletterController extends Controller
 
             // Simple email notification to Violet (using raw email)
             Mail::raw("New newsletter subscription from: {$email}\nSubscribed at: " . now(), function ($message) use ($email) {
-                $message->to(config('mail.contact_email', 'clivetlungu1@gmail.com'))
+                $message->to(config('mail.contact_email', 'violet@violetnswanakaponda.com.com'))
                     ->subject('New Newsletter Subscription - violetnswanakaponda.com')
                     ->replyTo($email);
             });
@@ -41,7 +41,7 @@ class NewsletterController extends Controller
             Mail::raw("Welcome to Violet's Newsletter!\n\nThank you for subscribing! You'll receive exclusive fintech insights and updates from the African Fintech Queen.\n\nBest regards,\nViolet Nswana Kaponda", function ($message) use ($email) {
                 $message->to($email)
                     ->subject('Welcome to Violet\'s Exclusive Fintech Insights!')
-                    ->from(config('mail.from.address', 'clivetlungu1@gmail.com'), 'Violet Nswana Kaponda');
+                    ->from(config('mail.from.address', 'violet@violetnswanakaponda.com.com'), 'Violet Nswana Kaponda');
             });
 
             // Log successful subscription

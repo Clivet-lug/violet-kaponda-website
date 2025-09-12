@@ -38,9 +38,9 @@ Route::post('/webhook/youtube', function () {
     return response('OK', 200);
 })->name('youtube.webhook');
 
-Route::get('/blog', function () {
-    return view('pages.blog.index');
-})->name('blog.index');
+// Route::get('/blog', function () {
+//     return view('pages.blog.index');
+// })->name('blog.index');
 
 // Public Blog Routes
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');

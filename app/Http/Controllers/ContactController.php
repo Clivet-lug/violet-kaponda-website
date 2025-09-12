@@ -33,7 +33,7 @@ class ContactController extends Controller
             $data['inquiry_type_label'] = $this->getInquiryTypeLabel($data['inquiry_type']);
 
             // Send email to Violet
-            Mail::to(config('mail.contact_email', 'clivetlungu1@gmail.com'))
+            Mail::to(config('mail.contact_email', 'violet@violetnswanakaponda.com.com'))
                 ->send(new ContactInquiry($data));
 
             // Send confirmation to inquirer

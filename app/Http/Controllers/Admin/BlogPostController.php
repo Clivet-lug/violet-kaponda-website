@@ -56,7 +56,7 @@ class BlogPostController extends Controller
             'slug' => 'nullable|string|max:255|unique:blog_posts,slug',
             'excerpt' => 'nullable|string|max:500',
             'content' => 'required|string',
-            'featured_image' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:2048',
+            'featured_image' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:10240',
             'seo_title' => 'nullable|string|max:60',
             'meta_description' => 'nullable|string|max:160',
             'is_published' => 'boolean',

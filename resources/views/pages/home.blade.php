@@ -1002,7 +1002,7 @@
                             JM
                         </div>
                         <div>
-                            <div class="font-semibold text-gray-900">Daniel EFT</div>
+                            <div class="font-semibold text-gray-900">Daniel Skirrow</div>
                             <div class="text-sm text-gray-600">VIce President EFT Corp, SA</div>
                         </div>
                     </div>

@@ -1043,29 +1043,29 @@
                         if (type === 'success') {
                             notification.classList.add('bg-green-600', 'text-white');
                             notification.innerHTML = `
-            <div class="flex items-center">
-                <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <div>
-                    <div class="font-semibold">Success!</div>
-                    <div class="text-sm opacity-90">${message}</div>
-                </div>
-            </div>
-        `;
+                                <div class="flex items-center">
+                                    <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <div>
+                                        <div class="font-semibold">Success!</div>
+                                        <div class="text-sm opacity-90">${message}</div>
+                                    </div>
+                                </div>
+                            `;
                         } else {
-                            notification.classList.add('bg-red-600', 'text-white');
-                            notification.innerHTML = `
-            <div class="flex items-center">
-                <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-                <div>
-                    <div class="font-semibold">Error</div>
-                    <div class="text-sm opacity-90">${message}</div>
-                </div>
-            </div>
-        `;
+                                                notification.classList.add('bg-red-600', 'text-white');
+                                                notification.innerHTML = `
+                                <div class="flex items-center">
+                                    <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                    <div>
+                                        <div class="font-semibold">Error</div>
+                                        <div class="text-sm opacity-90">${message}</div>
+                                    </div>
+                                </div>
+                            `;
                         }
 
                         document.body.appendChild(notification);

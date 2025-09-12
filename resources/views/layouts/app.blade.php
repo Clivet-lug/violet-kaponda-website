@@ -19,6 +19,9 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ asset('favicon/apple-touch-icon.png') }}">
+
     <!-- Enhanced Tailwind Config -->
     <script>
         tailwind.config = {
@@ -334,7 +337,7 @@
                     <a href="/blog" class="nav-link {{ request()->is('blog*') ? 'active' : '' }}">Blog</a>
                     <a href="/contact"
                         class="btn-primary text-white px-6 py-3 rounded-xl font-semibold shadow-lg ml-4 flex-shrink-0">
-                        Work With Me
+                        Work With Me ->
                     </a>
                 </div>
 
@@ -357,7 +360,7 @@
                 <div class="px-4 pt-4 pb-6 space-y-3 glass-nav border-t border-gray-100 shadow-xl rounded-b-2xl">
                     <a href="/contact"
                         class="block mx-2 mb-4 btn-primary text-white px-6 py-4 rounded-xl text-center font-semibold shadow-lg">
-                        Work With Me
+                        Work With Me ->
                     </a>
                     <a href="/" class="mobile-nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
                     <a href="/about" class="mobile-nav-link {{ request()->is('about') ? 'active' : '' }}">About</a>
@@ -402,7 +405,8 @@
                         </div>
                     </div>
                     <p class="text-gray-300 text-base leading-relaxed mb-8">
-                        Driving Africa’s fintech revolution through bold leadership, digital inclusion, and transformation.
+                        Driving Africa’s fintech revolution through bold leadership, digital inclusion,
+                        and transformation.
                     </p>
 
                     <!-- Social Links -->
@@ -672,57 +676,57 @@
             }
         });
 
-            // Glass Navigation Scroll Effect
-            window.addEventListener('scroll', function() {
-                const navbar = document.getElementById('navbar');
-                if (window.scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            });
+        // Glass Navigation Scroll Effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
 
-            // Scroll Progress Indicator
-            window.addEventListener('scroll', function() {
-                const scrollIndicator = document.getElementById('scrollIndicator');
-                const totalHeight = document.body.scrollHeight - window.innerHeight;
-                const progress = (window.scrollY / totalHeight) * 100;
-                scrollIndicator.style.width = progress + '%';
-            });
+        // Scroll Progress Indicator
+        window.addEventListener('scroll', function() {
+            const scrollIndicator = document.getElementById('scrollIndicator');
+            const totalHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (window.scrollY / totalHeight) * 100;
+            scrollIndicator.style.width = progress + '%';
+        });
 
-            // Back to Top Button
-            const backToTopButton = document.getElementById('back-to-top');
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
 
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 500) {
-                    backToTopButton.style.opacity = '1';
-                    backToTopButton.style.visibility = 'visible';
-                } else {
-                    backToTopButton.style.opacity = '0';
-                    backToTopButton.style.visibility = 'hidden';
-                }
-            });
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 500) {
+                backToTopButton.style.opacity = '1';
+                backToTopButton.style.visibility = 'visible';
+            } else {
+                backToTopButton.style.opacity = '0';
+                backToTopButton.style.visibility = 'hidden';
+            }
+        });
 
-            backToTopButton.addEventListener('click', function() {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
             });
+        });
 
         // Keyboard navigation (ESC closes mobile menu)
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape') {
-                    const mobileMenu = document.getElementById('mobile-menu');
-                    const menuIcon = document.getElementById('menu-icon');
-                    const closeIcon = document.getElementById('close-icon');
-                    if (mobileMenu && mobileMenu.classList.contains('open')) {
-                        mobileMenu.classList.remove('open');
-                        menuIcon.classList.remove('hidden');
-                        closeIcon.classList.add('hidden');
-                    }
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const mobileMenu = document.getElementById('mobile-menu');
+                const menuIcon = document.getElementById('menu-icon');
+                const closeIcon = document.getElementById('close-icon');
+                if (mobileMenu && mobileMenu.classList.contains('open')) {
+                    mobileMenu.classList.remove('open');
+                    menuIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
                 }
-            });
+            }
+        });
     </script>
 </body>
 
