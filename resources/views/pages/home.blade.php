@@ -172,11 +172,11 @@
                 </div>
 
                 <!-- Image Side -->
-                <div class="lg:order-2 order-1 flex justify-center lg:justify-end">
+                <div class="animate-on-scroll lg:order-2 order-1 flex justify-center lg:justify-end">
                     <div class="relative">
                         <!-- Main Image - Made Bigger -->
                         <div
-                            class="relative w-96 h-[500px] md:w-[450px] md:h-[580px] rounded-3xl overflow-hidden shadow-2xl">
+                            class="relative w-96 h-[500px] md:w-[450px] md:h-[580px] rounded-2xl overflow-hidden shadow-2xl">
                             <img src="{{ asset('images/hero/violet-hero-main.jpg') }}"
                                 alt="Violet Nswana Kaponda - African Fintech Queen"
                                 class="w-full h-full object-cover object-center">
@@ -999,7 +999,7 @@
                     <div class="flex items-center">
                         <div
                             class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white font-semibold mr-4">
-                            JM
+                            DS
                         </div>
                         <div>
                             <div class="font-semibold text-gray-900">Daniel Skirrow</div>
@@ -1046,7 +1046,7 @@
                     <div class="flex items-center">
                         <div
                             class="w-12 h-12 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center text-white font-semibold mr-4">
-                            AK
+                            SM
                         </div>
                         <div>
                             <div class="font-semibold text-gray-900">Samuel Mwale</div>
@@ -1093,7 +1093,7 @@
                     <div class="flex items-center">
                         <div
                             class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-semibold mr-4">
-                            SM
+                            ND
                         </div>
                         <div>
                             <div class="font-semibold text-gray-900">Nickson Dawson</div>
