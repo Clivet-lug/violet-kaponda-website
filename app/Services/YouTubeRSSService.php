@@ -23,14 +23,9 @@ class YouTubeRSSService
     {
         return Cache::remember('youtube_latest_videos', 900, function () use ($limit) {
             try {
-                $response = Http::timeout(30)
-                    ->withHeaders([
-                        'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-                    ])
-                    ->get($this->rssUrl);
+                $response = Http::timeout(30)->get($this->rssUrl);
 
                 if ($response->successful()) {
-                    // Register namespaces before parsing
                     $xml = simplexml_load_string($response->body());
 
                     if ($xml === false) {
@@ -38,54 +33,65 @@ class YouTubeRSSService
                         return $this->getFallbackData();
                     }
 
-                    // Register namespaces
-                    $xml->registerXPathNamespace('atom', 'http://www.w3.org/2005/Atom');
-                    $xml->registerXPathNamespace('media', 'http://search.yahoo.com/mrss/');
-                    $xml->registerXPathNamespace('yt', 'http://www.youtube.com/xml/schemas/2015');
+                    $videos = [];
+                    $count = 0;
 
-                    $entries = $xml->entry;
+                    // Parse entries without namespace issues
+                    foreach ($xml->entry as $entry) {
+                        if ($count >= $limit) break;
 
-                    if (!$entries || count($entries) === 0) {
-                        Log::warning('YouTube RSS: No entries found in feed');
+                        try {
+                            // Extract video ID from the id element
+                            $idString = (string)$entry->id;
+                            $videoId = str_replace('yt:video:', '', $idString);
+
+                            $publishedDate = new \DateTime((string)$entry->published);
+
+                            // Get media:group elements
+                            $mediaGroup = $entry->children('media', true)->group;
+                            $description = '';
+
+                            if ($mediaGroup) {
+                                $description = (string)$mediaGroup->description;
+                            }
+
+                            $videos[] = [
+                                'id' => $videoId,
+                                'title' => (string)$entry->title,
+                                'description' => $description,
+                                'published' => $publishedDate->format('Y-m-d H:i:s'),
+                                'updated' => $publishedDate->format('Y-m-d H:i:s'),
+                                'published_ago' => $this->timeAgo($publishedDate),
+                                'thumbnail' => $this->getThumbnailUrl($videoId),
+                                'thumbnail_high' => $this->getThumbnailUrl($videoId, 'maxresdefault'),
+                                'url' => "https://www.youtube.com/watch?v={$videoId}",
+                                'embed_url' => "https://www.youtube.com/embed/{$videoId}",
+                                'channel_title' => (string)$entry->author->name,
+                                'duration' => $this->estimateDuration((string)$entry->title),
+                                'category' => $this->categorizeVideo((string)$entry->title),
+                                'episode_number' => $this->extractEpisodeNumber((string)$entry->title),
+                                'series' => $this->extractSeries((string)$entry->title),
+                            ];
+
+                            $count++;
+                        } catch (\Exception $e) {
+                            Log::warning('YouTube RSS: Failed to parse entry: ' . $e->getMessage());
+                            continue;
+                        }
+                    }
+
+                    if (count($videos) > 0) {
+                        Log::info('YouTube RSS: Successfully fetched ' . count($videos) . ' videos');
+                        return $videos;
+                    } else {
+                        Log::warning('YouTube RSS: No videos extracted from feed');
                         return $this->getFallbackData();
                     }
-
-                    $videos = [];
-
-                    foreach ($entries as $index => $entry) {
-                        if ($index >= $limit) break;
-
-                        $videoId = $this->extractVideoId((string)$entry->id);
-                        $publishedDate = new \DateTime((string)$entry->published);
-                        $updatedDate = new \DateTime((string)$entry->updated);
-
-                        $videos[] = [
-                            'id' => $videoId,
-                            'title' => (string)$entry->title,
-                            'description' => (string)$entry->{'media:group'}->{'media:description'},
-                            'published' => $publishedDate->format('Y-m-d H:i:s'),
-                            'updated' => $updatedDate->format('Y-m-d H:i:s'),
-                            'published_ago' => $this->timeAgo($publishedDate),
-                            'thumbnail' => $this->getThumbnailUrl($videoId),
-                            'thumbnail_high' => $this->getThumbnailUrl($videoId, 'maxresdefault'),
-                            'url' => "https://www.youtube.com/watch?v={$videoId}",
-                            'embed_url' => "https://www.youtube.com/embed/{$videoId}",
-                            'channel_title' => (string)$entry->author->name,
-                            'duration' => $this->estimateDuration((string)$entry->title),
-                            'category' => $this->categorizeVideo((string)$entry->title),
-                            'episode_number' => $this->extractEpisodeNumber((string)$entry->title),
-                            'series' => $this->extractSeries((string)$entry->title),
-                        ];
-                    }
-
-                    Log::info('YouTube RSS: Successfully fetched ' . count($videos) . ' videos');
-                    return $videos;
                 }
 
-                Log::error('YouTube RSS: HTTP request failed with status ' . $response->status());
+                Log::error('YouTube RSS: HTTP request failed');
             } catch (\Exception $e) {
                 Log::error('YouTube RSS fetch failed: ' . $e->getMessage());
-                Log::error('Stack trace: ' . $e->getTraceAsString());
             }
 
             return $this->getFallbackData();
