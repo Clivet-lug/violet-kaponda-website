@@ -23,13 +23,36 @@ class YouTubeRSSService
     {
         return Cache::remember('youtube_latest_videos', 900, function () use ($limit) {
             try {
-                $response = Http::timeout(30)->get($this->rssUrl);
+                $response = Http::timeout(30)
+                    ->withHeaders([
+                        'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                    ])
+                    ->get($this->rssUrl);
 
                 if ($response->successful()) {
+                    // Register namespaces before parsing
                     $xml = simplexml_load_string($response->body());
+
+                    if ($xml === false) {
+                        Log::error('YouTube RSS: XML parsing failed');
+                        return $this->getFallbackData();
+                    }
+
+                    // Register namespaces
+                    $xml->registerXPathNamespace('atom', 'http://www.w3.org/2005/Atom');
+                    $xml->registerXPathNamespace('media', 'http://search.yahoo.com/mrss/');
+                    $xml->registerXPathNamespace('yt', 'http://www.youtube.com/xml/schemas/2015');
+
+                    $entries = $xml->entry;
+
+                    if (!$entries || count($entries) === 0) {
+                        Log::warning('YouTube RSS: No entries found in feed');
+                        return $this->getFallbackData();
+                    }
+
                     $videos = [];
 
-                    foreach ($xml->entry as $index => $entry) {
+                    foreach ($entries as $index => $entry) {
                         if ($index >= $limit) break;
 
                         $videoId = $this->extractVideoId((string)$entry->id);
@@ -55,10 +78,14 @@ class YouTubeRSSService
                         ];
                     }
 
+                    Log::info('YouTube RSS: Successfully fetched ' . count($videos) . ' videos');
                     return $videos;
                 }
+
+                Log::error('YouTube RSS: HTTP request failed with status ' . $response->status());
             } catch (\Exception $e) {
                 Log::error('YouTube RSS fetch failed: ' . $e->getMessage());
+                Log::error('Stack trace: ' . $e->getTraceAsString());
             }
 
             return $this->getFallbackData();
