@@ -490,7 +490,7 @@
                     <div class="flex items-center">
                         <div
                             class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-semibold text-xs mr-3">
-                            AK
+                            CL
                         </div>
                         <div>
                             <div class="font-semibold text-gray-900 text-sm">Clivet Lungu</div>
@@ -533,7 +533,7 @@
                     <div class="flex items-center">
                         <div
                             class="w-8 h-8 bg-gradient-to-r from-gray-500 to-gray-400 rounded-full flex items-center justify-center text-white font-semibold text-xs mr-3">
-                            AK
+                            ND
                         </div>
                         <div>
                             <div class="font-semibold text-gray-900 text-sm">Nickson Dawson</div>
