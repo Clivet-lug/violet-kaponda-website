@@ -679,7 +679,7 @@
                     <div class="flex items-center">
                         <div
                             class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-semibold mr-4">
-                            AK
+                            CM
                         </div>
                         <div>
                             <div class="font-semibold text-gray-900">Chongo Mutale</div>
@@ -727,7 +727,7 @@
                     <div class="flex items-center">
                         <div
                             class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center text-white font-semibold mr-4">
-                            PM
+                            BM
                         </div>
                         <div>
                             <div class="font-semibold text-gray-900">Billy Mwape</div>
