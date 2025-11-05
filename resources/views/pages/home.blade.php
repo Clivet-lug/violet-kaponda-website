@@ -199,8 +199,8 @@
                         <!-- Floating Stats Card - Updated without Probase -->
                         <div
                             class="absolute -bottom-6 -right-6 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-4 shadow-xl text-white max-w-xs">
-                            <div class="text-lg font-bold">Lead Business Development</div>
-                            <div class="text-sm opacity-90">Strategic Leader</div>
+                            <div class="text-lg font-bold">Co-founder and Chief Operations Office</div>
+                            <div class="text-sm opacity-90">Fintech Leader</div>
                         </div>
 
                         <!-- Decorative Elements -->
@@ -340,7 +340,8 @@
                                 class="w-2 h-2 bg-red-600 rounded-full group-hover:scale-125 transition-transform duration-200">
                             </div>
                             <span class="text-gray-700 group-hover:text-gray-900 transition-colors duration-200">Current:
-                                Lead Business Development at Probase Group</span>
+                                Co-Founder & Chief Operating Officer at Sunga
+                            </span>
                         </div>
                         <div class="flex items-center space-x-3 group">
                             <div
@@ -993,7 +994,8 @@
                     <blockquote
                         class="text-gray-700 mb-6 leading-relaxed group-hover:text-gray-900 transition-colors duration-300">
                         "Violet has a rare ability to connect vision with execution. In every partnership
-                         conversation, she brings depth, foresight, and a true passion for African innovation. She is a force in fintech and technology across the continent."
+                        conversation, she brings depth, foresight, and a true passion for African innovation. She is a force
+                        in fintech and technology across the continent."
                     </blockquote>
 
                     <div class="flex items-center">
@@ -1039,8 +1041,9 @@
 
                     <blockquote
                         class="text-gray-700 mb-6 leading-relaxed group-hover:text-gray-900 transition-colors duration-300">
-                        "Violet is the epitome of resilience and vision. She has defied odds, broken barriers, and now uses her platform to open doors for others.
-                         She’s not just a leader in technology — she’s a role model for what is possible."
+                        "Violet is the epitome of resilience and vision. She has defied odds, broken barriers, and now uses
+                        her platform to open doors for others.
+                        She’s not just a leader in technology — she’s a role model for what is possible."
                     </blockquote>
 
                     <div class="flex items-center">
@@ -1086,7 +1089,8 @@
 
                     <blockquote
                         class="text-gray-700 mb-6 leading-relaxed group-hover:text-gray-900 transition-colors duration-300">
-                        "Violet Nswana Kaponda doesn't just participate in Africa's fintech revolution — she leads it. Through strategic vision and relentless execution,
+                        "Violet Nswana Kaponda doesn't just participate in Africa's fintech revolution — she leads it.
+                        Through strategic vision and relentless execution,
                         she's opening doors that transform entire industries."
                     </blockquote>
 

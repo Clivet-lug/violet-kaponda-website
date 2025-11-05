@@ -265,7 +265,7 @@
                         and I'm on
                         a mission to bridge the gap between innovation and accessibility. This belief drives everything I do
                         -
-                        from my strategic work at Probase Group to my thought leadership through the "Elevate & Dominate"
+                        From the impactful and strategic work I do at Sunga to my thought leadership through the "Elevate & Dominate"
                         podcast.
                     </p>
 
@@ -319,22 +319,67 @@
                 <!-- Timeline Items -->
                 <div class="space-y-12">
 
-                    <!-- Current Role -->
+                    <!-- NEW: Sunga Role -->
                     <div class="relative flex items-center animate-on-scroll">
                         <div
-                            class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 bg-gradient-to-r from-amber-600 to-orange-600 rounded-full border-4 border-white shadow-xl flex items-center justify-center z-10">
+                            class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full border-4 border-white shadow-xl flex items-center justify-center z-10">
                             <div class="w-3 h-3 bg-white rounded-full animate-pulse"></div>
                         </div>
 
                         <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8 md:text-right">
                             <div
                                 class="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                                <div class="text-sm font-semibold text-amber-600 mb-2 flex">
+                                <div class="text-sm font-semibold text-emerald-600 mb-2 flex md:justify-end">
                                     <span class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
-                                    Feb 2024 - Present
+                                    2025 - Present
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-2 md:text-left">Lead Business Development & Strategic Partnerships</h3>
-                                <div class="text-amber-700 font-medium mb-3 flex">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2 md:text-right">Co-Founder & Chief Operating
+                                    Officer</h3>
+                                <div class="text-emerald-700 font-medium mb-3 flex md:justify-end">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                        </path>
+                                    </svg>
+                                    Sunga
+                                </div>
+                                <p class="text-gray-600 leading-relaxed mb-4 text-justify">
+                                    Leading operational strategy, partnerships, and growth initiatives while overseeing
+                                    product development focused on group savings and inclusive finance. Spearheading
+                                    initiatives that foster digital trust and financial literacy across Zambia, driving
+                                    strategic vision to position Sunga as a household name in African fintech.
+                                </p>
+                                <div class="flex flex-wrap gap-2 md:justify-end">
+                                    <span
+                                        class="px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-sm font-medium">Operations</span>
+                                    <span
+                                        class="px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-sm font-medium">Product
+                                        Development</span>
+                                    <span
+                                        class="px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-sm font-medium">Financial
+                                        Inclusion</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Current Role: Probase -->
+                    <div class="relative flex items-center animate-on-scroll">
+                        <div
+                            class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 bg-gradient-to-r from-amber-600 to-orange-600 rounded-full border-4 border-white shadow-xl flex items-center justify-center z-10">
+                            <div class="w-3 h-3 bg-white rounded-full animate-pulse"></div>
+                        </div>
+
+                        <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8 md:ml-auto">
+                            <div
+                                class="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300 hover:scale-105">
+                                <div class="text-sm font-semibold text-amber-600 mb-2">
+                                    <span class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
+                                    Feb 2024 - 2025
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Lead Business Development & Strategic
+                                    Partnerships</h3>
+                                <div class="text-amber-700 font-medium mb-3">
                                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
@@ -362,34 +407,35 @@
                         </div>
                     </div>
 
-                    <!-- Other Current Role -->
+                    <!-- Other Current Role: Uniplexity AI -->
                     <div class="relative flex items-center animate-on-scroll">
                         <div
                             class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 bg-gradient-to-r from-purple-600 to-gray-600 rounded-full border-4 border-white shadow-xl flex items-center justify-center z-10">
                             <div class="w-3 h-3 bg-white rounded-full animate-pulse"></div>
                         </div>
 
-                        <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8 md:ml-auto">
+                        <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8 md:text-right">
                             <div
                                 class="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                                <div class="text-sm font-semibold text-purple-600 mb-2">
+                                <div class="text-sm font-semibold text-purple-600 mb-2 flex md:justify-end">
                                     <span class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
                                     Jan 2025 - Present
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-2">Co-Founder & Chief Strategy and Growth Officer at Uniplexity AI</h3>
-                                <div class="text-purple-700 font-medium mb-3">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2 md:text-right">Co-Founder & Chief Strategy
+                                    and Growth Officer</h3>
+                                <div class="text-purple-700 font-medium mb-3 flex md:justify-end">
                                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
                                         </path>
                                     </svg>
-                                    Uniplexity AI
+                                    Uniplexity AI
                                 </div>
                                 <p class="text-gray-600 leading-relaxed mb-4 text-justify">
                                     Leading strategic partnerships and business growth initiatives while positioning
-                                    Uniplexity AI as a leader in Africa’s digital and AI innovation
+                                    Uniplexity AI as a leader in Africa's digital and AI innovation
                                 </p>
-                                <div class="flex flex-wrap gap-2">
+                                <div class="flex flex-wrap gap-2 md:justify-end">
                                     <span
                                         class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Artificial
                                         Intelligence
@@ -403,7 +449,7 @@
                         </div>
                     </div>
 
-                    <!-- Previous Role -->
+                    <!-- Previous Role: ProBASE IT Project Manager -->
                     <div class="relative flex items-center animate-on-scroll">
                         <div
                             class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full border-4 border-white shadow-xl flex items-center justify-center z-10">
@@ -414,13 +460,13 @@
                             </svg>
                         </div>
 
-                        <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8 md:text-right">
+                        <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8 md:ml-auto">
                             <div
                                 class="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                                <div class="text-sm font-semibold text-blue-600 mb-2 flex">Sep 2017 - Feb 2024 (6 yrs 6 mos)
+                                <div class="text-sm font-semibold text-blue-600 mb-2">Sep 2017 - Feb 2024 (6 yrs 6 mos)
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-2 flex">IT Project Manager</h3>
-                                <div class="text-blue-700 font-medium mb-3 flex">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">IT Project Manager</h3>
+                                <div class="text-blue-700 font-medium mb-3">
                                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
@@ -447,7 +493,7 @@
                         </div>
                     </div>
 
-                    <!-- Career Milestone -->
+                    <!-- Career Milestone: Academic Excellence -->
                     <div class="relative flex items-center animate-on-scroll">
                         <div
                             class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 bg-gradient-to-r from-green-600 to-emerald-600 rounded-full border-4 border-white shadow-xl flex items-center justify-center z-10">
@@ -460,18 +506,18 @@
                             </svg>
                         </div>
 
-                        <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8 md:ml-auto">
+                        <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8 md:text-right">
                             <div
                                 class="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                                <div class="text-sm font-semibold text-green-600 mb-2">
+                                <div class="text-sm font-semibold text-green-600 mb-2 flex md:justify-end">
                                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
                                     2019 - 2021
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-2">Academic Excellence</h3>
-                                <div class="text-green-700 font-medium mb-3">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2 md:text-right">Academic Excellence</h3>
+                                <div class="text-green-700 font-medium mb-3 flex md:justify-end">
                                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M12 14l9-5-9-5-9 5 9 5z"></path>
@@ -482,7 +528,7 @@
                                     Earned Master's degree in Project Management while excelling in professional role,
                                     demonstrating commitment to continuous learning and academic excellence in leadership.
                                 </p>
-                                <div class="flex flex-wrap gap-2">
+                                <div class="flex flex-wrap gap-2 md:justify-end">
                                     <span
                                         class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">Master's
                                         Degree</span>
