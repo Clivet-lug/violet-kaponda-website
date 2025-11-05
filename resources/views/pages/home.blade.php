@@ -880,9 +880,9 @@
                                         </div>
                                     </div>
 
-                                    <!-- YouTube Video with better parameters -->
+                                    <!-- YouTube Video with MUTED autoplay by default -->
                                     <iframe x-ref="videoFrame" class="relative z-10 w-full h-full rounded-lg shadow-2xl"
-                                        src="https://www.youtube.com/embed/xtmlZ5w70uE?autoplay=1&rel=0&modestbranding=1&fs=1&cc_load_policy=1"
+                                        src="https://www.youtube.com/embed/xtmlZ5w70uE?autoplay=1&mute=1&rel=0&modestbranding=1&fs=1&cc_load_policy=1"
                                         title="Violet Kaponda - Fintech Innovation Interview" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen>
