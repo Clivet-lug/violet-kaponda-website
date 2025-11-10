@@ -215,12 +215,13 @@
             </div>
         </div>
 
-        <!-- Scroll Indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/70 animate-bounce">
+        <!-- Scroll Indicator - Hidden on Mobile, Visible on Desktop -->
+        <div class="hidden md:flex absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/70 animate-bounce">
             <a href="#about-preview" class="block group">
                 <div class="flex flex-col items-center space-y-2">
-                    <span class="text-sm font-medium group-hover:text-yellow-400 transition-colors duration-300">Discover
-                        More</span>
+                    <span class="text-sm font-medium group-hover:text-yellow-400 transition-colors duration-300">
+                        Discover More
+                    </span>
                     <svg class="w-6 h-6 group-hover:text-yellow-400 transition-colors duration-300" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
