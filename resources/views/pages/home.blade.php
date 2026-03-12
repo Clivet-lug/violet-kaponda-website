@@ -334,14 +334,14 @@
                                 class="w-2 h-2 bg-red-600 rounded-full group-hover:scale-125 transition-transform duration-200">
                             </div>
                             <span class="text-gray-700 group-hover:text-gray-900 transition-colors duration-200">10+ Years
-                                IT Project Management at ProBASE</span>
+                                IT Project Management</span>
                         </div>
                         <div class="flex items-center space-x-3 group">
                             <div
                                 class="w-2 h-2 bg-red-600 rounded-full group-hover:scale-125 transition-transform duration-200">
                             </div>
                             <span class="text-gray-700 group-hover:text-gray-900 transition-colors duration-200">Current:
-                                Co-Founder & Chief Operating Officer at Sunga
+                                Co-Founder & Chief Operating Officer at Sunga Africa
                             </span>
                         </div>
                         <div class="flex items-center space-x-3 group">
@@ -349,7 +349,7 @@
                                 class="w-2 h-2 bg-red-600 rounded-full group-hover:scale-125 transition-transform duration-200">
                             </div>
                             <span class="text-gray-700 group-hover:text-gray-900 transition-colors duration-200">Current:
-                                Co-Founder & Chief Strategy and Growth Officer at Uniplexity AI
+                                Founder & Chief Executive Officer at Avec Technologies
                             </span>
                         </div>
                         <div class="flex items-center space-x-3 group">
