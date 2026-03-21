@@ -334,7 +334,7 @@
                                 class="w-2 h-2 bg-red-600 rounded-full group-hover:scale-125 transition-transform duration-200">
                             </div>
                             <span class="text-gray-700 group-hover:text-gray-900 transition-colors duration-200">10+ Years
-                                IT Project Management</span>
+                                in Financial Technology</span>
                         </div>
                         <div class="flex items-center space-x-3 group">
                             <div
