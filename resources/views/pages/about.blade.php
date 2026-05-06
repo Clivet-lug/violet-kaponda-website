@@ -86,7 +86,7 @@
                     <div class="relative">
                         <!-- Main Image -->
                         <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-                            <img src="{{ asset('images/hero/violet-hero-2.jpg') }}"
+                            <img src="{{ asset('images/hero/fintechQ2.webp') }}"
                                 alt="Violet Nswana Kaponda - African Fintech Queen" class="w-full h-auto object-cover">
 
                             <!-- Glass Overlay -->
