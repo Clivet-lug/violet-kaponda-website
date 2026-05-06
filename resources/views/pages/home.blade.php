@@ -177,7 +177,7 @@
                         <!-- Main Image - Made Bigger -->
                         <div
                             class="relative w-96 h-[500px] md:w-[450px] md:h-[580px] rounded-2xl overflow-hidden shadow-2xl">
-                            <img src="{{ asset('images/hero/fintechQ1.webp') }}"
+                            <img src="{{ asset('images/hero/fintechQ2.webp') }}"
                                 alt="Violet Nswana Kaponda - African Fintech Queen"
                                 class="w-full h-full object-cover object-center">
 
