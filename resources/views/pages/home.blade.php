@@ -199,8 +199,8 @@
                         <!-- Floating Stats Card - Updated without Probase -->
                         <div
                             class="absolute -bottom-6 -right-6 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-4 shadow-xl text-white max-w-xs">
-                            <div class="text-lg font-bold">Co-founder and Chief Operations Officer</div>
-                            <div class="text-sm opacity-90">Fintech Leader</div>
+                            <div class="text-lg font-bold">Co-founder and Chief Excecutive Officer</div>
+                            <div class="text-sm opacity-90">African Fintech Leader</div>
                         </div>
 
                         <!-- Decorative Elements -->
