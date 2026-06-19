@@ -18,6 +18,14 @@ Route::get('/speaking', function () {
     return view('pages.speaking');
 })->name('speaking');
 
+Route::get('/avec', function () {
+    return view('pages.avec');
+})->name('avec');
+
+Route::get('/projects', function () {
+    return view('pages.projects');
+})->name('projects');
+
 // Route::get('/media', function () {
 //     return view('pages.media');
 // })->name('media');
@@ -73,6 +81,7 @@ Route::get('/sitemap.xml', function () {
     $routes = [
         ['url' => route('home'), 'priority' => '1.0', 'changefreq' => 'weekly'],
         ['url' => route('about'), 'priority' => '0.9', 'changefreq' => 'monthly'],
+        ['url' => route('avec'), 'priority' => '0.9', 'changefreq' => 'monthly'],
         ['url' => route('speaking'), 'priority' => '0.8', 'changefreq' => 'monthly'],
         ['url' => route('media'), 'priority' => '0.8', 'changefreq' => 'monthly'],
         ['url' => route('blog.index'), 'priority' => '0.9', 'changefreq' => 'weekly'],

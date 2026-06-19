@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'Violet Nswana Kaponda - Fintech Thought Leader & Speaker')</title>
-    <meta name="description" content="@yield('description', 'Violet Nswana Kaponda is a leading voice in African fintech, digital transformation, and women in technology.')">
+    <title>@yield('title', 'Violet Nswana Kaponda - CEO, AVEC Technologies | Building Africa\'s Digital Future')</title>
+    <meta name="description" content="@yield('description', 'Violet Nswana Kaponda is the Founder & CEO of AVEC Technologies, building Africa\'s AI and digital infrastructure future.')">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -64,8 +64,6 @@
             background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(30px);
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-            /* padding-top: 0.75rem;
-            padding-bottom: 0.75rem; */
         }
 
         /* Enhanced Logo */
@@ -319,7 +317,7 @@
                                 class="font-display font-bold text-xl text-gray-900 group-hover:text-brand-orange transition-colors duration-300 whitespace-nowrap">
                                 Violet Nswana Kaponda
                             </div>
-                            <div class="text-xs text-gray-600">African Fintech Queen</div>
+                            <div class="text-xs text-gray-600">CEO, AVEC Technologies</div>
                         </div>
                         <!-- Mobile: Shorter Version -->
                         <div class="min-w-0 sm:hidden">
@@ -327,7 +325,7 @@
                                 class="font-display font-bold text-lg text-gray-900 group-hover:text-brand-orange transition-colors duration-300">
                                 Violet Nswana Kaponda
                             </div>
-                            <div class="text-xs text-gray-600">African Fintech Queen</div>
+                            <div class="text-xs text-gray-600">CEO, AVEC Technologies</div>
                         </div>
                     </a>
                 </div>
@@ -336,12 +334,13 @@
                 <div class="hidden lg:flex items-center space-x-2">
                     <a href="/" class="nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
                     <a href="/about" class="nav-link {{ request()->is('about') ? 'active' : '' }}">About</a>
+                    <a href="/avec" class="nav-link {{ request()->is('avec') ? 'active' : '' }}">AVEC</a>
                     <a href="/speaking" class="nav-link {{ request()->is('speaking') ? 'active' : '' }}">Speaking</a>
                     <a href="/media" class="nav-link {{ request()->is('media') ? 'active' : '' }}">Media</a>
                     <a href="/blog" class="nav-link {{ request()->is('blog*') ? 'active' : '' }}">Blog</a>
                     <a href="/contact"
                         class="btn-primary text-white px-6 py-3 rounded-xl font-semibold shadow-lg ml-4 flex-shrink-0">
-                        Work With Me ->
+                        Work With Us ->
                     </a>
                 </div>
 
@@ -364,10 +363,11 @@
                 <div class="px-4 pt-4 pb-6 space-y-3 glass-nav border-t border-gray-100 shadow-xl rounded-b-2xl">
                     <a href="/contact"
                         class="block mx-2 mb-4 btn-primary text-white px-6 py-4 rounded-xl text-center font-semibold shadow-lg">
-                        Work With Me ->
+                        Work With Us ->
                     </a>
                     <a href="/" class="mobile-nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
                     <a href="/about" class="mobile-nav-link {{ request()->is('about') ? 'active' : '' }}">About</a>
+                    <a href="/avec" class="mobile-nav-link {{ request()->is('avec') ? 'active' : '' }}">AVEC</a>
                     <a href="/speaking"
                         class="mobile-nav-link {{ request()->is('speaking') ? 'active' : '' }}">Speaking</a>
                     <a href="/media" class="mobile-nav-link {{ request()->is('media') ? 'active' : '' }}">Media</a>
@@ -405,12 +405,12 @@
                         </div>
                         <div>
                             <div class="font-display font-bold text-2xl gradient-text">Violet Nswana Kaponda</div>
-                            <div class="text-gray-400 text-sm">African Fintech Queen</div>
+                            <div class="text-gray-400 text-sm">CEO, AVEC Technologies</div>
                         </div>
                     </div>
                     <p class="text-gray-300 text-base leading-relaxed mb-8">
-                        Driving Africa’s fintech revolution through bold leadership, digital inclusion,
-                        and transformation.
+                        Building Africa's AI and digital infrastructure future through bold leadership,
+                        enterprise systems, and technology innovation.
                     </p>
 
                     <!-- Social Links -->
@@ -465,6 +465,9 @@
                         <li><a href="/about"
                                 class="text-gray-400 hover:text-brand-orange transition-colors duration-300 text-base hover:translate-x-2 inline-block">About
                                 Me</a></li>
+                        <li><a href="/avec"
+                                class="text-gray-400 hover:text-brand-orange transition-colors duration-300 text-base hover:translate-x-2 inline-block">AVEC
+                                Technologies</a></li>
                         <li><a href="/speaking"
                                 class="text-gray-400 hover:text-brand-orange transition-colors duration-300 text-base hover:translate-x-2 inline-block">Speaking
                                 Engagements</a></li>
@@ -483,7 +486,8 @@
                 <!-- Newsletter -->
                 <div>
                     <h3 class="font-semibold text-lg mb-4 text-white">Stay Connected</h3>
-                    <p class="text-gray-400 text-base mb-6">Get exclusive fintech insights delivered to your inbox.</p>
+                    <p class="text-gray-400 text-base mb-6">Get exclusive AI and digital infrastructure insights
+                        delivered to your inbox.</p>
 
                     <form id="newsletter-form" action="{{ route('newsletter.subscribe') }}" method="POST"
                         class="flex flex-col sm:flex-row gap-3">
@@ -644,7 +648,7 @@
                 <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                     <div class="text-gray-400 text-sm text-center md:text-left">
                         <p>&copy; {{ date('Y') }} Violet Nswana Kaponda. All rights reserved.</p>
-                        <p class="text-xs mt-1">Empowering Africa's Fintech Future 🌍</p>
+                        <p class="text-xs mt-1">Building Africa's Digital Future 🌍</p>
                     </div>
                     <div class="flex space-x-6 text-sm">
                         <a href="/privacy"
