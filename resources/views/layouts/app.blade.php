@@ -24,7 +24,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('favicon/favicon-96x96.png') }}?v=2">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon/apple-touch-icon.png') }}?v=2">
     <link rel="manifest" href="{{ asset('favicon/site.webmanifest') }}?v=2">
-    <meta name="theme-color" content="#991b1b">
+    <meta name="theme-color" content="#5b21b6">
 
     <!-- Enhanced Tailwind Config -->
     <script>
@@ -37,9 +37,9 @@
                     },
                     colors: {
                         'brand': {
-                            'orange': '#ea580c',
-                            'red': '#dc2626',
-                            'gold': '#f59e0b',
+                            'purple': '#8b5cf6',
+                            'blue': '#3b82f6',
+                            'cyan': '#06b6d4',
                         }
                     },
                     animation: {
@@ -69,7 +69,7 @@
         /* Enhanced Logo */
         .logo-container:hover .logo-icon {
             transform: scale(1.1) rotate(5deg);
-            box-shadow: 0 15px 35px rgba(234, 88, 12, 0.4);
+            box-shadow: 0 15px 35px rgba(139, 92, 246, 0.4);
         }
 
         .logo-icon {
@@ -94,7 +94,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(234, 88, 12, 0.1), transparent);
+            background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.1), transparent);
             transition: left 0.6s ease;
         }
 
@@ -103,17 +103,17 @@
         }
 
         .nav-link:hover {
-            color: #ea580c;
-            background-color: rgba(254, 215, 170, 0.5);
+            color: #8b5cf6;
+            background-color: rgba(196, 181, 253, 0.5);
             transform: translateY(-2px);
         }
 
         /* Active Nav Link Styles */
         .nav-link.active {
-            color: #ea580c;
-            background: linear-gradient(135deg, rgba(234, 88, 12, 0.15), rgba(220, 38, 38, 0.1));
+            color: #8b5cf6;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(59, 130, 246, 0.1));
             font-weight: 600;
-            box-shadow: 0 4px 12px rgba(234, 88, 12, 0.2);
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
         }
 
         .nav-link.active::after {
@@ -123,10 +123,10 @@
             left: 50%;
             width: 60%;
             height: 3px;
-            background: linear-gradient(to right, #ea580c, #dc2626);
+            background: linear-gradient(to right, #8b5cf6, #3b82f6);
             border-radius: 2px;
             transform: translateX(-50%);
-            box-shadow: 0 2px 8px rgba(234, 88, 12, 0.4);
+            box-shadow: 0 2px 8px rgba(139, 92, 246, 0.4);
         }
 
         /* Mobile Navigation */
@@ -156,19 +156,19 @@
         }
 
         .mobile-nav-link:hover {
-            color: #ea580c;
-            background-color: rgba(254, 215, 170, 0.7);
+            color: #8b5cf6;
+            background-color: rgba(196, 181, 253, 0.7);
             transform: translateX(8px);
         }
 
         /* Active Mobile Nav Link */
         .mobile-nav-link.active {
-            color: #ea580c;
-            background: linear-gradient(135deg, rgba(234, 88, 12, 0.2), rgba(220, 38, 38, 0.1));
+            color: #8b5cf6;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(59, 130, 246, 0.1));
             font-weight: 600;
             transform: translateX(8px);
-            border-left: 4px solid #ea580c;
-            box-shadow: 0 4px 12px rgba(234, 88, 12, 0.2);
+            border-left: 4px solid #8b5cf6;
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
         }
 
         /* Scroll Progress */
@@ -178,19 +178,19 @@
             left: 0;
             width: 0%;
             height: 4px;
-            background: linear-gradient(to right, #ea580c, #dc2626, #f59e0b);
+            background: linear-gradient(to right, #8b5cf6, #3b82f6, #06b6d4);
             z-index: 9999;
             transition: width 0.1s ease;
-            box-shadow: 0 2px 10px rgba(234, 88, 12, 0.3);
+            box-shadow: 0 2px 10px rgba(139, 92, 246, 0.3);
         }
 
         /* Enhanced Button */
         .btn-primary {
-            background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);
+            background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(234, 88, 12, 0.3);
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
         }
 
         .btn-primary::before {
@@ -210,11 +210,11 @@
 
         .btn-primary:hover {
             transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 20px 40px rgba(234, 88, 12, 0.4);
+            box-shadow: 0 20px 40px rgba(139, 92, 246, 0.4);
         }
 
         .gradient-text {
-            background: linear-gradient(135deg, #ea580c 0%, #dc2626 50%, #f59e0b 100%);
+            background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 50%, #06b6d4 100%);
             background-size: 200% 200%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -271,13 +271,13 @@
         }
 
         ::-webkit-scrollbar-thumb {
-            background: linear-gradient(to bottom, #ea580c, #dc2626);
+            background: linear-gradient(to bottom, #8b5cf6, #3b82f6);
             border-radius: 6px;
-            box-shadow: 0 2px 10px rgba(234, 88, 12, 0.3);
+            box-shadow: 0 2px 10px rgba(139, 92, 246, 0.3);
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: linear-gradient(to bottom, #dc2626, #b91c1c);
+            background: linear-gradient(to bottom, #3b82f6, #1d4ed8);
         }
 
         /* Responsive */
@@ -308,13 +308,13 @@
                 <div class="flex items-center min-w-0 flex-1 lg:flex-none">
                     <a href="/" class="logo-container flex items-center space-x-3 group min-w-0">
                         <div
-                            class="logo-icon w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-red rounded-xl flex items-center justify-center animate-float shadow-lg flex-shrink-0">
+                            class="logo-icon w-12 h-12 bg-gradient-to-br from-brand-purple to-brand-blue rounded-xl flex items-center justify-center animate-float shadow-lg flex-shrink-0">
                             <span class="text-white font-bold text-xl font-display">V</span>
                         </div>
                         <!-- Desktop: Full Name -->
                         <div class="min-w-0 hidden sm:block">
                             <div
-                                class="font-display font-bold text-xl text-gray-900 group-hover:text-brand-orange transition-colors duration-300 whitespace-nowrap">
+                                class="font-display font-bold text-xl text-gray-900 group-hover:text-brand-purple transition-colors duration-300 whitespace-nowrap">
                                 Violet Nswana Kaponda
                             </div>
                             <div class="text-xs text-gray-600">CEO, AVEC Technologies</div>
@@ -322,7 +322,7 @@
                         <!-- Mobile: Shorter Version -->
                         <div class="min-w-0 sm:hidden">
                             <div
-                                class="font-display font-bold text-lg text-gray-900 group-hover:text-brand-orange transition-colors duration-300">
+                                class="font-display font-bold text-lg text-gray-900 group-hover:text-brand-purple transition-colors duration-300">
                                 Violet Nswana Kaponda
                             </div>
                             <div class="text-xs text-gray-600">CEO, AVEC Technologies</div>
@@ -335,6 +335,7 @@
                     <a href="/" class="nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
                     <a href="/about" class="nav-link {{ request()->is('about') ? 'active' : '' }}">About</a>
                     <a href="/avec" class="nav-link {{ request()->is('avec') ? 'active' : '' }}">AVEC</a>
+                    <a href="/projects" class="nav-link {{ request()->is('projects') ? 'active' : '' }}">Projects</a>
                     <a href="/speaking" class="nav-link {{ request()->is('speaking') ? 'active' : '' }}">Speaking</a>
                     <a href="/media" class="nav-link {{ request()->is('media') ? 'active' : '' }}">Media</a>
                     <a href="/blog" class="nav-link {{ request()->is('blog*') ? 'active' : '' }}">Blog</a>
@@ -347,7 +348,7 @@
                 <!-- Mobile Menu Button -->
                 <div class="lg:hidden flex-shrink-0">
                     <button id="mobile-menu-button"
-                        class="p-3 rounded-xl text-gray-700 hover:text-brand-orange hover:bg-orange-50 transition-all duration-300">
+                        class="p-3 rounded-xl text-gray-700 hover:text-brand-purple hover:bg-violet-50 transition-all duration-300">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h16M4 18h16" />
@@ -384,7 +385,7 @@
 
     <!-- Back to Top Button -->
     <button id="back-to-top"
-        class="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-br from-brand-orange to-brand-red text-white rounded-full shadow-xl opacity-0 invisible transition-all duration-300 hover:scale-110 hover:shadow-2xl z-50 group"
+        class="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-br from-brand-purple to-brand-blue text-white rounded-full shadow-xl opacity-0 invisible transition-all duration-300 hover:scale-110 hover:shadow-2xl z-50 group"
         aria-label="Back to top">
         <svg class="w-6 h-6 mx-auto group-hover:animate-bounce" fill="none" stroke="currentColor"
             viewBox="0 0 24 24">
@@ -400,7 +401,7 @@
                 <div class="md:col-span-1">
                     <div class="flex items-center space-x-4 mb-6">
                         <div
-                            class="w-16 h-16 bg-gradient-to-br from-brand-orange to-brand-red rounded-2xl flex items-center justify-center animate-float shadow-xl">
+                            class="w-16 h-16 bg-gradient-to-br from-brand-purple to-brand-blue rounded-2xl flex items-center justify-center animate-float shadow-xl">
                             <span class="text-white font-bold text-2xl font-display">V</span>
                         </div>
                         <div>
@@ -463,22 +464,22 @@
                     <h3 class="font-semibold text-lg mb-6 text-white">Quick Links</h3>
                     <ul class="space-y-4">
                         <li><a href="/about"
-                                class="text-gray-400 hover:text-brand-orange transition-colors duration-300 text-base hover:translate-x-2 inline-block">About
+                                class="text-gray-400 hover:text-brand-purple transition-colors duration-300 text-base hover:translate-x-2 inline-block">About
                                 Me</a></li>
                         <li><a href="/avec"
-                                class="text-gray-400 hover:text-brand-orange transition-colors duration-300 text-base hover:translate-x-2 inline-block">AVEC
+                                class="text-gray-400 hover:text-brand-purple transition-colors duration-300 text-base hover:translate-x-2 inline-block">AVEC
                                 Technologies</a></li>
                         <li><a href="/speaking"
-                                class="text-gray-400 hover:text-brand-orange transition-colors duration-300 text-base hover:translate-x-2 inline-block">Speaking
+                                class="text-gray-400 hover:text-brand-purple transition-colors duration-300 text-base hover:translate-x-2 inline-block">Speaking
                                 Engagements</a></li>
                         <li><a href="/media"
-                                class="text-gray-400 hover:text-brand-orange transition-colors duration-300 text-base hover:translate-x-2 inline-block">Media
+                                class="text-gray-400 hover:text-brand-purple transition-colors duration-300 text-base hover:translate-x-2 inline-block">Media
                                 Kit</a></li>
                         <li><a href="/blog"
-                                class="text-gray-400 hover:text-brand-orange transition-colors duration-300 text-base hover:translate-x-2 inline-block">Blog
+                                class="text-gray-400 hover:text-brand-purple transition-colors duration-300 text-base hover:translate-x-2 inline-block">Blog
                                 & Insights</a></li>
                         <li><a href="/contact"
-                                class="text-gray-400 hover:text-brand-orange transition-colors duration-300 text-base hover:translate-x-2 inline-block">Contact</a>
+                                class="text-gray-400 hover:text-brand-purple transition-colors duration-300 text-base hover:translate-x-2 inline-block">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -493,7 +494,7 @@
                         class="flex flex-col sm:flex-row gap-3">
                         @csrf
                         <input type="email" name="email" placeholder="Your email address" required
-                            class="flex-1 px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-orange transition-all duration-300">
+                            class="flex-1 px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-purple transition-all duration-300">
                         <button type="submit" id="newsletter-btn"
                             class="btn-primary px-6 py-3 rounded-lg font-semibold whitespace-nowrap">
                             Subscribe
@@ -652,13 +653,13 @@
                     </div>
                     <div class="flex space-x-6 text-sm">
                         <a href="/privacy"
-                            class="text-gray-400 hover:text-brand-orange transition-colors duration-300">Privacy
+                            class="text-gray-400 hover:text-brand-purple transition-colors duration-300">Privacy
                             Policy</a>
                         <a href="/terms"
-                            class="text-gray-400 hover:text-brand-orange transition-colors duration-300">Terms of
+                            class="text-gray-400 hover:text-brand-purple transition-colors duration-300">Terms of
                             Service</a>
                         <a href="/sitemap"
-                            class="text-gray-400 hover:text-brand-orange transition-colors duration-300">Sitemap</a>
+                            class="text-gray-400 hover:text-brand-purple transition-colors duration-300">Sitemap</a>
                     </div>
                 </div>
             </div>

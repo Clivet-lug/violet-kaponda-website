@@ -11,13 +11,13 @@
         class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-black">
         <div class="absolute inset-0">
             <div
-                class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-brand-orange/20 to-brand-red/20 rounded-full blur-3xl animate-pulse">
+                class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-brand-purple/20 to-brand-blue/20 rounded-full blur-3xl animate-pulse">
             </div>
             <div
-                class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-brand-red/20 to-yellow-400/20 rounded-full blur-3xl animate-pulse delay-1000">
+                class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-brand-blue/20 to-yellow-400/20 rounded-full blur-3xl animate-pulse delay-1000">
             </div>
             <div
-                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-full blur-3xl animate-float">
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-violet-500/10 to-blue-500/10 rounded-full blur-3xl animate-float">
             </div>
         </div>
         <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
@@ -37,10 +37,10 @@
                         <h1 class="text-5xl md:text-7xl font-display font-bold leading-tight">
                             <span class="block text-white">Violet Nswana</span>
                             <span
-                                class="block bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent animate-gradient">Kaponda</span>
+                                class="block bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-500 bg-clip-text text-transparent animate-gradient">Kaponda</span>
                         </h1>
                         <div class="text-xl md:text-2xl text-gray-300 font-medium">CEO, AVEC Technologies</div>
-                        <div class="text-lg md:text-xl text-orange-400 font-semibold tracking-wide">Building Africa's AI &
+                        <div class="text-lg md:text-xl text-violet-400 font-semibold tracking-wide">Building Africa's AI &
                             Digital Infrastructure Future</div>
                     </div>
 
@@ -66,10 +66,10 @@
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-4 pt-4">
                         <a href="/avec"
-                            class="group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-red-600 text-white font-semibold rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25">
+                            class="group relative px-8 py-4 bg-gradient-to-r from-violet-500 to-blue-600 text-white font-semibold rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-violet-500/25">
                             <span class="relative z-10">Explore AVEC Technologies</span>
                             <div
-                                class="absolute inset-0 bg-gradient-to-r from-red-600 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                class="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
                         </a>
                         <a href="{{ route('speaking') }}"
@@ -96,7 +96,7 @@
                             </div>
                             <div class="relative z-10">
                                 <div
-                                    class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 group-hover:text-yellow-300 transition-colors duration-300">
+                                    class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 group-hover:text-cyan-300 transition-colors duration-300">
                                     10+</div>
                                 <div class="text-sm text-gray-300 group-hover:text-white transition-colors duration-300">
                                     Years in Tech</div>
@@ -112,7 +112,7 @@
                             </div>
                             <div class="relative z-10">
                                 <div
-                                    class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 group-hover:text-yellow-300 transition-colors duration-300">
+                                    class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 group-hover:text-cyan-300 transition-colors duration-300">
                                     3+</div>
                                 <div class="text-sm text-gray-300 group-hover:text-white transition-colors duration-300">
                                     Tech Ventures</div>
@@ -128,7 +128,7 @@
                             </div>
                             <div class="relative z-10">
                                 <div
-                                    class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 group-hover:text-yellow-300 transition-colors duration-300">
+                                    class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 group-hover:text-cyan-300 transition-colors duration-300">
                                     11+</div>
                                 <div class="text-sm text-gray-300 group-hover:text-white transition-colors duration-300">
                                     Podcast Episodes</div>
@@ -144,7 +144,7 @@
                             </div>
                             <div class="relative z-10">
                                 <div
-                                    class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 group-hover:text-yellow-300 transition-colors duration-300">
+                                    class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1 group-hover:text-cyan-300 transition-colors duration-300">
                                     5000+</div>
                                 <div class="text-sm text-gray-300 group-hover:text-white transition-colors duration-300">
                                     Followers</div>
@@ -173,12 +173,12 @@
                             <p class="text-xs text-gray-600 mt-1">Available for global events</p>
                         </div>
                         <div
-                            class="absolute -bottom-6 -right-6 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-4 shadow-xl text-white max-w-xs">
+                            class="absolute -bottom-6 -right-6 bg-gradient-to-r from-violet-500 to-blue-600 rounded-2xl p-4 shadow-xl text-white max-w-xs">
                             <div class="text-lg font-bold">Founder & CEO</div>
                             <div class="text-sm opacity-90">AVEC Technologies</div>
                         </div>
                         <div
-                            class="absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full opacity-20 blur-xl animate-float">
+                            class="absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full opacity-20 blur-xl animate-float">
                         </div>
                         <div
                             class="absolute -bottom-10 -left-10 w-24 h-24 bg-gradient-to-r from-red-500 to-pink-500 rounded-full opacity-20 blur-xl animate-float delay-1000">
@@ -208,7 +208,7 @@
         class="py-20 bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white relative overflow-hidden">
         <div class="absolute inset-0">
             <div
-                class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-orange-500/15 to-red-500/15 rounded-full blur-3xl animate-pulse">
+                class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-violet-500/15 to-blue-500/15 rounded-full blur-3xl animate-pulse">
             </div>
             <div
                 class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-red-500/15 to-pink-500/15 rounded-full blur-3xl animate-pulse delay-1000">
@@ -222,7 +222,7 @@
                     🏗️ AVEC Technologies</div>
                 <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-6 leading-tight">
                     What We Are <span
-                        class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Building At
+                        class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Building At
                         AVEC</span>
                 </h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
@@ -280,7 +280,7 @@
                 <div
                     class="group bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-2">
                     <div
-                        class="w-14 h-14 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        class="w-14 h-14 bg-gradient-to-r from-violet-500 to-blue-500 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2">
@@ -294,7 +294,7 @@
                         trusted authentication and seamless access management for individuals and institutions across
                         Africa.</p>
                     <div class="mt-4"><span
-                            class="px-2 py-1 bg-orange-500/20 text-orange-300 rounded-full text-xs font-medium">Infrastructure</span>
+                            class="px-2 py-1 bg-violet-500/20 text-violet-300 rounded-full text-xs font-medium">Infrastructure</span>
                     </div>
                 </div>
 
@@ -323,7 +323,7 @@
                 <div
                     class="group bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-2">
                     <div
-                        class="w-14 h-14 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        class="w-14 h-14 bg-gradient-to-r from-violet-500 to-yellow-500 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
@@ -336,7 +336,7 @@
                     <p class="text-gray-400 leading-relaxed text-sm">End-to-end digitization of government services,
                         enabling public institutions to deliver faster, more transparent, and citizen-centric services.</p>
                     <div class="mt-4"><span
-                            class="px-2 py-1 bg-amber-500/20 text-amber-300 rounded-full text-xs font-medium">GovTech</span>
+                            class="px-2 py-1 bg-violet-500/20 text-violet-300 rounded-full text-xs font-medium">GovTech</span>
                     </div>
                 </div>
 
@@ -365,7 +365,7 @@
                 <div
                     class="group bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-2 md:col-span-2 lg:col-span-1">
                     <div
-                        class="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-500 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        class="w-14 h-14 bg-gradient-to-r from-red-500 to-blue-500 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01">
@@ -386,7 +386,7 @@
 
             <div class="text-center animate-on-scroll">
                 <a href="/avec"
-                    class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-500 to-red-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-violet-500 to-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                     <span>Explore AVEC Technologies</span>
                     <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
@@ -401,10 +401,10 @@
     <!-- About Preview Section -->
     <section id="about-preview" class="py-20 bg-white relative overflow-hidden">
         <div
-            class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-orange-100 to-red-100 rounded-full blur-3xl opacity-30">
+            class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-violet-100 to-blue-100 rounded-full blur-3xl opacity-30">
         </div>
         <div
-            class="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-yellow-100 to-orange-100 rounded-full blur-3xl opacity-20">
+            class="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-cyan-100 to-blue-100 rounded-full blur-3xl opacity-20">
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -428,28 +428,28 @@
                             <p class="text-xs text-gray-600">University of Lusaka</p>
                         </div>
                         <div
-                            class="absolute -bottom-4 -left-4 bg-gradient-to-r from-red-600 to-orange-600 rounded-xl p-3 shadow-xl text-white max-w-xs">
+                            class="absolute -bottom-4 -left-4 bg-gradient-to-r from-blue-600 to-blue-600 rounded-xl p-3 shadow-xl text-white max-w-xs">
                             <div class="text-sm font-bold">10+ Years</div>
                             <div class="text-xs opacity-90">Tech Leadership Experience</div>
                         </div>
                         <div
-                            class="absolute -top-8 -left-8 w-24 h-24 bg-gradient-to-r from-orange-400 to-red-400 rounded-full opacity-20 blur-xl">
+                            class="absolute -top-8 -left-8 w-24 h-24 bg-gradient-to-r from-violet-400 to-blue-400 rounded-full opacity-20 blur-xl">
                         </div>
                         <div
-                            class="absolute -bottom-8 -right-8 w-32 h-32 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full opacity-15 blur-xl">
+                            class="absolute -bottom-8 -right-8 w-32 h-32 bg-gradient-to-r from-cyan-400 to-cyan-400 rounded-full opacity-15 blur-xl">
                         </div>
                     </div>
                 </div>
 
                 <div class="lg:order-2 animate-on-scroll space-y-6">
                     <div
-                        class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 text-red-800 rounded-full text-sm font-medium">
+                        class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-red-50 to-blue-50 border border-red-200 text-red-800 rounded-full text-sm font-medium">
                         🚀 Technology Founder & AI Advocate
                     </div>
                     <div class="space-y-4">
                         <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 leading-tight">
                             Building Africa's <span
-                                class="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Digital
+                                class="bg-gradient-to-r from-violet-600 to-blue-600 bg-clip-text text-transparent">Digital
                                 Future</span>
                             <br>Through AVEC
                         </h2>
@@ -506,7 +506,7 @@
                     </div>
                     <div class="pt-4">
                         <a href="{{ route('about') }}"
-                            class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                            class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-violet-600 to-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                             <span>Discover My Full Story</span>
                             <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -523,10 +523,10 @@
     <!-- Expertise Section -->
     <section id="expertise" class="py-20 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
         <div
-            class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-orange-200/30 to-red-200/30 rounded-full blur-3xl">
+            class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-violet-200/30 to-blue-200/30 rounded-full blur-3xl">
         </div>
         <div
-            class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-yellow-200/30 to-orange-200/30 rounded-full blur-3xl">
+            class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-cyan-200/30 to-blue-200/30 rounded-full blur-3xl">
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -536,7 +536,7 @@
                     💼 Areas of Expertise</div>
                 <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6 leading-tight">
                     Technology <span
-                        class="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Leadership</span>
+                        class="bg-gradient-to-r from-violet-600 to-blue-600 bg-clip-text text-transparent">Leadership</span>
                     <br>for Africa's Digital Era
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -549,7 +549,7 @@
                 <div
                     class="group bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     <div
-                        class="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        class="w-16 h-16 bg-gradient-to-r from-violet-500 to-blue-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
@@ -584,7 +584,7 @@
                 <div
                     class="group bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     <div
-                        class="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01">
@@ -601,7 +601,7 @@
                 <div
                     class="group bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     <div
-                        class="w-16 h-16 bg-gradient-to-r from-purple-500 to-red-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        class="w-16 h-16 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
@@ -635,7 +635,7 @@
                 <div
                     class="group bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     <div
-                        class="w-16 h-16 bg-gradient-to-r from-pink-500 to-red-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        class="w-16 h-16 bg-gradient-to-r from-pink-500 to-blue-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
@@ -655,20 +655,20 @@
     <!-- Speaking Topics Preview -->
     <section id="speaking" class="py-20 bg-white relative overflow-hidden">
         <div
-            class="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-red-100 to-orange-100 rounded-full blur-3xl opacity-40">
+            class="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-red-100 to-blue-100 rounded-full blur-3xl opacity-40">
         </div>
         <div
-            class="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-tl from-yellow-100 to-red-100 rounded-full blur-3xl opacity-30">
+            class="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-tl from-cyan-100 to-blue-100 rounded-full blur-3xl opacity-30">
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-16 animate-on-scroll">
                 <div
-                    class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 text-red-800 rounded-full text-sm font-medium mb-6">
+                    class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-red-50 to-blue-50 border border-red-200 text-red-800 rounded-full text-sm font-medium mb-6">
                     🎤 Speaking Topics</div>
                 <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6 leading-tight">
                     Insights That <span
-                        class="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Shape the
+                        class="bg-gradient-to-r from-violet-600 to-blue-600 bg-clip-text text-transparent">Shape the
                         Future</span>
                 </h2>
                 <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -681,7 +681,7 @@
                 <div
                     class="group bg-white/90 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     <div
-                        class="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        class="w-16 h-16 bg-gradient-to-r from-violet-500 to-blue-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
@@ -701,7 +701,7 @@
                 <div
                     class="group bg-white/90 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     <div
-                        class="w-16 h-16 bg-gradient-to-r from-pink-500 to-red-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        class="w-16 h-16 bg-gradient-to-r from-pink-500 to-blue-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
@@ -720,7 +720,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-6 border border-orange-200">
+                <div class="bg-gradient-to-br from-violet-50 to-blue-50 rounded-xl p-6 border border-violet-200">
                     <h4 class="font-bold text-gray-900 mb-2">Digital Identity & Inclusion</h4>
                     <p class="text-sm text-gray-600">Building the digital identity rails that unlock financial services,
                         healthcare, and civic participation for millions.</p>
@@ -730,7 +730,7 @@
                     <p class="text-sm text-gray-600">How African tech companies can stop building for the West and start
                         building for the continent — and win globally.</p>
                 </div>
-                <div class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl p-6 border border-yellow-200">
+                <div class="bg-gradient-to-br from-yellow-50 to-blue-50 rounded-xl p-6 border border-yellow-200">
                     <h4 class="font-bold text-gray-900 mb-2">The Future of Work & AI</h4>
                     <p class="text-sm text-gray-600">Preparing Africa's workforce for an AI-native economy — skills,
                         mindsets, and policy for the decade ahead.</p>
@@ -741,7 +741,7 @@
                 <p class="text-lg text-gray-600 mb-6">Available for governments, corporates, universities, and development
                     partners.</p>
                 <a href="{{ route('speaking') }}"
-                    class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-violet-600 to-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                     <span>View All Speaking Topics & Book Now</span>
                     <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
@@ -758,13 +758,13 @@
         class="py-20 bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white relative overflow-hidden">
         <div class="absolute inset-0">
             <div
-                class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-orange-500/20 to-red-500/20 rounded-full blur-3xl animate-pulse">
+                class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-violet-500/20 to-blue-500/20 rounded-full blur-3xl animate-pulse">
             </div>
             <div
                 class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full blur-3xl animate-pulse delay-1000">
             </div>
             <div
-                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-yellow-500/10 to-orange-500/10 rounded-full blur-3xl">
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl">
             </div>
         </div>
 
@@ -778,7 +778,7 @@
                         <h2 class="text-4xl md:text-5xl font-display font-bold text-white leading-tight">
                             Elevate & Dominate
                             <span
-                                class="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Podcast</span>
+                                class="block bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Podcast</span>
                         </h2>
                     </div>
                     <div class="space-y-4">
@@ -827,7 +827,7 @@
                     </div>
                     <div class="pt-4">
                         <a href="{{ route('media') }}"
-                            class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-yellow-500 to-orange-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                            class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                             <span>Listen to All Episodes</span>
                             <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -861,7 +861,7 @@
                                 12:45</div>
                             <button @click="openVideo = true" @mouseenter="isHovered = true"
                                 @mouseleave="isHovered = false"
-                                class="group/btn relative w-24 h-24 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center shadow-2xl hover:shadow-red-500/25 transition-all duration-500 border-2 border-white/20 hover:border-white/40 mb-4 z-10"
+                                class="group/btn relative w-24 h-24 bg-gradient-to-br from-blue-600 to-red-700 rounded-full flex items-center justify-center shadow-2xl hover:shadow-red-500/25 transition-all duration-500 border-2 border-white/20 hover:border-white/40 mb-4 z-10"
                                 :class="{ 'scale-110 shadow-red-500/40': isHovered }">
                                 <div class="absolute inset-0 rounded-full bg-red-600 animate-ping opacity-20"></div>
                                 <div class="absolute inset-2 rounded-full bg-red-600 animate-pulse opacity-30"></div>
@@ -870,7 +870,7 @@
                                     <path d="M8 5v14l11-7z" />
                                 </svg>
                                 <div
-                                    class="absolute inset-0 rounded-full bg-gradient-to-r from-red-600 to-red-500 blur-lg opacity-0 group-hover/btn:opacity-30 transition-opacity duration-500">
+                                    class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-600 to-blue-500 blur-lg opacity-0 group-hover/btn:opacity-30 transition-opacity duration-500">
                                 </div>
                             </button>
                             <div
@@ -921,7 +921,7 @@
                             <div class="text-xs text-gray-300">Building Africa's Digital Future</div>
                         </div>
                         <div
-                            class="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full opacity-20 blur-xl animate-float">
+                            class="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full opacity-20 blur-xl animate-float">
                         </div>
                         <div
                             class="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-r from-red-500 to-pink-500 rounded-full opacity-20 blur-xl animate-float delay-1000">
@@ -935,10 +935,10 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="py-20 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
         <div
-            class="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-orange-200/30 to-red-200/30 rounded-full blur-3xl">
+            class="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-violet-200/30 to-blue-200/30 rounded-full blur-3xl">
         </div>
         <div
-            class="absolute bottom-1/4 left-1/4 w-80 h-80 bg-gradient-to-r from-yellow-200/30 to-orange-200/30 rounded-full blur-3xl">
+            class="absolute bottom-1/4 left-1/4 w-80 h-80 bg-gradient-to-r from-cyan-200/30 to-blue-200/30 rounded-full blur-3xl">
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -947,7 +947,7 @@
                     class="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-md border border-gray-200 text-gray-800 rounded-full text-sm font-medium mb-6">
                     ⭐ Trusted by Industry Leaders</div>
                 <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6 leading-tight">
-                    What <span class="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Leaders
+                    What <span class="bg-gradient-to-r from-violet-600 to-blue-600 bg-clip-text text-transparent">Leaders
                         Say</span>
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">See what colleagues, partners, and
@@ -971,7 +971,7 @@
                         across the continent."</blockquote>
                     <div class="flex items-center">
                         <div
-                            class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white font-semibold mr-4">
+                            class="w-12 h-12 bg-gradient-to-r from-violet-500 to-blue-500 rounded-full flex items-center justify-center text-white font-semibold mr-4">
                             DS</div>
                         <div>
                             <div class="font-semibold text-gray-900">Daniel Skirrow</div>
@@ -990,7 +990,7 @@
                         for what is possible."</blockquote>
                     <div class="flex items-center">
                         <div
-                            class="w-12 h-12 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center text-white font-semibold mr-4">
+                            class="w-12 h-12 bg-gradient-to-r from-pink-500 to-blue-500 rounded-full flex items-center justify-center text-white font-semibold mr-4">
                             SM</div>
                         <div>
                             <div class="font-semibold text-gray-900">Samuel Mwale</div>
@@ -1023,13 +1023,13 @@
 
     <!-- Newsletter Section -->
     <section id="newsletter"
-        class="py-20 bg-gradient-to-br from-red-900 via-red-800 to-orange-900 text-white relative overflow-hidden">
+        class="py-20 bg-gradient-to-br from-purple-900 via-indigo-800 to-blue-900 text-white relative overflow-hidden">
         <div class="absolute inset-0">
             <div
-                class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 rounded-full blur-3xl animate-pulse">
+                class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full blur-3xl animate-pulse">
             </div>
             <div
-                class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-orange-500/20 to-red-500/20 rounded-full blur-3xl animate-pulse delay-1000">
+                class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-violet-500/20 to-blue-500/20 rounded-full blur-3xl animate-pulse delay-1000">
             </div>
         </div>
 
@@ -1037,7 +1037,7 @@
             <div class="mb-8">
                 <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-6 leading-tight">
                     Stay Ahead of Africa's
-                    <span class="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">Digital
+                    <span class="bg-gradient-to-r from-cyan-400 to-cyan-400 bg-clip-text text-transparent">Digital
                         Revolution</span>
                 </h2>
                 <p class="text-xl text-red-100 leading-relaxed max-w-3xl mx-auto">
@@ -1051,10 +1051,10 @@
                     class="flex flex-col sm:flex-row gap-4">
                     @csrf
                     <input type="email" name="email" placeholder="Enter your email address"
-                        class="flex-1 px-6 py-4 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-yellow-400/50 border-0 shadow-lg backdrop-blur-md"
+                        class="flex-1 px-6 py-4 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-violet-400/50 border-0 shadow-lg backdrop-blur-md"
                         required>
                     <button type="submit" id="newsletter-main-btn"
-                        class="px-8 py-4 bg-gradient-to-r from-yellow-500 to-orange-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 whitespace-nowrap">
+                        class="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 whitespace-nowrap">
                         Join the Movement
                     </button>
                 </form>
@@ -1140,17 +1140,17 @@
     <!-- Final CTA -->
     <section id="cta" class="py-20 bg-white relative overflow-hidden">
         <div
-            class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-orange-100 to-red-100 rounded-full blur-3xl opacity-30">
+            class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-violet-100 to-blue-100 rounded-full blur-3xl opacity-30">
         </div>
         <div
-            class="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-yellow-100 to-orange-100 rounded-full blur-3xl opacity-20">
+            class="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-cyan-100 to-blue-100 rounded-full blur-3xl opacity-20">
         </div>
 
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 animate-on-scroll">
             <div class="space-y-8">
                 <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 leading-tight">
                     Ready to Build Africa's
-                    <span class="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Digital Future
+                    <span class="bg-gradient-to-r from-violet-600 to-blue-600 bg-clip-text text-transparent">Digital Future
                         Together?</span>
                 </h2>
                 <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -1159,7 +1159,7 @@
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
                     <a href="{{ route('contact') }}"
-                        class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                        class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-violet-600 to-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                         <span>Book Speaking Engagement</span>
                         <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1168,7 +1168,7 @@
                         </svg>
                     </a>
                     <a href="/avec"
-                        class="group inline-flex items-center px-8 py-4 bg-white border-2 border-gray-300 text-gray-700 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:border-orange-500 hover:text-orange-600">
+                        class="group inline-flex items-center px-8 py-4 bg-white border-2 border-gray-300 text-gray-700 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:border-violet-500 hover:text-violet-600">
                         <span>Explore AVEC Technologies</span>
                         <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1262,12 +1262,12 @@
         }
 
         ::-webkit-scrollbar-thumb {
-            background: linear-gradient(to bottom, #ea580c, #dc2626);
+            background: linear-gradient(to bottom, #8b5cf6, #3b82f6);
             border-radius: 4px;
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: linear-gradient(to bottom, #dc2626, #b91c1c);
+            background: linear-gradient(to bottom, #3b82f6, #1d4ed8);
         }
     </style>
 

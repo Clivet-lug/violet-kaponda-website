@@ -10,10 +10,10 @@
     <section class="relative py-20 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
         <!-- Background Elements -->
         <div
-            class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-violet-100 to-violet-100 rounded-full blur-3xl opacity-40">
+            class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-orange-100 to-amber-100 rounded-full blur-3xl opacity-40">
         </div>
         <div
-            class="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-violet-100 to-cyan-100 rounded-full blur-3xl opacity-30">
+            class="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-amber-100 to-yellow-100 rounded-full blur-3xl opacity-30">
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -23,7 +23,7 @@
                 <div class="animate-on-scroll space-y-8">
                     <!-- Badge -->
                     <div
-                        class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-violet-50 to-blue-50 border border-violet-200 text-violet-800 rounded-full text-sm font-medium shadow-sm">
+                        class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 text-amber-800 rounded-full text-sm font-medium shadow-sm">
                         💬 Let's Connect & Collaborate
                     </div>
 
@@ -32,13 +32,13 @@
                         <h1 class="text-4xl md:text-6xl font-display font-bold text-gray-900 leading-tight">
                             Ready to
                             <span
-                                class="bg-gradient-to-r from-violet-600 via-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                                class="bg-gradient-to-r from-orange-600 via-amber-600 to-red-600 bg-clip-text text-transparent">
                                 Transform
                             </span>
                             Together?
                         </h1>
 
-                        <h2 class="text-xl md:text-2xl text-violet-700 font-medium">
+                        <h2 class="text-xl md:text-2xl text-amber-700 font-medium">
                             Building Africa's Digital Future, One Connection at a Time
                         </h2>
                     </div>
@@ -47,7 +47,7 @@
                     <p class="text-lg text-gray-700 leading-relaxed">
                         Whether you're looking for a transformational keynote speaker, strategic business partnership,
                         or media collaboration, I'm excited to explore how we can create meaningful impact together
-                        across Africa's digital ecosystem.
+                        across Africa's fintech ecosystem.
                     </p>
 
                     <!-- Response Promise -->
@@ -85,7 +85,7 @@
                                 <div>
                                     <div class="font-medium text-gray-900">Email</div>
                                     <a href="mailto:violet@violetnswanakaponda.com"
-                                        class="text-violet-600 hover:text-violet-700 transition-colors duration-300">
+                                        class="text-orange-600 hover:text-orange-700 transition-colors duration-300">
                                         	violet@violetnswanakaponda.com
                                     </a>
                                 </div>
@@ -111,7 +111,7 @@
 
                             <div class="flex items-center space-x-3 group">
                                 <div
-                                    class="w-10 h-10 bg-gradient-to-r from-violet-500 to-blue-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                    class="w-10 h-10 bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                                     <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
                                         viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -203,14 +203,14 @@
                                     <label class="inquiry-type-option cursor-pointer">
                                         <input type="radio" name="inquiry_type" value="general" class="sr-only">
                                         <div
-                                            class="inquiry-card bg-gradient-to-r from-violet-50 to-blue-50 border border-violet-200 rounded-lg p-4 text-center transition-all duration-300 hover:shadow-md">
-                                            <svg class="w-6 h-6 mx-auto mb-2 text-violet-600" fill="none"
+                                            class="inquiry-card bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-lg p-4 text-center transition-all duration-300 hover:shadow-md">
+                                            <svg class="w-6 h-6 mx-auto mb-2 text-amber-600" fill="none"
                                                 stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                     d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
                                                 </path>
                                             </svg>
-                                            <div class="font-medium text-violet-800 text-sm">Coaching</div>
+                                            <div class="font-medium text-amber-800 text-sm">Coaching</div>
                                         </div>
                                     </label>
                                 </div>
@@ -221,13 +221,13 @@
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700 mb-2">Your Name *</label>
                                     <input type="text" name="name" required
-                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-300"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300"
                                         placeholder="Full Name">
                                 </div>
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
                                     <input type="email" name="email" required
-                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-300"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300"
                                         placeholder="email@company.com">
                                 </div>
                             </div>
@@ -236,13 +236,13 @@
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700 mb-2">Organization</label>
                                     <input type="text" name="organization"
-                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-300"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300"
                                         placeholder="Company/Organization">
                                 </div>
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700 mb-2">Your Role</label>
                                     <input type="text" name="role"
-                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-300"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300"
                                         placeholder="Job Title">
                                 </div>
                             </div>
@@ -254,16 +254,16 @@
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-2">Your Message *</label>
                                 <textarea name="message" rows="4" required
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-300"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300"
                                     placeholder="Tell me more about your inquiry and how we can work together..."></textarea>
                             </div>
 
                             <!-- Submit Button -->
                             <button type="submit" id="submit-button"
-                                class="w-full bg-gradient-to-r from-violet-600 to-blue-600 text-white font-semibold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 relative overflow-hidden">
+                                class="w-full bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 relative overflow-hidden">
                                 <span class="relative z-10">Send Inquiry</span>
                                 <div
-                                    class="absolute inset-0 bg-gradient-to-r from-blue-600 to-violet-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    class="absolute inset-0 bg-gradient-to-r from-red-600 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 </div>
                             </button>
 
@@ -283,23 +283,23 @@
     <section class="py-20 bg-white relative overflow-hidden">
         <!-- Background Elements -->
         <div
-            class="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-violet-100 to-blue-100 rounded-full blur-3xl opacity-30">
+            class="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-amber-100 to-orange-100 rounded-full blur-3xl opacity-30">
         </div>
         <div
-            class="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-tl from-cyan-100 to-violet-100 rounded-full blur-3xl opacity-20">
+            class="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-tl from-yellow-100 to-amber-100 rounded-full blur-3xl opacity-20">
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <!-- Section Header -->
             <div class="text-center mb-16 animate-on-scroll">
                 <div
-                    class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-violet-50 to-blue-50 border border-violet-200 text-violet-800 rounded-full text-sm font-medium mb-6">
+                    class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 text-amber-800 rounded-full text-sm font-medium mb-6">
                     🚀 Ways We Can Collaborate
                 </div>
 
                 <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6 leading-tight">
                     How I Can <span
-                        class="bg-gradient-to-r from-violet-600 to-blue-600 bg-clip-text text-transparent">Help You</span>
+                        class="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">Help You</span>
                     Succeed
                 </h2>
 
@@ -329,7 +329,7 @@
                     </h3>
 
                     <p class="text-gray-600 leading-relaxed mb-4">
-                        Keynotes, panels, workshops on AI and digital infrastructure, women in tech, and technology innovation.
+                        Keynotes, panels, workshops on fintech innovation, women in tech, and digital transformation.
                     </p>
 
                     <ul class="text-sm text-gray-600 space-y-1">
@@ -402,7 +402,7 @@
                 <div
                     class="group bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 animate-on-scroll">
                     <div
-                        class="w-16 h-16 bg-gradient-to-r from-violet-500 to-blue-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        class="w-16 h-16 bg-gradient-to-r from-amber-500 to-orange-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
@@ -411,7 +411,7 @@
                     </div>
 
                     <h3
-                        class="text-xl font-bold text-gray-900 mb-3 group-hover:text-violet-700 transition-colors duration-300">
+                        class="text-xl font-bold text-gray-900 mb-3 group-hover:text-amber-700 transition-colors duration-300">
                         Mentorship & Coaching
                     </h3>
 
@@ -434,23 +434,23 @@
     <section class="py-20 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
         <!-- Background Elements -->
         <div
-            class="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-violet-200/30 to-blue-200/30 rounded-full blur-3xl">
+            class="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-amber-200/30 to-orange-200/30 rounded-full blur-3xl">
         </div>
         <div
-            class="absolute bottom-1/4 left-1/4 w-80 h-80 bg-gradient-to-r from-cyan-200/30 to-violet-200/30 rounded-full blur-3xl">
+            class="absolute bottom-1/4 left-1/4 w-80 h-80 bg-gradient-to-r from-yellow-200/30 to-amber-200/30 rounded-full blur-3xl">
         </div>
 
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <!-- Section Header -->
             <div class="text-center mb-12 animate-on-scroll">
                 <div
-                    class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-violet-50 to-blue-50 border border-violet-200 text-violet-800 rounded-full text-sm font-medium mb-6">
+                    class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 text-amber-800 rounded-full text-sm font-medium mb-6">
                     ⭐ What People Say
                 </div>
 
                 <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
                     Trusted by <span
-                        class="bg-gradient-to-r from-violet-600 to-blue-600 bg-clip-text text-transparent">Industry
+                        class="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">Industry
                         Leaders</span>
                 </h2>
             </div>
@@ -524,7 +524,7 @@
                                 <path
                                     d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
-                        </div> 
+                        </div> AfricanFitechQueen@2025!
                     </div>
                     <blockquote class="text-gray-700 mb-4 leading-relaxed">
                         "Violet Nswana Kaponda doesn't just participate in Africa's fintech revolution — she leads it.
@@ -549,23 +549,23 @@
     <section class="py-20 bg-white relative overflow-hidden">
         <!-- Background Elements -->
         <div
-            class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-violet-100 to-blue-100 rounded-full blur-3xl opacity-30">
+            class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-amber-100 to-orange-100 rounded-full blur-3xl opacity-30">
         </div>
         <div
-            class="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tl from-cyan-100 to-violet-100 rounded-full blur-3xl opacity-20">
+            class="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tl from-yellow-100 to-amber-100 rounded-full blur-3xl opacity-20">
         </div>
 
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <!-- Section Header -->
             <div class="text-center mb-16 animate-on-scroll">
                 <div
-                    class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-violet-50 to-blue-50 border border-violet-200 text-violet-800 rounded-full text-sm font-medium mb-6">
+                    class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 text-amber-800 rounded-full text-sm font-medium mb-6">
                     ❓ Frequently Asked Questions
                 </div>
 
                 <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6 leading-tight">
                     Common <span
-                        class="bg-gradient-to-r from-violet-600 to-blue-600 bg-clip-text text-transparent">Questions</span>
+                        class="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">Questions</span>
                 </h2>
 
                 <p class="text-xl text-gray-600 leading-relaxed">
@@ -618,7 +618,7 @@
                         class="bg-white/90 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/20 animate-on-scroll">
                         <h3 class="font-bold text-gray-900 mb-3">What industries do you work with?</h3>
                         <p class="text-gray-600 text-sm leading-relaxed">
-                            Primarily AI, digital infrastructure, technology, and emerging markets.
+                            Primarily fintech, technology, financial services, and emerging markets.
                             I also work with organizations focused on women's empowerment and leadership development.
                         </p>
                     </div>
@@ -640,7 +640,7 @@
                         </h3>
                         <p class="text-gray-600 text-sm leading-relaxed">
                             Yes — I create and deliver bespoke workshops on digital transformation, business growth
-                            strategies, AI and infrastructure trends, and leadership in emerging markets.
+                            strategies, fintech trends, and leadership in emerging markets.
 
                         </p>
                     </div>
@@ -650,7 +650,7 @@
                         <h3 class="font-bold text-gray-900 mb-3">What makes your approach unique?
                         </h3>
                         <p class="text-gray-600 text-sm leading-relaxed">
-                            I merge nearly a decade of technology experience with a passion for digital inclusion, ensuring
+                            I merge nearly a decade of fintech experience with a passion for digital inclusion, ensuring
                             that strategies are both innovative and accessible to diverse markets.
                         </p>
                     </div>
@@ -703,7 +703,7 @@
     </section>
 
     <!-- Final CTA -->
-    <section class="py-20 bg-gradient-to-br from-violet-600 via-blue-600 to-cyan-600 text-white relative overflow-hidden">
+    <section class="py-20 bg-gradient-to-br from-amber-600 via-orange-600 to-red-600 text-white relative overflow-hidden">
         <!-- Background Effects -->
         <div class="absolute inset-0">
             <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
@@ -714,10 +714,10 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 animate-on-scroll">
             <div class="space-y-8">
                 <h2 class="text-4xl md:text-5xl font-display font-bold text-white leading-tight">
-                    Let's Create <span class="text-cyan-200">Extraordinary</span> Together
+                    Let's Create <span class="text-yellow-200">Extraordinary</span> Together
                 </h2>
 
-                <p class="text-xl text-violet-100 leading-relaxed max-w-3xl mx-auto">
+                <p class="text-xl text-orange-100 leading-relaxed max-w-3xl mx-auto">
                     Ready to bring transformational insights to your audience or explore strategic partnerships?
                     I'm excited to connect and discover how we can drive meaningful impact across Africa's digital
                     ecosystem.
@@ -725,7 +725,7 @@
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
                     <a href="#contact-form" onclick="scrollToForm()"
-                        class="group inline-flex items-center px-8 py-4 bg-white text-violet-700 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                        class="group inline-flex items-center px-8 py-4 bg-white text-amber-700 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                         <span>Send Your Inquiry</span>
                         <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -747,7 +747,7 @@
 
                 <!-- Social Links -->
                 <div class="pt-8 border-t border-white/20">
-                    <p class="text-violet-200 mb-4">Connect with me on social media</p>
+                    <p class="text-orange-200 mb-4">Connect with me on social media</p>
                     <div class="flex justify-center space-x-6">
                         <a href="https://linkedin.com/in/violet-nswana-kaponda-bsc-msc-a2761a153" target="_blank"
                             class="p-3 bg-white/20 backdrop-blur-md rounded-xl text-white hover:text-yellow-300 hover:scale-110 transition-all duration-300 shadow-lg">
@@ -796,7 +796,7 @@
                     // Update visual selection
                     document.querySelectorAll('.inquiry-type-option .inquiry-card').forEach(
                         card => {
-                            card.classList.remove('border-violet-500', 'bg-violet-50',
+                            card.classList.remove('border-orange-500', 'bg-orange-50',
                                 'shadow-lg');
                             card.classList.add('hover:shadow-md');
                         });
@@ -804,7 +804,7 @@
                     const selectedCard = this.closest('.inquiry-type-option').querySelector(
                         '.inquiry-card');
                     selectedCard.classList.remove('hover:shadow-md');
-                    selectedCard.classList.add('border-violet-500', 'bg-violet-50', 'shadow-lg');
+                    selectedCard.classList.add('border-orange-500', 'bg-orange-50', 'shadow-lg');
 
                     // Generate dynamic fields based on inquiry type
                     generateDynamicFields(this.value);
@@ -821,12 +821,12 @@
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700 mb-2">Event Date</label>
                                     <input type="date" name="event_date"
-                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-300">
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300">
                                 </div>
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700 mb-2">Expected Audience Size</label>
                                     <select name="audience_size"
-                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-300">
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300">
                                         <option value="">Select size</option>
                                         <option value="1-50">1-50 people</option>
                                         <option value="51-200">51-200 people</option>
@@ -838,9 +838,9 @@
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Speaking Topic</label>
                                 <select name="speaking_topic"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-300">
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300">
                                     <option value="">Select a topic</option>
-                                    <option value="ai-infrastructure">AI & Digital Infrastructure in Africa</option>
+                                    <option value="fintech-ai">Fintech & AI in Africa</option>
                                     <option value="women-tech">Women in Technology & Leadership</option>
                                     <option value="digital-transformation">Digital Transformation Strategy</option>
                                     <option value="business-development">Strategic Business Development</option>
@@ -851,7 +851,7 @@
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-2">Event Format</label>
                                 <select name="event_format"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-300">
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300">
                                     <option value="">Select format</option>
                                     <option value="keynote">Keynote (45-60 min)</option>
                                     <option value="panel">Panel Discussion</option>
@@ -868,7 +868,7 @@
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700 mb-2">Partnership Type</label>
                                     <select name="partnership_type"
-                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-300">
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300">
                                         <option value="">Select type</option>
                                         <option value="business-development">Business Development</option>
                                         <option value="strategic-consulting">Strategic Consulting</option>
@@ -880,7 +880,7 @@
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700 mb-2">Project Timeline</label>
                                     <select name="timeline"
-                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-300">
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300">
                                         <option value="">Select timeline</option>
                                         <option value="immediate">Immediate (within 1 month)</option>
                                         <option value="short-term">Short-term (1-3 months)</option>
@@ -892,7 +892,7 @@
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-2">Industry Focus</label>
                                 <input type="text" name="industry"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-300"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300"
                                     placeholder="e.g., Fintech, Digital Banking, Mobile Payments">
                             </div>`;
                         break;
@@ -903,7 +903,7 @@
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700 mb-2">Media Type</label>
                                     <select name="media_type"
-                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-300">
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300">
                                         <option value="">Select type</option>
                                         <option value="podcast">Podcast Interview</option>
                                         <option value="article">Article/Blog Feature</option>
@@ -915,14 +915,14 @@
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700 mb-2">Publication/Platform</label>
                                     <input type="text" name="publication"
-                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-300"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300"
                                         placeholder="Name of publication, podcast, or platform">
                                 </div>
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-2">Topic/Angle</label>
                                 <input type="text" name="media_topic"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-300"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300"
                                     placeholder="What aspect of fintech/tech leadership would you like to explore?">
                             </div>`;
                         break;
@@ -932,7 +932,7 @@
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-2">How can I help you?</label>
                                 <select name="general_help"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-300">
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300">
                                     <option value="">Select option</option>
                                     <option value="networking">Professional Networking</option>
                                     <option value="mentorship">Career Mentorship</option>
@@ -944,7 +944,7 @@
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-2">Your Background</label>
                                 <input type="text" name="background"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-300"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300"
                                     placeholder="Brief description of your background or current focus">
                             </div>`;
                         break;
@@ -998,8 +998,8 @@
                     Message Sent!
                 </div>
             `;
-                            submitButton.classList.remove('bg-gradient-to-r', 'from-violet-600',
-                                'to-blue-600');
+                            submitButton.classList.remove('bg-gradient-to-r', 'from-orange-600',
+                                'to-red-600');
                             submitButton.classList.add('bg-green-600');
 
                             // Show success message
@@ -1011,8 +1011,8 @@
                                 dynamicFields.innerHTML = '';
                                 document.querySelectorAll('.inquiry-type-option .inquiry-card')
                                     .forEach(card => {
-                                        card.classList.remove('border-violet-500',
-                                            'bg-violet-50', 'shadow-lg');
+                                        card.classList.remove('border-orange-500',
+                                            'bg-orange-50', 'shadow-lg');
                                         card.classList.add('hover:shadow-md');
                                     });
 
@@ -1020,7 +1020,7 @@
                                 submitButton.disabled = false;
                                 submitButton.classList.remove('bg-green-600');
                                 submitButton.classList.add('bg-gradient-to-r',
-                                    'from-violet-600', 'to-blue-600');
+                                    'from-orange-600', 'to-red-600');
                             }, 3000);
                         } else {
                             // Show error state
@@ -1032,8 +1032,8 @@
                     Error - Try Again
                 </div>
             `;
-                            submitButton.classList.remove('bg-gradient-to-r', 'from-violet-600',
-                                'to-blue-600');
+                            submitButton.classList.remove('bg-gradient-to-r', 'from-orange-600',
+                                'to-red-600');
                             submitButton.classList.add('bg-red-600');
 
                             showNotification('error', data.message ||
@@ -1045,7 +1045,7 @@
                                 submitButton.disabled = false;
                                 submitButton.classList.remove('bg-red-600');
                                 submitButton.classList.add('bg-gradient-to-r',
-                                    'from-violet-600', 'to-blue-600');
+                                    'from-orange-600', 'to-red-600');
                             }, 3000);
                         }
                     })
@@ -1060,8 +1060,8 @@
                 Network Error
             </div>
         `;
-                        submitButton.classList.remove('bg-gradient-to-r', 'from-violet-600',
-                            'to-blue-600');
+                        submitButton.classList.remove('bg-gradient-to-r', 'from-orange-600',
+                            'to-red-600');
                         submitButton.classList.add('bg-red-600');
 
                         showNotification('error',
@@ -1071,8 +1071,8 @@
                             submitButton.innerHTML = originalText;
                             submitButton.disabled = false;
                             submitButton.classList.remove('bg-red-600');
-                            submitButton.classList.add('bg-gradient-to-r', 'from-violet-600',
-                                'to-blue-600');
+                            submitButton.classList.add('bg-gradient-to-r', 'from-orange-600',
+                                'to-red-600');
                         }, 3000);
                     });
             });
@@ -1190,7 +1190,7 @@
         input:focus,
         select:focus,
         textarea:focus {
-            box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+            box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.1);
         }
 
         /* Smooth transitions for all interactive elements */

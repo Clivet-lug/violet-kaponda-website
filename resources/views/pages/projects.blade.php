@@ -10,10 +10,10 @@
     <section class="relative py-20 bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-hidden">
         <div class="absolute inset-0">
             <div
-                class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-orange-500/20 to-red-500/20 rounded-full blur-3xl animate-pulse">
+                class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-violet-500/20 to-blue-500/20 rounded-full blur-3xl animate-pulse">
             </div>
             <div
-                class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-full blur-3xl animate-pulse delay-1000">
+                class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-violet-500/20 to-blue-500/20 rounded-full blur-3xl animate-pulse delay-1000">
             </div>
         </div>
 
@@ -25,7 +25,7 @@
                 </div>
                 <h1 class="text-4xl md:text-6xl font-display font-bold leading-tight">
                     Building <span
-                        class="bg-gradient-to-r from-orange-400 via-amber-400 to-red-400 bg-clip-text text-transparent">Real
+                        class="bg-gradient-to-r from-violet-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent">Real
                         Systems</span> for Real Institutions
                 </h1>
                 <p class="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
@@ -121,7 +121,7 @@
     <!-- Project 2: Bespoke Institutional Systems -->
     <section class="py-20 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
         <div
-            class="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-orange-100 to-red-100 rounded-full blur-3xl opacity-30">
+            class="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-violet-100 to-blue-100 rounded-full blur-3xl opacity-30">
         </div>
 
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -130,7 +130,7 @@
                 <!-- Visual -->
                 <div class="animate-on-scroll lg:order-1">
                     <div
-                        class="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-12 flex items-center justify-center border border-orange-100">
+                        class="bg-gradient-to-br from-violet-50 to-blue-50 rounded-2xl p-12 flex items-center justify-center border border-violet-100">
                         <svg viewBox="0 0 200 200" class="w-48 h-48">
                             <rect x="30" y="50" width="50" height="110" rx="6" fill="none" stroke="#f97316"
                                 stroke-width="2" />
@@ -151,7 +151,7 @@
                 <!-- Content -->
                 <div class="animate-on-scroll space-y-6 lg:order-2">
                     <div
-                        class="inline-flex items-center px-4 py-2 bg-orange-50 border border-orange-200 text-orange-800 rounded-full text-sm font-medium">
+                        class="inline-flex items-center px-4 py-2 bg-violet-50 border border-violet-200 text-violet-800 rounded-full text-sm font-medium">
                         Pillar 2 · Bespoke Institutional Systems
                     </div>
                     <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 leading-tight">
@@ -185,11 +185,11 @@
                     </div>
 
                     <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">ERP
+                        <span class="px-3 py-1 bg-violet-50 text-violet-700 rounded-full text-sm font-medium">ERP
                             Systems</span>
-                        <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">Document
+                        <span class="px-3 py-1 bg-violet-50 text-violet-700 rounded-full text-sm font-medium">Document
                             Management</span>
-                        <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium">RFID
+                        <span class="px-3 py-1 bg-violet-50 text-violet-700 rounded-full text-sm font-medium">RFID
                             Tracking</span>
                     </div>
                 </div>
@@ -323,7 +323,7 @@
     </section>
 
     <!-- Final CTA -->
-    <section class="py-20 bg-gradient-to-br from-orange-600 via-red-600 to-amber-600 text-white relative overflow-hidden">
+    <section class="py-20 bg-gradient-to-br from-violet-600 via-blue-600 to-blue-600 text-white relative overflow-hidden">
         <div class="absolute inset-0">
             <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
             <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-white/5 rounded-full blur-3xl animate-pulse delay-1000">
@@ -332,15 +332,15 @@
 
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 animate-on-scroll">
             <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-6 leading-tight">
-                Have a Challenge <span class="text-yellow-200">Worth Solving?</span>
+                Have a Challenge <span class="text-cyan-200">Worth Solving?</span>
             </h2>
-            <p class="text-xl text-orange-100 leading-relaxed max-w-3xl mx-auto mb-8">
+            <p class="text-xl text-violet-100 leading-relaxed max-w-3xl mx-auto mb-8">
                 Whether it's government digitization, institutional systems, or AI-driven intelligence — let's discuss what
                 AVEC can build for your organization.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a href="{{ route('avec') }}"
-                    class="group inline-flex items-center px-8 py-4 bg-white text-orange-700 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    class="group inline-flex items-center px-8 py-4 bg-white text-violet-700 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                     <span>Learn More About AVEC</span>
                     <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">

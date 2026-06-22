@@ -9,37 +9,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Violet's Brand Colors - Deep Red, Black, Brown/Amber
+        // AVEC Technologies Brand Colors - Purple, Blue, Cyan
         'brand': {
-          'red': {
-            50: '#fef2f2',
-            100: '#fee2e2',
-            200: '#fecaca',
-            300: '#fca5a5', 
-            400: '#f87171',
-            500: '#ef4444',
-            600: '#dc2626',
-            700: '#b91c1c',
-            800: '#991b1b',
-            900: '#8B0000', // Deep red - Violet's primary
-            950: '#7f1d1d',
-          },
-          'amber': {
-            50: '#fffbeb',
-            100: '#fef3c7',
-            200: '#fde68a',
-            300: '#fcd34d',
-            400: '#fbbf24',
-            500: '#f59e0b',
-            600: '#d97706',
-            700: '#b45309',
-            800: '#92400e',
-            900: '#D2691E', // Chocolate brown - Violet's secondary
-            950: '#78350f',
-          },
-          'black': '#000000',
-          'charcoal': '#1a1a1a',
-          'gold': '#FFD700',
+          'purple': '#8b5cf6',
+          'blue': '#3b82f6',
+          'cyan': '#06b6d4',
         },
         // Additional brand palette
         'accent': {
@@ -49,13 +23,12 @@ module.exports = {
       },
       fontFamily: {
         // Brand Typography
-        'display': ['Playfair Display', 'serif'], // For headers
-        'body': ['Inter', 'sans-serif'], // For body text
+        'display': ['Playfair Display', 'serif'],
+        'body': ['Inter', 'sans-serif'],
         'sans': ['Inter', 'sans-serif'],
         'serif': ['Playfair Display', 'serif'],
       },
       fontSize: {
-        // Custom font sizes for brand consistency
         'hero': ['4rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }],
         'display': ['3rem', { lineHeight: '1.2', letterSpacing: '-0.02em' }],
         'headline': ['2.5rem', { lineHeight: '1.3', letterSpacing: '-0.01em' }],
@@ -67,7 +40,6 @@ module.exports = {
         '128': '32rem',
       },
       animation: {
-        // Custom animations for interactivity
         'fade-in': 'fadeIn 0.6s ease-out',
         'slide-up': 'slideUp 0.8s ease-out',
         'slide-in-left': 'slideInLeft 0.7s ease-out',
@@ -75,6 +47,7 @@ module.exports = {
         'bounce-soft': 'bounceSoft 2s infinite',
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'gradient': 'gradient 6s ease infinite',
+        'float': 'float 6s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -101,21 +74,24 @@ module.exports = {
           '0%, 100%': { backgroundPosition: '0% 50%' },
           '50%': { backgroundPosition: '100% 50%' },
         },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+          '50%': { transform: 'translateY(-15px) rotate(2deg)' },
+        },
       },
       backgroundImage: {
-        // Brand gradients
-        'brand-gradient': 'linear-gradient(135deg, #8B0000 0%, #D2691E 100%)',
-        'brand-gradient-soft': 'linear-gradient(135deg, #8B0000 0%, #b91c1c 50%, #D2691E 100%)',
-        'hero-gradient': 'linear-gradient(135deg, #000000 0%, #8B0000 50%, #D2691E 100%)',
-        'accent-gradient': 'linear-gradient(45deg, #FFD700, #D2691E)',
+        'brand-gradient': 'linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%)',
+        'brand-gradient-soft': 'linear-gradient(135deg, #8b5cf6 0%, #6366f1 50%, #3b82f6 100%)',
+        'hero-gradient': 'linear-gradient(135deg, #000000 0%, #5b21b6 50%, #3b82f6 100%)',
+        'accent-gradient': 'linear-gradient(45deg, #06b6d4, #8b5cf6)',
       },
       backdropBlur: {
         xs: '2px',
       },
       boxShadow: {
-        'brand': '0 10px 25px -5px rgba(139, 0, 0, 0.3), 0 10px 10px -5px rgba(139, 0, 0, 0.04)',
-        'brand-lg': '0 20px 25px -5px rgba(139, 0, 0, 0.3), 0 10px 10px -5px rgba(139, 0, 0, 0.04)',
-        'glow': '0 0 20px rgba(139, 0, 0, 0.3)',
+        'brand': '0 10px 25px -5px rgba(139, 92, 246, 0.3), 0 10px 10px -5px rgba(139, 92, 246, 0.04)',
+        'brand-lg': '0 20px 25px -5px rgba(139, 92, 246, 0.3), 0 10px 10px -5px rgba(139, 92, 246, 0.04)',
+        'glow': '0 0 20px rgba(139, 92, 246, 0.3)',
       },
     },
   },

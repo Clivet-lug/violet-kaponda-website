@@ -5,21 +5,21 @@
 
 @section('content')
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-gray-50 to-blue-50 py-12 lg:py-16">
+    <section class="bg-gradient-to-br from-gray-50 to-orange-50 py-12 lg:py-16">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Breadcrumb -->
             <nav class="flex items-center space-x-2 text-sm text-gray-600 mb-6">
-                <a href="{{ route('home') }}" class="hover:text-violet-600 transition-colors">Home</a>
+                <a href="{{ route('home') }}" class="hover:text-orange-600 transition-colors">Home</a>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
-                <a href="{{ route('blog.index') }}" class="hover:text-violet-600 transition-colors">Blog</a>
+                <a href="{{ route('blog.index') }}" class="hover:text-orange-600 transition-colors">Blog</a>
                 @if ($post->categories->first())
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                     </svg>
                     <a href="{{ route('blog.category', $post->categories->first()->slug) }}"
-                        class="hover:text-violet-600 transition-colors">
+                        class="hover:text-orange-600 transition-colors">
                         {{ $post->categories->first()->name }}
                     </a>
                 @endif
@@ -51,12 +51,12 @@
             <div class="flex flex-wrap items-center gap-6 text-gray-600 mb-8">
                 <div class="flex items-center">
                     <div
-                        class="w-12 h-12 bg-gradient-to-br from-violet-500 to-red-600 rounded-full flex items-center justify-center mr-3">
+                        class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mr-3">
                         <span class="text-white font-bold text-lg">V</span>
                     </div>
                     <div>
                         <p class="font-medium text-gray-900">Violet Nswana Kaponda</p>
-                        <p class="text-sm text-gray-500">CEO, AVEC Technologies</p>
+                        <p class="text-sm text-gray-500">Fintech Thought Leader</p>
                     </div>
                 </div>
 
@@ -138,7 +138,7 @@
                 @endif
 
                 <!-- Article Body -->
-                <div class="prose prose-lg prose-violet max-w-none">
+                <div class="prose prose-lg prose-orange max-w-none">
                     {!! $post->content !!}
                 </div>
 
@@ -149,7 +149,7 @@
                         <div class="flex flex-wrap gap-2">
                             @foreach ($post->tags as $tag)
                                 <a href="{{ route('blog.index', ['tag' => $tag]) }}"
-                                    class="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-orange-100 text-violet-800 hover:bg-orange-200 transition-colors">
+                                    class="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-orange-100 text-orange-800 hover:bg-orange-200 transition-colors">
                                     #{{ $tag }}
                                 </a>
                             @endforeach
@@ -161,13 +161,13 @@
                 <div class="mt-12 pt-8 border-t border-gray-200">
                     <div class="flex items-start space-x-4">
                         <div
-                            class="w-16 h-16 bg-gradient-to-br from-violet-500 to-red-600 rounded-full flex items-center justify-center flex-shrink-0">
+                            class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center flex-shrink-0">
                             <span class="text-white font-bold text-xl">V</span>
                         </div>
                         <div class="flex-1">
                             <h3 class="text-xl font-bold text-gray-900 mb-2">Violet Nswana Kaponda</h3>
                             <p class="text-gray-600 mb-4">
-                                CEO of AVEC Technologies and speaker passionate about empowering Africa through technology and
+                                Fintech thought leader and speaker passionate about empowering Africa through technology and
                                 innovation.
                                 With expertise in digital transformation and women in tech, Violet is driving change across
                                 the continent.
@@ -188,7 +188,7 @@
                                     </svg>
                                 </a>
                                 <a href="{{ route('about') }}"
-                                    class="text-violet-600 hover:text-violet-700 text-sm font-medium">
+                                    class="text-orange-600 hover:text-orange-700 text-sm font-medium">
                                     View Full Bio →
                                 </a>
                             </div>
@@ -211,7 +211,7 @@
                                         </svg>
                                         Previous Post
                                     </div>
-                                    <h3 class="font-semibold text-gray-900 group-hover:text-violet-600 transition-colors">
+                                    <h3 class="font-semibold text-gray-900 group-hover:text-orange-600 transition-colors">
                                         {{ $previousPost->title }}
                                     </h3>
                                 </a>
@@ -229,7 +229,7 @@
                                         </svg>
                                     </div>
                                     <h3
-                                        class="font-semibold text-gray-900 group-hover:text-violet-600 transition-colors text-right">
+                                        class="font-semibold text-gray-900 group-hover:text-orange-600 transition-colors text-right">
                                         {{ $nextPost->title }}
                                     </h3>
                                 </a>
@@ -249,18 +249,18 @@
                     </div>
 
                     <!-- Newsletter Signup -->
-                    <div class="bg-gradient-to-br from-violet-500 to-red-600 rounded-2xl p-6 text-white">
+                    <div class="bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl p-6 text-white">
                         <h3 class="text-lg font-bold mb-2">Enjoyed this article?</h3>
-                        <p class="text-violet-100 text-sm mb-4">
+                        <p class="text-orange-100 text-sm mb-4">
                             Subscribe to get more insights like this delivered to your inbox.
                         </p>
                         <form id="post-newsletter-form" action="{{ route('newsletter.subscribe') }}" method="POST"
                             class="space-y-3">
                             @csrf
                             <input type="email" name="email" placeholder="Your email address" required
-                                class="w-full px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-300">
+                                class="w-full px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-300">
                             <button type="submit" id="post-newsletter-btn"
-                                class="w-full bg-white text-violet-600 py-3 px-4 rounded-lg font-semibold hover:bg-orange-50 transition-colors">
+                                class="w-full bg-white text-orange-600 py-3 px-4 rounded-lg font-semibold hover:bg-orange-50 transition-colors">
                                 Subscribe
                             </button>
                         </form>
@@ -281,7 +281,7 @@
                                             </div>
                                         @endif
                                         <h4
-                                            class="font-medium text-gray-900 group-hover:text-violet-600 transition-colors mb-2 line-clamp-2">
+                                            class="font-medium text-gray-900 group-hover:text-orange-600 transition-colors mb-2 line-clamp-2">
                                             <a
                                                 href="{{ route('blog.show', $relatedPost->slug) }}">{{ $relatedPost->title }}</a>
                                         </h4>
@@ -297,7 +297,7 @@
                     <!-- Back to Blog -->
                     <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 text-center">
                         <a href="{{ route('blog.index') }}"
-                            class="inline-flex items-center text-violet-600 hover:text-violet-700 font-medium">
+                            class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
                             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M15 19l-7-7 7-7" />
@@ -346,7 +346,7 @@
                         const tocItem = document.createElement('a');
                         tocItem.href = `#${heading.id}`;
                         tocItem.textContent = heading.textContent;
-                        tocItem.className = `block text-sm text-gray-600 hover:text-violet-600 transition-colors py-1 ${
+                        tocItem.className = `block text-sm text-gray-600 hover:text-orange-600 transition-colors py-1 ${
                     heading.tagName === 'H3' ? 'pl-4' : heading.tagName === 'H4' ? 'pl-8' : ''
                 }`;
 
@@ -382,7 +382,7 @@
                         // Show loading state
                         submitBtn.innerHTML = `
                     <div class="flex items-center justify-center">
-                        <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-violet-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-orange-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                         </svg>
@@ -485,7 +485,7 @@
             }
 
             .prose a {
-                color: #8b5cf6;
+                color: #ea580c;
                 text-decoration: underline;
                 font-weight: 500;
             }
@@ -514,7 +514,7 @@
             .prose ul li::before {
                 content: "";
                 position: absolute;
-                background-color: #8b5cf6;
+                background-color: #ea580c;
                 border-radius: 50%;
                 width: 0.375em;
                 height: 0.375em;
@@ -540,7 +540,7 @@
                 content: counter(list-counter) ".";
                 position: absolute;
                 font-weight: 600;
-                color: #8b5cf6;
+                color: #ea580c;
                 left: -1.5em;
             }
 
@@ -549,7 +549,7 @@
                 font-style: italic;
                 color: #111827;
                 border-left-width: 0.25rem;
-                border-left-color: #8b5cf6;
+                border-left-color: #ea580c;
                 quotes: "\201C" "\201D" "\2018" "\2019";
                 margin-top: 1.6em;
                 margin-bottom: 1.6em;
@@ -732,7 +732,7 @@
                 left: 0;
                 width: 0%;
                 height: 3px;
-                background: linear-gradient(to right, #8b5cf6, #dc2626);
+                background: linear-gradient(to right, #ea580c, #dc2626);
                 z-index: 9999;
                 transition: width 0.3s ease;
             }
